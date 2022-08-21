@@ -1,0 +1,25 @@
+/* ====  Responsive ==== */
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-right: 0px;
+    align-items: center;
+  }
+  .breadcrumb {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+    overflow: auto;
+  }
+  .breadcrumb ul {
+    flex-wrap: nowrap;
+  }
+  h1.is-size-4 {
+    font-size: 18px !important;
+  }
+  .nivo-directionNav {
+    display: none;
+  }
+  .footer_top {
+    display: none;
+  }
+}

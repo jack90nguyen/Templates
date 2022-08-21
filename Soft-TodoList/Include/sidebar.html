@@ -1,0 +1,271 @@
+<nav id="sidebar" class="">
+    <div class="sidebar__bg"></div>
+    <ul class="sidebar scrollbar">
+        <li class="nav--user" data-type="static">
+            <a>
+                <i class="is--icon is--cover is--circle" style="background-image: url(/images/avatar.png);"></i>
+                <span class="is--bold">Jack Nguyen</span>
+            </a>
+            <div class="action__menu">
+                <a class="item" href="/search.html" title="Search">
+                    <img src="/Images/icons/search.svg" alt="icon">
+                </a>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a href="/account-info.html">
+                            <img src="/Images/icons/user.svg" alt="icon">
+                            Account
+                        </a>
+                        <a href="/account-settings.html">
+                            <img src="/Images/icons/config.svg" alt="icon">
+                            Settings
+                        </a>
+                        <a href="/account-login.html">
+                            <img src="/Images/icons/close.svg" alt="icon">
+                            Logout
+                        </a>
+                    </p>
+                </div>
+                <div class="item" onclick="toggleActionMenu(this)" title="Workspace">
+                    <img src="/Images/icons/workspace.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a href="/account-info.html">
+                            <img src="/Images/icons/workspace.svg" alt="icon">
+                            Workspace 1
+                        </a>
+                        <a href="/account-info.html">
+                            <img src="/Images/icons/workspace.svg" alt="icon">
+                            Workspace 2
+                        </a>
+                        <a href="/account-info.html">
+                            <img src="/Images/icons/workspace.svg" alt="icon">
+                            Workspace 3
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li data-type="static">
+            <a href="/index.html">
+                <i class="is--icon"><img src="/Images/icons/sun.svg" alt="icon"></i>
+                <span>Today</span>
+                <i class="is--count">5</i>
+            </a>
+        </li>
+        <li data-type="static">
+            <a href="/planned.html">
+                <i class="is--icon"><img src="/Images/icons/calendar.svg" alt="icon"></i class="is--icon">
+                <span>Planned</span>
+            </a>
+        </li>
+        <li data-type="static">
+            <a href="/notes.html">
+                <i class="is--icon"><img src="/Images/icons/note.svg" alt="icon"></i class="is--icon">
+                <span>Notes</span>
+            </a>
+        </li>
+        <li data-type="static">
+            <a href="/finance.html">
+                <i class="is--icon"><img src="/Images/icons/dollar.svg" alt="icon"></i class="is--icon">
+                <span>Finance</span>
+            </a>
+        </li>
+        <li data-type="static">
+            <a onclick="toggleSidebarItem(this)">
+                <i class="is--icon"><img src="/Images/icons/more.svg" alt="icon"></i class="is--icon">
+                <span>More</span>
+            </a>
+            <i class="is--toggle" onclick="toggleSidebarItem(this)"></i>
+            <ul>
+                <li>
+                    <a href="/customer.html">
+                        <i class="is--icon"><img src="/Images/icons/customer.svg" alt="icon"></i class="is--icon">
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/domain.html">
+                        <i class="is--icon"><img src="/Images/icons/globe.svg" alt="icon"></i class="is--icon">
+                        <span>Websites</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/completed.html">
+                        <i class="is--icon"><img src="/Images/icons/check.svg" alt="icon"></i class="is--icon">
+                        <span>Completed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/completed-chart.html">
+                        <i class="is--icon"><img src="/Images/icons/chart.svg" alt="icon"></i class="is--icon">
+                        <span>Working Chart</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav--line" data-type="static">
+            <span></span>
+            <div class="action__menu">
+                <a class="item" onclick="showPopupCategory()" title="Add new">
+                    <img src="/Images/icons/plus.svg" alt="icon">
+                </a>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a onclick="toggleSideBarSort()">
+                            <img src="/Images/icons/sort.svg" alt="icon">
+                            Soft
+                        </a>
+                        <a class="is--red" onclick="toggleCategoryDelete()">
+                            <img src="/Images/icons/trash.svg" alt="icon">
+                            Delete
+                        </a>
+                    </p>
+                </div>
+                <a class="item is--text is--hide" onclick="toggleSideBarSorted()">
+                    DONE
+                </a>
+            </div>
+        </li>
+        <li class="nav__list">
+            <ul id="catalog_list" class="sidebar__list">
+                <li id="list_1" data-name="Ideas">
+                    <a href="/none.html">
+                        <i class="is--icon">🎈</i>
+                        <span>Ideas</span>
+                    </a>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                </li>
+                <li id="list_2" data-name="Learn">
+                    <a href="/none.html">
+                        <i class="is--icon">🎨</i>
+                        <span>Learn</span>
+                    </a>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                </li>
+                <li class="is--show" id="list_3" data-name="Coding">
+                    <a href="/none.html">
+                        <i class="is--icon">💻</i>
+                        <span>Coding</span>
+                    </a>
+                    <i class="is--toggle" onclick="toggleSidebarItem(this)"></i>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                    <ul class="child__list">
+                        <li id="list_31" data-name="Quick Task">
+                            <a href="/none.html">
+                                <i class="is--icon">🎃</i>
+                                <span>Quick Task</span>
+                                <i class="is--count">5</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_32" data-name="Website">
+                            <a href="/none.html">
+                                <i class="is--icon">⛳</i>
+                                <span>Website</span>
+                                <i class="is--count">2</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_33" data-name="Software">
+                            <a href="/none.html">
+                                <i class="is--icon">🥏</i>
+                                <span>Software</span>
+                                <i class="is--count">7</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_34" data-name="App Mobile">
+                            <a href="/none.html">
+                                <i class="is--icon">🎲</i>
+                                <span>App Mobile</span>
+                                <i class="is--count">1</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_35" data-name="My Project">
+                            <a href="/none.html">
+                                <i class="is--icon">💡</i>
+                                <span>My Project</span>
+                                <i class="is--count">3</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                    </ul>
+                </li>
+                <li class="is--show" id="list_4" data-name="MMO">
+                    <a href="/none.html">
+                        <i class="is--icon">💎</i>
+                        <span>MMO</span>
+                    </a>
+                    <i class="is--toggle" onclick="toggleSidebarItem(this)"></i>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                    <ul class="child__list">
+                        <li id="list_41" data-name="POD Platform">
+                            <a href="/none.html">
+                                <i class="is--icon">👚</i>
+                                <span>POD Platform</span>
+                                <i class="is--count">5</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_42" data-name="POD Merch">
+                            <a href="/none.html">
+                                <i class="is--icon">👕</i>
+                                <span>POD Merch</span>
+                                <i class="is--count">2</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_43" data-name="Dropshiping">
+                            <a href="/none.html">
+                                <i class="is--icon">🚚</i>
+                                <span>Dropshiping</span>
+                                <i class="is--count">7</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                        <li id="list_44" data-name="AdSene">
+                            <a href="/none.html">
+                                <i class="is--icon">📰</i>
+                                <span>AdSene</span>
+                                <i class="is--count">1</i>
+                            </a>
+                            <i class="is--trash"></i>
+                            <i class="sort__icon"></i>
+                        </li>
+                    </ul class="child__list">
+                </li>
+                <li id="list_5" data-name="Marketing">
+                    <a href="/none.html">
+                        <i class="is--icon">🎯</i>
+                        <span>Marketing</span>
+                    </a>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                </li>
+                <li id="list_6" data-name="Song Song">
+                    <a href="/none.html">
+                        <i class="is--icon">💠</i>
+                        <span>Song Song</span>
+                    </a>
+                    <i class="is--trash"></i>
+                    <i class="sort__icon"></i>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

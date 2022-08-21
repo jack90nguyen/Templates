@@ -1,0 +1,209 @@
+﻿
+@media (max-height: 768px) {
+    .page {
+        padding-bottom: 20px;
+    }
+    .welcome_services li {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    #header.is-active {
+        background: #fff;
+    }
+    .navbar-item {
+        margin: 0px;
+        font-size: 16px;
+        color: #333 !important;
+        background: none !important;
+        padding: 7px 12px;
+    }
+    .navbar-item.is-active {
+        color: var(--color-main) !important;
+    }
+    .navbar-brand .navbar-item {
+        padding: 4px;
+        padding-left: 12px;
+    }
+    #header.is-active .navbar-brand .navbar-item {
+        display: flex !important;
+    }
+    .navbar-brand .logo {
+        height: 44px;
+        width: auto;
+    }
+    #page_home.page:before, #page_about.page:before {
+        width: 80%;
+    }
+    .page {
+        padding: 50px 0px 20px;
+    }
+    .welcome_text {
+        padding-bottom: 0px;
+        padding-bottom: 0px;
+        width: 280px;
+        margin: 0px auto;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .welcome_text .is_1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .welcome_text .is_2 {
+        font-size: 71px;
+        line-height: 80px;
+    }
+    .welcome_text .is_3 {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    .welcome_text .is_3:after {
+        border-radius: 1px;
+        box-shadow: 1px 1px 0px 0px #d8edfb;
+    }
+    .welcome_logo {
+        width: 280px;
+        margin: 0px auto;
+    }
+    .welcome_btn {
+        font-size: 16px;
+        width: auto;
+        padding: 10px 20px;
+        width: 240px;
+        right: calc(50% - 120px);
+    }
+    #page_about .welcome_btn {
+        display: none;
+    }
+    .welcome_services {
+        width: 280px;
+        margin: 0px auto !important;
+        padding-top: 20px;
+    }
+    .welcome_services .is_icon {
+        width: 40px;
+        height: 40px;
+    }
+    .welcome_services li {
+        padding-left: 50px;
+        padding-bottom: 15px;
+    }
+    .welcome_services .is_name {
+        padding: 5px 0px;
+        font-size: 16px;
+    }
+    .welcome_services:not(.no_border) li:first-child .is_name {
+        padding: 0px 0px 5px;
+        line-height: 20px;
+        white-space: normal;
+    }
+    .welcome_services.no_border {
+        width: 200px;
+    }
+    #page_services {
+        padding-bottom: 10px;
+    }
+    .services_icons {
+        padding: 0px 10px;
+    }
+    .services_icons li img {
+        height: 20px;
+    }
+    .services_list {
+        padding: 0px 10px;
+    }
+    .service_item .is_image {
+        padding: 0px;
+        max-width: 280px;
+        margin: 0px auto;
+    }
+    .service_item .is_title .is_icon {
+        width: 80px;
+    }
+    .service_item .is_title h3 {
+        width: calc(100% - 80px);
+    }
+    .service_item .is_title span {
+        font-size: 20px;
+    }
+    .service_item .is_title strong {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .service_item .is_desc {
+        font-size: 14px;
+        padding: 15px 0px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .page.has_footer {
+        padding-bottom: 0px;
+        min-height: 100vh;
+        height: auto;
+    }
+    .page.has_footer > .container, 
+    .page.has_footer .section_full {
+        min-height: 100%;
+        height: auto;
+    }
+    .footer {
+        position: static;
+    }
+    .footer .column {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .footer_info {
+        justify-content: flex-start !important;
+        padding: 5px 0px;
+    }
+    .block_article {
+        padding-bottom: 20px;
+    }
+    .block_article article {
+        margin-bottom: 0px !important;
+    }
+    .article_title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 320px) {
+    .welcome_text .is_1 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+    .welcome_text .is_2 {
+        font-size: 56px;
+        line-height: 54px;
+    }
+    .welcome_text .is_3 {
+        font-size: 18px;
+    }
+    .welcome_logo {
+        width: 220px;
+    }
+    .service_item .is_image {
+        max-width: 200px;
+    }
+    .service_item .is_title span {
+        font-size: 16px;
+    }
+    .service_item .is_title strong {
+        font-size: 28px;
+    }
+    .services_icons li img {
+        height: 18px;
+    }
+    .welcome_services {
+        padding-top: 0px;
+    }
+}

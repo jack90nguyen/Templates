@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogs Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <section class="section_breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li class="is-active"><a href="#">Detail</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Page Blogs -->
+        <section class="section_blogs section_space">
+            <div class="container">
+                <div class="title_bg">
+                    <h1 class="is_title is-uppercase">
+                        #Post.Name
+                    </h1>
+                </div>
+
+                <ul class="blog_list columns is-multiline" data-repeat="true" data-rows="12" data-type="blog-list"
+                    data-source="#Post.Id" data-pagination="true">
+                    <li class="column is-one-third">
+                        <div class="item">
+                            <a class="item_image is_cover" href="#Blog.Link"
+                                style="background-image: url(#Blog.Image);">
+                                <img src="#Blog.Image" alt="IMG">
+                            </a>
+                            <h3 class="item_name">
+                                <a href="#Blog.Link" title="#Blog.Name">
+                                    #Blog.Name
+                                </a>
+                            </h3>
+                            <div class="item_desc has-text-grey">
+                                #Blog.Desc
+                            </div>
+                            <a class="item_link" href="#Blog.Link">Chi tiết</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav class="pagination is-centered" data-bind="true" data-rows="12" data-type="pagination"
+                     data-source="#Post.Id">
+                    <ul class="pagination-list">
+                        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                        <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                        <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+
+        }
+    </script>
+
+</body>
+
+</html>

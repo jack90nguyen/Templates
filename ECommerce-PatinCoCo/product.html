@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <section class="section_breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li class="is-active"><a href="#">Detail</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Page Product -->
+        <section class="page_product section_space">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-quarter is-hidden-mobile">
+                        <div class="columns is-multiline">
+
+                            <div class="column is-full">
+                                <div id="jc_new" class="jcarousel-wrapper">
+                                    <div class="title_bg">
+                                        <div class="is_title is-uppercase">
+                                            Sản phẩm mới
+                                        </div>
+                                        <div class="is_more jcarousel-control">
+                                            <a class="jcarousel-control-prev">
+                                                <i class="s24 feather icon-chevron-left"></i>
+                                            </a>
+                                            <a class="jcarousel-control-next">
+                                                <i class="s24 feather icon-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product_slideup jcarousel is_vertical is_small">
+                                        <ul data-repeat="true" data-rows="6" data-type="products" data-source="0"
+                                            data-sort="0">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="columns is-vcentered is-variable is-1">
+                                                        <div class="column is-narrow">
+                                                            <a class="item_image is_cover" href="#Product.Link"
+                                                                style="background-image: url(#Product.Image);">
+                                                                <img src="#Product.Image" alt="IMG">
+                                                            </a>
+                                                        </div>
+                                                        <div class="column">
+                                                            <h3 class="item_name">
+                                                                <a href="#Product.Link">
+                                                                    #Product.Name
+                                                                </a>
+                                                            </h3>
+                                                            <div class="item_price">
+                                                                #Product.Price
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-full">
+                                <div id="jc_seller" class="jcarousel-wrapper">
+                                    <div class="title_bg">
+                                        <div class="is_title is-uppercase">
+                                            Bán chạy
+                                        </div>
+                                        <div class="is_more jcarousel-control">
+                                            <a class="jcarousel-control-prev">
+                                                <i class="s24 feather icon-chevron-left"></i>
+                                            </a>
+                                            <a class="jcarousel-control-next">
+                                                <i class="s24 feather icon-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product_slideup jcarousel is_vertical is_small">
+                                        <ul data-repeat="true" data-rows="6" data-type="products" data-source="0"
+                                            data-sort="4">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="columns is-vcentered is-variable is-1">
+                                                        <div class="column is-narrow">
+                                                            <a class="item_image is_cover" href="#Product.Link"
+                                                                style="background-image: url(#Product.Image);">
+                                                                <img src="#Product.Image" alt="IMG">
+                                                            </a>
+                                                        </div>
+                                                        <div class="column">
+                                                            <h3 class="item_name">
+                                                                <a href="#Product.Link">
+                                                                    #Product.Name
+                                                                </a>
+                                                            </h3>
+                                                            <div class="item_price">
+                                                                #Product.Price
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column is-full">
+                                <div id="jc_hot" class="jcarousel-wrapper">
+                                    <div class="title_bg">
+                                        <div class="is_title is-uppercase">
+                                            Nổi bật
+                                        </div>
+                                        <div class="is_more jcarousel-control">
+                                            <a class="jcarousel-control-prev">
+                                                <i class="s24 feather icon-chevron-left"></i>
+                                            </a>
+                                            <a class="jcarousel-control-next">
+                                                <i class="s24 feather icon-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product_slideup jcarousel is_vertical is_small">
+                                        <ul data-repeat="true" data-rows="6" data-type="products" data-source="0"
+                                            data-sort="1">
+                                            <li>
+                                                <div class="item">
+                                                    <div class="columns is-vcentered  is-variable is-1">
+                                                        <div class="column is-narrow">
+                                                            <a class="item_image is_cover" href="#Product.Link"
+                                                                style="background-image: url(#Product.Image);">
+                                                                <img src="#Product.Image" alt="IMG">
+                                                            </a>
+                                                        </div>
+                                                        <div class="column">
+                                                            <h3 class="item_name">
+                                                                <a href="#Product.Link">
+                                                                    #Product.Name
+                                                                </a>
+                                                            </h3>
+                                                            <div class="item_price">
+                                                                #Product.Price
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="column is-three-quarters">
+                        <!-- Images & Attributes -->
+                        <div class="columns">
+                            <!-- Images -->
+                            <div class="column is-5">
+                                <a id="product_image" class="js_gallery" href="/Themes/p1.jpg" data-group="images">
+                                    <img src="/Themes/p1.jpg" alt="IMG">
+                                </a>
+                                <div id="jc_images" class="jcarousel-wrapper">
+                                    <div class="jcarousel">
+                                        <ul data-bind="true" data-type="images" data-source="#Post.Id">
+                                            <li>
+                                                <a href="#Element.Image" data-group="images">
+                                                    <img src="#Element.Image" alt="IMG">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="jcarousel-control">
+                                        <a class="jcarousel-control-prev">
+                                            <i class="s24 feather icon-chevron-left"></i>
+                                        </a>
+                                        <a class="jcarousel-control-next">
+                                            <i class="s24 feather icon-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Attributes -->
+                            <div class="column is-7">
+                                <h1 class="product_title">
+                                    #Post.Name
+                                </h1>
+                                <table class="product_attributes" data-bind="true" data-type="attributes"
+                                    data-source="#Post.Id">
+                                    <tbody>
+                                        <tr>
+                                            <td class="is_desc" colspan="2">
+                                                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                                                trong phần quản trị của website.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Danh mục
+                                            </td>
+                                            <td class="is_value">
+                                                Patin trẻ em
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Thương hiệu
+                                            </td>
+                                            <td class="is_value">
+                                                Patin CoCo
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Mã sản phẩm
+                                            </td>
+                                            <td class="is_value">
+                                                098129381293291
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Bảo hành
+                                            </td>
+                                            <td class="is_value">
+                                                24 tháng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Chất liệu
+                                            </td>
+                                            <td class="is_value">
+                                                Nhựa tổng hợp
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Kích cỡ
+                                            </td>
+                                            <td class="is_value">
+                                                <div id="product_size" class="select" onchange="changeAttribute()">
+                                                    <select>
+                                                        <option>35</option>
+                                                        <option>36</option>
+                                                        <option>37</option>
+                                                        <option>38</option>
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Màu sắc
+                                            </td>
+                                            <td class="is_value">
+                                                <div id="product_color" class="select" onchange="changeAttribute()">
+                                                    <select>
+                                                        <option>Trắng</option>
+                                                        <option>Đen</option>
+                                                        <option>Đỏ</option>
+                                                        <option>Xanh</option>
+                                                        <option>Vàng</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                Giá bán
+                                            </td>
+                                            <td id="product_price" class="is_value is_price">
+                                                <span>250.000 VND</span>
+                                                <del>300.000</del>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="is_name">
+                                                <div class="field has-addons">
+                                                    <div class="control">
+                                                        <a class="button" onclick="changeQuantity(-1)">
+                                                            <span class="icon">
+                                                                <i class="feather icon-minus"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="control is-expanded">
+                                                        <input id="buy_quantity" class="input has-text-centered"
+                                                            type="text" value="1" readonly>
+                                                    </div>
+                                                    <div class="control">
+                                                        <a class="button" onclick="changeQuantity(1)">
+                                                            <span class="icon">
+                                                                <i class="feather icon-plus"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="is_value">
+                                                <a id="button_cart" class="button is-danger"
+                                                    onclick="addToCart('#Post.Id')">
+                                                    Thêm vào giỏ hàng
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="section_space content">
+                            <article data-repeat="true" data-rows="2">
+                                <div>
+                                    <p>
+                                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần
+                                        quản trị của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể
+                                        thay đổi
+                                        trong
+                                        phần quản trị của website.
+                                    </p>
+                                    <p><img src="#Product.Image" alt="img"></p>
+                                    <p>Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+                                        phần quản trị của website.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Recommended -->
+                        <div class="section_space">
+                            <div class="title_bg">
+                                <div class="is_title is-uppercase">
+                                    Đề xuất cho bạn
+                                </div>
+                            </div>
+                            <ul class="product_list columns is-multiline" data-repeat="true" data-rows="3"
+                                data-type="products" data-source="#Post.ParentId" data-sort="1">
+                                <li class="column is-one-third">
+                                    <div class="item">
+                                        <a class="item_image is_cover" href="#Product.Link"
+                                            style="background-image: url(#Product.Image);">
+                                            <img src="#Product.Image" alt="IMG">
+                                        </a>
+                                        <h3 class="item_name">
+                                            <a href="#Product.Link">
+                                                #Product.Name
+                                            </a>
+                                        </h3>
+                                        <div class="item_price">
+                                            <span>250.000 VND</span>
+                                            <del>300.000</del>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script>
+        function changeAttribute() {
+            const size = $('#product_size').val();
+            const color = $('#product_color').val();
+            const img = '/Themes/p5.jpg';
+            $('#product_image').attr('href', img);
+            $('#product_image img').attr('src', img);
+            $('#product_price').html('<span>400.000 VND</span>');
+            $('#button_cart').html('Sản phẩm hết hàng');
+            $('#button_cart').attr('class', 'button is-dark');
+        }
+
+        function changeQuantity(qty) {
+            const old = parseInt($('#buy_quantity').val());
+            const quantity = old + qty;
+            if (quantity > 0)
+                $('#buy_quantity').val(quantity);
+            else
+                showNotify('Số lượng sản phẩm trong kho không đủ !', false);
+        }
+
+        function addToCart(id) {
+            const quantity = $('#buy_quantity').val() !== undefined ? $('#buy_quantity').val() : 1;
+            showNotify('Đã thêm sản phẩm vào giỏ hàng !', true);
+        }
+
+        function loadAfterDataDemo() {
+
+            const jc_new = $('#jc_new .jcarousel');
+            jc_new.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 800
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_seller = $('#jc_seller .jcarousel');
+            jc_seller.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 1000
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_hot = $('#jc_hot .jcarousel');
+            jc_hot.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 1200
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_images = $('#jc_images .jcarousel');
+            jc_images.on('jcarousel:reload', function () {
+                var width = jc_images.innerWidth() / 3;
+                jc_images.jcarousel('items').css('width', width + 'px');
+            }).jcarousel({
+                wrap: 'circular'
+            }).jcarouselAutoscroll({ autostart: false });
+
+            $('.jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('.jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            $('#jc_images li a').click(function (e) {
+                e.preventDefault();
+                var img = $(this).attr('href');
+                $('#product_image').attr('href', img);
+                $('#product_image img').attr('src', img);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

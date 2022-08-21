@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test JS</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+</head>
+
+<body>
+
+  <!-- Main body -->
+  <main id="main" class="background_bg">
+
+    <section class="p-5">
+      <h1 class="title">Demo SetModel</h1>
+      <ul id="app" class="columns is-multiline is-vcentered"></ul>
+    </section>
+
+    <template id="temp">
+      <li id="item_model.id" class="column is-two-thirds ">
+        <div class="field is-grouped">
+          <div class="control">
+            <a class="image is-64x64 has-background-grey" href="model.image">
+              <img src="model.image" alt="model.name" data-model="image">
+            </a>
+          </div>
+          <div class="control is-expanded">
+            <a class="tag is-link" data-model="id">model.id</a>
+            <span class="has-text-weight-bold" title="model.name" data-model="name">model.name</span>
+            <p class="text_2_line font_14 mt-2" data-model="desc">model.desc</p>
+          </div>
+          <div class="control" style="width: 60px;">
+            <input class="input is-small" type="text" data-model="price">
+            <div class="select is-small is-fullwidth mt-2">
+              <select id="select_model.id" data-model="id">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="column is-one-third">
+        <code>Đây là Item model.id</code>
+      </li>
+    </template>
+
+  </main>
+
+  <!-- Javascript -->
+  <script src="/Scripts/jquery-3.6.0.min.js"></script>
+  <script>
+    function getData() {
+      let data = [];
+      for (let i = 1; i <= 6; i++) {
+        const item = {
+          id: i,
+          name: `Tiêu đề để kiểm tra code ${i}`,
+          image: `/Themes/b${i}.jpg`,
+          desc: 'Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.',
+          price: i + 7
+        };
+        data.push(item);
+      }
+      return data;
+    }
+
+    function setModel(data, template) {
+      console.clear();
+
+      const model = Object.getOwnPropertyNames(data);
+      const node = template.content.cloneNode(true);
+
+      let html = '';
+      for (let i = 0; i < node.children.length; i++)
+        html += node.children[i].outerHTML;
+
+      model.forEach(type => {
+        html = html.replaceAll(`model.${type}`, data[type]);
+      })
+
+      return html;
+    }
+
+    function setModel2(data, template) {
+      console.clear();
+
+      const model = Object.getOwnPropertyNames(data);
+      const nodes = template.content.cloneNode(true);
+
+      const elements = nodes.querySelectorAll(`[data-model]`);
+
+      elements.forEach(element => {
+        //console.log(element.localName, element.dataset.model);
+
+        const value = data[element.dataset.model];
+
+        if (element.localName === 'img')
+          element.src = value;
+        else if (element.localName === 'input' || element.localName === 'select' || element.localName === 'textarea')
+          element.value = value;
+        else
+          element.innerHTML = value;
+      })
+
+      console.log(nodes.children[0].innerHTML);
+
+      //nodes.children[0].innerHTML = '--remove--';
+
+      //console.log(nodes.children[0].outerHTML);
+
+      let html = nodes.children[0].innerHTML;
+      model.forEach(type => {
+        //nodes.children[0].innerHTML = nodes.children[0].innerHTML.replaceAll(`model.${type}`, data[type]);
+        html = html.replaceAll(`model.${type}`, data[type]);
+      })
+
+      //const select = nodes.querySelector(`[data-model="id"]`);
+      //select.outerHTML = select.outerHTML.replaceAll(`model.id`, data.id);
+      //select.value = data.id;
+      //console.log(select.outerHTML);
+
+      return nodes;
+    }
+
+    function getModel() {
+
+    }
+
+    function load() {
+      const data = getData();
+
+      const listItem = $('#app');
+      const template = document.getElementById('temp');
+      data.forEach(item => {
+        const node = setModel(item, template);
+        listItem.append(node);
+      })
+
+      // const listItem = document.querySelector('#app');
+      // const template = document.getElementById('temp');
+      // data.forEach(item => {
+      //     const node = setModel2(item, template);
+      //     listItem.appendChild(node);
+      // })
+
+    }
+    load();
+  </script>
+
+</body>
+
+</html>

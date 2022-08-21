@@ -1,0 +1,102 @@
+<header id="header">
+
+    <div class="header_fix">
+        <a class="navbar-burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="container">
+            <div class="columns is-gapless">
+                <div class="column is-2">
+                    <a class="header_fix_logo" href="/">
+                        <img src="/Themes/logo-color.png" alt="logo">
+                    </a>
+                </div>
+                <div class="column is-10">
+                    <div class="header_fix_info">
+                        <div class="level">
+                            <div class="level-left is-hidden-mobile">
+                                <div class="level-item">
+                                    <div class="item_info">
+                                        <i class="feather icon-phone-call"></i>
+                                        <span>HOTLINE</span>
+                                        <a class="has-text-weight-bold" href="#">0972 053 100</a>
+                                        <a class="has-text-weight-bold" href="#">0972 053 100</a>
+                                    </div>
+                                </div>
+                                <div class="level-item">
+                                    <div class="item_info">
+                                        <i class="feather icon-map-pin"></i>
+                                        <a href="#">TÌM KIẾM CỬA HÀNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                                <div class="level-item">
+                                    <div class="item_icon">
+                                        <a class="icon is-medium" onclick="toggleSearch()">
+                                            <i class="feather icon-search"></i>
+                                        </a>
+                                        <a class="icon is-medium" href="/cart.html">
+                                            <i class="feather icon-shopping-cart"></i>
+                                            <span class="header_cart_count">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_fix_menu">
+                        <nav class="navbar">
+                            <div class="navbar-menu">
+                                <div class="navbar-start">
+                                    <div class="navbar-item has-dropdown is-hoverable">
+                                        <a class="navbar-link">
+                                            <span class="is-uppercase has-text-weight-bold">
+                                                Danh mục sản phẩm
+                                            </span>
+                                        </a>
+
+                                        <div class="navbar-dropdown" data-repeat="true" data-rows="10" data-type="nav"
+                                            data-source="header-category">
+                                            <div class="navbar-item">
+                                                <a href="#Element.Link">
+                                                    <span>#Element.Name</span>
+                                                    <i class="feather icon-chevron-down"></i>
+                                                </a>
+                                                <ul class="navbar_childs columns is-multiline is-gapless"
+                                                    data-repeat="true" data-rows="0" data-type="nav"
+                                                    data-source="childs">
+                                                    <li class="column is-half">
+                                                        <a href="#Element.Link">#Element.Name</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="navbar-start" data-repeat="true" data-rows="6" data-type="nav-icon"
+                                    data-source="header-nav">
+                                    <a class="navbar-item" href="#Element.Link">
+                                        <span class="is-uppercase has-text-weight-bold">
+                                            #Element.Name
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                        <div id="quick_search" class="header_search control has-icons-right">
+                            <input id="header_search" class="input quick_search" type="text"
+                                placeholder="Tìm kiếm sản phẩm..." />
+                            <span class="icon is-right"><i class="feather icon-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>

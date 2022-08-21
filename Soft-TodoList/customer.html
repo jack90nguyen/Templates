@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customers | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/customer.svg" alt="icon"></i>
+            <h1 id="header_title">Customers</h1>
+            <div class="action__menu">
+                <a class="item" title="Search" onclick="toggleSearch()">
+                    <img src="/Images/icons/search.svg" alt="icon">
+                </a>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child">
+                        <a href="#">
+                            <img src="/Images/icons/plus.svg" alt="icon">
+                            New customer
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="header__search" class="">
+                <form action="#">
+                    <input id="search__txt" name="search__txt" type="text" placeholder="Search here...">
+                    <button id="search__btn" type="submit" title="Search">
+                        <img src="/Images/icons/search.svg" alt="icon">
+                    </button>
+                    <a id="search__close" title="Cancel" onclick="toggleSearch()">
+                        <img src="/Images/icons/close.svg" alt="icon">
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <div id="content_wrap" class="task__detail hide--right">
+                <div id="customer__list" class="content__left">
+                    <ul id="data__list" class="data__list">
+                        <li class="item">
+                            <div class="data__item">
+                                <i class="is--icon is--cover is--circle"
+                                    style="background-image: url(/images/avatar.jpg);"></i>
+                                <div class="item__fields">
+                                    <div class="is--field is--bold" data-width="120px">
+                                        <span>Jack Nguyen</span>
+                                    </div>
+                                    <div class="is--field" data-width="100px">
+                                        <i>📞</i>
+                                        <span>0972053100</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📧</i>
+                                        <a>jack90nguyen@gmail.com</a>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📍</i>
+                                        <span>Hải Châu, Đà Nẵng</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <img src="/Images/icons/dollar.svg" alt="icon">
+                                        <span>19,000,000 VND</span>
+                                    </div>
+                                    <div class="is--field" data-width="80px">
+                                        <img src="/Images/icons/check-double.svg" alt="icon">
+                                        <span>10 task</span>
+                                    </div>
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a onclick="showPopupCustomerEdit('123')">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="data__item">
+                                <i class="is--icon is--cover is--circle"
+                                    style="background-image: url(/Images/icons/avatar.svg);"></i>
+                                <div class="item__fields">
+                                    <div class="is--field is--bold" data-width="120px">
+                                        <span>Nguyễn Văn Thành</span>
+                                    </div>
+                                    <div class="is--field" data-width="100px">
+                                        <i>📞</i>
+                                        <span>0973996100</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📧</i>
+                                        <a>ngocanhbuingocanhbuingocanhbui@gmail.com</a>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📍</i>
+                                        <span>Ái Nghĩa, Đại Lộc, Quảng Nam</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <img src="/Images/icons/dollar.svg" alt="icon">
+                                        <span>19,000,000 VND</span>
+                                    </div>
+                                    <div class="is--field" data-width="80px">
+                                        <img src="/Images/icons/check-double.svg" alt="icon">
+                                        <span>10 task</span>
+                                    </div>
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="data__item">
+                                <i class="is--icon is--cover is--circle"
+                                    style="background-image: url(/images/avatar.jpg);"></i>
+                                <div class="item__fields">
+                                    <div class="is--field is--bold" data-width="120px">
+                                        <span>Bùi Ngọc Ánh</span>
+                                    </div>
+                                    <div class="is--field" data-width="100px">
+                                        <i>📞</i>
+                                        <span>0973996100</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📧</i>
+                                        <a>ngocanhbuingocanhbuingocanhbui@gmail.com</a>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <i>📍</i>
+                                        <span>Đại Lãnh, Đại Lộc, Quảng Nam</span>
+                                    </div>
+                                    <div class="is--field" data-width="120px">
+                                        <img src="/Images/icons/dollar.svg" alt="icon">
+                                        <span>19,000,000 VND</span>
+                                    </div>
+                                    <div class="is--field" data-width="80px">
+                                        <img src="/Images/icons/check-double.svg" alt="icon">
+                                        <span>10 task</span>
+                                    </div>
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="customer__info" class="content__right">
+                    <ul class="property__list">
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__action icon is--16 is--close" title="Close"
+                                    onclick="toggleContentWrap()"></a>
+                                <div class="item__title is--active">
+                                    <i class="is--icon"><img src="/Images/icons/customer.svg" alt="icon"></i>
+                                    <strong>Contact Info</strong>
+                                </div>
+                                <div class="item__childs">
+                                    <div class="child__item is--text">
+                                        <span class="child__field">Name:</span>
+                                        <span class="child__name">Nguyễn Văn Thành</span>
+                                    </div>
+                                    <div class="child__item is--text">
+                                        <span class="child__field">Phone:</span>
+                                        <span class="child__name">0972053100</span>
+                                    </div>
+                                    <div class="child__item is--text">
+                                        <span class="child__field">E-mail:</span>
+                                        <a class="child__name">jack90nguyen@gmail.com</a>
+                                    </div>
+                                    <div class="child__item is--text">
+                                        <span class="child__field">Add:</span>
+                                        <span class="child__name">Ái Nghĩa, Đại Lộc, Quảng Nam</span>
+                                    </div>
+                                    <div class="child__item is--text">
+                                        <span class="child__field">Note:</span>
+                                        <span class="child__name">Khách hàng có thể nhập link của sản phẩm vào và nhập
+                                            email. Khi giá giảm sẽ gửi thông báo qua email</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <div class="item__title is--active">
+                                    <i class="is--icon"><img src="/Images/icons/check-double.svg" alt="icon"></i>
+                                    <strong>Task List</strong>
+                                </div>
+                                <div class="item__childs">
+                                    <div class="child__item">
+                                        <i class="child__icon is--done"></i>
+                                        <a class="child__name is--bold">Notota.com - Note Todo Taks</a>
+                                        <span class="child__recap">
+                                            Phần mềm quản lý công việc, ghi chú, tài chính
+                                            (<i>20/01/2020</i>)
+                                        </span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--circle is--none"></i>
+                                        <a class="child__name is--bold">Notota.com - Note Todo Taks</a>
+                                        <span class="child__recap">
+                                            Phần mềm quản lý công việc, ghi chú, tài chính
+                                        </span>
+                                        <span class="child__recap">
+                                            20/01/2020
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <div class="item__title is--active">
+                                    <i class="is--icon"><img src="/Images/icons/dollar.svg" alt="icon"></i>
+                                    <strong>Finance</strong>
+                                </div>
+                                <div class="item__childs">
+                                    <div class="child__item">
+                                        <i class="child__icon is--circle">+</i>
+                                        <strong class="child__name">10,000,000 VND</strong>
+                                        <span class="child__recap">Báo giá code website</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--circle">-</i>
+                                        <strong class="child__name">1,200,000 VND</strong>
+                                        <span class="child__recap">Hosting</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--none is--circle is--none">-</i>
+                                        <strong class="child__name">1,200,000 VND</strong>
+                                        <span class="child__recap">Hosting</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--none is--circle is--none">+</i>
+                                        <strong class="child__name">300,000 VND</strong>
+                                        <span class="child__recap">Tâng domain</span>
+                                    </div>
+                                    <div class="child__item is--footer">
+                                        <i class="child__icon is--none">=</i>
+                                        <strong class="child__name">9,900,000 VND</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+</body>
+
+</html>

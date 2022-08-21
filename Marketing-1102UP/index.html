@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Về chúng tôi</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a class="navbar-item" data-page="home">
+                        <img class="logo" src="/Images/logo-header.png" width="74" height="83">
+                    </a>
+
+                    <a class="navbar-burger burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item is-hidden-tablet" data-page="home">
+                            Trang chủ
+                        </a>
+
+                        <a class="navbar-item is-active" data-page="about">
+                            Về chúng tôi
+                        </a>
+
+                        <a class="navbar-item" data-page="services">
+                            Dịch vụ
+                        </a>
+
+                        <a class="navbar-item" data-page="partner">
+                            Đối tác
+                        </a>
+
+                        <a class="navbar-item" data-page="recruitment">
+                            Tuyển dụng
+                        </a>
+
+                        <a class="navbar-item" data-page="contact">
+                            Liên hệ
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main body -->
+    <main id="main">
+        <!-- Page Home -->
+        <div id="page_home" class="page">
+            <div class="container">
+                <section class="section_full columns is-vcentered">
+                    <div class="column is-half">
+                        <div class="aniview" data-av-animation="bounceInLeft">
+                            <div class="welcome_text">
+                                <div class="is_1">Welcome to</div>
+                                <div class="is_2">1102 UP</div>
+                                <div class="is_3">Digital Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="aniview" data-av-animation="bounceInRight">
+                            <div class="welcome_logo">
+                                <img src="/Images/logo-big.png" alt="logo 1102up.com">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <a class="welcome_btn" onclick="goPage('about')">Tìm hiểu về chúng tôi</a>
+            </div>
+        </div>
+
+        <!-- Page About -->
+        <div id="page_about" class="page" style="display: none;">
+            <div class="container">
+                <section class="section_full columns is-vcentered">
+                    <div class="column is-half">
+                        <div class="aniview" data-av-animation="bounceInLeft">
+                            <div class="welcome_text">
+                                <div class="is_1">Welcome to</div>
+                                <div class="is_2">1102 UP</div>
+                                <div class="is_3">Digital Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="aniview" data-av-animation="bounceInRight">
+                            <ul class="welcome_services">
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-logo.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_1')">
+                                        Tư vấn tổng thể Digital Marketing
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-fb.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_2')">
+                                        Quản cáo Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-aw.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_3')">
+                                        Quảng cáo Google
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-yt.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_4')">
+                                        Quảng cáo Youtube
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-ig.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_5')">
+                                        Quảng cáo Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="is_icon">
+                                        <img src="/Images/icon-zalo.png" alt="icon">
+                                    </div>
+                                    <a class="is_name" onclick="goServices('service_6')">
+                                        Quảng cáo Zalo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <a class="welcome_btn" href="#">Tìm hiểu về chúng tôi</a>
+            </div>
+        </div>
+
+        <!-- Page Services -->
+        <div id="page_services" class="page" style="display: none;">
+            <div class="container">
+                <section class="services_list">
+                    <div id="info_service_1" class="service_item is_active">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-1.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-1.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Tư vấn tổng thể</span>
+                                                <strong>Digital Marketing</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info_service_2" class="service_item">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-2.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-2.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Quảng cáo</span>
+                                                <strong>Facebook</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info_service_3" class="service_item">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-3.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-3.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Quảng cáo</span>
+                                                <strong>Google</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info_service_4" class="service_item">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-4.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-4.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Quảng cáo</span>
+                                                <strong>Youtube</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info_service_5" class="service_item">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-5.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-5.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Quảng cáo</span>
+                                                <strong>Instagram</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="info_service_6" class="service_item">
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInLeft" data-av-animation="bounceInLeft"
+                                        style="opacity: 1;">
+                                        <div class="is_image">
+                                            <img src="/Images/service-img-6.png" alt="service">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="av-container av-visible">
+                                    <div class="aniview animated bounceInRight" data-av-animation="bounceInRight"
+                                        style="opacity: 1;">
+                                        <div class="is_title">
+                                            <div class="is_icon">
+                                                <img src="/Images/service-title-6.png" alt="service">
+                                            </div>
+                                            <h3>
+                                                <span>Quảng cáo</span>
+                                                <strong>Zalo</strong>
+                                            </h3>
+                                        </div>
+                                        <div class="is_desc">
+                                            Sở hữu và cung cấp công cụ Adnetwork giúp nhà quảng cáo đã được tính hợp các
+                                            giải pháp trí tuệ nhân tạo, để phân tích tối ưu nhất các chiến dịch quảng
+                                            cáo.
+                                        </div>
+                                        <a class="button is-rounded" href="#">Tìm hiểu thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <ul class="services_icons">
+                    <li id="service_1" class="is_active">
+                        <img src="/Images/service-1.png" alt="icon">
+                    </li>
+
+                    <li id="service_2">
+                        <img src="/Images/service-2.png" alt="icon">
+                    </li>
+
+                    <li id="service_3">
+                        <img src="/Images/service-3.png" alt="icon">
+                    </li>
+
+                    <li id="service_4">
+                        <img src="/Images/service-4.png" alt="icon">
+                    </li>
+
+                    <li id="service_5">
+                        <img src="/Images/service-5.png" alt="icon">
+                    </li>
+
+                    <li id="service_6">
+                        <img src="/Images/service-6.png" alt="icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Page Partner -->
+        <div id="page_partner" class="page has_footer" style="display: none;">
+            <div class="container">
+                <section class="section_full columns is-vcentered">
+                    <div class="column is-full">
+                        <div class="aniview" data-av-animation="zoomIn">
+                            <div class="article_cover">
+                                <img src="/Images/cover-recruiment.png" alt="cover">
+                            </div>
+                        </div>
+                        <div class="aniview" data-av-animation="zoomIn">
+                            <h2 class="article_title" style="padding-bottom: 50px;">
+                                Đối tác
+                            </h2>
+                        </div>
+                        <ul class="welcome_services no_border columns is-vcentered is-multiline">
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-fb.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-aw.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Google
+                                </a>
+                            </li>
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-yt.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-ig.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-zalo.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Zalo
+                                </a>
+                            </li>
+                            <li class="column is-one-third">
+                                <div class="is_icon">
+                                    <img src="/Images/icon-logo.png" alt="icon">
+                                </div>
+                                <a class="is_name" href="#">
+                                    Tìm hiểu thêm
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div data-include="/Include/footer.html"></div>
+        </div>
+
+        <!-- Page Recruitment -->
+        <div id="page_recruitment" class="page has_footer" style="display: none;">
+            <div class="container">
+                <section class="section_full columns is-centered is-vcentered">
+                    <div class="column is-half">
+                        <div class="slimScroll block_article">
+                            <div class="aniview" data-av-animation="zoomIn">
+                                <div class="article_cover">
+                                    <img src="/Images/cover-recruiment.png" alt="cover">
+                                </div>
+                            </div>
+                            <div class="aniview" data-av-animation="zoomIn">
+                                <h2 class="article_title">
+                                    Tuyển Dụng
+                                </h2>
+                            </div>
+                            <article class="content has-text-justified">
+                                <p>
+                                    1102UP đã và đang xây dựng để luôn là một tổ hợp truyền thông hàng đầu, giá trị
+                                    của
+                                    1102UP được xây dựng trên nền tảng
+                                    vững chắc của sức mạnh nội lực cộng với sự hợp tác chặt chẽ của bạn bè đối tác
+                                    rộng
+                                    khắp. Gia nhập cùng chúng tôi để
+                                    cùng sáng tạo ra những giá trị mới.
+                                </p>
+                            </article>
+                            <div class="has-text-centered">
+                                <br>
+                                <a class="button is-outlined is-rounded" href="#">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div data-include="/Include/footer.html"></div>
+        </div>
+
+        <!-- Page Contact -->
+        <div id="page_contact" class="page has_footer" style="display: none;">
+            <div class="container">
+                <section class="section_full columns is-centered is-vcentered">
+                    <div class="column is-half">
+                        <div class="slimScroll block_article">
+                            <div class="aniview" data-av-animation="zoomIn">
+                                <div class="article_cover">
+                                    <img src="/Images/cover-contact.png" alt="cover">
+                                </div>
+                            </div>
+                            <div class="aniview" data-av-animation="zoomIn">
+                                <h2 class="article_title">
+                                    Liên hệ
+                                </h2>
+                            </div>
+                            <article class="content has-text-centered">
+                                <p>
+                                    <strong>VĂN PHÒNG ĐÀ NẴNG</strong>
+                                    <br>
+                                    <span>182 Huỳnh Tất Phát, Quận Hải Châu, TP. Đà Nẵng</span>
+                                </p>
+                                <p>
+                                    <strong>HOTLINE</strong>
+                                    <br>
+                                    <span>0903 123 123 - 0933 045 045</span>
+                                </p>
+                                <p>
+                                    <strong>GMAIL</strong>
+                                    <br>
+                                    <span>1102updigital@gmail.com</span>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div data-include="/Include/footer.html"></div>
+        </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+            $('.services_icons li').click(function (e) {
+                e.preventDefault();
+                const id = this.id;
+                goServices(id);
+            });
+        }
+
+        function goServices(id) {
+            goPage('services');
+
+            $(`.services_icons li`).removeClass('is_active');
+            $(`#${id}`).addClass('is_active');
+
+            $(`.service_item`).removeClass('is_active');
+            $(`#info_${id}`).addClass('is_active');
+        }
+
+    </script>
+
+</body>
+
+</html>

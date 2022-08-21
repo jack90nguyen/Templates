@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Slide Banner -->
+        <section class="py-4 wrap_mobile">
+            <div class="container">
+                <div id="slider_home">
+                    <div class="slider-wrapper">
+                        <div id="slideNivo" class="nivoSlider is_radius" data-repeat="true" data-rows="3"
+                            data-type="image-text" data-source="home-slide">
+                            <a href="#Element.Link">
+                                <img src="#Element.Image" data-thumb="#Element.Image" alt="IMG"
+                                    title="#htmlcaption#Element.Id" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suggest -->
+        <section class="py-5 background_bg wrap_mobile" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <ul class="columns is-vcentered is-mobile">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Mẫu nhà Toàn Đạt đề xuất
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <a class="is-flex is-vcentered font_14 color_extra" href="#Data.Link">
+                            <span>Xem thêm</span>
+                            <i class="s18 feather icon-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="columns is-vcentered">
+                    <div class="column is-two-fifths is-hidden-mobile">
+                        <div class="card">
+                            <div class="card-image" data-repeat="true" data-rows="1" data-type="blogs"
+                                data-source="#Data.Id" data-sort="5">
+                                <a class="image is-4by5" href="#Blog.Link">
+                                    <img src="#Blog.Thumb" alt="#Blog.Name">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-three-fifths">
+                        <ul class="columns is-multiline is-mobile projects_16" data-repeat="true" data-rows="7"
+                            data-type="blogs" data-source="#Data.Id" data-sort="5">
+                            <li class="column is-one-third-tablet is-half-mobile">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="image is-4by5" href="#Blog.Link">
+                                            <img src="#Blog.Thumb" alt="#Blog.Name">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Du an -->
+        <section class="py-5 wrap_mobile" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <ul class="columns is-vcentered is-mobile">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Dự án đã thi công
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <a class="is-flex is-vcentered font_14 color_extra" href="#Data.Link">
+                            <span>Xem thêm</span>
+                            <i class="s18 feather icon-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="columns is-multiline is-mobile" data-repeat="true" data-rows="10" data-type="blogs"
+                    data-source="#Data.Id" data-sort="1">
+                    <li class="column is-one-fifth-tablet is-half-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <a class="image is-4by5" href="#Blog.Link">
+                                    <img src="#Blog.Thumb" alt="#Blog.Name">
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="has-text-weight-semibold font_14 text_1_line mt-2 mb-1">
+                            <a href="#Blog.Link">
+                                #Blog.Name
+                            </a>
+                        </h3>
+                        <div class="font_13 text_1_line" data-type="attributes" data-source="post">
+                            <span class="mr-1">5m x 20m</span>
+                            <span class="mr-1">1.2 tỷ</span>
+                            <span class="mr-1">Ninh bình</span>
+                            <span class="mr-1">#Attribute.Value</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cong tinh -->
+        <section class="py-5 background_bg wrap_mobile" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <ul class="columns is-vcentered is-mobile">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Công trình đã hoàn thiện
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <a class="is-flex is-vcentered font_14 color_extra" href="#Data.Link">
+                            <span>Xem thêm</span>
+                            <i class="s18 feather icon-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="columns is-multiline is-mobile" data-repeat="true" data-rows="10" data-type="blogs"
+                    data-source="#Data.Id" data-sort="1">
+                    <li class="column is-one-fifth-tablet is-half-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <a class="image is-4by5" href="#Blog.Link">
+                                    <img src="#Blog.Thumb" alt="#Blog.Name">
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="has-text-weight-semibold font_14 text_1_line mt-2 mb-1">
+                            <a href="#Blog.Link">
+                                #Blog.Name
+                            </a>
+                        </h3>
+                        <div class="font_13 text_1_line" data-type="attributes" data-source="post">
+                            <span class="mr-1">5m x 20m</span>
+                            <span class="mr-1">1.2 tỷ</span>
+                            <span class="mr-1">Ninh bình</span>
+                            <span class="mr-1">#Attribute.Value</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Nhat xet -->
+        <section class="py-5 wrap_mobile">
+            <div id="jc_feedback" class="container jcarousel-wrapper">
+                <ul class="columns is-vcentered is-mobile mb-0">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Nhận xét của khách hàng
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <div class="jcarousel-control">
+                            <a class="jcarousel-control-prev color_extra">
+                                <i class="s18 feather icon-chevron-left"></i>
+                            </a>
+                            <a class="jcarousel-control-next color_extra">
+                                <i class="s18 feather icon-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="jcarousel">
+                    <ul data-repeat="true" data-rows="10" data-type="image-text" data-source="home-feedback">
+                        <li>
+                            <div class="columns is-multiline is-vcentered is-variable is-2 is-mobile font_14">
+                                <div class="column is-full has-text-justified">
+                                    #Element.Desc
+                                </div>
+                                <div class="column is-narrow">
+                                    <a class="image is-32x32 is-rounded" href="#Element.Link" target="_blank">
+                                        <img src="#Element.Thumb" alt="#Element.Name">
+                                    </a>
+                                </div>
+                                <div class="column has-text-weight-medium">
+                                    #Element.Name
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bai viet moi -->
+        <section class="py-5 background_bg wrap_mobile" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <ul class="columns is-vcentered is-mobile">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Tin tức - Cẩm nang
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <a class="is-flex is-vcentered font_14 color_extra" href="#Data.Link">
+                            <span>Xem thêm</span>
+                            <i class="s18 feather icon-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="columns is-multiline" data-repeat="true" data-rows="4" data-type="blogs"
+                    data-source="#Data.Id" data-sort="0">
+                    <li class="column is-half">
+                        <div class="columns is-multiline is-vcentered is-mobile is-variable is-2">
+                            <div class="column is-one-quarter">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <a class="image is-square" href="#Blog.Link">
+                                            <img src="#Blog.Thumb" alt="#Blog.Name">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-three-quarters">
+                                <h3 class="has-text-weight-medium text_1_line font_14_mobile">
+                                    <a href="#Blog.Link">#Blog.Name</a>
+                                </h3>
+                                <div class="has-text-grey text_5_line font_14 mt-1">
+                                    #Blog.Desc
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Doi Tac -->
+        <section class="py-5 wrap_mobile">
+            <div id="jc_partner" class="container jcarousel-wrapper">
+                <ul class="columns is-vcentered is-mobile mb-0">
+                    <li class="column">
+                        <h2 class="has-text-weight-bold is-size-5 is-size-6-mobile color_main">
+                            Đối tác - Khách hàng
+                        </h2>
+                    </li>
+                    <li class="column is-narrow">
+                        <div class="jcarousel-control">
+                            <a class="jcarousel-control-prev color_extra">
+                                <i class="s18 feather icon-chevron-left"></i>
+                            </a>
+                            <a class="jcarousel-control-next color_extra">
+                                <i class="s18 feather icon-chevron-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="jcarousel">
+                    <ul data-repeat="true" data-rows="20" data-type="image-text" data-source="home-partner">
+                        <li>
+                            <a class="is-block has-text-centered" href="#Element.Link" title="#Element.Name"
+                                target="_blank">
+                                <img src="/Images/logo.svg" _src="#Element.Thumb" alt="#Element.Name"
+                                    style="max-height: 60px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/jquery.nivo.slider.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            $('#slider_home .nivoSlider').nivoSlider({
+                manualAdvance: false,
+                effect: 'random',
+                animSpeed: 1000,
+                pauseTime: 5000,
+                pauseOnHover: true
+            });
+
+            var jc_feedback = $('#jc_feedback .jcarousel');
+            jc_feedback.on('jcarousel:reload jcarousel:create', function () {
+                var width = jc_feedback.innerWidth();
+                if (width >= 1024)
+                    width = width / 3;
+                else if (width >= 768)
+                    width = width / 2;
+                jc_feedback.jcarousel('items').css('width', width + 'px');
+            })
+                .jcarousel({
+                    wrap: 'circular',
+                    animation: 'fast'
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            $('#jc_feedback .jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('#jc_feedback .jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            var jc_partner = $('#jc_partner .jcarousel');
+            jc_partner.on('jcarousel:reload jcarousel:create', function () {
+                var width = jc_partner.innerWidth();
+                if (width >= 1024)
+                    width = width / 6;
+                else if (width >= 768)
+                    width = width / 4;
+                else
+                    width = width / 2;
+                jc_partner.jcarousel('items').css('width', width + 'px');
+            })
+                .jcarousel({
+                    wrap: 'circular',
+                    animation: 'fast'
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            $('#jc_partner .jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('#jc_partner .jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+        }
+
+        function submitSubscribe() {
+            const code = 'subscribe';
+            const form = 'form_subscribe';
+            const msg = $(`#${form} .is_msg`);
+            const name = $(`#${form} .is_name`).val();
+            const phone = $(`#${form} .is_phone`).val();
+            const email = '';
+            const address = '';
+            const type = $(`#${form} .is_type`).val();
+            const content = `Loại công trình: ${type}`;
+
+            if (checkRequired(form)) {
+                console.log(code, name, phone, email, address, content);
+                $(`#${form} .button`).addClass('is-loading');
+                $.ajax({
+                    type: "POST",
+                    url: "/APIv1/Form/Send",
+                    data: { code, name, phone, email, address, content },
+                    dataType: "json",
+                    success: function (res) {
+                        $(`#${form} .button`).removeClass('is-loading');
+                        if (res.status === true) {
+                            alert(`Đã gửi thông tin liên hệ !`);
+                            $(`#${form} .input`).val('');
+                        } else {
+                            alert(res.msg);
+                        }
+                    }
+                });
+            }
+            else {
+                alert('Vui lòng nhập đầy đủ thông tin');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <div class="padding_base">
+            <div class="container">
+                <div class="columns is-variable is-1">
+                    <div class="column is-two-thirds">
+                        <div class="title-inleft">
+                            <a class="is-title" href="#">Tin Tức Nổi Bật</a>
+                        </div>
+
+                        <ul class="latest_hot" data-repeat="true" data-rows="5">
+                            <li>
+                                <div class="item">
+                                    <a class="item__img is-cover" href="#" style="background-image: url(#img);"></a>
+                                    <h3 class="item__title">
+                                        <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                                            trong phần quản trị của website #id</a>
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="columns is-gapless">
+                            <div class="column is-two-thirds">
+                                <ul class="latest_hot--min" data-repeat="true" data-rows="4">
+                                    <li>
+                                        <div class="item">
+                                            <a class="item__img is-cover" href="#"
+                                                style="background-image: url(#img);"></a>
+                                            <h3 class="item__title">
+                                                <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể
+                                                    thay đổi trong phần quản trị của website #id</a>
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="column is-one-third">
+                                <div class="latest_video">
+                                    <div class="item">
+                                        <div class="item__title">
+                                            <a href="#">Tin Videos</a>
+                                        </div>
+                                        <a class="item__img is-cover" href="#"
+                                            style="background-image: url(/Images/demo/1.jpg);"></a>
+                                        <a class="item__link" href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện,
+                                            bạn có thể
+                                            thay đổi trong phần quản trị của website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div class="title-inleft">
+                            <a class="is-title" href="#">Tin Mới Nhất</a>
+                        </div>
+
+                        <div id="latest_news" class="latest_news">
+                            <div class="slimScroll">
+                                <ul data-repeat="true" data-rows="20">
+                                    <li>
+                                        <a class="item" href="#">
+                                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay
+                                            đổi #id
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding_base bg_gray">
+            <div class="container">
+                <div class="title_and_tabs is-flex">
+                    <div class="title-inleft">
+                        <a class="is-title" href="#">Videos</a>
+                    </div>
+                    <div class="tabs">
+                        <ul id="tab_video_header">
+                            <li id="tab_header_1" class="is-active"><a>Pictures</a></li>
+                            <li id="tab_header_2"><a>Music</a></li>
+                            <li id="tab_header_3"><a>Videos</a></li>
+                            <li id="tab_header_4"><a>Documents</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-7">
+                        <div id="video_play" class="video_play">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PPfWcMwmlOc"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <!-- <div class="test" style="height: 350px;"></div> -->
+                        </div>
+                    </div>
+                    <div class="column is-5">
+                        <div id="video_list" class="slimScroll">
+                            <ul id="tab_video_1" class="video_list" data-repeat="true" data-rows="10">
+                                <li>
+                                    <a class="item" href="https://www.youtube.com/watch?v=-XTgUq01NaQ">
+                                        <span class="item__img is-cover" style="background-image: url(#img);"></span>
+                                        <span class="item__title">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                            thể
+                                            thay đổi #id</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="tab_video_2" class="video_list is-hidden" data-repeat="true" data-rows="10">
+                                <li>
+                                    <a class="item" href="https://www.youtube.com/watch?v=-XTgUq01NaQ">
+                                        <span class="item__img is-cover" style="background-image: url(#img);"></span>
+                                        <span class="item__title">2 Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn
+                                            có
+                                            thể
+                                            thay đổi #id</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="tab_video_3" class="video_list is-hidden" data-repeat="true" data-rows="10">
+                                <li>
+                                    <a class="item" href="https://www.youtube.com/watch?v=-XTgUq01NaQ">
+                                        <span class="item__img is-cover" style="background-image: url(#img);"></span>
+                                        <span class="item__title">3 Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn
+                                            có
+                                            thể
+                                            thay đổi #id</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul id="tab_video_4" class="video_list is-hidden" data-repeat="true" data-rows="10">
+                                <li>
+                                    <a class="item" href="https://www.youtube.com/watch?v=-XTgUq01NaQ">
+                                        <span class="item__img is-cover" style="background-image: url(#img);"></span>
+                                        <span class="item__title">4 Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn
+                                            có
+                                            thể
+                                            thay đổi #id</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding_base">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <div class="title-inleft">
+                            <a class="is-title">Danh Mục 1</a>
+                        </div>
+                        <div class="columns is-variable is-0">
+                            <div class="column is-9">
+                                <ul class="reviews_list" data-repeat="true" data-rows="2">
+                                    <li>
+                                        <div class="item">
+                                            <a class="item__img is-cover" href="#"
+                                                style="background-image: url(#img);"></a>
+                                            <h3 class="item__title">
+                                                <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể
+                                                    thay đổi trong phần quản trị của website #id</a>
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="column is-3">
+                                <ul class="reviews_list-min" data-repeat="true" data-rows="5">
+                                    <li>
+                                        <div class="item">
+                                            <h3 class="item__title">
+                                                <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện</a>
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <a class="is-block padding-top-30" href="#">
+                            <img src="/Images/ads.jpg" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding_base">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <div class="slide_show">
+                            <div class="title-inleft">
+                                <a class="is-title" href="#">Slide 1</a>
+                            </div>
+                            <div id="jc_slide_show_1" class="jcarousel-wrapper">
+                                <div class="jcarousel">
+                                    <ul class="is-clearfix" data-repeat="true" data-rows="10">
+                                        <li>
+                                            <div class="item">
+                                                <a class="item__img is-cover" href="#"
+                                                    style="background-image: url(#img);"></a>
+                                                <h3 class="item__title">
+                                                    <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                                        thể
+                                                        thay đổi trong phần quản trị của website #id</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="jcarousel-control">
+                                    <a class="jcarousel-control-prev">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </a>
+                                    <a class="jcarousel-control-next">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padding-top-30">
+                            <div class="title-inleft">
+                                <a class="is-title">Danh Mục 2</a>
+                            </div>
+                            <div class="columns is-variable is-0">
+                                <div class="column is-9">
+                                    <ul class="reviews_list" data-repeat="true" data-rows="2">
+                                        <li>
+                                            <div class="item">
+                                                <a class="item__img is-cover" href="#"
+                                                    style="background-image: url(#img);"></a>
+                                                <h3 class="item__title">
+                                                    <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                                        thể
+                                                        thay đổi trong phần quản trị của website #id</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="column is-3">
+                                    <ul class="reviews_list-min" data-repeat="true" data-rows="5">
+                                        <li>
+                                            <div class="item">
+                                                <h3 class="item__title">
+                                                    <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padding-top-30">
+                            <div class="slide_show">
+                                <div class="title-inleft">
+                                    <a class="is-title" href="#">Slide 2</a>
+                                </div>
+                                <div id="jc_slide_show_2" class="jcarousel-wrapper">
+                                    <div class="jcarousel">
+                                        <ul class="is-clearfix" data-repeat="true" data-rows="10">
+                                            <li>
+                                                <div class="item">
+                                                    <a class="item__img is-cover" href="#"
+                                                        style="background-image: url(#img);"></a>
+                                                    <h3 class="item__title">
+                                                        <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn
+                                                            có
+                                                            thể
+                                                            thay đổi trong phần quản trị của website #id</a>
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="jcarousel-control">
+                                        <a class="jcarousel-control-prev">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </a>
+                                        <a class="jcarousel-control-next">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padding-top-30">
+                            <div class="title-inleft">
+                                <a class="is-title">Danh Mục 3</a>
+                            </div>
+                            <div class="columns is-variable is-0">
+                                <div class="column is-9">
+                                    <ul class="reviews_list" data-repeat="true" data-rows="2">
+                                        <li>
+                                            <div class="item">
+                                                <a class="item__img is-cover" href="#"
+                                                    style="background-image: url(#img);"></a>
+                                                <h3 class="item__title">
+                                                    <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                                        thể
+                                                        thay đổi trong phần quản trị của website #id</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="column is-3">
+                                    <ul class="reviews_list-min" data-repeat="true" data-rows="5">
+                                        <li>
+                                            <div class="item">
+                                                <h3 class="item__title">
+                                                    <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện</a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="padding-top-30">
+                            <div class="slide_show">
+                                <div class="title-inleft">
+                                    <a class="is-title" href="#">Slide 3</a>
+                                </div>
+                                <div id="jc_slide_show_3" class="jcarousel-wrapper">
+                                    <div class="jcarousel">
+                                        <ul class="is-clearfix" data-repeat="true" data-rows="10">
+                                            <li>
+                                                <div class="item">
+                                                    <a class="item__img is-cover" href="#"
+                                                        style="background-image: url(#img);"></a>
+                                                    <h3 class="item__title">
+                                                        <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn
+                                                            có
+                                                            thể
+                                                            thay đổi trong phần quản trị của website #id</a>
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="jcarousel-control">
+                                        <a class="jcarousel-control-prev">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </a>
+                                        <a class="jcarousel-control-next">
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more_news padding-top-30">
+                            <div class="title_and_tabs is-flex" style="justify-content: space-between;">
+                                <div class="title-inleft">
+                                    <a class="is-title">More News</a>
+                                </div>
+                                <div class="tabs">
+                                    <ul>
+                                        <li class="is-active"><a href="#">Top News</a></li>
+                                        <li><a href="#">Pictures</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="more_news_list" data-repeat="true" data-rows="4">
+                                <li>
+                                    <div class="item">
+                                        <a class="item__img is-cover" href="#" style="background-image: url(#img);"></a>
+                                        <div class="item__info">
+                                            <h3 class="item__title">
+                                                <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                                    thể
+                                                    thay đổi trong phần quản trị của website #id</a>
+                                            </h3>
+                                            <div class="item__date">
+                                                <span>14 giờ trước</span>
+                                                <a>Tech News</a>
+                                            </div>
+                                            <div class="item__desc">
+                                                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                                                trong phần quản trị của website #id
+                                                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                                                trong phần quản trị của website #id
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div class="title-inleft">
+                            <a class="is-title">Most Polular</a>
+                        </div>
+                        <ul class="polular_list" data-repeat="true" data-rows="20">
+                            <li>
+                                <div class="item">
+                                    <a class="item__img is-cover" href="#" style="background-image: url(#img);"></a>
+                                    <h3 class="item__title">
+                                        <a href="#">Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có
+                                            thể
+                                            thay đổi trong phần quản trị của website #id</a>
+                                    </h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="https://kit.fontawesome.com/38f345802b.js" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script>
+        $(function () {
+            $('#latest_news').slimScroll({
+                height: '824px'
+            });
+            $('#video_list').slimScroll({
+                height: '350px'
+            });
+        });
+
+        function loadAfterDataDemo() {
+            $(".video_list .item").click(function (e) {
+                e.preventDefault();
+                const item = $(this);
+                const link = item.attr("href").replace('watch?v=', 'embed/');
+                $('#video_play iframe').attr('src', link);
+            });
+
+            $("#tab_video_header li").click(function (e) {
+                const item = $(this);
+
+                const id = item.attr("id").replace('tab_header_', '');
+
+                $("#tab_video_header li").removeClass('is-active');
+                item.addClass('is-active');
+
+                $('#video_list .video_list').addClass('is-hidden');
+                $(`#tab_video_${id}`).removeClass('is-hidden');
+            });
+
+            var jc_slide_show_1 = $('#jc_slide_show_1 .jcarousel').jcarousel();
+            jc_slide_show_1.on('jcarousel:reload jcarousel:create', function () {
+
+            }).jcarousel({
+                wrap: 'circular'
+            });
+            jc_slide_show_1.jcarousel('reload');
+            jc_slide_show_1.jcarouselAutoscroll({ autostart: true });
+            jc_slide_show_1.hover(function () {
+                $(this).jcarouselAutoscroll('stop');
+            }, function () {
+                $(this).jcarouselAutoscroll('start');
+            });
+            $('#jc_slide_show_1 .jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('#jc_slide_show_1 .jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

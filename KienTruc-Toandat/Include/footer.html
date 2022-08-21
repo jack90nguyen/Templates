@@ -1,0 +1,130 @@
+<footer id="footer" class="font_14 has-text-grey has-background-light">
+    <div class="footer_top py-5 wrap_mobile">
+        <div class="container">
+            <section class="columns">
+                <div class="column is-two-fifths">
+                    <div class="has-text-weight-medium mb-2 color_main is-uppercase">
+                        Thông tin liên hệ
+                    </div>
+                    <ul>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-home"></i>
+                            </span>
+                            <span>#Config.Title</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-map-pin"></i>
+                            </span>
+                            <a href="#" target="_blank">#Config.ContactAddress</a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-phone"></i>
+                            </span>
+                            <span>Điện thoại:</span>
+                            <a href="tel:#Config.Hotline1">#Config.Hotline1</a>
+                            <span>-</span>
+                            <a href="tel:#Config.Hotline2">#Config.Hotline2</a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-mail"></i>
+                            </span>
+                            <span>Email:</span>
+                            <a href="mailto:#Config.ContactMail1">#Config.ContactMail1</a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-facebook"></i>
+                            </span>
+                            <span>Fanpage:</span>
+                            <a href="#Config.SocialFb" target="_blank">Change Fanpage Name</a>
+                        </li>
+                        <li class="mb-2">
+                            <span class="icon is-small">
+                                <i class="feather icon-globe"></i>
+                            </span>
+                            <a href="#Config.Domain" target="_blank">#Config.Domain</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column is-two-fifths">
+                    <ul class="columns is-variable is-2" data-repeat="true" data-rows="2" data-type="nav"
+                        data-source="footer-nav">
+                        <li class="column is-half">
+                            <div class="has-text-weight-medium mb-2 color_main is-uppercase">
+                                #Element.Name
+                            </div>
+                            <ul data-repeat="true" data-rows="6" data-type="nav" data-source="childs">
+                                <li class="mb-2">
+                                    <a href="#Element.Link">#Element.Name</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="form_subscribe" class="column is-one-fifth">
+                    <div class="has-text-weight-medium mb-2 color_main is-uppercase">
+                        Đăng ký tự vấn
+                    </div>
+                    <div class="field">
+                        <input type="text" class="input is-small is_name" placeholder="Nhập họ và tên"
+                            data-required="true">
+                    </div>
+                    <div class="field">
+                        <input type="text" class="input is-small is_phone" placeholder="Nhập số điện thoại"
+                            data-required="true">
+                    </div>
+                    <div class="field">
+                        <div class="select is-small is-fullwidth">
+                            <select class="is_type" data-required="true">
+                                <option value="">- Loại công trình -</option>
+                                <option value="Nhà phố">Nhà phố</option>
+                                <option value="Biệt thự">Biệt thự</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Công trình khác">Công trình khác</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <a class="button is-small is_main is-fullwidth" onclick="submitSubscribe()">
+                            Gửi yêu cầu
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="footer_bottom py-4 wrap_mobile">
+        <div class="container">
+            <div class="columns is-vcentered is-gapless">
+                <div class="column is-half has-text-centered-mobile">
+                    <span>Copyright © 2021 Onetez.com. All rights reserved.</span>
+                </div>
+                <div class="column is-half has-text-right has-text-centered-mobile">
+                    <div class="madeby">
+                        <span>Made with</span>
+                        <i class="feather icon-heart-on animated infinite tada has-text-danger"></i>
+                        <span>by</span>
+                        <a href="http://www.onetez.com/?utm_source=customer">ONETEZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a id="hotline" href="tel:#Config.Hotline1" title="Hotline">
+    <span class="icon animated infinite tada background_extra">
+        <i class="feather icon-phone"></i>
+    </span>
+    <span class="text is-hidden">#Config.Hotline1</span>
+</a>
+
+<a id="gotop" href="#" title="Lên đầu trang">
+    <span class="icon">
+        <i class="feather icon-chevron-up"></i>
+    </span>
+</a>

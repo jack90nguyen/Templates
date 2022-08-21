@@ -1,0 +1,91 @@
+<header id="header">
+  <div class="header_top pb-3 wrap_mobile">
+    <div class="container">
+      <ul class="columns is-vcentered is-mobile is-variable is-2-mobile">
+        <li class="column is-narrow">
+          <a class="is-block header_logo" href="/">
+            <img src="/themes/logo.png" _src="#Config.Logo" alt="#Config.Domain" />
+          </a>
+        </li>
+        <li class="column">
+          <div class="control has-icons-right has_suggest mt-5">
+            <input class="input is-rounded quick_search" type="text" placeholder="Tìm theo mã bản vẽ hoặc từ khóa khác"
+              data-suggest="true" />
+            <span class="icon is-right">
+              <i class="fas fa-search"></i>
+            </span>
+            <ul class="suggest"></ul>
+          </div>
+          <div class="is-size-7 mt-1 is-hidden-mobile" data-repeat="true" data-rows="3" data-type="link"
+            data-source="search-suggest">
+            <a class="ml-3" href="#Element.Link">Element.Name</a>
+          </div>
+        </li>
+        <li class="column is-narrow">
+          <a id="favorite" class="icon is-medium is-rounded color_main is-hidden-mobile" href="#">
+            <i class="fas fa-heart"></i>
+            <small>3</small>
+          </a>
+          <a class="is-block color_main is-hidden-tablet" href="#">
+            <i class="fa-2x far fa-user-circle"></i>
+          </a>
+        </li>
+        <li class="column is-narrow is-hidden-mobile">
+          <a href="tel:#Config.Hotline1">
+            <span class="icon is-medium is-rounded has-background-link">
+              <i class="fas fa-phone-alt has-text-white"></i>
+            </span>
+            <span class="has-text-weight-semibold">#Config.Hotline1</span>
+          </a>
+        </li>
+        <li class="column is-narrow is-hidden-mobile">
+          <a class="button font_14 is-rounded is_gradient" href="#">
+            Nhận tư vấn
+          </a>
+        </li>
+        <!-- <li class="column is-narrow ml-6">
+          <a class="button is-medium" href="tel:#Config.Hotline">
+            <span class="icon mr-2">
+              <img src="/themes/icons/14.png" alt="icon">
+            </span>
+            <span class="font_14 has-text-weight-medium">#Config.Hotline1</span>
+          </a>
+        </li>
+        <li class="column is-narrow">
+          <a class="button is-medium" href="#Config.SocialFb">
+            <span class="icon mr-2">
+              <img src="/themes/icons/13.png" alt="icon">
+            </span>
+            <span class="font_14 has-text-link has-text-weight-medium">Sieuthibanve</span>
+          </a>
+        </li>
+        <li class="column is-narrow">
+          <a class="button is-medium" href="#Config.SocialYt">
+            <span class="icon mr-2">
+              <img src="/themes/icons/12.png" alt="icon">
+            </span>
+            <span class="font_14 has-text-danger has-text-weight-medium">Sieuthibanve</span>
+          </a>
+        </li>
+        <li class="column is-narrow">
+          <a class="button is-medium" href="#Config.SocialTw">
+            <span class="icon mr-2">
+              <img src="/themes/icons/11.png" alt="icon">
+            </span>
+            <span class="font_14 has-text-black has-text-weight-medium">Sieuthibanve</span>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+  <div class="header_menu is-hidden-mobile">
+    <div class="container">
+      <div class="navbar has-text-weight-medium" data-bind="true" data-rows="0" data-type="nav"
+        data-source="header-nav">
+        <a class="navbar-item" href="#Element.Link">
+          #Element.Name
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

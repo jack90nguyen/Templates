@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Slide Banner -->
+        <div id="slider_home">
+            <div class="slider-wrapper">
+                <div class="nivoSlider">
+                    <a href="/">
+                        <img src="/Demo/s1.jpg" data-thumb="/Demo/s1.jpg" alt="IMG" title="#htmlcaption1" />
+                    </a>
+                    <a href="/">
+                        <img src="/Demo/s2.jpg" data-thumb="/Demo/s2.jpg" alt="IMG" title="#htmlcaption2" />
+                    </a>
+                    <a href="/">
+                        <img src="/Demo/s3.jpg" data-thumb="/Demo/s3.jpg" alt="IMG" title="#htmlcaption3" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icons Bar -->
+        <section class="icons_bar container is-hidden-mobile">
+            <div class="columns is-multiline is-gapless" data-repeat="true" data-rows="5">
+                <div class="column is-one-fifth">
+                    <div class="columns is-mobile is-vcentered">
+                        <div class="column is-narrow">
+                            <span class="icon is-large">
+                                <i class="s2em feather icon-truck"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <div class="is-uppercase has-text-weight-bold">
+                                Giao hàng
+                            </div>
+                            <div class="has-text-grey">
+                                Miễn phí
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images Ads -->
+        <section class="image_ads container is-hidden-mobile">
+            <div class="columns is-variable is-5 is-multiline" data-repeat="true" data-rows="3">
+                <div class="column is-one-third">
+                    <a href="#">
+                        <img src="/Demo/ads.png" alt="#">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category -->
+        <section class="category_block container">
+            <div class="columns is-gapless">
+                <div class="column is-one-fifth">
+                    <div class="category_menu menu">
+                        <h2 class="menu-label">
+                            <a href="#">
+                                Quạt công nghiệp
+                            </a>
+                        </h2>
+                        <ul class="menu-list is-hidden-mobile" data-repeat="true" data-rows="7">
+                            <li>
+                                <a href="#">
+                                    <i class="feather icon-chevron-right"></i>
+                                    <span>Danh mục sản phẩm #id</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="is_more is-hidden-mobile">
+                            <a class="has-text-link has-text-weight-semibold" href="#">
+                                Xem tất cả
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-four-fifths">
+                    <div class="product_list columns is-gapless is-multiline is-mobile" data-repeat="true"
+                        data-rows="13">
+                        <div class="column is-one-fifth-desktop is-half-mobile">
+                            <div class="product_item">
+                                <a href="#" class="item_image">
+                                    <img src="/Demo/p1.png" alt="#">
+                                </a>
+                                <h3 class="item_title has-text-centered">
+                                    <a href="#">
+                                        Quạt Hút Xách Tay Superlite Max SHT #id
+                                    </a>
+                                </h3>
+                                <div class="item_price has-text-weight-semibold has-text-centered has-text-danger">
+                                    3.500.000₫
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section class="blog_list container">
+            <div class="title_border">
+                <a class="is_link is-uppercase" href="#">Tin tức</a>
+            </div>
+            <div class="columns is-multiline" data-repeat="true" data-rows="4">
+                <div class="column is-one-quarter">
+                    <div class="blog_item">
+                        <a class="item_image is_cover" href="#" style="background-image: url(/Demo/ads.png);">
+                            <img src="/Demo/ads.png" alt="IMG">
+                        </a>
+                        <h3 class="item_title has-text-weight-semibold is-size-6">
+                            <a href="#">
+                                Đây là tiêu đề tin tức mẫu số #id, bạn có thể thay đổi
+                            </a>
+                        </h3>
+                        <div class="item_desc has-text-grey">
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                            website.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide Partner -->
+        <section class="slide_partner">
+            <div class="container">
+                <div id="slide_partner" class="jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul data-repeat="true" data-rows="20">
+                            <li>
+                                <a href="#">
+                                    <img src="/Images/logo.svg" alt="logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script src="/Scripts/jquery.nivo.slider.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+            var slide_partner = $('.slide_partner .jcarousel');
+            slide_partner.on('jcarousel:reload jcarousel:create', function () {
+                var width = slide_partner.innerWidth();
+                if (width >= 1000)
+                    width = width / 5;
+                else if (width >= 768)
+                    width = width / 3;
+                else if (width >= 480)
+                    width = width / 2;
+                slide_partner.jcarousel('items').css('width', width + 'px');
+            }).jcarousel({
+                wrap: 'circular'
+            });
+            slide_partner.jcarouselAutoscroll({ autostart: true });
+            slide_partner.hover(function () {
+                $(this).jcarouselAutoscroll('stop');
+            }, function () {
+                $(this).jcarouselAutoscroll('start');
+            });
+        }
+
+        $('#slider_home .nivoSlider').nivoSlider({
+            manualAdvance: false,
+            effect: 'random',
+            animSpeed: 1000,
+            pauseTime: 5000,
+            pauseOnHover: true
+        });
+    </script>
+
+</body>
+
+</html>

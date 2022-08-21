@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Banner -->
+        <section class="section_banner">
+            <div id="slider_home">
+                <div class="slider-wrapper">
+                    <div id="slideNivo" class="nivoSlider" data-repeat="false" data-rows="0" data-type="image"
+                        data-source="home-slide">
+                        <a href="/">
+                            <img src="/Themes/s1.jpg" data-thumb="/Themes/s1.jpg" alt="IMG" />
+                        </a>
+                        <a href="/">
+                            <img src="/Themes/s2.jpg" data-thumb="/Themes/s2.jpg" alt="IMG" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADS -->
+        <section class="section_ads">
+            <div class="columns" data-repeat="true" data-rows="2" data-type="image" data-source="home-ads">
+                <div class="column is-half">
+                    <div class="item">
+                        <a href="#">
+                            <img src="/Themes/a#Element.Id.jpg" alt="IMG">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category -->
+        <section class="section_category section_space">
+            <div class="container">
+                <div class="title_bg">
+                    <a class="is_title is-uppercase">
+                        Danh mục nổi bật
+                    </a>
+                    <a class="is_more">
+                        <span>Xem thêm</span>
+                        <i class="feather icon-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="columns is-multiline is-mobile" data-repeat="true" data-rows="8" data-type="image-text"
+                    data-source="home-category">
+                    <div class="column is-one-quarter-tablet is-half-mobile">
+                        <div class="item">
+                            <div class="columns is-gapless is-vcentered is-mobile">
+                                <div class="column is-half">
+                                    <a class="item_image" href="#Element.Link">
+                                        <img src="https://image.freepik.com/free-vector/roller-skates-pop-art-icon_25030-34373.jpg"
+                                            alt="IMG">
+                                    </a>
+                                </div>
+                                <h2 class="column is-half">
+                                    <a class="item_name" href="#Element.Link">
+                                        #Element.Name
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products List -->
+        <section class="section_products section_space">
+            <div class="container" data-bind="true" data-type="post" data-source="-PostId-">
+                <div class="title_bg">
+                    <a class="is_title is-uppercase" href="#Data.Link">
+                        #Data.Name
+                    </a>
+                    <a class="is_more" href="#Data.Link">
+                        <span>Xem thêm</span>
+                        <i class="feather icon-chevron-right"></i>
+                    </a>
+                </div>
+
+                <ul class="product_list columns is-multiline" data-repeat="true" data-rows="8" data-type="products"
+                    data-source="#Data.Id">
+                    <li class="column is-one-quarter">
+                        <div class="item">
+                            <a class="item_image is_cover" href="#Product.Link"
+                                style="background-image: url(#Product.Image);">
+                                <img src="#Product.Image" alt="IMG">
+                            </a>
+                            <h3 class="item_name">
+                                <a href="#Product.Link">
+                                    #Product.Name
+                                </a>
+                            </h3>
+                            <div class="item_price">
+                                #Product.Price
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Products List -->
+        <section class="section_products section_space">
+            <div class="container" data-bind="true" data-type="post" data-source="-PostId-">
+                <div class="title_bg">
+                    <a class="is_title is-uppercase" href="#Data.Link">
+                        #Data.Name
+                    </a>
+                    <a class="is_more" href="#Data.Link">
+                        <span>Xem thêm</span>
+                        <i class="feather icon-chevron-right"></i>
+                    </a>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-one-quarter is-hidden-mobile">
+                        <a class="item_ads is_cover" href="#"
+                            style="background-image: url(https://themes.invints.com/prestashop/IT02/Gomart/modules/itcustomhtml/views/img/mult-banner-1.jpg);"></a>
+                    </div>
+                    <div class="column is-three-quarters">
+                        <ul class="product_list columns is-multiline" data-repeat="true" data-rows="6"
+                            data-type="products" data-source="#Data.Id">
+                            <li class="column is-one-third">
+                                <div class="item">
+                                    <a class="item_image is_cover" href="#Product.Link"
+                                        style="background-image: url(#Product.Image);">
+                                        <img src="#Product.Image" alt="IMG">
+                                    </a>
+                                    <h3 class="item_name">
+                                        <a href="#Product.Link">
+                                            #Product.Name
+                                        </a>
+                                    </h3>
+                                    <div class="item_price">
+                                        #Product.Price
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Slide -->
+        <section class="section_slideup section_space">
+            <div class="container">
+                <div class="columns">
+
+                    <div class="column is-one-third">
+                        <div id="jc_new" class="jcarousel-wrapper">
+                            <div class="title_bg">
+                                <div class="is_title is-uppercase">
+                                    Sản phẩm mới
+                                </div>
+                                <div class="is_more jcarousel-control">
+                                    <a class="jcarousel-control-prev">
+                                        <i class="s24 feather icon-chevron-left"></i>
+                                    </a>
+                                    <a class="jcarousel-control-next">
+                                        <i class="s24 feather icon-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product_slideup jcarousel is_vertical">
+                                <ul data-repeat="true" data-rows="6" data-type="products" data-source="0" data-sort="0">
+                                    <li>
+                                        <div class="item">
+                                            <div class="columns is-vcentered is-mobile">
+                                                <div class="column is-narrow">
+                                                    <a class="item_image is_cover" href="#Product.Link"
+                                                        style="background-image: url(#Product.Image);">
+                                                        <img src="#Product.Image" alt="IMG">
+                                                    </a>
+                                                </div>
+                                                <div class="column">
+                                                    <h3 class="item_name">
+                                                        <a href="#Product.Link">
+                                                            #Product.Name
+                                                        </a>
+                                                    </h3>
+                                                    <div class="item_price">
+                                                        #Product.Price
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div id="jc_seller" class="jcarousel-wrapper">
+                            <div class="title_bg">
+                                <div class="is_title is-uppercase">
+                                    Bán chạy
+                                </div>
+                                <div class="is_more jcarousel-control">
+                                    <a class="jcarousel-control-prev">
+                                        <i class="s24 feather icon-chevron-left"></i>
+                                    </a>
+                                    <a class="jcarousel-control-next">
+                                        <i class="s24 feather icon-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product_slideup jcarousel is_vertical">
+                                <ul data-repeat="true" data-rows="6" data-type="products" data-source="0" data-sort="4">
+                                    <li>
+                                        <div class="item">
+                                            <div class="columns is-vcentered is-mobile">
+                                                <div class="column is-narrow">
+                                                    <a class="item_image is_cover" href="#Product.Link"
+                                                        style="background-image: url(#Product.Image);">
+                                                        <img src="#Product.Image" alt="IMG">
+                                                    </a>
+                                                </div>
+                                                <div class="column">
+                                                    <h3 class="item_name">
+                                                        <a href="#Product.Link">
+                                                            #Product.Name
+                                                        </a>
+                                                    </h3>
+                                                    <div class="item_price">
+                                                        #Product.Price
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <div id="jc_hot" class="jcarousel-wrapper">
+                            <div class="title_bg">
+                                <div class="is_title is-uppercase">
+                                    Nổi bật
+                                </div>
+                                <div class="is_more jcarousel-control">
+                                    <a class="jcarousel-control-prev">
+                                        <i class="s24 feather icon-chevron-left"></i>
+                                    </a>
+                                    <a class="jcarousel-control-next">
+                                        <i class="s24 feather icon-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product_slideup jcarousel is_vertical">
+                                <ul data-repeat="true" data-rows="6" data-type="products" data-source="0" data-sort="1">
+                                    <li>
+                                        <div class="item">
+                                            <div class="columns is-vcentered is-mobile">
+                                                <div class="column is-narrow">
+                                                    <a class="item_image is_cover" href="#Product.Link"
+                                                        style="background-image: url(#Product.Image);">
+                                                        <img src="#Product.Image" alt="IMG">
+                                                    </a>
+                                                </div>
+                                                <div class="column">
+                                                    <h3 class="item_name">
+                                                        <a href="#Product.Link">
+                                                            #Product.Name
+                                                        </a>
+                                                    </h3>
+                                                    <div class="item_price">
+                                                        #Product.Price
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section class="section_blogs section_space">
+            <div class="container">
+                <div class="title_bg">
+                    <a class="is_title is-uppercase" href="#Data.Link">
+                        Tin tức & Sự kiện
+                    </a>
+                    <a class="is_more" href="#Data.Link">
+                        <span>Xem thêm</span>
+                        <i class="feather icon-chevron-right"></i>
+                    </a>
+                </div>
+
+                <ul class="blog_list columns is-multiline" data-repeat="true" data-rows="3" data-type="blogs"
+                    data-source="2">
+                    <li class="column is-one-third">
+                        <div class="item">
+                            <a class="item_image is_cover" href="#Blog.Link"
+                                style="background-image: url(#Blog.Image);">
+                                <img src="#Blog.Image" alt="IMG">
+                            </a>
+                            <h3 class="item_name">
+                                <a href="#Blog.Link" title="#Blog.Name">
+                                    #Blog.Name
+                                </a>
+                            </h3>
+                            <div class="item_desc has-text-grey">
+                                #Blog.Desc
+                            </div>
+                            <a class="item_link" href="#Blog.Link">Chi tiết</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Partner -->
+        <section class="section_partner">
+            <div class="container">
+                <div id="jc_partner" class="jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul data-repeat="true" data-rows="10" data-type="image" data-source="partner">
+                            <li>
+                                <a href="#Element.Link">
+                                    <img src="/Themes/logo-color.png" alt="#Element.Name">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script src="/Scripts/jquery.nivo.slider.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script>
+        $('#slider_home .nivoSlider').nivoSlider({
+            manualAdvance: true,
+            effect: 'random',
+            animSpeed: 1000,
+            pauseTime: 5000,
+            pauseOnHover: true
+        });
+
+        function loadAfterDataDemo() {
+            $('.box_address').slimScroll({
+                height: 260
+            });
+
+            const jc_new = $('#jc_new .jcarousel');
+            jc_new.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 800
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_seller = $('#jc_seller .jcarousel');
+            jc_seller.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 1000
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_hot = $('#jc_hot .jcarousel');
+            jc_hot.on('jcarousel:reload jcarousel:create', function () { })
+                .jcarousel({
+                    wrap: 'circular',
+                    vertical: true,
+                    animation: {
+                        duration: 1200
+                    }
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            const jc_partner = $('#jc_partner .jcarousel');
+            jc_partner.on('jcarousel:reload jcarousel:create', function () {
+                var width = jc_partner.innerWidth();
+                if (width >= 1000)
+                    width = width / 5;
+                else if (width >= 768)
+                    width = width / 3;
+                else
+                    width = width / 2;
+                jc_partner.jcarousel('items').css('width', width + 'px');
+            })
+                .jcarousel({
+                    wrap: 'circular'
+                })
+                .jcarouselAutoscroll({ autostart: true })
+                .hover(function () {
+                    $(this).jcarouselAutoscroll('stop');
+                }, function () {
+                    $(this).jcarouselAutoscroll('start');
+                });
+
+            $('.jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('.jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+        }
+    </script>
+
+</body>
+
+</html>

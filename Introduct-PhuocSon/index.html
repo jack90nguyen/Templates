@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Slide Banner -->
+        <section class="section_banner">
+            <div id="slider_home">
+                <div class="slider-wrapper">
+                    <div id="slideNivo" class="nivoSlider" data-repeat="true" data-rows="3" data-type="image-text"
+                        data-source="home-slide">
+                        <a href="#Element.Link">
+                            <img src="#Element.Image" data-thumb="#Element.Image" alt="IMG"
+                                title="#htmlcaption#Element.Id" />
+                        </a>
+                    </div>
+                </div>
+                <div data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+                    <div id="htmlcaption#Element.Id" style="display:none">
+                        <div class="container has-text-centered">
+                            <div class="nivo_title aniview" data-av-animation="bounceInLeft">
+                                #Element.Name
+                            </div>
+                            <div class="nivo_recap aniview" data-av-animation="bounceInRight">
+                                #Element.Desc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Icons -->
+        <section class="section_home_icons wrap_mobile">
+            <div class="container">
+                <div class="aniview" data-av-animation="bounceInRight">
+                    <h2 class="title_center">
+                        CÁC GIÁ TRỊ SẼ CUNG CẤP CHO KHÁCH HÀNG
+                    </h2>
+                </div>
+                <ul class="columns is-multiline" data-repeat="true" data-rows="4" data-type="icon-text"
+                    data-source="home-icon">
+                    <li class="column is-one-quarter has-text-centered color_extra">
+                        <div class="aniview" data-av-animation="bounceInUp">
+                            <span class="icon is-large">
+                                <i class="s2em feather icon-check-circle"></i>
+                            </span>
+                            <div class="is-size-5 is-uppercase has-text-weight-semibold">
+                                Element.Name
+                            </div>
+                            <div class="color_main">
+                                #Element.Desc
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Image Ads -->
+        <section class="section_home_ads" data-bind="true" data-type="image" data-source="home-ads">
+            <a class="is-block" href="#Element.Link">
+                <img class="is-block" src="/Themes/a1.jpg" alt="#Element.Image">
+            </a>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section_home_gallery wrap_mobile" data-bind="true" data-type="post" data-source="-PostId-">
+            <div class="container">
+                <div class="aniview" data-av-animation="bounceInRight">
+                    <h2 class="title_center has-text-white">
+                        #Data.Name BỘ SƯU TẬP SẢN PHẨM
+                    </h2>
+                </div>
+                <div class="content has-text-white">
+                    <div class="aniview" data-av-animation="bounceInRight">
+                        #Data.Content
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                        website.
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                        website.
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                        website.
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                        website.
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của
+                        website.
+                    </div>
+                </div>
+
+                <ul class="columns is-multiline" data-repeat="true" data-rows="0" data-type="blogs"
+                    data-source="#Data.Id">
+                    <li class="column is-one-third ">
+                        <a class="gallery_item image is-5by3 is_cover" href="#Blog.Link"
+                            style="background-image: url('#Blog.Image');">
+                            <div class="item_info">
+                                <div class="aniview" data-av-animation="fadeIn">
+                                    <h3 class="item_name is-uppercase">
+                                        #Blog.Name
+                                    </h3>
+                                    <div class="item_desc">
+                                        #Blog.Desc
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3 thông số vàng -->
+        <section class="section_home_content wrap_mobile">
+            <div class="container">
+                <div class="columns is-variable is-1">
+                    <!-- 3 thông số vàng -->
+                    <div class="column is-one-third">
+                        <div class="content_item is_title">
+                            <div class="title is-4">
+                                BA THÔNG SỐ VÀNG ĐỂ LỰA CHỌN ĐƯỢC TẤM SÀN GỖ TỐT NHẤT.
+                            </div>
+                        </div>
+                        <ul class="columns is-multiline is-variable is-1" data-repeat="true" data-rows="3"
+                            data-type="image-text" data-source="thong-so-vang">
+                            <li class="column is-full">
+                                <div class="aniview" data-av-animation="fadeInUp">
+                                    <div class="content_item">
+                                        <div class="item_index">#Element.Index</div>
+                                        <div class="item_name">#Element.Name</div>
+                                        <div class="item_image">
+                                            <img class="is-block" src="#Element.Image" alt="IMG">
+                                        </div>
+                                        <div class="item_desc">#Element.Desc</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 3 loại sàn gỗ -->
+                    <div class="column is-two-thirds">
+                        <ul class="columns is-multiline is-variable is-1" data-repeat="true" data-rows="3"
+                            data-type="image-content" data-source="thong-so-vang">
+                            <li class="column is-full">
+                                <div class="content_item is_title">
+                                    <div class="aniview" data-av-animation="fadeInRight">
+                                        <div class="title is-4">
+                                            #Element.Name
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_item">
+                                    <div class="columns is-variable is-3">
+                                        <div class="column is-half ">
+                                            <div class="aniview" data-av-animation="zoomIn">
+                                                <img class="is-block" src="#Element.Image" alt="IMG">
+                                            </div>
+                                        </div>
+                                        <div class="column is-half">
+                                            <div class="content">
+                                                <div class="aniview" data-av-animation="fadeInUp">
+                                                    #Element.Content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/jquery.nivo.slider.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            $('#slider_home .nivoSlider').nivoSlider({
+                manualAdvance: true,
+                effect: 'random',
+                animSpeed: 1000,
+                pauseTime: 5000,
+                pauseOnHover: true
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

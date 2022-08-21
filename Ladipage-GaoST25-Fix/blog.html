@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Gạo ST25 tại Miền Trung</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Blog Content -->
+        <section class="section_article">
+            <div class="container">
+                <div class="columns">
+
+                    <div class="column is-three-quarters">
+                        <div class="image" style="margin-bottom: 20px;">
+                            <img src="/Themes/p5.jpg" alt="IMG">
+                        </div>
+
+                        <h1 class="title is-3">
+                            #Post.Name
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện
+                        </h1>
+
+                        <article class="content is-size-6" data-repeat="true" data-rows="3">
+                            <div>
+                                <p>
+                                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản
+                                    trị
+                                    của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                                    trong
+                                    phần quản trị của website.
+                                </p>
+                                <p style="text-align: center;"><img src="#Post.Image" alt="img"></p>
+                                <p>Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+                                    phần quản trị của website.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="column is-one-quarter">
+
+                        <div class="sidebar_wrap">
+                            <div id="sidebar">
+                                <div class="box_border">
+                                    <div class="title_min">
+                                        Bài viết liên quan
+                                    </div>
+                                    <ul class="list_related" data-repeat="true" data-rows="5" data-type="blogs"
+                                        data-source="#Post.ParentId">
+                                        <li>
+                                            <a href="#Blog.Link">
+                                                #Blog.Name
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="box_border">
+                                    <div class="title_min">
+                                        Danh mục bài viết
+                                    </div>
+                                    <ul class="list_related">
+                                        <li>
+                                            <a class="is-block is-clearfix" href="#Blog.Link">
+                                                <span>Tin khuyến mãi</span>
+                                                <span class="color_main is-pulled-right">(5)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="is-block is-clearfix" href="#Blog.Link">
+                                                <span>Tin về gạo ST25</span>
+                                                <span class="color_main is-pulled-right">(5)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="is-block is-clearfix" href="#Blog.Link">
+                                                <span>Món ngon với gạo ST25</span>
+                                                <span class="color_main is-pulled-right">(5)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        $(function () {
+            var sidebar = $('#sidebar').offset();
+            var stickySidebar = function () {
+                var scrollTop = $(window).scrollTop();
+                var width_sidebar = $('.sidebar_wrap').innerWidth();
+                $('#sidebar').css('width', width_sidebar + 'px');
+                if (scrollTop > sidebar.top - 70) {
+                    $('#sidebar').addClass('is_sticky');
+                }
+                else {
+                    $('#sidebar').removeClass('is_sticky');
+                }
+            };
+            stickySidebar();
+            $(window).scroll(function () { stickySidebar(); });
+        });
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+        }
+
+    </script>
+
+    <style>
+        #sidebar.is_sticky {
+            position: fixed;
+            top: 90px;
+        }
+
+        .box_border {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 26px;
+        }
+
+        .title_min {
+            border-bottom: 2px solid #78b653;
+        }
+
+        .list_related li {
+            padding-bottom: 15px;
+        }
+
+        .list_related li:last-child {
+            padding-bottom: 0px;
+        }
+    </style>
+
+</body>
+
+</html>

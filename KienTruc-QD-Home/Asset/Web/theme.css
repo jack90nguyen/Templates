@@ -1,0 +1,96 @@
+:root {
+   --color-main: #4f953c;
+   --color-extra: #394285;
+   --color-bg: #0f232e;
+}
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #404040;
+}
+.container {
+    max-width: 1050px !important;
+    width: 100%;
+}
+#header {
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+.header_logo img {
+    max-height: 40px;
+}
+.navbar-end > a.navbar-item, .navbar-end .navbar-link {
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-weight: 500;
+}
+.navbar-link:not(.is-arrowless)::after {
+    border-color: var(--color-main);
+    border-width: 2px;
+}
+#footer {
+    background-color: var(--color-main);
+}
+.footer_top .label {
+    font-size: 14px;
+    display: none;;
+}
+.footer_top .input.is-dark, .footer_top .select.is-dark select {
+    background: #427d32;
+    color: #fff;
+}
+.footer_top .input.is-dark:not(.is-danger), .footer_top .select.is-dark select {
+    border-color: #427d32;
+}
+.footer_bottom {
+    background:  rgba(0, 0, 0, 0.3);
+}
+.nivo-directionNav a {
+    border: 0px;
+    background: none;
+    opacity: 0;
+}
+.slider-wrapper:hover .nivo-directionNav a {
+    opacity: 1;
+}
+.nivo-directionNav a::before {
+    font-size: 30px !important;
+}
+.title_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_center::before, .title_center::after{
+    height: 2px;
+    background: #eee;
+    content: '';
+    flex-grow: 1;
+}
+.title_center > a {
+    flex-grow: 0;
+    padding: 0px 1rem;
+}
+.title_center_border {
+    text-align: center;
+    position: relative;
+    padding-bottom: .5rem;
+}
+.title_center_border::after{
+    content: '';
+    height: 2px;
+    width: 50px;
+    background: #eee;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 25px);
+}
+.section_cover .breadcrumb a {
+    color: #fff !important;
+}
+.section_map iframe {
+    width: 100%;
+    height: 50vh;
+    max-height: 400px !important;
+}

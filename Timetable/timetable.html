@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="/Asset/bulma.min.css">
+    <link rel="shortcut icon" href="/timetable/favicon.ico" />
+    <link rel="icon" type="image/png" href="/timetable/favicon.ico" />
+    <link rel="apple-touch-icon" href="/timetable/favicon.png" />
+    <link rel="apple-touch-startup-image" href="/timetable/favicon.png" />
+    <!-- mobile-web-app -->
+    <meta name="application-name" content="Timetable" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Timetable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="msapplication-TileImage" content="/timetable/favicon.png" />
+    <meta name="msapplication-TileColor" content="#d73a03" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+            width: 100%;
+        }
+
+        #main {
+            margin: 0px !important;
+        }
+
+        .table th,
+        .table td {
+            vertical-align: middle !important;
+            text-align: center !important;
+        }
+
+        .table td:first-child {
+            font-family: monospace !important;
+        }
+
+        .table tr.is-active td:first-child,
+        .table th.is-active {
+            background: #a317bb;
+        }
+
+        .table tr.is-active td:first-child .tag {
+            background: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 0px;
+        }
+
+        .table th {
+            color: #fff !important;
+            font-size: 14px;
+        }
+
+        .table td {
+            font-size: 16px;
+            padding: 5px;
+            transition: all 0.25s;
+        }
+
+        .table td:not(:first-child):hover {
+            transform: scaleX(1.05) scaleY(1.05);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            border-radius: 7px;
+        }
+
+        @media (min-width: 1024px) {
+            .table-container {
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body id="page_body">
+
+    <main id="main" class="table-container">
+
+        <table class="table is-bordered is-fullwidth">
+            <thead>
+                <tr class="is-uppercase has-background-black">
+                    <th>
+                        TIME
+                    </th>
+                    <th id="d1" width="14%">
+                        Thứ 2
+                    </th>
+                    <th id="d2" width="14%">
+                        Thứ 3
+                    </th>
+                    <th id="d3" width="14%">
+                        Thứ 4
+                    </th>
+                    <th id="d4" width="14%">
+                        Thứ 5
+                    </th>
+                    <th id="d5" width="14%">
+                        Thứ 6
+                    </th>
+                    <th id="d6" width="14%">
+                        Thứ 7
+                    </th>
+                    <th id="d0" width="14%">
+                        chủ nhật
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="500">
+                    <td>
+                        <span class="tag is-dark">05:00</span>
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                </tr>
+                <tr id="530">
+                    <td>
+                        <span class="tag is-dark">05:30</span>
+                    </td>
+                </tr>
+                <tr id="600">
+                    <td>
+                        <span class="tag is-info">06:00</span>
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn sáng 🍔
+                        <br>
+                        Coffee ☕
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                </tr>
+                <tr id="630">
+                    <td>
+                        <span class="tag is-info">06:30</span>
+                    </td>
+                </tr>
+                <tr id="700">
+                    <td>
+                        <span class="tag is-info">07:00</span>
+                    </td>
+                </tr>
+                <tr id="730">
+                    <td>
+                        <span class="tag is-link">07:30</span>
+                    </td>
+                    <td rowspan="2" class="has-background-warning">
+                        Ra Đà Nẵng 🛵
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="2" class="has-background-warning">
+                        Ra Đà Nẵng 🛵
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                </tr>
+                <tr id="800">
+                    <td>
+                        <span class="tag is-link">08:00</span>
+                    </td>
+                </tr>
+                <tr id="830">
+                    <td>
+                        <span class="tag is-link">08:30</span>
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                </tr>
+                <tr id="900">
+                    <td>
+                        <span class="tag is-link">09:00</span>
+                    </td>
+                </tr>
+                <tr id="930">
+                    <td>
+                        <span class="tag is-link">09:30</span>
+                    </td>
+                </tr>
+                <tr id="1000">
+                    <td>
+                        <span class="tag is-link">10:00</span>
+                    </td>
+                </tr>
+                <tr id="1030">
+                    <td>
+                        <span class="tag is-link">10:30</span>
+                    </td>
+                </tr>
+                <tr id="1100">
+                    <td>
+                        <span class="tag is-link">11:00</span>
+                    </td>
+                </tr>
+                <tr id="1130">
+                    <td>
+                        <span class="tag is-danger">11:30</span>
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                    <td rowspan="4" class="has-background-success has-text-white">
+                        Ăn trưa 🍔
+                        <br>
+                        Nghỉ ngơi 😴
+                    </td>
+                </tr>
+                <tr id="1200">
+                    <td>
+                        <span class="tag is-danger">12:00</span>
+                    </td>
+                </tr>
+                <tr id="1230">
+                    <td>
+                        <span class="tag is-danger">12:30</span>
+                    </td>
+                </tr>
+                <tr id="1300">
+                    <td>
+                        <span class="tag is-danger">13:00</span>
+                    </td>
+                </tr>
+                <tr id="1330">
+                    <td>
+                        <span class="tag is-link">13:30</span>
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="8" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="6" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                </tr>
+                <tr id="1400">
+                    <td>
+                        <span class="tag is-link">14:00</span>
+                    </td>
+                </tr>
+                <tr id="1430">
+                    <td>
+                        <span class="tag is-link">14:30</span>
+                    </td>
+                </tr>
+                <tr id="1500">
+                    <td>
+                        <span class="tag is-link">15:00</span>
+                    </td>
+                </tr>
+                <tr id="1530">
+                    <td>
+                        <span class="tag is-link">15:30</span>
+                    </td>
+                </tr>
+                <tr id="1600">
+                    <td>
+                        <span class="tag is-link">16:00</span>
+                    </td>
+                </tr>
+                <tr id="1630">
+                    <td>
+                        <span class="tag is-link">16:30</span>
+                    </td>
+                    <td rowspan="4" class="has-background-primary has-text-white">
+                        Đá bóng ⚽
+                    </td>
+                    <td rowspan="2" class="has-background-warning">
+                        Về nhà 🏡
+                    </td>
+                    <td rowspan="4" class="has-background-primary has-text-white">
+                        Đá bóng ⚽
+                    </td>
+                    <td rowspan="2" class="has-background-success has-text-white">
+                        Thư giãn 😁
+                    </td>
+                    <td rowspan="2" class="has-background-success has-text-white">
+                        Thư giãn 😁
+                    </td>
+                </tr>
+                <tr id="1700">
+                    <td>
+                        <span class="tag is-link">17:00</span>
+                    </td>
+                </tr>
+                <tr id="1730">
+                    <td>
+                        <span class="tag is-warning">17:30</span>
+                    </td>
+                    <td rowspan="2" class="has-background-primary has-text-white">
+                        Chạy bộ 🏃‍♂️
+                    </td>
+                    <td rowspan="2" class="has-background-primary has-text-white">
+                        Tập bụng 💪
+                    </td>
+                    <td rowspan="2" class="has-background-primary has-text-white">
+                        Chạy bộ 🏃‍♂️
+                    </td>
+                    <td rowspan="2" class="has-background-primary has-text-white">
+                        Chạy bộ 🏃‍♂️
+                    </td>
+                    <td rowspan="2" class="has-background-primary has-text-white">
+                        Tập bụng 💪
+                    </td>
+                </tr>
+                <tr id="1800">
+                    <td>
+                        <span class="tag is-warning">18:00</span>
+                    </td>
+                </tr>
+                <tr id="1830">
+                    <td>
+                        <span class="tag is-warning">18:30</span>
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                    <td rowspan="2" class="has-background-warning">
+                        Về nhà 🏡
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                    <td rowspan="3" class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                        <br>
+                        Giải trí 😁
+                    </td>
+                </tr>
+                <tr id="1900">
+                    <td>
+                        <span class="tag is-warning">19:00</span>
+                    </td>
+                </tr>
+                <tr id="1930">
+                    <td>
+                        <span class="tag is-warning">19:30</span>
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Ăn tối 🍔
+                    </td>
+                </tr>
+                <tr id="2000">
+                    <td>
+                        <span class="tag is-warning">20:00</span>
+                    </td>
+                    <td rowspan="3" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="3" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="3" class="has-background-danger has-text-white">
+                        💛 Vk iu 🧡
+                    </td>
+                    <td rowspan="3" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="3" class="has-background-danger has-text-white">
+                        💛 Vk iu 🧡
+                        <br>
+                        Đọc sách 📖
+                    </td>
+                    <td rowspan="3" class="has-background-link has-text-white">
+                        Làm việc 💻
+                    </td>
+                    <td rowspan="3" class="has-background-danger has-text-white">
+                        💛 Vk iu 🧡<br>
+                        Đọc sách 📖
+                    </td>
+                </tr>
+                <tr id="2030">
+                    <td>
+                        <span class="tag is-warning">20:30</span>
+                    </td>
+                </tr>
+                <tr id="2100">
+                    <td>
+                        <span class="tag is-warning">21:00</span>
+                    </td>
+                </tr>
+                <tr id="2130">
+                    <td>
+                        <span class="tag is-warning">21:30</span>
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                    <td class="has-background-success has-text-white">
+                        Đọc sách 📖
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="8" class="has-background-dark has-text-white">
+                        <span class="is-family-code">
+                            22:00 - 05:00
+                        </span>
+                        <span>Ngủ ngon 😴</span>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script>
+        function scrollTo() {
+            var date = new Date();
+
+            $(`#d${date.getDay()}`).addClass('is-active');
+
+            const h = date.getHours();
+            const m = date.getMinutes() >= 30 ? '30' : '00';
+            const id = h + m;
+            console.log(id);
+            const current = $(`#${id}`);
+            $('tr').removeClass('is-active');
+            current.addClass('is-active');
+            $('html, body').animate({
+                'scrollTop': parseInt(current.offset().top)
+            }, 600);
+        };
+
+        $(document).ready(function () {
+            scrollTo();
+            setInterval(function () {
+                scrollTo();
+            }, 60000);
+        });
+    </script>
+</body>
+
+</html>

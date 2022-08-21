@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Category Page - Danh mục </title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_cover image is-3by1">
+      <img src="/themes/s2.jpg" _scr="#Post.Image" alt="IMG" />
+    </section>
+
+    <section class="section_bredcrumd py-4 wrap_mobile">
+      <div class="container">
+        <nav class="breadcrumb">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="wrap_mobile pb-6">
+      <div class="container">
+        <h1 class="is-size-2 is-size-4-mobile has-text-weight-light has-text-centered mb-5">
+          #Post.Name
+        </h1>
+        <ul class="columns is-multiline is-centered is-variable is-5-tablet is-3-mobile" data-repeat="true" data-rows="12" data-type="blog-list" data-source="#Post.Id" data-sort="0">
+          <li class="column is-one-third">
+            <a class="card" href="#Blog.Link">
+              <div class="image is-4by3">
+                <img src="#Blog.Image" alt="img">
+              </div>
+              <h3 class="card_title_top is-uppercase is-size-6-mobile">#Blog.Name</h3>
+              <p class="card_desc_bottom">#Blog.Desc</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Cover -->
+        <section id="cover" class="is_cover" style="background-image: url('/Themes/b6.jpg');">
+            <div class="container has-text-centered is-uppercase">
+                <h1 class="title">
+                    #Post.Name
+                </h1>
+                <div class="subtitle">
+                    #Post.Desc
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section_contact container wrap_mobile">
+            <ul class="columns is-multiline">
+                <!-- FAQ -->
+                <li class="column is-two-thirds">
+                    <ul id="faq_list" data-repeat="true" data-rows="0" data-type="content" data-source="faq">
+                        <li class="item">
+                            <div class="item_name">
+                                <span>#Element.Index.</span>
+                                <span>#Element.Name</span>
+                            </div>
+                            <div class="item_content content">
+                                #Element.Content
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Form -->
+                <li class="column is-one-third">
+                    <div id="faq_form">
+                        <div class="title is-6">
+                            Vui lòng điền vào mẫu dưới đây nếu có những câu hỏi cụ thể bạn muốn chúng tôi trả lời.
+                        </div>
+                        <div class="field">
+                            <label class="label">Họ và tên</label>
+                            <div class="control">
+                                <input id="faq_name" class="input" type="text" placeholder="Họ và tên"
+                                    data-required="true">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Điện thoại</label>
+                            <div class="control">
+                                <input id="faq_phone" class="input" type="number" placeholder="Điện thoại"
+                                    data-required="true">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input id="faq_email" class="input" type="email" placeholder="Email"
+                                    data-required="true">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Câu hỏi</label>
+                            <div class="control">
+                                <textarea id="faq_content" class="textarea" rows="5" placeholder="Nội dung câu hỏi"
+                                    data-required="true"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <a id="faq_btn" class="button is_main" onclick="sendFaq()">
+                                GỬI CÂU HỎI
+                            </a>
+                            <span id="faq_msg" class="has-text-danger"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+
+        function sendFaq() {
+            var code = 'faq';
+            var name = $('#faq_name').val();
+            var phone = $('#faq_phone').val();
+            var email = $('#faq_email').val();
+            var address = $('#faq_address').val();
+            var content = $('#faq_content').val();
+
+            if (checkRequired('faq_form')) {
+                $('#faq_btn').addClass('is-loading');
+                setTimeout(function () {
+                    $('#faq_btn').removeClass('is-loading');
+                    $('#faq_msg').html(`Đã gửi thông tin liên hệ !`);
+                }, 1000);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/APIv1/Form/Send",
+                    data: { code, name, phone, email, address, content },
+                    dataType: "json",
+                    success: function (res) {
+                        $('#faq_btn').removeClass('is-loading');
+                        if (res.status === true) {
+                            $('#faq_msg').html(`Đã gửi thông tin liên hệ !`);
+                            $('#faq_msg').attr('class', 'has-text-success');
+                        } else {
+                            $('#faq_msg').html(res.msg);
+                        }
+                    }
+                });
+            }
+            else {
+                $('#faq_msg').html('Vui lòng nhập đầy đủ thông tin');
+            }
+        }
+        function loadAfterDataDemo() {
+            $("#faq_list .item_name").click(function () {
+                $("#faq_list .item").removeClass("is_show");
+                $(this).parent().addClass('is_show');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

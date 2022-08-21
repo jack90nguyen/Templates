@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Cover -->
+        <section id="cover" class="is_cover" style="background-image: url('/Themes/b6.jpg');">
+            <div class="container has-text-centered is-uppercase">
+                <h1 class="title">
+                    #Post.Name
+                </h1>
+                <div class="subtitle">
+                    #Post.Desc
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section_contact container wrap_mobile">
+
+            <ul class="columns is-multiline is-variable is-6">
+                <li class="column is-full">
+                    <div class="content has-text-centered">
+                        <p>
+                            <span class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <span>Địa chỉ:</span>
+                            <span>#Config.ContactAddress</span>
+                        </p>
+                        <p>
+                            <span class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span>Email:</span>
+                            <a href="mailto:#Config.ContactMail1">#Config.ContactMail1</a>
+                        </p>
+                        <p>
+                            <span class="icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </span>
+                            <span>Hotline:</span>
+                            <a href="tel:#Config.Hotline1">#Config.Hotline1</a>
+                        </p>
+                        <div>
+                            #Post.Content
+                        </div>
+                    </div>
+                    <hr style="margin-bottom: 0px">
+                </li>
+                <!-- #Config.ContactMap -->
+                <li class="column is-half ">
+                    <div id="contact_map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5063647088286!2d108.21970445149776!3d16.03919234444547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e9468e9169%3A0x8c92615f975fc0cd!2zVGhp4bq_dCBL4bq_IFdlYnNpdGUgxJDDoCBO4bq1bmcgLSBPbmV0ZXouY29t!5e0!3m2!1svi!2s!4v1592881685825!5m2!1svi!2s"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </li>
+                <!-- Form -->
+                <li class="column is-half ">
+                    <div id="contact_form">
+                        <h2 class="title">
+                            LIÊN HỆ NGAY
+                        </h2>
+                        <div class="field">
+                            <input id="contact_name" class="input" type="text" placeholder="Họ và tên"
+                                data-required="true">
+                        </div>
+                        <div class="field">
+                            <input id="contact_phone" class="input" type="number" placeholder="Điện thoại"
+                                data-required="true">
+                        </div>
+                        <div class="field">
+                            <input id="contact_email" class="input" type="email" placeholder="Email"
+                                data-required="true">
+                        </div>
+                        <div class="field">
+                            <textarea id="contact_content" class="textarea" rows="5" placeholder="Nội dung"
+                                data-required="true"></textarea>
+                        </div>
+                        <div class="field is-grouped" style="align-items: center;">
+                            <div class="control">
+                                <a id="contact_btn" class="button is_main" onclick="sendContact()">
+                                    GỬI NGAY
+                                </a>
+                            </div>
+                            <div class="control">
+                                <span id="contact_msg" class="has-text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+        function sendContact() {
+            var code = 'contact';
+            var name = $('#contact_name').val();
+            var phone = $('#contact_phone').val();
+            var email = $('#contact_email').val();
+            var address = $('#contact_address').val();
+            var content = $('#contact_content').val();
+
+            if (checkRequired('contact_form')) {
+                $('#contact_btn').addClass('is-loading');
+                setTimeout(function () {
+                    $('#contact_btn').removeClass('is-loading');
+                    $('#contact_msg').html(`Đã gửi thông tin liên hệ !`);
+                }, 1000);
+
+                $.ajax({
+                    type: "POST",
+                    url: "/APIv1/Form/Send",
+                    data: { code, name, phone, email, address, content },
+                    dataType: "json",
+                    success: function (res) {
+                        $('#contact_btn').removeClass('is-loading');
+                        if (res.status === true) {
+                            $('#contact_msg').html(`Đã gửi thông tin liên hệ !`);
+                            $('#contact_msg').attr('class', 'has-text-success');
+                        } else {
+                            $('#contact_msg').html(res.msg);
+                        }
+                    }
+                });
+            }
+            else {
+                $('#contact_msg').html('Vui lòng nhập đầy đủ thông tin');
+            }
+        }
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

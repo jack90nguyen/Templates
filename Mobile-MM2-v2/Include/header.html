@@ -1,0 +1,48 @@
+<header id="header" class="has-background-white pt-2">
+    <div class="container">
+        <div class="navbar is-mobile font_14">
+            <div class="navbar-brand">
+                <a class="navbar-item header_logo p-0" href="/">
+                    <img src="/Images/logo.png" data-src="#Config.Logo" alt="#Config.Domain" />
+                </a>
+
+                <div class="navbar-item">
+                    <div class="dropdown is-hoverable is-right">
+                        <div class="dropdown-trigger">
+                            <span class="button color_main">
+                                <span class="icon font_14">
+                                    VN
+                                    <!-- #Language.Code -->
+                                </span>
+                            </span>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content" data-bind="true" data-type="language">
+                                <a id="language_1" class="dropdown-item" onclick="changeLanguage()">
+                                    Tiếng Việt
+                                </a>
+                                <a id="language_2" class="dropdown-item" onclick="changeLanguage()">
+                                    Tiếng Anh
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="navbar-burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-start" data-bind="true" data-rows="0" data-type="nav" data-source="header-nav">
+                    <a class="navbar-item" href="#Element.Link">
+                        #Element.Name
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

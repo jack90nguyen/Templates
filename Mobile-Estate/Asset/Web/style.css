@@ -1,0 +1,319 @@
+/* ====  Variables & Shared ==== */
+:root {
+    --color-main: #EF6C00;
+}
+.is_cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 20px;
+}
+.is_cover > img {
+    opacity: 0;
+}
+.page_loading:before {
+    content: "";
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(/Images/loading.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+}
+.test {
+    background-color: gray;
+    min-height: 100px;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color: var(--color-main);
+}
+.button.is_main {
+    color: #fff;
+    border-color: var(--color-main);
+    background-color: var(--color-main);
+}
+.feather {
+    font-size: inherit;
+}
+.is_font_14 {
+    font-size: 14px;
+}
+.is_one_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mobile_padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.title_s1 {
+    display: flex;
+    padding: 10px 20px;
+}
+.title_s1 .is_title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-main);
+}
+.has_navi {
+    position: relative;
+}
+.has_navi .is_navi_back {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #fff;
+    font-size: 3em;
+    line-height: 24px;
+    width: 42px;
+    z-index: 5;
+}
+.pagination-link.is-current {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+/* ====  Mobile UI ==== */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #333;
+}
+.container {
+    max-width: 500px;
+}
+#main {
+    min-height: 100vh;
+    padding-bottom: 52px;
+}
+#header {
+    padding: 20px;
+}
+#header img {
+    display: block;
+}
+#header h1 {
+    padding-top: 20px;
+}
+#footer {
+    background: #fff;
+    position: fixed;
+    z-index: 1001;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 2px 0px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+}
+#footer .level-item .icon {
+    color: #757575;
+}
+#footer .level-item .icon.is-active {
+    color: var(--color-main);
+}
+#footer .level-item .feather {
+    font-size: 24px;
+}
+.section_qicknews {
+    padding-top: 25px;
+}
+.list_quick li {
+    padding: 6px 20px;
+}
+.list_quick .box {
+    padding: 10px 15px;
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.12);
+    background: var(--color-main);
+    color: #fff;
+}
+.list_quick .box label {
+    float: left;
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.9;
+}
+.section_products {
+    padding-top: 50px;
+}
+.list_product {
+    padding: 10px 0px;
+}
+.list_product li {
+    padding: 10px 20px;
+}
+.item_product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.item_product .is_cover {
+    height: 200px;
+    position: relative;
+}
+.item_product .is_cover .tag {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.item_product .is_info {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    padding: 30px 15px 15px;
+    background-color: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 100%);
+}
+.section_blogs {
+    padding-bottom: 20px;
+}
+.list_blog {
+    padding: 10px 0px;
+}
+.list_blog li {
+    padding: 10px 20px;
+}
+.item_blog .is_cover {
+    height: 110px;
+    border-radius: 14px;
+}
+.item_blog .is_title {
+    max-height: 66px;
+    overflow: hidden;
+    line-height: 22px;
+}
+.item_blog .is_desc {
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.title_blog {
+    padding-top: 150px;
+}
+.title_blog .is_title {
+    width: 100%;
+    color: #fff;
+    padding: 50px 20px 40px;
+    background-color: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 100%);
+}
+.title_blog h1 {
+    line-height: 1.4;
+    padding-bottom: 10px;
+}
+.content_blog {
+    margin-top: -20px;
+    border-radius: 20px 20px 0px 0px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+.info_product {
+    padding: 0px 0px 20px;
+}
+.info_product .is_price {
+    padding-bottom: 20px;
+}
+.info_product .is_price .icon {
+    background: var(--color-main);
+    color: #fff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+}
+.info_product .column {
+    text-align: center;
+}
+.info_product .column .feather {
+    color: var(--color-main);
+    font-size: 24px;
+}
+.info_product .column span {
+    display: block;
+    font-size: 13px;
+    color: gray;
+}
+.section_product .js_tab  {
+    min-height: 80vh;
+}
+#tabs_product.is_sticky~.js_tab {
+    padding-top: 60px;
+}
+#tab_contact .icon {
+    color: #ef6c00;
+    border: 1px solid #ef6c00;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 26px;
+    height: 26px;
+}
+#tabs_product.is_sticky {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+    padding: 0px 20px;
+}
+#tabs_product.is_sticky ul {
+    max-width: 500px;
+    margin: 0px auto;
+}
+.contact_map {
+    position: relative;
+}
+.contact_map iframe {
+    height: 320px;
+}
+.contact_map .is_title {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #fff;
+    padding: 50px 20px 40px;
+    background-color: rgba(0,0,0,0.5);
+    background: linear-gradient(0deg,rgba(0,0,0,.6) 50%,rgba(0,0,0,0) 100%);
+}
+.contact_info {
+    margin-top: -20px;
+    border-radius: 20px 20px 0px 0px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 30px 20px;
+}
+.section_send .title_blog {
+    padding-top: 100px;
+}
+.section_send .content_blog {
+    padding: 30px 20px;
+}
+.search_filter {
+    padding: 20px;
+}
+#search_results {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,107 @@
+:root {
+   --color-main: #D20404;
+   --color-extra: #FA5D5D;
+   --color-text: #333;
+   --color-bg: #f9f9f9;
+}
+.image img {
+	object-fit: cover;
+}
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: var(--color-text);
+}
+.container {
+    max-width: 330px !important;
+    width: 100%;
+}
+.navbar-menu {
+    box-shadow: none;
+}
+.navbar-brand {
+    align-items: center;
+}
+.navbar-brand .button, .navbar-burger {
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+}
+.header_logo {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.header_logo img {
+    max-height: 40px;
+    height: 40px;
+}
+#main {
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+#footer {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+.is_radius {
+    border-radius: 16px;
+    overflow: hidden;
+}
+.is_radius .is_radius {
+    border-radius: 12px;
+}
+.is_scroll {
+    overflow-y: auto;
+}
+.video_item {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    background: #fff;
+    padding: .75rem;
+}
+.video_item .image {
+    border-radius: 10px;
+}
+.is_video .is_play {
+    font-size: 3rem;
+}
+.video_item .is_video .is_play {
+    font-size: 1.5rem;
+}
+li:first-child .video_item .is_video .is_play {
+    font-size: 3rem;
+}
+li:first-child .video_item {
+    padding: 0px;
+    box-shadow: none;
+    background: transparent;
+}
+li:first-child .video_item .columns {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+}
+li:first-child .video_item .column {
+    width: 100% !important;
+    padding: 0px;
+}
+li:first-child .video_item .text_2_line {
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+.grid_images {
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+}
+.grid_images .grid-item {
+    width: 50%;
+    padding: .5rem;
+}

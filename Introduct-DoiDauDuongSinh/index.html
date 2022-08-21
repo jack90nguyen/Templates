@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page - Trang chủ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="home_slide">
+      <div class="slider-wrapper">
+        <div class="nivoSlider" data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+          <a href="#Element.Link">
+            <img src="#Element.Image" data-thumb="#Element.Image" alt="IMG" title="#htmlcaption#Element.Id" />
+          </a>
+        </div>
+      </div>
+      <div class="is-hidden" data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+        <div id="htmlcaption#Element.Id" style="display:none">
+          <div class="container">
+            <div class="font_title is-size-2 is-size-5-mobile mb-3 aniview" data-av-animation="bounceInLeft">
+              #Element.Name
+            </div>
+            <div class="is-size-6 is-hidden-mobile aniview" data-av-animation="bounceInLeft">
+              #Element.Desc
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_about wrap_mobile">
+      <div class="container">
+        <ul class="columns is-gapless">
+          <li class="column is-one-third">
+            <div class="image">
+              <img src="/themes/b1.jpg" alt="img">
+            </div>
+          </li>
+          <li class="column is-two-thirds">
+            <div class="p-6 my-2">
+              <h2 class="title is-3 font_title">GIỚI THIỆU</h2>
+              <div class="has-text-grey mb-5">
+                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+              </div>
+              <ul class="columns is-multiline is-variable is-5" data-repeat="true" data-rows="6" data-type="icon-text" data-source="home-about">
+                <li class="column is-half">
+                  <div class="icon-text">
+                    <span class="icon is-large color_main mr-5">
+                      <i class="fas fa-procedures is-size-2" _class="#Element.Image"></i>
+                    </span>
+                    <div>
+                      <p class="has-text-dark has-text-weight-bold">#Element.Name</p>
+                      <p class="has-text-grey font_14">#Element.Desc</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home_booking wrap_mobile" style="background-image: url('/themes/s1.jpg');">
+      <div class="py-6" style="background-color: rgba(0,0,0,.4)">
+        <div class="container py-6">
+          <div style="max-width: 700px; margin: 0px auto;">
+            <div class="has-text-centered mb-6">
+              <h2 class="title is-3 font_title has-text-white">
+                Đặt lịch hẹn dịch vụ
+              </h2>
+              <div class="has-text-white mb-5">
+                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+              </div>
+            </div>
+            <div class="card p-6 bg_main">
+              <ul class="columns is-multiline is-variable is-4">
+                <li class="column is-half">
+                  <input type="text" class="input is-white has-text-weight-bold" placeholder="Nhập họ và tên" data-name data-required>
+                </li>
+                <li class="column is-half">
+                  <input type="text" class="input is-white has-text-weight-bold" placeholder="Nhập số điện thoại" data-phone data-required>
+                </li>
+                <li class="column is-half">
+                  <input type="text" class="input is-white has-text-weight-bold" placeholder="Thời gian hẹn" data-time data-required>
+                </li>
+                <li class="column is-half">
+                  <input type="text" class="input is-white has-text-weight-bold" placeholder="Dịch vụ muốn đặt" data-service data-required>
+                </li>
+                <li class="column is-full">
+                  <textarea class="textarea is-white has-text-weight-bold" rows="4" placeholder="Ghi chú hoặc yêu cầu khác..." data-content></textarea>
+                </li>
+                <li class="column is-full">
+                  <button class="button is-fullwidth is-dark" onclick="booking()" data-btn>
+                    <span class="has-text-weight-semibold font_14">ĐẶT LỊCH</span>
+                    <span class="icon ml-3">
+                      <i class="fas fa-arrow-right is-size-6"></i>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_service wrap_mobile py-6">
+      <div class="container py-6">
+        <div class="has-text-centered mb-6">
+          <h2 class="title is-3 font_title">
+            Dịch vụ của chúng tôi
+          </h2>
+          <div class="has-text-grey mb-5">
+            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+          </div>
+        </div>
+
+        <ul class="columns is-multiline is-variable is-5" data-repeat="true" data-rows="6" data-type="icon-text" data-source="home-service">
+          <li class="column is-one-third">
+            <div class="card has-text-centered">
+              <div class="is-size-1 color_main">
+                <i class="fas fa-procedures" _class="#Element.Image"></i>
+              </div>
+              <h3 class="has-text-weight-bold is-size-4 mt-4 mb-3">#Element.Name</h3>
+              <div class="has-text-grey text_4_line mb-3" style="height: 6em;">#Element.Desc</div>
+              <a class="button is-white is-medium" href="#Element.Link" title="Chi tiết">
+                <span class="icon color_main">
+                  <i class="fas fa-arrow-right is-size-6"></i>
+                </span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap_mobile py-6 bg_bg">
+      <div class="container pt-6">
+        <h2 class="title is-3 font_title">
+          Hình ảnh khách hàng
+        </h2>
+        <div class="has-text-grey">
+          Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+          Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+        </div>
+      </div>
+      <div class="p-6">
+        <ul class="columns is-multiline" data-bind="true" data-rows="8" data-type="images-childs" data-source="GalleryID">
+          <li class="column is-one-quarter">
+            <a class="image is-square js_gallery" href="#Image.Link" data-group="gallery">
+              <img src="#Image.Thumb" alt="#Image.Name">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home_video wrap_mobile py-6">
+      <div class="container">
+        <div class="card" style="background-image: url('http://goidauduongsinhdanang.com/upload/images/202208/100942-img-2672.jpg');">
+          <ul class="columns is-multiline is-gapless is-vcentered">
+            <li class="column is-half">
+              <div class="p-6">
+                <h2 class="title is-3 font_title has-text-white">
+                  Tiêu đề của Video
+                </h2>
+                <div class="has-text-white">
+                  Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                  Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                </div>
+              </div>
+            </li>
+            <li class="column is-half has-text-centered">
+              <a class="js_play_video" href="https://www.youtube.com/watch?v=qAQHz2zPFFQ">
+                <span class="icon is-large animated infinite zoomIn">
+                  <i class="fas fa-play is-size-4"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="home_feedback" class="home_feedback wrap_mobile py-6">
+      <div class="container">
+        <h2 class="title is-3 font_title">
+          Phản hồi của khách hàng
+        </h2>
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul data-repeat="true" data-rows="12" data-type="image-text" data-source="home-feedback">
+              <li>
+                <div class="feedback_item">
+                  <div class="item_desc">
+                    #Element.Content
+                  </div>
+                  <div class="item_avatar">
+                    <img src="#Element.Image" alt="avatar">
+                    <p>
+                      <span class="has-text-weight-semibold font_14">#Element.Name</span>
+                      <span class="has-text-grey is-size-7">#Element.Desc</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="jcarousel-pagination"></div>
+          <div class="jcarousel-control is-hidden">
+            <a class="jcarousel-control-prev">prev</a>
+            <a class="jcarousel-control-next">next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap_mobile py-6">
+      <div class="container">
+        <h2 class="title is-3 font_title">
+          Tin tức khuyến mãi
+        </h2>
+        <div class="has-text-grey">
+          Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+          Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+        </div>
+        <ul class="columns is-variable is-5 mt-4" data-repeat="true" data-rows="3" data-type="blogs" data-source="BlogID" data-sort="0">
+          <li class="column is-one-third">
+            <div class="card" style="overflow: hidden;">
+              <a class="image is-5by3" href="#Blog.Link">
+                <img src="#Blog.Thumb" alt="IMG" />
+              </a>
+            </div>
+            <h3 class="has-text-weight-bold mt-4" style="font-size: 18px;">
+              <a class="has-text-dark text_2_line" href="#Blog.Link">
+                #Blog.Name
+              </a>
+            </h3>
+            <div class="has-text-grey font_14 text_3_line mt-2">#Blog.Desc</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script src="/scripts/jquery.nivo.slider.js"></script>
+  <script src="/scripts/jquery.jcarousel.min.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+      $('.home_slide .nivoSlider').nivoSlider({
+        manualAdvance: false,
+        effect: 'random',
+        animSpeed: 1000,
+        pauseTime: 5000,
+        pauseOnHover: true
+      });
+
+      var jc_feedback = $('.home_feedback .jcarousel');
+      jc_feedback.on('jcarousel:reload jcarousel:create', function () {
+        var width = jc_feedback.innerWidth();
+        if (width >= 1000)
+          width = width / 3;
+        else if (width >= 768)
+          width = width / 2;
+        jc_feedback.jcarousel('items').css('width', width + 'px');
+      })
+        .jcarousel({
+          wrap: 'circular',
+          animation: 'slow'
+        })
+        .jcarouselAutoscroll({ autostart: true })
+        .hover(function () {
+          $(this).jcarouselAutoscroll('stop');
+        }, function () {
+          $(this).jcarouselAutoscroll('start');
+        });
+
+      $('.home_feedback .jcarousel-pagination')
+        .jcarouselPagination({
+          item: function (page) {
+            return '<a>' + page + '</a>';
+          }
+        })
+        .on('jcarouselpagination:active', 'a', function () {
+          $(this).addClass('active');
+        })
+        .on('jcarouselpagination:inactive', 'a', function () {
+          $(this).removeClass('active');
+        });
+    }
+    function booking() {
+      const content = `Dịch vụ: ${$('[data-service]').val()}<br/>
+        Thời gian: ${$('[data-time]').val()}<br/>
+        Ghi chú: ${$('[data-content]').val()}`;
+
+      const data = {
+        code: 'booking',
+        name: $('[data-name').val(),
+        phone: $('[data-phone]').val(),
+        email: '',
+        address: '',
+        content: content,
+      }
+
+      formSend(data, 'Đã gửi thông tin lịch hẹn!');
+    }
+  </script>
+
+</body>
+
+</html>

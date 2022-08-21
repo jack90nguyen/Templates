@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Services Page - Danh sách dịch vụ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_bredcrumd py-4">
+      <div class="container">
+        <nav class="breadcrumb is-size-7 has-text-weight-medium">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="pb-5" data-bind="true" data-type="post" data-source="ID">
+      <div class="container">
+        <div class="is-size-4 has-text-weight-medium mb-3">
+          <a href="#Data.Link">Các loại hình dịch vụ</a>
+        </div>
+        <ul class="service_list columns is-multiline is-gapless" data-repeat="true" data-rows="5" data-type="Blogs"
+          data-source="#Post.Id">
+          <li class="column is-one-fifth">
+            <div class="service_item p-5 has-text-centered">
+              <a class="image is-square" href="#Blog.Link">
+                <img src="#Blog.Thumb" alt="img">
+              </a>
+              <h3 class="font_title mt-5 mb-3">
+                <a href="#Blog.Link">#Blog.Name</a>
+              </h3>
+              <div class="has-text-grey is-size-7">
+                #Blog.Desc
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pt-5 pb-6">
+      <div class="container">
+        <div class="is-size-4 has-text-weight-medium mb-4">
+          <a href="#Data.Link">Báo chi nói về chúng tôi</a>
+        </div>
+        <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="9" data-type="blogs"
+          data-source="#Data.Id" data-sort="1">
+          <li class="column is-one-third blog_item">
+            <div class="card">
+              <div class="card-image">
+                <div class="image is-4by3" href="#Blog.Link">
+                  <img src="#Blog.Thumb" alt="img">
+                </div>
+              </div>
+            </div>
+            <h3 class="has-text-weight-medium mt-3 mb-2">
+              <a href="#Blog.Link">#Blog.Name</a>
+            </h3>
+            <div class="item_attr font_14 text_1_line mb-1" data-type="attributes" data-source="post">
+              <span>5m x 20m</span>
+              <span>1.2 tỷ</span>
+              <span>Ninh bình</span>
+              <span>#Attribute.Value</span>
+            </div>
+            <div class="has-text-grey font_14 text_2_line">
+              #Blog.Desc
+            </div>
+          </li>
+        </ul>
+        <div class="has-text-centered pt-5">
+          <a class="button is_more" href="#Data.Link">
+            <span class="font_14 has-text-weight-semibold">Xem thêm các dự án thực tế</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+    function addFavorite(item) {
+      $(item).toggleClass('is_yes');
+      console.log('Add Favorite ' + item.dataset.id);
+    }
+  </script>
+
+</body>
+
+</html>

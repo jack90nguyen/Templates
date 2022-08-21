@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page - Trang chủ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="home_slide">
+      <div class="slider-wrapper">
+        <div class="nivoSlider" data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+          <a href="#Element.Link">
+            <img src="#Element.Image" data-thumb="#Element.Image" alt="IMG" title="#htmlcaption#Element.Id" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_search is-hidden-mobile">
+      <div class="home_search_bar">
+        <ul class="columns is-vcentered is-gapless">
+          <li class="column">
+            <label>Loại nhà</label>
+            <div class="select">
+              <select>
+                <option value="">Chọn loại nhà</option>
+                <option value="637719167337774914">Nhà cấp 4</option>
+                <option value="637719167957992853">Nhà dịch vụ</option>
+                <option value="637719168113394190">Nhà phố</option>
+                <option value="637719168265909652">Khách sạn - Căn hộ cho thuê</option>
+              </select>
+            </div>
+          </li>
+          <li class="column">
+            <label>Chiều rộng</label>
+            <div class="select">
+              <select>
+                <option value="">Chọn số (m²)</option>
+              </select>
+            </div>
+          </li>
+          <li class="column">
+            <label>Chiều dài</label>
+            <div class="select">
+              <select>
+                <option value="">Chọn số (m²)</option>
+              </select>
+            </div>
+          </li>
+          <li class="column">
+            <label>Số phòng ngủ</label>
+            <div class="select">
+              <select>
+                <option value="">Chọn số lượng</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <button class="button is-rounded is-medium is_gradient">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home_service wrap_mobile py-6">
+      <div class="container">
+        <ul class="columns is-multiline is-mobile is-variable is-2" data-repeat="true" data-rows="6"
+          data-type="image-text" data-source="home-service">
+          <li class="column is-2-tablet is-half-mobile">
+            <a class="service_item has-text-centered">
+              <div class="item_icon">
+                <img src="/themes/icons/21.png" alt="icon">
+              </div>
+              <h2 class="item_title font_title mb-2 mt-4">
+                Element.Name
+              </h2>
+              <div class="item_desc text_4_line is-size-7 has-text-grey">
+                #Element.Desc
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home_products wrap_mobile py-6" data-bind="true" data-type="post" data-source="ID">
+      <div class="container">
+        <div class="font_title is-size-3 is-size-4-mobile mb-4">
+          1000+ Mẫu thiết kế nhà đẹp ở Việt Nam
+        </div>
+        <ul class="columns is-multiline is-mobile is-variable is-4-tablet is-2-mobile" data-repeat="true" data-rows="12"
+          data-type="products" data-source="#Data.Id" data-sort="5">
+          <li class="column is-one-quarter-tablet is-half-mobile product_item">
+            <div class="card item_img">
+              <a class="image is-square" href="#Product.Link">
+                <img src="#Product.Thumb" alt="img">
+              </a>
+              <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+            </div>
+            <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
+              <img class="mr-2" src="/themes/icons/04.png" alt="icon">
+              <span>Thiết kế bởi STBV</span>
+            </div>
+            <h3 class="font_14_mobile text_2_line mb-1">
+              <a href="#Product.Link">#Product.Name</a>
+            </h3>
+            <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post"
+              data-rows="3">
+              <span>#Attribute.Name #Attribute.Value</span>
+            </div>
+            <div class="item_price mt-3 is-size-7-mobile">
+              #Product.Price
+            </div>
+          </li>
+        </ul>
+        <div class="has-text-centered pt-5">
+          <a class="button is_gradient is-rounded" href="#">
+            <span class="font_14 has-text-weight-semibold">Xem thêm mẫu nhà đẹp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_ads wrap_mobile py-6">
+      <div class="container">
+        <a class="image" href="#">
+          <img src="/themes/home-ads.png" alt="img">
+        </a>
+      </div>
+    </section>
+
+    <section class="home_feedback wrap_mobile py-6">
+      <div class="container">
+        <div class="font_title is-size-3 is-size-4-mobile mb-4">
+          Khách hàng nói gì về Siêu Thị Bản Vẽ
+        </div>
+        <div class="jcarousel-wrapper">
+          <div class="jcarousel">
+            <ul data-repeat="true" data-rows="12" data-type="image-text" data-source="home-feedback">
+              <li>
+                <div class="feedback_item">
+                  <div class="item_desc">
+                    Element.Content Tôi đã chọn được thiết kế rất đẹp từ Siêu Thị Bản Vẽ. Nhân viên hỗ trợ nhiệt tình.
+                    Tôi triển khai xây nhà rất giống với thiết kế. Ngoài ra tôi được nhân viên đến đo đạc thực tế.
+                    <br>
+                    Cảm ơn!
+                  </div>
+                  <div class="item_avatar">
+                    <img src="#Element.Image" alt="avatar">
+                    <p>
+                      <span class="has-text-weight-semibold font_14">Element.Name</span>
+                      <span class="has-text-grey is-size-7">Element.Desc</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="jcarousel-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_blog wrap_mobile py-6" data-bind="true" data-type="post" data-source="ID">
+      <div class="container">
+        <div class="font_title is-size-3 is-size-4-mobile mb-4">
+          <a href="#Data.Link">#Data.Name</a>
+        </div>
+        <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="3" data-type="blogs"
+          data-source="#Data.Id" data-sort="1">
+          <li class="column is-one-third blog_item">
+            <div class="card">
+              <div class="card-image">
+                <div class="image is-4by3" href="#Blog.Link">
+                  <img src="#Blog.Thumb" alt="img">
+                </div>
+              </div>
+            </div>
+            <div class="has-text-success has-text-weight-medium is-size-7 mt-2 mb-1" data-type="tags" data-source="post"
+              data-rows="1">
+              #Tag.Name
+            </div>
+            <h3 class="has-text-weight-medium mb-1">
+              <a href="#Blog.Link">#Blog.Name</a>
+            </h3>
+            <div class="has-text-grey font_14 text_2_line">
+              #Blog.Desc
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="home_introduct wrap_mobile pt-6 pb-4">
+      <div class="container">
+        <div class="font_title is-size-3 is-size-4-mobile mb-4">
+          Hệ thống siêu thị khắp cả nước
+        </div>
+        <div class="card py-6 bg_main has-text-white">
+          <ul class="columns is-multiline is-mobile is-gapless" data-repeat="true" data-rows="4" data-type="icon-text"
+            data-source="home-introduct">
+            <li class="column is-one-quarter-tablet is-half-mobile has-text-centered">
+              <div class="is-size-3 is-size-5-mobile has-text-weight-medium mb-4">
+                <!-- Element.Name -->
+                10,000+
+              </div>
+              <div class="is-flex is-vcentered is-centered">
+                <span class="icon mr-2">
+                  <i class="fas fa-store"></i>
+                </span>
+                <span class="is-size-7-mobile">Element.Desc</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="home_contract wrap_mobile pb-6">
+      <div class="container">
+        <div class="home_contact card p-6 is_cover" style="background-image: url('/themes/home-contact.png');">
+          <div class="card-content py-6">
+            <ul class="columns is-variable is-6">
+              <li class="column is-half is-hidden-mobile"></li>
+              <li class="column is-half">
+                <div class="font_title is-size-2 is-size-4-mobile">
+                  Chưa chọn được thiết
+                  <br>
+                  kế phù hợp?
+                </div>
+                <div class="mt-4 font_14_mobile">
+                  Chúng tôi tư vấn hoàn toàn miễn phí
+                </div>
+                <div class="field is-grouped pt-6 pb-5 px-0">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="Số điện thoại" data-phone data-required>
+                  </div>
+                  <div class="control">
+                    <button class="button is_gradient" onclick="contact()" data-btn>
+                      Liên hệ ngay
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script src="/scripts/jquery.nivo.slider.js"></script>
+  <script src="/scripts/jquery.jcarousel.min.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+      $('.home_slide .nivoSlider').nivoSlider({
+        manualAdvance: true,
+        effect: 'random',
+        animSpeed: 1000,
+        pauseTime: 5000,
+        pauseOnHover: true
+      });
+
+      var jc_feedback = $('.home_feedback .jcarousel');
+      jc_feedback.on('jcarousel:reload jcarousel:create', function () {
+        var width = jc_feedback.innerWidth();
+        if (width >= 1000)
+          width = width / 3;
+        else if (width >= 768)
+          width = width / 2;
+        jc_feedback.jcarousel('items').css('width', width + 'px');
+      })
+        .jcarousel({
+          wrap: 'circular',
+          animation: 'slow'
+        })
+        .jcarouselAutoscroll({ autostart: true })
+        .hover(function () {
+          $(this).jcarouselAutoscroll('stop');
+        }, function () {
+          $(this).jcarouselAutoscroll('start');
+        });
+
+      $('.home_feedback .jcarousel-pagination')
+        .jcarouselPagination({
+          item: function (page) {
+            return '<a>' + page + '</a>';
+          }
+        })
+        .on('jcarouselpagination:active', 'a', function () {
+          $(this).addClass('active');
+        })
+        .on('jcarouselpagination:inactive', 'a', function () {
+          $(this).removeClass('active');
+        });
+    }
+    function contact() {
+      const data = {
+        code: 'contact',
+        name: '',
+        phone: $('[data-phone]').val(),
+        email: '',
+        address: '',
+        content: ''
+      }
+      formSend(data, 'Đã gửi thông tin liên hệ!');
+    }
+  </script>
+
+</body>
+
+</html>

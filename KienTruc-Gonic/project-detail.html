@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project Detail - Chi tiết dự án</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main" class="bg_bg">
+
+    <section class="pt-4">
+      <div class="container">
+        <nav class="breadcrumb font_14">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="py-5 wrap_mobile">
+      <div class="container">
+        <h1 class="is-size-4 has-text-weight-bold has-text-black mb-4" data-bind="true" data-type="post"
+          data-source="#Post.Id">
+          #Post.Name
+        </h1>
+
+        <!-- <ul class="columns is-centered is-multiline" data-bind="true" data-type="images" data-source="#Post.Id">
+          <li class="column is-one-third">
+            <div class="card">
+              <a class="image is-1by1 js_gallery" href="#Image.Link" data-group="project">
+                <img src="#Image.Link" alt="#Image.Name">
+              </a>
+            </div>
+          </li>
+        </ul> -->
+
+        <article class="content" data-repeat="true" data-rows="3">
+          <!-- #Post.Content -->
+          <div>
+            <p>
+              Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần
+              quản trị
+              của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+              trong
+              phần quản trị của website.
+            </p>
+            <p style="text-align: center;"><img style="width: 100%;" src="#Element.Image" alt="img">
+            </p>
+            <p>Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+              phần quản trị của website.</p>
+          </div>
+        </article>
+
+        <div class="is-size-3 has-text-weight-bold has-text-black mb-4">
+          Dự án liên quan
+        </div>
+        <ul class="columns is-multiline" data-repeat="true" data-rows="4" data-type="blogs" data-source="#Post.ParentId"
+          data-sort="5">
+          <li class="column is-one-quarter">
+            <div class="card" data-repeat="true" data-rows="1" data-type="blogs" data-source="CategoryID" data-sort="6">
+              <div class="card-image">
+                <a class="image is-1by1" href="#Blog.Link">
+                  <img src="#Blog.Thumb" alt="img">
+                </a>
+              </div>
+              <div class="card-content p-3">
+                <a class="is-block mb-2" href="#Blog.Link">
+                  <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+                </a>
+                <div class="has-text-grey text_3_line font_14">#Blog.Desc</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/Scripts/jquery-1.8.2.min.js"></script>
+  <script src="/Scripts/swiped-events.js"></script>
+  <script src="/Scripts/jquery.aniview.js"></script>
+  <script src="/Scripts/onetez.js"></script>
+  <script src="/Scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+  </script>
+
+</body>
+
+</html>

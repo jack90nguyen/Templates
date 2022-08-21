@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog List</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main" class="background_bg">
+        <!-- Apps -->
+        <section id="app" class="py-6 container">
+            <div class="columns is-vcentered is-centered">
+                <div id="step1" class="column is-half">
+                    <h1 class="title is-4 is-size-5-mobile color_main">
+                        Dự toán nhà phố
+                    </h1>
+                    <div class="mb-3">
+                        Ứng dụng dự toán nhà phố do chính Milimet Vuông phát triển, có độ chính xác trên 95%, đơn giá
+                        thi công xây dựng được cập nhật thường xuyên theo tỉnh thành.
+                        Là ứng dụng dự toán thông minh, sau khi có kết quả sẽ gợi ý các công trình phù hợp với yêu cầu
+                        của chủ đầu tư.
+                    </div>
+                    <div class="field">
+                        <label class="label">Địa điểm xây dựng</label>
+                        <div class="select is-fullwidth">
+                            <select id="diadiem">
+                                <option value="0">chọn địa điểm xây dựng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Loại công trình</label>
+                        <div class="select is-fullwidth">
+                            <select id="congtrinh">
+                                <option value="nhapho">Nhà phố</option>
+                                <option value="bietthu">Biệt thự</option>
+                                <option value="cap4">Nhà cấp 4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field pt-2">
+                        <a class="button is-danger is-fullwidth" onclick="submitStep1()">Tiếp theo</a>
+                    </div>
+                </div>
+
+                <div id="step2" class="column is-four-fifths is-hidden">
+                    <ul class="columns is-multiline is-variable is-2">
+                        <li class="column is-half">
+                            <label class="label">Diện tích đất</label>
+                            <input class="input" type="number" id="dientichdat" placeholder="Nhập diện tích đất m2">
+                        </li>
+                        <li class="column is-half">
+                            <label class="label">Diện tích xây dựng</label>
+                            <input class="input" type="number" id="dientichxaydung"
+                                placeholder="Nhập diện tích xây dựng m2">
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Số tầng (không tính tum mái)</label>
+                            <input class="input" type="number" id="sotang" placeholder="Nhập số tầng">
+                        </li>
+                        <li class="column is-half is_private for_cap4 for_bietthu">
+                            <label class="label">Diện tích tầng lửng (nếu có)</label>
+                            <input class="input" type="number" id="tanglung" placeholder="Nhập diện tích tầng lửng">
+                        </li>
+                        <li class="column is-full is_private for_nhapho for_bietthu">
+                            <span class="has-text-weight-semibold color_main">Hướng dẫn:</span>
+                            Số tầng là chưa bao gồm tum mái (ví dụ 2 tầng và tum mái 50m2), trường hợp nếu nhà 3 tầng,
+                            không tum mái, nhưng tầng 3 muốn lợp tôn toàn bộ thì nhập “số tầng nhập là 02 tầng, diện
+                            tích tum mái bằng diện tích tầng 2”
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Kết cấu tum mái</label>
+                            <div class="select is-fullwidth">
+                                <select id="tummai_ketcau">
+                                    <option value="0">Chọn kết cấu tum mái</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Diện tích tum mái</label>
+                            <input class="input" type="number" id="tummai_dientich"
+                                placeholder="Nhập diện tích tum mái">
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Thang máy</label>
+                            <div class="select is-fullwidth">
+                                <select id="thangmay_loai">
+                                    <option value="0">Không dùng thang máy</option>
+                                    <option value="1">Có thang máy</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Số điểm dừng thang máy</label>
+                            <input class="input" type="number" id="thangmay_diemdung"
+                                placeholder="Nhập số điểm dừng thang máy">
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Tầng hầm / bán hầm</label>
+                            <div class="select is-fullwidth">
+                                <select id="tangham_loai"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Diện tích tầng hầm</label>
+                            <input class="input" type="number" id="tangham_dientich"
+                                placeholder="Nhập diện tích tầng hầm">
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Hồ bơi</label>
+                            <div class="select is-fullwidth">
+                                <select id="hoboi_loai">
+                                    <option value="0">Không có hồ bơi</option>
+                                    <option value="1">Có hồ bơi</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho for_bietthu">
+                            <label class="label">Diện tích hồ bơi</label>
+                            <input class="input" type="number" id="hoboi_dientich" placeholder="Nhập diện tích hồ bơ">
+                        </li>
+                        <li class="column is-half">
+                            <label class="label">Khu đất</label>
+                            <div class="select is-fullwidth">
+                                <select id="khudat"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho">
+                            <label class="label">Nhà lân cận</label>
+                            <div class="select is-fullwidth">
+                                <select id="nhalancan"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_bietthu for_cap4">
+                            <label class="label">Vị trí nhà</label>
+                            <div class="select is-fullwidth">
+                                <select id="vitrinha"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_nhapho">
+                            <label class="label">Mặt tiền</label>
+                            <div class="select is-fullwidth">
+                                <select id="mattien"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half">
+                            <label class="label">Kết cấu móng</label>
+                            <div class="select is-fullwidth">
+                                <select id="ketcaumong"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_cap4">
+                            <label class="label">Kết cấu mái</label>
+                            <div class="select is-fullwidth">
+                                <select id="ketcaumai"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_cap4 for_bietthu">
+                            <label class="label">Sân vườn</label>
+                            <div class="select is-fullwidth">
+                                <select id="sanvuon"></select>
+                            </div>
+                        </li>
+                        <li class="column is-half is_private for_bietthu">
+                            <label class="label">Phong cách</label>
+                            <div class="select is-fullwidth">
+                                <select id="phongcach"></select>
+                            </div>
+                        </li>
+                        <li class="column is-full is_private for_nhapho for_bietthu">
+                            <span class="has-text-weight-semibold color_main">Hướng dẫn:</span>
+                            Đối với nền đất yếu, nhà xây cao trên 3 tầng nên chọn móng bè hoặc móng cọc.
+                            <br>
+                            Nếu nền đất thổ cư ổn định lâu năm nhưng nhà xây cao hơn 3 tầng nên chọn móng băng.
+                        </li>
+                        <li class="column is-full">
+                            <div class="buttons">
+                                <a class="button is-danger" onclick="submitStep2()">Tính ngay</a>
+                                <a class="button" onclick="reset()">Nhập lại</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="step3" class="column is-full is-hidden">
+                    <ul class="columns is-multiline is-vcentered">
+                        <li class="column is-two-thirds">
+                            <article class="content">
+                                #Post.Content
+                            </article>
+                        </li>
+                        <li class="column is-one-third">
+                            <ul id="house_demo"></ul>
+                        </li>
+                        <li class="column is-one-third">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-header-title">1. GÓI TIẾT KIỆM</div>
+                                </div>
+                                <div class="card-content">
+                                    <table id="tietkiem" class="table is-fullwidth font_13">
+                                        <thead>
+                                            <tr>
+                                                <th width="40px">STT</th>
+                                                <th>Thành phần</th>
+                                                <th align="right">Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="column is-one-third">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-header-title">2. GÓI PHỔ THÔNG</div>
+                                </div>
+                                <div class="card-content">
+                                    <table id="phothong" class="table is-fullwidth font_13">
+                                        <thead>
+                                            <tr>
+                                                <th width="40px">STT</th>
+                                                <th>Thành phần</th>
+                                                <th align="right">Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="column is-one-third">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="card-header-title">3. GÓI CAO CẤP</div>
+                                </div>
+                                <div class="card-content">
+                                    <table id="caocap" class="table is-fullwidth font_13">
+                                        <thead>
+                                            <tr>
+                                                <th width="40px">STT</th>
+                                                <th>Thành phần</th>
+                                                <th align="right">Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="column">
+                            <span class="has-text-weight-semibold color_main">Chú thích:</span>
+                            đơn vị tính ở đây là nghìn đồng
+                        </li>
+                        <li class="column is-narrow">
+                            <a class="button" onclick="reset()">Nhập lại</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/app-dutoan.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

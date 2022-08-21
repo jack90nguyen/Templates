@@ -1,0 +1,212 @@
+﻿@media (min-width: 1400px) {
+    .title__cover {
+        height: 650px;
+    }
+    .title__cover .cover__img {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    .jwrap {
+        width: 100%;
+    }
+    header, .foot__bottom {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .foot__top {
+        margin: 0px;
+    }
+    .nivo-caption, .nivo-controlNav, .home__intro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nivo-controlNav {
+        width: 100%;
+        left: 0px;
+    }
+    .title__s1, .title__s2, .blog__share {
+        margin: 0px 20px;
+    }
+    .list__s1 {
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .title__cover .cover__info, .product__props {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .blog__content, .product__content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .gallery {
+        margin: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .gallery a {
+        height: 180px;
+    }
+}
+
+@media (max-width: 770px) {
+    .head__right {
+        display: none;
+    }
+    header {
+        height: 54px;
+        position: static;
+        padding: 0px;
+    }
+    .head__wrap {
+        position: fixed;
+        padding: 5px 0px;
+        justify-content: center;
+        z-index: 100;
+        background: #fff;
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.3);
+    }
+    .head__left {
+        width: 200px;
+    }
+    .head__logo {
+        height: 44px;
+        background-position: center;
+    }
+    .item__foot {
+        width: 100%;
+    }
+    .foot__bottom {
+        padding-bottom: 30px;
+    }
+    .list__s1 li {
+        width: 50%;
+    }
+    .list__s1 li:nth-child(3n + 1) {
+        clear: none;
+    }
+    .list__s1 li:nth-child(2n + 1) {
+        clear: both;
+    }
+    .home__intro {
+        background-attachment: unset;
+        background-size: cover;
+    }
+    .gallery li {
+        width: calc(100% / 3);
+    }
+    .title__cover .title {
+        line-height: 1.4;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .foot__copyright, .foot__social {
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .foot__copyright {
+        padding-bottom: 10px;
+    }
+    .item__foot .item__title {
+        font-size: 140%;
+    }
+    .nivo-controlNav {
+        padding: 0px 10px;
+    }
+    .nivo-caption {
+        padding-bottom: 30px;
+        padding: 0px 10px 30px;
+    }
+    .nivo_title {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .nivo_title::before {
+        width: 60px;
+        height: 3px;
+    }
+    .nivo_recap {
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .nivo_link a {
+        display: none;
+    }
+    .title__s1, .title__s2, .blog__share {
+        margin: 0px 10px;
+    }
+    .title__s1 .title {
+        font-size: 18px;
+    }
+    .title__cover .cover__info {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .title__cover .title:before {
+        height: 3px;
+        width: 70px;
+    }
+    .title__cover .title {
+        font-size: 20px;
+        padding: 5px 0px;
+        line-height: 1.4;
+    }
+    .title__cover .recap {
+        font-size: 13px;
+        max-height: 40px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .list__s1 {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .list__s1 li {
+        width: 100%;
+    }
+    .item__s1 .item__img {
+        height: 250px;
+    }
+    .home__intro {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .home__intro .intro__title .title {
+        font-size: 24px;
+    }
+    .home__intro .intro__link a {
+        margin: 5px;
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    .blog__content, .product__content, .product__props {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .gallery {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .gallery li {
+        width: 50%;
+    }
+    .gallery a {
+        height: 150px;
+    }
+}
+
+@media (max-width: 330px) {
+    
+}

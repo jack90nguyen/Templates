@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <section class="section_header container">
+            <div class="columns is-vcentered is-mobile">
+                <!-- <div class="column is-narrow">
+                    <a class="icon is-left">
+                        <i class="s24 feather icon-chevron-left"></i>
+                    </a>
+                </div> -->
+                <div class="column">
+                    <h1 class="title is-5 has-text-centered is-uppercase">
+                        Danh sách sự cố
+                    </h1>
+                </div>
+                <!-- <div class="column is-narrow">
+                    <a class="icon is-left">
+                        <i class="s24 feather icon-chevron-right"></i>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="section_list container">
+
+            <div class="tabs is-centered is-uppercase has-text-weight-semibold">
+                <ul>
+                    <li class="is-active">
+                        <a>Tiếp nhận</a>
+                    </li>
+                    <li>
+                        <a>Đang làm</a>
+                    </li>
+                    <li>
+                        <a>Hoàn thành</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="box_list" data-repeat="true" data-rows="10">
+                <li class="box">
+                    <div class="columns is_gap is-multiline is-mobile is-variable is-1">
+                        <div class="column is-full is-size-6">
+                            <a class="has-text-weight-semibold has-text-black" href="/detail.html">
+                                Đây là tiêu đề sự cố mẫu để kiểm tra giao diện
+                            </a>
+                        </div>
+                        <div class="column is-3 is_one_line">
+                            <span class="has-text-grey">Ngày báo</span>
+                        </div>
+                        <div class="column is-6">
+                            <span>3 giờ trước</span>
+                        </div>
+                        <div class="column is-3 has-text-right">
+                            <a href="/detail.html">
+                                Chi tiết
+                            </a>
+                        </div>
+                        <div class="column is-3 is_one_line">
+                            <span class="has-text-grey">Người báo</span>
+                        </div>
+                        <div class="column is-9">
+                            <span>Nuyễn Văn Thành</span>
+                        </div>
+                        <div class="column is-3 is_one_line">
+                            <span class="has-text-grey">Vị trí</span>
+                        </div>
+                        <div class="column is-9">
+                            <span>Phòng 505, 320/21 NGUYỄN THỊ THẬP</span>
+                        </div>
+                        <div class="column is-3 is_one_line">
+                            <span class="has-text-grey">Loại sự cố</span>
+                        </div>
+                        <div class="column is-9">
+                            <span>Máy điều hòa</span>
+                        </div>
+                        <div class="column is-3 is_one_line">
+                            <span class="has-text-grey">Mức độ</span>
+                        </div>
+                        <div class="column is-9">
+                            <span class="tag is-danger">Khẩn cấp</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <nav class="pagination is-centered">
+                <ul class="pagination-list">
+                    <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+    </main>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+        }
+    </script>
+
+</body>
+
+</html>

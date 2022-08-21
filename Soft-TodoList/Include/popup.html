@@ -1,0 +1,334 @@
+<!-- Popup Category -->
+<div id="popup_category" class="popup is--hide">
+    <div class="popup__wrap is--small">
+        <div class="title">
+            <span>New List</span>
+        </div>
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="popup__form no--scroll">
+            <div class="columns">
+                <div class="form__input column is--1">
+                    <input id="list_edit_name" class="txt" type="text" placeholder="Enter list name...">
+                </div>
+            </div>
+            <div class="columns">
+                <div class="form__input column is--13">
+                    <input id="list_edit_icon" class="txt is--icon" type="text" placeholder="Icon"
+                        data-meteor-emoji="true">
+                </div>
+                <div class="form__input column is--23">
+                    <div class="selection">
+                        <span class="selected">💡 My Project</span>
+                        <input id="list_edit_parent" name="list_id" class="selectvalue" type="hidden" value="">
+                        <ul style="display: none;">
+                            <li data-id="100">🎈 Ideas</li>
+                            <li data-id="779">🎨 Learn</li>
+                            <li data-id="754">💻 Coding</li>
+                            <li class="sub" data-id="100">🎈 Ideas</li>
+                            <li class="sub" data-id="779">🎨 Learn</li>
+                            <li class="sub" data-id="754">💻 Coding</li>
+                            <li data-id="100">🎈 Ideas</li>
+                            <li data-id="779">🎨 Learn</li>
+                            <li data-id="754">💻 Coding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup__button">
+            <button type="submit" class="btn is--link">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Note -->
+<div id="popup_note" class="popup is--hide">
+    <div class="popup__wrap is--note">
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="popup__form">
+            <div class="form__input">
+                <div class="is--bold is--f16">
+                    Chuyển đổi số (Digital transformation) – Doanh nghiệp Việt Nam có đang bị bỏ lại phía sau?
+                </div>
+            </div>
+            <div class="form__input">
+                <div class="note__html">
+                    - Web chuyên <strong>tracking</strong> giá sản phẩm
+                    <br>
+                    - Khách hàng có thể nhập link của sản phẩm vào và nhập email. Khi giá giảm sẽ gửi thông báo
+                    qua email
+                    <br>
+                    - Ngoài ra khách hàng có thể nhập mã sản phẩm để kiểm tra giá nếu sản phẩm có trên hệ thống
+                    <br>
+                    - Nếu link hoặc mã sản phẩm chưa có thì lưu vào database để lấy thông tin ngay lúc đó
+                    <br>
+                    - Sẽ index thông tin sản phẩm với tiêu đề sản "sản phẩm abc giá tốt nhất" hoặc so sánh giá
+                    <br>
+                    - Index lịch sử giá của sản phẩm theo thời gian
+                    <br>
+                    - Có thể phát triển thị trường trong nước và nước ngoài luôn
+                </div>
+            </div>
+        </div>
+        <div class="popup__button is--menu item">
+            <div class="item__data">
+                <span>🎯 Marketing</span>
+                <span>
+                    <img src="/Images/icons/clock.svg" alt="icon">
+                    5 days ago
+                </span>
+                <a href="/task.html">
+                    <img src="/Images/icons/info.svg" alt="icon">
+                    Notota.com - Note Todo Taks
+                </a>
+            </div>
+            <div class="action__menu">
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/share.svg" alt="icon" title="Share it">
+                    <p class="is--child is--small">
+                        <a href="#">
+                            <img src="/Images/icons/eye.svg" alt="icon">
+                            Read only
+                        </a>
+                        <a>
+                            <img src="/Images/icons/note.svg" alt="icon">
+                            Can edit
+                        </a>
+                    </p>
+                </div>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a onclick="showPopupNoteEdit('123')">
+                            <img src="/Images/icons/edit.svg" alt="icon">
+                            Edit note
+                        </a>
+                        <a href="/note-view.html" title="Open in new tab" target="_blank">
+                            <img src="/Images/icons/expand.svg" alt="icon">
+                            New tab
+                        </a>
+                        <a class="is--red">
+                            <img src="/Images/icons/trash.svg" alt="icon">
+                            Delete
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Note -->
+<div id="popup_note_edit" class="popup is--hide">
+    <div class="popup__wrap">
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="title">
+            Edit Note
+        </div>
+        <div class="popup__form scrollbar">
+            <div class="columns">
+                <div class="form__input column is--1">
+                    <textarea id="note_edit_name" name="note_edit_name" class="txt is--bold is--f16"
+                        placeholder="Title..."
+                        rows="2">Chuyển đổi số (Digital transformation) – Doanh nghiệp Việt Nam có đang bị bỏ lại phía sau?</textarea>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="form__input column is--13">
+                    <div class="selection">
+                        <span class="selected">💡 My Project</span>
+                        <input id="note_edit_listid" name="note_edit_listid" class="selectvalue" type="hidden" value="">
+                        <ul style="display: none;">
+                            <li data-id="100">🎈 Ideas</li>
+                            <li data-id="779">🎨 Learn</li>
+                            <li data-id="754">💻 Coding</li>
+                            <li class="sub" data-id="100">🎈 Ideas</li>
+                            <li class="sub" data-id="779">🎨 Learn</li>
+                            <li class="sub" data-id="754">💻 Coding</li>
+                            <li data-id="100">🎈 Ideas</li>
+                            <li data-id="779">🎨 Learn</li>
+                            <li data-id="754">💻 Coding</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__input column is--13 mobile--is--12">
+                    <div class="selection">
+                        <span class="selected"><img src="/Images/icons/share.svg" alt="icon"> No share</span>
+                        <input id="note_edit_share" name="note_edit_share" class="selectvalue" type="hidden" value="">
+                        <ul style="display: none;">
+                            <li data-id="100">
+                                <img src="/Images/icons/share.svg" alt="icon"> No share
+                            </li>
+                            <li data-id="100">
+                                <img src="/Images/icons/eye.svg" alt="icon"> Read only
+                            </li>
+                            <li data-id="100">
+                                <img src="/Images/icons/note.svg" alt="icon"> Can edit
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__input column is--13 mobile--is--12">
+                    <input id="note_edit_password" name="note_edit_password" class="txt" type="text"
+                        placeholder="Password" value="">
+                </div>
+            </div>
+            <div class="columns">
+                <div class="form__input column is--1">
+                    <textarea id="note_edit_name" name="note_edit_name" class="txt" rows="20">- Web chuyên tracking giá sản phẩm
+- Khách hàng có thể nhập link của sản phẩm vào và nhập email. Khi giá giảm sẽ gửi thông báo qua email
+- Ngoài ra khách hàng có thể nhập mã sản phẩm để kiểm tra giá nếu sản phẩm có trên hệ thống
+- Nếu link hoặc mã sản phẩm chưa có thì lưu vào database để lấy thông tin ngay lúc đó
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="popup__button">
+            <button type="submit" class="btn is--link">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Customer Edit -->
+<div id="popup_customer_edit" class="popup is--hide">
+    <div class="popup__wrap is--small">
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="title">
+            Customer Info
+        </div>
+        <div class="popup__form scrollbar">
+            <div class="form__input form__file has--icon">
+                <a class="thumb" href="#" style="background-image: url(/images/avatar.jpg);"></a>
+                <input id="customer_edit_avatar" name="customer_edit_avatar" class="txt" type="text"
+                    placeholder="Avatar..." value="">
+                <a class="is--icon" href="#">
+                    <img src="/Images/icons/camera.svg" alt="icon">
+                </a>
+            </div>
+            <div class="form__input">
+                <input id="customer_edit_name" name="customer_edit_name" class="txt" type="text" placeholder="Name..."
+                    value="">
+            </div>
+            <div class="form__input">
+                <input id="customer_edit_phone" name="customer_edit_phone" class="txt" type="text"
+                    placeholder="Phone..." value="">
+            </div>
+            <div class="form__input">
+                <input id="customer_edit_email" name="customer_edit_email" class="txt" type="email"
+                    placeholder="E-mail..." value="">
+            </div>
+            <div class="form__input">
+                <input id="customer_edit_address" name="customer_edit_address" class="txt" type="text"
+                    placeholder="Address..." value="">
+            </div>
+            <div class="form__input column">
+                <textarea id="note_edit_note" name="note_edit_note" class="txt" placeholder="Note..."
+                    rows="3"></textarea>
+            </div>
+        </div>
+        <div class="popup__button">
+            <button type="submit" class="btn is--link">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Finance Edit -->
+<div id="popup_finance_edit" class="popup is--hide">
+    <div class="popup__wrap is--small">
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="title">
+            Add Revenue Or Expenditure
+        </div>
+        <div class="popup__form scrollbar">
+            <div class="form__input">
+                <div class="selection">
+                    <span class="selected">
+                        <i class="icon is--plus-circle"></i> Revenue
+                    </span>
+                    <input id="list_edit_parent" name="list_id" class="selectvalue" type="hidden" value="">
+                    <ul style="display: none;">
+                        <li data-id="1">
+                            <i class="icon is--plus-circle"></i> Revenue
+                        </li>
+                        <li data-id="2">
+                            <i class="icon is--minus-circle"></i> Expenditure
+                        </li>
+                        <li data-id="3">
+                            <i class="icon is--plus"></i> Unpaid
+                        </li>
+                        <li data-id="4">
+                            <i class="icon is--minus"></i> Debt
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__input">
+                <input id="finance_edit_money" name="finance_edit_money" class="txt currency is--bold" type="text"
+                    placeholder="Money..." value="">
+            </div>
+            <div class="form__input" title="Received date">
+                <input id="finance_edit_date" name="finance_edit_date" type="date" class="txt"
+                    placeholder="Received date">
+            </div>
+            <div class="form__input">
+                <textarea id="finance_edit_desc" name="finance_edit_desc" class="txt" placeholder="Description..."
+                    rows="2"></textarea>
+            </div>
+            <div class="form__input has--icon">
+                <input id="finance_edit_customer" name="finance_edit_customer" class="txt" type="text"
+                    placeholder="Customer..." value="">
+                <a class="is--icon" title="Add new" onclick="toggleElement('form_finance_edit_phone')">
+                    <img src="/Images/icons/plus.svg" alt="icon">
+                </a>
+            </div>
+            <div id="form_finance_edit_phone" class="form__input is--hide">
+                <input id="finance_edit_phone" name="finance_edit_phone" class="txt" type="text"
+                    placeholder="Phone number..." value="">
+            </div>
+            <div class="form__input has--icon">
+                <input id="finance_edit_task" name="finance_edit_task" class="txt" type="text" placeholder="Task..."
+                    value="">
+                <span class="is--icon">
+                    <img src="/Images/icons/search.svg" alt="icon">
+                </span>
+            </div>
+        </div>
+        <div class="popup__button">
+            <button type="submit" class="btn is--link">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Website Edit -->
+<div id="popup_website_edit" class="popup is--hide">
+    <div class="popup__wrap is--small">
+        <div class="title">
+            <span>New Site</span>
+        </div>
+        <a class="close" onclick="hidePopup()"></a>
+        <div class="popup__form no--scroll">
+            <div class="columns">
+                <div class="form__input column is--1">
+                    <input id="website_edit_domain" class="txt" type="text" placeholder="Domain...">
+                </div>
+            </div>
+            <div class="columns">
+                <div class="form__input column is--12">
+                    <label class="checkbox">
+                        <input id="website_edit_https" type="checkbox">
+                        HTTPS
+                    </label>
+                </div>
+                <div class="form__input column is--12">
+                    <label class="checkbox">
+                        <input id="website_edit_expired" type="checkbox">
+                        Expired
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="popup__button">
+            <button type="submit" class="btn is--link">Save</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main" class="background_bg">
+
+        <!-- Cover -->
+        <section class="py-6">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-three-fifths">
+                        <nav class="breadcrumb">
+                            <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                                <li><a href="/">Trang chủ</a></li>
+                                <li><a href="/">Tin tức</a></li>
+                                <li class="is-active"><a href="#">Documentation</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column is-two-fifths">
+                        <div class="control has-icons-left">
+                            <input class="input is-rounded is_shadow quick_search" type="text" placeholder="Tìm kiếm">
+                            <span class="icon is-left">
+                                <i class="s24 feather icon-search color_main"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Detail -->
+        <section class="pb-6">
+            <div class="container">
+
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <figure class="image is-2by1 is_radius is_cover" style="background-image: url('#Post.Cover');">
+                        </figure>
+                    </div>
+                    <div class="column is-one-third font_14">
+                        <h1 class="title is-4 is-size-5-mobile mb-1 color_main">
+                            #Post.Name
+                        </h1>
+                        <hr class="mt-1 mb-3">
+                        <div class="columns is-multiline is-variable is-0 project_attr">
+                            <p class="column is-full">
+                                <span class="is_title">Loại công trình</span>
+                                <span class="is_value">nhà ở gia đình</span>
+                            </p>
+                            <p class="column is-full">
+                                <span class="is_title">Năm thiết kế</span>
+                                <span class="is_value">2021</span>
+                            </p>
+                            <p class="column is-full">
+                                <span class="is_title">Diện tích đất</span>
+                                <span class="is_value">5m x 20m</span>
+                            </p>
+                            <p class="column is-full">
+                                <span class="is_title">Tổng diện tích sàn</span>
+                                <span class="is_value">240m2</span>
+                            </p>
+                            <p class="column is-full">
+                                <span class="is_title">Diện tích xây dựng</span>
+                                <span class="is_value">90m2</span>
+                            </p>
+                            <p class="column is-full">
+                                <span class="is_title">Chi phí thi công</span>
+                                <span class="is_value">1,45 tỷ</span>
+                            </p>
+                        </div>
+                        <article class="mt-3">
+                            <!-- #Post.Content -->
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần
+                            quản trị
+                            của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                            trong
+                            phần quản trị của website.
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần
+                            quản trị
+                            của website.
+                            <br>
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                            trong
+                            phần quản trị của website.
+                        </article>
+
+                        <div class="tags is-hidden" data-bind="true" data-type="tags" data-source="#Post.Id">
+                            <a class="tag is-link" href="#Tag.Link">#Tag.Name</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <ul class="columns is-centered is-multiline" data-bind="true" data-type="images" data-source="#Post.Id">
+                    <li class="column is-three-fifths has-text-centered">
+                        <figure class="image is_radius">
+                            <img src="#Image.Link" alt="#Image.Name">
+                        </figure>
+                    </li>
+                </ul>
+
+                <hr>
+
+                <div class="pb-4 has-text-weight-bold is-size-5 color_main">
+                    Dự án liên quan
+                </div>
+                <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="5" data-type="blogs"
+                    data-source="#Post.ParentId" data-sort="0">
+                    <li class="column is-one-fifth">
+                        <div class="card">
+                            <div class="card-image">
+                                <a class="image is-4by5 is_cover" href="#Blog.Link"
+                                    style="background-image: url('#Blog.Thumb');"></a>
+                            </div>
+                        </div>
+                        <h3 class="has-text-weight-semibold font_14 text_1_line mt-2 mb-1">
+                            <a href="#Blog.Link">
+                                #Blog.Name
+                            </a>
+                        </h3>
+                        <div class="font_13 text_1_line">
+                            <span class="mr-1">5m x 20m</span>
+                            <span class="mr-1">1.2 tỷ</span>
+                            <span class="mr-1">Ninh bình</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

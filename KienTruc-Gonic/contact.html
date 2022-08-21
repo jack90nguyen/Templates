@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Page - Trang liên hệ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main" class="bg_bg page_contact">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.9286243330757!2d108.2067774157343!3d16.01723064508177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421bd031289d65%3A0x7ef61c297344c51e!2zQ8O0bmcgVHkgVG5oaCBUaGnhur90IEvhur8gVsOgIFjDonkgROG7sW5nIEdvbmlj!5e0!3m2!1svi!2s!4v1651109526289!5m2!1svi!2s"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container py-6">
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <div class="content mb-5">
+            #Post.Content
+          </div>
+          <ul class="columns is-variable is-4">
+            <li class="column is-one-third">
+              <div class="icon-text">
+                <span class="icon is-medium">
+                  <i class="is-size-3 fas fa-envelope"></i>
+                </span>
+                <div class="ml-3" style="line-height: 1.2;">
+                  <p class="is-size-7 has-text-grey">Email liên hệ</p>
+                  <a class="font_14 color_text" href="mailto:#Config.ContactMail1">
+                    #Config.ContactMail1
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="column is-one-third">
+              <div class="icon-text">
+                <span class="icon is-medium">
+                  <i class="is-size-3 fas fa-phone-alt"></i>
+                </span>
+                <div class="ml-3" style="line-height: 1.2;">
+                  <p class="is-size-7 has-text-grey">Tổng đài tư vấn</p>
+                  <a class="font_14 color_text" href="tel:#Config.Hotline1">
+                    #Config.Hotline1
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="column is-one-third">
+              <div class="icon-text">
+                <span class="icon is-medium">
+                  <i class="is-size-3 fas fa-phone-alt"></i>
+                </span>
+                <div class="ml-3" style="line-height: 1.2;">
+                  <p class="is-size-7 has-text-grey">Tổng đài tư vấn</p>
+                  <a class="font_14 color_text" href="tel:#Config.Hotline2">
+                    #Config.Hotline2
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="column is-one-third">
+          <div id="form_contact" class="box_shadow">
+            <div class="has-text-weight-bold mb-5">
+              Bạn thắc mắc hoặc cần tư vấn
+            </div>
+            <div class="field">
+              <label class="label has-text-weight-normal has-text-grey">
+                Tên của bạn
+              </label>
+              <div class="control">
+                <input type="text" class="input" placeholder="Nhập tên của bạn" data-name>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label has-text-weight-normal has-text-grey">
+                Số điện thoại <b class="has-text-danger">*</b>
+              </label>
+              <div class="control">
+                <input type="text" class="input" placeholder="Nhập số điện thoại" data-phone data-required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label has-text-weight-normal has-text-grey">
+                Yêu cầu của bạn
+              </label>
+              <div class="control">
+                <textarea class="textarea" rows="5" placeholder="Nhập yêu cầu của bạn..." data-content></textarea>
+              </div>
+            </div>
+            <div class="field mt-5">
+              <button class="button is_extra" onclick="contact()" data-btn>
+                <span class="icon">
+                  <i class="fas fa-paper-plane"></i>
+                </span>
+                <span>Gửi yêu cầu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+    function contact() {
+      const data = {
+        code: 'contact',
+        name: $('[data-name').val(),
+        phone: $('[data-phone]').val(),
+        email: '',
+        address: '',
+        content: $('[data-content]').val(),
+      }
+
+      formSend(data, 'Đã gửi thông tin liên hệ!');
+    }
+  </script>
+
+</body>
+
+</html>

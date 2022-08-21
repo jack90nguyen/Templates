@@ -1,0 +1,127 @@
+﻿@media (max-width: 1140px) {
+    .jwrap {
+        width: 100%;
+    }
+    .jpd__isfull {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 770px) {
+    .nivo_title {
+        font-size: 28px !important;
+        padding-bottom: 15px;
+    }
+    .nivo_recap {
+        font-size: 14px !important;
+        padding-bottom: 20px;
+    }
+    .nivo-directionNav {
+        display: none;
+    }
+    .foot__social {
+        width: 200px;
+        margin: 0px auto;
+    }
+    .box__s1 .column {
+        min-height: 0px;
+        padding: 20px;
+    }
+    .box__s1 .item__img {
+        height: 600px;
+        padding: 0px;
+    }
+    .item__s1 .item__link {
+        padding-top: 0px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .jpd__isfull {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .jpd__t70 {
+        padding-top: 40px;
+    }
+    .jpd__b70 {
+        padding-bottom: 40px;
+    }
+    .title__center {
+        padding: 0px 20px 20px;
+    }
+    .title__left  {
+        padding: 0px 0px 20px;
+    }
+    .title__center .item__title, .title__left .item__title {
+        font-size: 22px;
+        padding: 15px 0px;
+    }
+    .title__center .item__recap, .title__left .item__recap {
+        font-size: 14px;
+        padding: 5px 0px;
+    }
+    .nivo-caption {
+        padding-bottom: 10px;
+        padding-left: 40%;
+    }
+    .nivo_title {
+        font-size: 20px !important;
+        padding-bottom: 5px;
+    }
+    .nivo_recap {
+        font-size: 13px !important;
+    }
+    .nivo_link {
+        display: none;
+    }
+    .jbg__bottom {
+        padding-bottom: 100px;
+    }
+    .box__s1 .html__content {
+        font-size: 14px;
+    }
+    .price__list {
+        display: block;
+    }
+    .price__list li {
+        width: 100% !important;
+        padding-bottom: 20px;
+    }
+    .item__s1 {
+        border: 2px solid #333 !important;
+        border-radius: 7px !important;
+    }
+    .item__s1 .item__title {
+        padding: 12px 10px;
+        font-size: 18px;
+    }
+    .item__s1 .item__recap {
+        font-size: 14px;
+        display: block;
+        height: auto;
+        padding: 20px 15px 0px !important;
+    }
+    .item__s1 .item__price {
+        padding: 10px 0px !important;
+    }
+    .item__s1 .item__link a {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+    .item__s2 .item__content {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    .jpd__isfull {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

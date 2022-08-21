@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account Info | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/user.svg" alt="icon"></i>
+            <h1 id="header_title">Account Info</h1>
+        </div>
+        <div id="content" class="scrollbar">
+            <div class="widget__form">
+                <div class="widget__wrap">
+                    <div class="widget__title"></div>
+                    <div class="form__input form__file has--icon">
+                        <a class="thumb" href="#" style="background-image: url(/images/avatar.jpg);"></a>
+                        <input id="account_edit_avatar" name="account_edit_avatar" class="txt" type="text"
+                            placeholder="Avatar..." value="">
+                        <a class="is--icon" href="#">
+                            <img src="/Images/icons/camera.svg" alt="icon">
+                        </a>
+                    </div>
+                    <div class="form__input">
+                        <input id="account_edit_email" name="account_edit_email" class="txt" type="email"
+                            placeholder="E-mail..." readonly value="jack90nguyen@gmail.com">
+                    </div>
+                    <div class="form__input">
+                        <input id="account_edit_name" name="account_edit_name" class="txt" type="text"
+                            placeholder="Name..." value="">
+                    </div>
+                    <div class="form__input">
+                        <input id="account_edit_phone" name="account_edit_phone" class="txt" type="text"
+                            placeholder="Phone..." value="">
+                    </div>
+                    <div class="form__input">
+                        <input id="account_edit_address" name="account_edit_address" class="txt" type="text"
+                            placeholder="Address..." value="">
+                    </div>
+                    <div class="form__input">
+                        <a class="btn is--link is--s32">Update</a>
+                        <a class="btn is--s32">Cancel</a>
+                    </div>
+                    <div class="form__input form__title">
+                        <label>Change Password</label>
+                    </div>
+                    <div class="form__input">
+                        <input id="account_old_password" class="txt" type="password" placeholder="Current password">
+                    </div>
+                    <div class="form__input">
+                        <input id="account_new_password" class="txt" type="password" placeholder="Ener new password">
+                    </div>
+                    <div class="form__input">
+                        <input id="account_re_password" class="txt" type="password" placeholder="Re-enter new password">
+                    </div>
+                    <div class="form__input">
+                        <a class="btn is--danger is--s32">Change</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+</body>
+
+</html>

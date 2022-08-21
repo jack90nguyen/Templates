@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/Asset/animate.min.css">
+  <link rel="stylesheet" href="/Asset/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/style.css">
+  <link rel="stylesheet" href="/Asset/mobile.css">
+  <link rel="stylesheet" href="/Asset/icon.material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <main id="main">
+    <aside id="sidebar" class="is-small">
+      <div data-include="/Include/sidebar.html"></div>
+    </aside>
+    <summary id="content">
+      <ul class="field is-grouped p-4 m-0">
+        <li class="control">
+          <a class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">legend_toggle</i>
+            </span>
+            <span>Tổng quát</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">description</i>
+            </span>
+            <span>Chi tiết</span>
+          </a>
+        </li>
+        <li class="control is-expanded has-text-right">
+          <a class="has-text-dark is-italic is-underlined is-size-7">
+            Cập nhật gần nhất: 21/04/2022 - 15h30
+          </a>
+        </li>
+      </ul>
+      <hr class="m-0">
+      <section class="p-4">
+        <ul class="columns is-multiline">
+          <li class="column is-size-7">
+            <a class="icon-text mr-2">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">filter_alt</i>
+              </span>
+              <span class="has-text-weight-bold">Bộ lọc</span>
+            </a>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">Tổng bài viết:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">Tổng bài sản phẩm:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">SP thuộc top:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">SP đã thuê:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text has-text-danger">
+              <span class="mr-1">Cảnh báo dữ liệu lỗi:</span>
+              <strong>1000</strong>
+            </span>
+          </li>
+
+          <li class="column is-narrow has-text-weight-bold is-size-7">
+            <a class="icon-text mr-2">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">restart_alt</i>
+              </span>
+              <span>Cập nhật thứ hạng</span>
+            </a>
+
+            <a class="icon-text mr-2">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">add</i>
+              </span>
+              <span>Tạo mới</span>
+            </a>
+
+            <a class="icon-text mr-2">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">drive_file_rename_outline</i>
+              </span>
+              <span>Chỉnh sửa</span>
+            </a>
+
+            <a class="icon-text">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">settings</i>
+              </span>
+              <span>Thiết lập</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="pl-4 pr-2 pb-2">
+        <div class="table-container scroll is_x is_y" style="height: calc(100vh - 185px);">
+          <table class="table table-fixed is-hoverable is-vcentered">
+            <thead>
+              <tr>
+                <th rowspan="2" width="40px" class="is_sticky" style="left: 0px;">
+                  <a class="icon has-text-white">
+                    <i class="material-icons is-size-5">check_box_outline_blank</i>
+                  </a>
+                </th>
+                <th rowspan="2" width="70px" class="is_sticky" style="left: 40px;">
+                  <div class="dropdown is-hoverable is-right">
+                    <div class="dropdown-trigger">
+                      <div class="icon-text">
+                        <span>ID</span>
+                        <span class="icon">
+                          <i class="material-icons-outlined is-size-6">more_vert</i>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-content">
+                        <a class="dropdown-item">
+                          <div class="icon-text">
+                            <span>Sắp xếp A-Z</span>
+                            <span class="icon">
+                              <i class="material-icons is-size-6">arrow_upward</i>
+                            </span>
+                          </div>
+                        </a>
+                        <hr class="dropdown-divider m-0">
+                        <a class="dropdown-item">
+                          <div class="icon-text">
+                            <span>Sắp xếp Z-A</span>
+                            <span class="icon">
+                              <i class="material-icons is-size-6">arrow_downward</i>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <th rowspan="2" width="100px" class="is_sticky" style="left: 110px;">
+                  Tỉnh thành
+                </th>
+                <th rowspan="2" width="90px" class="is_sticky" style="left: 210px;">
+                  Bài viết
+                </th>
+                <th rowspan="2" width="70px" class="is_sticky" style="left: 300px;">
+                  NVKD
+                </th>
+                <th rowspan="2" width="180px" class="is_sticky is_last" style="left: 370px;">
+                  Từ khóa
+                </th>
+                <th rowspan="2" width="90px">
+                  Tiền năng
+                </th>
+                <th rowspan="2" width="120px">
+                  Chuyên mục lớn
+                </th>
+                <th rowspan="2" width="120px">
+                  Chuyên mục nhỏ
+                </th>
+                <th rowspan="2" width="120px">
+                  Ngày cập nhật
+                </th>
+                <th colspan="2" align="center">
+                  Cập nhật thứ hạng (04/04)
+                </th>
+                <th colspan="2" align="center">
+                  Cập nhật thứ hạng (10/04)
+                </th>
+                <th colspan="2" align="center">
+                  Cập nhật thứ hạng (20/04)
+                </th>
+              </tr>
+              <tr>
+                <th width="90px">
+                  Thứ hạng
+                </th>
+                <th width="90px">
+                  Check URL
+                </th>
+                <th width="90px">
+                  Thứ hạng
+                </th>
+                <th width="90px">
+                  Check URL
+                </th>
+                <th width="90px">
+                  Thứ hạng
+                </th>
+                <th width="90px">
+                  Check URL
+                </th>
+              </tr>
+            </thead>
+            <tbody data-repeat="true" data-rows="100">
+              <tr>
+                <td style="left: 0px;" class="is_sticky">
+                  <a class="icon has-text-grey">
+                    <i class="material-icons is-size-5">check_box_outline_blank</i>
+                  </a>
+                </td>
+                <td style="left: 40px;" class="is_sticky">
+                  #Post.Id
+                </td>
+                <td class="is_sticky" style="left: 110px;">
+                  Tỉnh thành
+                </td>
+                <td class="is_sticky" style="left: 210px;">
+                  <a class="text_1_line" style="width: 80px;">
+                    #Post.Name
+                  </a>
+                </td>
+                <td class="is_sticky" style="left: 300px;">
+                  NVKD
+                </td>
+                <td class="is_sticky is_last" style="left: 370px;">
+                  <div class="text_1_line" style="width: 170px;">
+                    #Post.Desc
+                  </div>
+                </td>
+                <td>
+                  Tiền năng
+                </td>
+                <td>
+                  Chuyên mục lớn
+                </td>
+                <td>
+                  Chuyên mục nhỏ
+                </td>
+                <td>
+                  Ngày cập nhật
+                </td>
+                <td>
+                  Thứ hạng
+                </td>
+                <td>
+                  Check URL
+                </td>
+                <td>
+                  Thứ hạng
+                </td>
+                <td>
+                  Check URL
+                </td>
+                <td>
+                  Thứ hạng
+                </td>
+                <td>
+                  Check URL
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="action_bar px-4 py-2">
+        <div class="field is-grouped is-size-7">
+          <div class="control has-text-weight-bold">
+            <div class="icon-text">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">check_box</i>
+              </span>
+              <span>10 mục được chọn</span>
+            </div>
+          </div>
+          <div class="control is_divider"></div>
+          <div class="control has-text-weight-bold">
+            Chọn NVKD phụ trách
+          </div>
+          <div class="control">
+            <div class="dropdown is-hoverable is-up">
+              <div class="dropdown-trigger">
+                <div class="button is-bordered">
+                  <span class="icon image is-24x24 is-rounded mr-2">
+                    <img src="https://avatars.dicebear.com/api/micah/happy.svg?background=pink" alt="img" />
+                  </span>
+                  <span class="text_1_line has-text-left" style="width: 180px;">Jack Nguyen</span>
+                  <span class="icon">
+                    <i class="material-icons-outlined is-size-4">expand_more</i>
+                  </span>
+                </div>
+              </div>
+              <div class="dropdown-menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item px-2 py-0">
+                    <div class="control has-icons-right">
+                      <input class="input" type="text" placeholder="Tìm nhân viên...">
+                      <span class="icon is-small is-right">
+                        <i class="material-icons-outlined is-size-5">search</i>
+                      </span>
+                    </div>
+                  </div>
+                  <hr class="dropdown-divider">
+                  <div class="dropdown-item px-2 py-0 is-size-7 has-text-weight-medium" data-repeat="true"
+                    data-rows="10">
+                    <div class="icon-text my-2">
+                      <span class="icon image is-24x24 is-rounded mr-2">
+                        <img src="https://avatars.dicebear.com/api/micah/happy.svg?background=pink" alt="img" />
+                      </span>
+                      <a class="has-text-dark">Jack Nguyen</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="control is-expanded">
+
+          </div>
+          <div class="control">
+            <div class="buttons">
+              <a class="button is-transparent">
+                <span class="icon">
+                  <i class="material-icons-outlined">replay</i>
+                </span>
+                <span>Hoàn tác</span>
+              </a>
+              <a class="button is-warning">
+                <span class="icon">
+                  <i class="material-icons-outlined is-size-5">file_download</i>
+                </span>
+                <span>Xuất Excel mục được chọn</span>
+              </a>
+              <a class="button is-danger">
+                <span class="icon">
+                  <i class="material-icons-outlined is-size-5">delete</i>
+                </span>
+                <span>Xóa</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </summary>
+  </main>
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/demo.js"></script>
+</body>
+
+</html>

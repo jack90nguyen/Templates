@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Cover -->
+        <section class="wrap_mobile my-5">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                        <li><a href="/">Trang chủ</a></li>
+                        <li><a href="/">Tin tức</a></li>
+                        <li class="is-active"><a href="#">Documentation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="wrap_mobile my-5">
+            <div class="container">
+                <div class="columns is-variable is-4">
+                    <div class="column is-half">
+                        <div class="card is_shadow">
+                            <!-- #Config.ContactMap -->
+                            <iframe class="is-block"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5063647088286!2d108.21970445149776!3d16.03919234444547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e9468e9169%3A0x8c92615f975fc0cd!2zVGhp4bq_dCBL4bq_IFdlYnNpdGUgxJDDoCBO4bq1bmcgLSBPbmV0ZXouY29t!5e0!3m2!1svi!2s!4v1592881685825!5m2!1svi!2s"
+                                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="card p-5" style="min-height: 100%;">
+                            <h1 class="has-text-weight-bold is-size-5 color_main">
+                                #Post.Name
+                            </h1>
+                            <div class="content font_14 pt-2">
+                                #Post.Desc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <!-- <div data-include="/Include/header.html"></div> -->
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- List Page -->
+        <section class="section_home wrap_mobile">
+            <div class="container">
+                <div class="columns is-multiline" data-repeat="true" data-rows="5" data-source="project"
+                    data-type="text-image">
+                    <div class="column is-full">
+                        <div class="box project_item is_cover" style="background-image: url('#Element.Image');">
+                            <div class="item_info">
+                                <h2 class="item_name aniview" data-av-animation="fadeInRight">
+                                    #Element.Name
+                                </h2>
+                                <div class="item_desc aniview" data-av-animation="fadeInRight">
+                                    #Element.Desc
+                                </div>
+                                <div class="item_link aniview" data-av-animation="bounceInUp">
+                                    <a class="button is_main" href="##Element.Link">
+                                        <span>Xem chi tiết</span>
+                                        <span class="icon">
+                                            <i class="feather icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

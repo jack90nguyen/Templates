@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sponsors</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-fw.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-mobi.css">
+    <script src="https://kit.fontawesome.com/38f345802b.js" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <!-- Script Page -->
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+</head>
+
+<body id="page_body" class="jrow">
+    <div id="notify"></div>
+    <a id="toggleSetting" class=""><i class="fas fa-tools"></i></a>
+    <a id="toggleSideBar"><span></span><span></span><span></span></a>
+
+    <!-- SideBar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- [Cover] -->
+        <div class="ct__cover" style="background-image: url(/Images/demo/s1.jpg);">
+            <img src="/Images/demo/s1.jpg" alt="#name">
+            <div class="cover__wrap">
+                <h1 class="item__title">
+                    Sponsors
+                </h1>
+                <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Bulma</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Components</a></li>
+                        <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- [Sponsors List] / [Right Sidebar] -->
+        <div class="jwrap pad__res mobile__space__hor">
+            <div class="columns is-multiline is-variable is-5">
+                <!-- [Sponsors List] -->
+                <div class="column is-two-thirds is-full-tablet">
+                    <div class="tab__heads">
+                        <a class="tab__head is--active" data-tab="0">SHOW ALL</a>
+                        <a class="tab__head" data-tab="2">organization</a>
+                        <a class="tab__head" data-tab="3">personal</a>
+                    </div>
+                    <div id="test_sponsors" class="tab__items">
+                        <div data-tab="#icon" class="tab__item animated">
+                            <a href="#link" class="item__s6 jbg__cover" style="background-image: url(#image);">
+                                <img src="#image" alt="#name">
+                                <span>We are very greatful and feel honoured to our all partners for being with
+                                    us</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $('.tab__head').click(function () {
+                        $('.tab__head').removeClass('is--active');
+                        $(this).addClass('is--active');
+                        var tab = $(this).data('tab');
+                        if (tab === 0) {
+                            $('.tab__item').removeClass('is--hide');
+                            $('.tab__item').removeClass('zoomOut');
+                            $('.tab__item').addClass('zoomIn');
+                        }
+                        else {
+                            $('.tab__item[data-tab="' + tab + '"]').removeClass('is--hide');
+                            $('.tab__item[data-tab="' + tab + '"]').removeClass('zoomOut');
+                            $('.tab__item[data-tab="' + tab + '"]').addClass('zoomIn');
+                            $('.tab__item:not([data-tab="' + tab + '"])').addClass('zoomOut');
+                            setTimeout(function () {
+                                $('.tab__item:not([data-tab="' + tab + '"])').addClass('is--hide');
+                            }, 500);
+                        }
+                    });
+                </script>
+
+                <!-- [Right Sidebar] -->
+                <div class="column is-one-third is-full-tablet">
+                    <div class="block__scrolling">
+                        <div class="scrolling__title">
+                            "SPECIAL THANKS TO THESE COMPANIES AND THEIR EMPLOYEES FOR THEIR GENEROUS SUPPORT OF ABC
+                            CHARITIES IN THEIR WORKPLACE
+                            FUND DRIVES"
+                        </div>
+                        <div class="scrolling__content">
+                            <div id="scrolling" class="jcarousel-wrapper">
+                                <div class="jcarousel">
+                                    <ul id="test_scrolling">
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                        <li>
+                                            <a href="#link">#name</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var scrolling = $('#scrolling .jcarousel');
+                    scrolling.on('jcarousel:reload jcarousel:create', function () {
+                        var width = scrolling.innerWidth();
+                    }).jcarousel({
+                        wrap: 'circular',
+                        vertical: true,
+                        animation: {
+                            duration: 1000,
+                            easing: 'linear',
+                        }
+                    });
+                    scrolling.jcarouselAutoscroll({
+                        autostart: true,
+                        interval: 0
+                    });
+                    scrolling.hover(function () {
+                        $(this).jcarouselAutoscroll('stop');
+                    }, function () {
+                        $(this).jcarouselAutoscroll('start');
+                    });
+                </script>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+</body>
+
+</html>

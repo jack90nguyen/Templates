@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <section class="section_vcentered section_login">
+            <div class="container">
+                <div id="form_login" class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            ĐĂNG NHẬP HỆ THỐNG
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="field">
+                            <label class="label has-text-grey">Tên đăng nhập</label>
+                            <div class="control">
+                                <input id="username" type="text" class="input" placeholder="Nhập tên đăng nhập..."
+                                    data-required="true" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-grey">Mật khẩu</label>
+                            <div class="control">
+                                <input id="password" type="password" class="input" placeholder="Nhập mật khẩu..."
+                                    data-required="true" />
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a class="card-footer-item has-text-weight-bold" onclick="login()">
+                            Đăng nhập
+                        </a>
+                        <a class="card-footer-item" onclick="pageReload()">
+                            Hủy
+                        </a>
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function login() {
+            if (checkRequired('form_login')) {
+                location.href = '/';
+            }
+            else
+                showNotify(`Nhập đầy đủ thông tin !`, false);
+        }
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+        }
+    </script>
+
+</body>
+
+</html>

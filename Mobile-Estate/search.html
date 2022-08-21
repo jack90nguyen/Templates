@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang tìm kiếm</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <div class="container">
+            <header id="header">
+                <img src="/Images/cover-search.svg" alt="cover">
+                <h1 class="title is-3">
+                    Tìm kiếm
+                </h1>
+            </header>
+        </div>
+
+        <!-- Search -->
+        <section class="section_search container">
+
+            <div id="search_filter" class="search_filter">
+                <div class="field">
+                    <div class="control has-icons-left">
+                        <input id="search_keyword" class="input" type="text" placeholder="Nhập từ khóa...">
+                        <span class="icon is-left">
+                            <i class="feather icon-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control has-icons-left is-expanded">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Dự án...</option>
+                            </select>
+                        </div>
+                        <div class="icon is-left">
+                            <i class="feather icon-map-pin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control has-icons-left is-expanded">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Hướng...</option>
+                            </select>
+                        </div>
+                        <div class="icon is-left">
+                            <i class="feather icon-compass"></i>
+                        </div>
+                    </div>
+                    <div class="control has-icons-left is-expanded">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Đường...</option>
+                            </select>
+                        </div>
+                        <div class="icon is-left">
+                            <i class="feather icon-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control has-icons-left is-expanded">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Giá từ...</option>
+                            </select>
+                        </div>
+                        <div class="icon is-left">
+                            <i class="feather icon-compass"></i>
+                        </div>
+                    </div>
+                    <div class="control has-icons-left is-expanded">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Giá đến...</option>
+                            </select>
+                        </div>
+                        <div class="icon is-left">
+                            <i class="feather icon-truck"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is_main" onclick="search()">
+                            <span class="icon">
+                                <i class="feather icon-search"></i>
+                            </span>
+                            <span>Tìm kiếm</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="search_results" class="section_products is-hidden">
+                <ul class="list_product" data-repeat="true" data-rows="5">
+                    <li>
+                        <div class="item_product">
+                            <a class="is_cover" href="/product.html" style="background-image: url(/Demo/s#id.jpg);">
+                                <span class="tag is-danger is-small is-uppercase">Đang bán</span>
+                            </a>
+                            <div class="is_info">
+                                <div class="columns is-multiline is-mobile is-gapless">
+                                    <div class="column is-three-quarters is_one_line">
+                                        <a class="has-text-weight-bold is-size-6" href="/product.html">
+                                            Siêu phẩm B1-153 lô 17,18 2 mặt tiền giá cực rẻ
+                                        </a>
+                                    </div>
+                                    <div class="column is-one-quarter has-text-right">
+                                        <span class="has-text-weight-bold is-size-6">#id.5 tỷ</span>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile is-variable is-2 is-vcentered">
+                                            <div class="column is-narrow">
+                                                <i class="feather icon-map-pin"></i>
+                                                <span>B2-14</span>
+                                                <span>, lô 90</span>
+                                            </div>
+                                            <div class="column is-narrow">
+                                                <i class="feather icon-crop"></i>
+                                                <span>100m²</span>
+                                            </div>
+                                            <div class="column is-narrow">
+                                                <i class="feather icon-compass"></i>
+                                                <span>Đông Nam</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav class="pagination is-rounded is-centered is-small">
+                    <ul class="pagination-list">
+                        <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                        <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                        <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                        <li><span class="pagination-ellipsis">&hellip;</span></li>
+                        <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+        }
+
+        function search() {
+            $('#search_filter').addClass('is-hidden');
+            $('#search_results').removeClass('is-hidden');
+        }
+
+    </script>
+
+</body>
+
+</html>

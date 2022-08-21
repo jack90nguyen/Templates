@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang tin tức</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <section class="container">
+            <nav class="breadcrumb">
+                <ul>
+                    <li><a href="#">Bulma</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li class="is-active"><a href="#">Breadcrumb</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Blogs -->
+        <section id="page_blogs" class="container section_25 is_mobile_space">
+            <div class="columns">
+                <div class="column is-three-quarters">
+                    <div class="title_border">
+                        <a class="is_link is-uppercase" href="#">Tin tức</a>
+                    </div>
+                    <div class="columns is-multiline" data-repeat="true" data-rows="4">
+                        <div class="column is-half-tablet">
+                            <div class="blog_item">
+                                <a class="item_image is_cover" href="#" style="background-image: url(/Demo/ads.png);">
+                                    <img src="/Demo/ads.png" alt="IMG">
+                                </a>
+                                <h3 class="item_title has-text-weight-semibold is-size-6">
+                                    <a href="#">
+                                        Đây là tiêu đề tin tức mẫu số #id, bạn có thể thay đổi
+                                    </a>
+                                </h3>
+                                <div class="item_desc has-text-grey">
+                                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản
+                                    trị của
+                                    website.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-one-quarter is-hidden-mobile">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title is-uppercase is-size-6">
+                                Bài viết mới
+                            </div>
+                        </div>
+                        <div class="card-content" style="padding: 10px 0px;">
+                            <ul class="product_list is_min" data-repeat="true" data-rows="5">
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="item_image">
+                                            <img src="/Demo/p1.png" alt="#">
+                                        </a>
+                                        <h3 class="item_title">
+                                            <a href="#">
+                                                Quạt Hút Xách Tay Superlite Max SHT #id
+                                            </a>
+                                        </h3>
+                                        <div class="item_price has-text-weight-semibold has-text-danger">
+                                            3.500.000₫
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-top: 25px;">
+                        <div class="card-header">
+                            <div class="card-header-title is-uppercase is-size-6">
+                                Sản phẩm
+                            </div>
+                        </div>
+                        <div class="card-content" style="padding: 10px 0px;">
+                            <ul class="product_list is_min" data-repeat="true" data-rows="5">
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="item_image">
+                                            <img src="/Demo/p1.png" alt="#">
+                                        </a>
+                                        <h3 class="item_title">
+                                            <a href="#">
+                                                Quạt Hút Xách Tay Superlite Max SHT #id
+                                            </a>
+                                        </h3>
+                                        <div class="item_price has-text-weight-semibold has-text-danger">
+                                            3.500.000₫
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script src="/Scripts/jquery.nivo.slider.js"></script>
+    <script src="/Scripts/jquery.jcarousel.min.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+            var slide_partner = $('.slide_partner .jcarousel');
+            slide_partner.on('jcarousel:reload jcarousel:create', function () {
+                var width = slide_partner.innerWidth();
+                if (width >= 1000)
+                    width = width / 5;
+                else if (width >= 768)
+                    width = width / 3;
+                else if (width >= 480)
+                    width = width / 2;
+                slide_partner.jcarousel('items').css('width', width + 'px');
+            }).jcarousel({
+                wrap: 'circular'
+            });
+            slide_partner.jcarouselAutoscroll({ autostart: true });
+            slide_partner.hover(function () {
+                $(this).jcarouselAutoscroll('stop');
+            }, function () {
+                $(this).jcarouselAutoscroll('start');
+            });
+        }
+
+        $('#slider_home .nivoSlider').nivoSlider({
+            manualAdvance: false,
+            effect: 'random',
+            animSpeed: 1000,
+            pauseTime: 5000,
+            pauseOnHover: true
+        });
+    </script>
+
+</body>
+
+</html>

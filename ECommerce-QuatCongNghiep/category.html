@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <section class="container">
+            <nav class="breadcrumb">
+                <ul>
+                    <li><a href="#">Bulma</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li class="is-active"><a href="#">Breadcrumb</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Category -->
+        <section class="container section_25">
+            <div class="columns">
+                <div class="column is-one-quarter is-hidden-mobile">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-header-title is-uppercase is-size-6">
+                                Sản phẩm
+                            </div>
+                        </div>
+                        <div class="card-content" style="padding: 10px 0px;">
+                            <ul class="product_list is_min" data-repeat="true" data-rows="5">
+                                <li>
+                                    <div class="product_item">
+                                        <a href="#" class="item_image">
+                                            <img src="/Demo/p1.png" alt="#">
+                                        </a>
+                                        <h3 class="item_title">
+                                            <a href="#">
+                                                Quạt Hút Xách Tay Superlite Max SHT #id
+                                            </a>
+                                        </h3>
+                                        <div class="item_price has-text-weight-semibold has-text-danger">
+                                            3.500.000₫
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-three-quarters">
+                    <div class="title_border">
+                        <h1 class="is_link is-uppercase">
+                            Danh mục sản phẩm
+                        </h1>
+                        <div class="select">
+                            <select>
+                                <option>Phổ biến nhất</option>
+                                <option>Sản phẩm mới nhất</option>
+                                <option>Giá thấp đến cao</option>
+                                <option>Giá cao đến thấp</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product_list columns is-gapless is-multiline is-mobile"
+                        style="border-top: 1px solid #ddd;" data-repeat="true" data-rows="13">
+                        <div class="column is-one-quarter-desktop is-half-mobile">
+                            <div class="product_item">
+                                <a href="#" class="item_image">
+                                    <img src="/Demo/p1.png" alt="#">
+                                </a>
+                                <h3 class="item_title has-text-centered">
+                                    <a href="#">
+                                        Quạt Hút Xách Tay Superlite Max SHT #id
+                                    </a>
+                                </h3>
+                                <div class="item_price has-text-weight-semibold has-text-centered has-text-danger">
+                                    3.500.000₫
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="pagination is-centered is-small">
+                        <ul class="pagination-list">
+                            <li><a class="pagination-link">1</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link">45</a></li>
+                            <li><a class="pagination-link is-current">46</a>
+                            </li>
+                            <li><a class="pagination-link">47</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link">86</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+        }
+    </script>
+
+</body>
+
+</html>

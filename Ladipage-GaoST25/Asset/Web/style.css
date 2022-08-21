@@ -1,0 +1,461 @@
+/* ====  Variables & Shared ==== */
+:root {
+    --color-main: #78b653;
+}
+.is_cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 20px;
+}
+.is_cover > img {
+    opacity: 0;
+}
+.page_loading:before {
+    content: "";
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(/Themes/loading.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+}
+.copyright > * {
+    margin-left: 5px;
+}
+.test {
+    background-color: gray;
+    min-height: 100px;
+}
+a {
+    color: inherit;
+}
+a:hover {
+    color: var(--color-main);
+}
+.color_main {
+    color: var(--color-main);
+}
+.button.is_main {
+    color: #fff;
+    border-color: var(--color-main);
+    background-color: var(--color-main);
+}
+.feather {
+    font-size: inherit;
+}
+.is_font_14 {
+    font-size: 14px;
+}
+.is_one_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* ====  CSS FIX  ==== */
+.pagination {
+    margin: 0px auto;
+    max-width: 920px;
+}
+.pagination-link.is-current {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+.input, .textarea,
+.select select {
+    height: 36px;;
+}
+/* ====  CSS NivoSlider  ==== */
+.slider-wrapper {
+    position: relative;
+}
+
+.nivoSlider {
+    position: relative;
+    background: #fff url(/Themes/loading.svg) center no-repeat;
+    background-size: auto 100%;
+}
+
+.nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.nivoSlider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+}
+
+.nivo-main-image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+    display: none;
+    background: white;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.nivo-box {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.nivo-box img {
+    display: block;
+}
+.nivoSlider.full_screen {
+    height: 100vh;
+}
+.nivoSlider.full_screen .nivo-main-image,
+.nivoSlider.full_screen .nivo-imageLink img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100% !important;
+}
+.nivo-slice {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    top: 0;
+}
+
+.nivo-controlNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 8;
+}
+
+.nivoSlider:hover .nivo-controlNav {
+    opacity: 1;
+}
+
+.nivo-controlNav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    font-size: 0px;
+    border-radius: 5px;
+}
+
+.nivo-controlNav a.active {
+    background: #fff;
+}
+
+.nivo-controlNav a:hover {
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+.nivo-directionNav {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    z-index: 10;
+    width: 55px;
+}
+
+.nivo-directionNav a {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'feather' !important;
+    font-size: 0px;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nivo-directionNav .nivo-prevNav::before {
+    content: "\e843";
+    font-size: 20px;
+}
+.nivo-directionNav .nivo-nextNav::before {
+    content: "\e844";
+    font-size: 20px;
+}
+
+.nivo-html-caption {
+    display: none;
+}
+
+.nivo-caption {
+    position: absolute;
+    z-index: 7;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(2, 5, 11, 0.5);
+}
+
+.nivo-caption .container {
+    padding: 0px 100px;
+}
+
+.nivo_title, .nivo_recap {
+    width: 100%;
+}
+
+.nivo_title {
+    font-size: 60px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.nivo_title a {
+    color: inherit;
+}
+
+.nivo_title a:hover {
+    text-decoration: none;
+}
+
+.nivo_recap {
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.nivo_recap a {
+    color: inherit;
+}
+
+.nivo_link {
+    display: block;
+}
+.nivo_link a {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 25px 8px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background: none;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.nivo_link a:hover {
+    background: #fff;
+    color: var(--color-main);
+}
+
+/* ====  CSS jcarousel  ==== */
+.jcarousel-wrapper {
+    position: relative;
+}
+.jcarousel-wrapper .jcarousel {
+    overflow: hidden;
+    position: relative;
+}
+.jcarousel-wrapper .jcarousel ul {
+    width: 10000em;
+    position: relative;
+    display: flex;
+}
+.jcarousel-wrapper .jcarousel ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ====  CSS Default  ==== */
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #333;
+}
+.container {
+    max-width: 100%;
+    width: 1140px;
+}
+#main {
+    min-height: 100vh;
+}
+#footer {
+    background: var(--color-main);
+    color: #fff;
+    padding: 30px 20px;
+}
+.section_banner {
+    min-height: 80vh;
+}
+.section_banner .button {
+    margin-right: 10px;
+}
+.section_numbers {
+    background: var(--color-main);
+    color: #fff;
+    min-height: 20vh;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+.section_numbers * {
+    color: inherit;
+}
+.section_about, .section_introduce, .section_blogs, .section_blogs {
+    margin: 100px 0px;
+}
+.section_story {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.story_wrap {
+    padding: 150px 0px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+.blog_list {
+    margin-top: 50px;
+}
+.blog_item .item_img {
+    border-radius: 10px;
+    height: 250px;
+}
+.blog_item .item_name {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 24px;
+    overflow: hidden;
+    margin-top: 10px;
+    max-height: 48px;
+}
+.blog_item .item_desc {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+    max-height: 72px;
+}
+.section_feedback {
+    background: var(--color-main);
+    padding: 100px 0px;
+}
+#jc_feedback {
+    max-width: 800px;
+    margin: 50px auto 0px;
+}
+#jc_feedback .jcarousel-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px;
+}
+#jc_feedback .jcarousel-pagination a {
+    font-size: 0px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+#jc_feedback .jcarousel-pagination a.active {
+    opacity: 1;
+}
+.feedback_item {
+    background: #fff;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.feedback_item .item_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+.feedback_item .item_desc {
+    margin: 20px auto;
+    font-size: 16px;
+}
+.feedback_item .item_name {
+    font-size: 16px;
+}
+.section_form {
+    padding: 100px 0px;
+}
+
+/* ====  Responsive ==== */
+@media (max-width: 768px) 
+{
+    #main {
+        overflow-x: hidden;
+    }
+    .section_banner {
+        padding: 100px 20px;
+        min-height: 100vh;
+    }
+    .section_banner .button {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .section_about, .section_introduce, .section_blogs, .section_blogs, .section_feedback, .section_form {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .story_wrap {
+        padding: 100px 20px;
+    }
+}

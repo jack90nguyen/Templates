@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <style>
+        .table td,
+        .table th {
+            padding: .5rem 0px .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main class="container" style="min-height: 100vh; display: flex; align-items: center;padding: 20px;">
+        <div class="columns is-multiline is-variable is-6">
+            <div class="column is-full">
+                <a class="title is-4 is-uppercase">
+                    Patincoco.com
+                </a>
+                <hr style="margin: 1rem 0px 0px;">
+            </div>
+            <div class="column is-two-thirds">
+                <div class="field is-size-5">
+                    Thông tin liên hệ
+                </div>
+                <div class="field is-grouped">
+                    <div class="control is-expanded" style="width: 50%;">
+                        <input class="input" type="text" placeholder="Họ và tên">
+                    </div>
+                    <div class="control is-expanded" style="width: 50%;">
+                        <input class="input" type="text" placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="field is-size-5">
+                    Thông tin nhận hàng
+                </div>
+                <div class="field is-grouped">
+                    <div class="control is-expanded" style="width: 50%;">
+                        <input class="input" type="text" placeholder="Tên người nhận">
+                    </div>
+                    <div class="control is-expanded" style="width: 50%;">
+                        <input class="input" type="text" placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control is-expanded" style="width: 50%;">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Tỉnh thành</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control is-expanded" style="width: 50%;">
+                        <div class="select is-fullwidth">
+                            <select>
+                                <option>Quận huyện</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <input class="input" type="text" placeholder="Địa chỉ">
+                </div>
+                <div class="field">
+                    <textarea class="textarea" rows="2" placeholder="Ghi chú hoặc yêu cầu khác"></textarea>
+                </div>
+                <hr style="margin: 15px 0px;">
+                <div class="field is-size-5">
+                    Hình thức thanh toán
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="payment" value="1" checked onchange="changePayment()">
+                            <span>Thanh toán tiền mặt khi nhận hàng (COD)</span>
+                        </label>
+                        <div id="payment_1" class="payment_desc has-text-grey">
+                            Nhân viên chúng tôi sẽ liên hệ với quý khách để xác nhận.
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="payment" value="2" onchange="changePayment()">
+                            <span>Chuyển khoản ngân hàng</span>
+                        </label>
+                        <div id="payment_2" class="payment_desc has-text-grey is-hidden">
+                            VIETCOMBANK: 0041000223526 - NGUYỄN VĂN THÀNH
+                            <br>
+                            SACOMBANK: 040065046093 - NGUYỄN VĂN THÀNH
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped is-grouped-right">
+                    <div class="control is-expanded is-flex" style="font-size: 14px;align-items: center;">
+                        <a class="has-text-black" href="#" target="_blank">
+                            Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của chúng tôi
+                        </a>
+                    </div>
+                    <a class="button is-danger is-uppercase" href="#">
+                        <span>Đặt Hàng</span>
+                    </a>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="is-size-5">
+                    Đơn hàng
+                </div>
+                <table class="table is-fullwidth">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="has-text-weight-semibold" href="#" target="_blank">
+                                    Đây là sản phẩm mẫu
+                                </a>
+                                <span class="has-text-danger has-text-weight-bold">x1</span>
+                                <div class="is-size-7">
+                                    <span>@item.size</span>
+                                    /
+                                    <span>@item.color</span>
+                                </div>
+                            </td>
+                            <td width="120px" class="has-text-right">
+                                <div class="has-text-weight-semibold">250.000 ₫</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="has-text-weight-semibold" href="#" target="_blank">
+                                    Đây là sản phẩm mẫu
+                                </a>
+                                <span class="has-text-danger has-text-weight-bold">x1</span>
+                                <div class="is-size-7">
+                                    <span>@item.size</span>
+                                    /
+                                    <span>@item.color</span>
+                                </div>
+                            </td>
+                            <td width="120px" class="has-text-right">
+                                <div class="has-text-weight-semibold">250.000 ₫</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin: 0px 0px 1rem;">
+
+                <ul class="columns is-mobile is-multiline is-vcentered is-variable is-3">
+                    <li class="column is-half has-text-grey">
+                        Tạm tính
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold">
+                            250.000 ₫
+                        </span>
+                    </li>
+                    <li class="column is-half has-text-grey">
+                        Phí vận chuyển
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold">
+                            20.000 ₫
+                        </span>
+                    </li>
+                    <li class="column is-half has-text-grey">
+                        Giảm giá
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold has-text-success">
+                            50.000 ₫
+                        </span>
+                    </li>
+                    <li class="column is-half has-text-grey">
+                        Mã giảm giá
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="is-uppercase">
+                            Khuyenmai10
+                        </span>
+                    </li>
+                    <li class="column is-full">
+                        <hr style="margin: 0px;">
+                    </li>
+                    <li class="column is-half">
+                        Tổng tiền
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold has-text-danger is-size-5">
+                            220.000 ₫
+                        </span>
+                    </li>
+                    <li class="column has-text-right">
+                        <a class="has-text-link" href="/cart.html">
+                            Chỉnh sửa
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script>
+        function changePayment() {
+            const id = $('input[name="payment"]:checked').val();
+            console.log(id);
+
+            $('.payment_desc').addClass('is-hidden');
+            $(`#payment_${id}`).removeClass('is-hidden');
+        }
+    </script>
+
+</body>
+
+</html>

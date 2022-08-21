@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang tin tức</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/responsive.css">
+</head>
+
+<body id="page_body">
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <div class="container">
+            <header id="header">
+                <img src="/Images/cover-blogs.svg" alt="cover">
+                <h1 class="title is-3">
+                    Tin tức
+                </h1>
+            </header>
+        </div>
+
+        <section class="section_blogs container">
+            <ul class="list_blog" data-repeat="true" data-rows="10">
+                <li>
+                    <div class="item_blog columns is-mobile is-vcentered is-variable is-2">
+                        <div class="column is-5">
+                            <a class="is_cover" href="/blog.html" style="background-image: url(/Demo/s#img.jpg);"></a>
+                        </div>
+                        <div class="column is-7 is_info">
+                            <div class="is_title is-size-6 has-text-weight-bold">
+                                <a href="/blog.html">
+                                    Vì sao nên mua Bất Động Sản Đà Nẵng trong giai đoạn này 2020
+                                </a>
+                            </div>
+                            <div class="is_desc">
+                                Hiện nay thị trường bất động sản (BĐS) Đà Nẵng đã giảm mạnh so với cùng kỳ năm 2019 và
+                                do dịch cúm Covid-19,
+                                tuy nhiên các chuyên gia nhận định đây là giai đoạn cần thiết để hướng đến sự ổn định,
+                                bền vững lâu dài.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <nav class="pagination is-rounded is-centered is-small">
+                <ul class="pagination-list">
+                    <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                    <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.slimscroll.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            console.log('load after data demo');
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

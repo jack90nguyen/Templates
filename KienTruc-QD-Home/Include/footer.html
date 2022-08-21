@@ -1,0 +1,115 @@
+<footer id="footer">
+    <div class="footer_top pt-6 pb-5 wrap_mobile">
+        <div class="container">
+            <ul id="form_subscribe" class="columns is-multiline is-variable is-2">
+                <li class="column is-one-fifth">
+                    <div class="field">
+                        <label class="label has-text-weight-normal">Họ tên</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-dark is_name" type="text" placeholder="Nhập họ tên..."
+                                data-required="true">
+                            <span class="icon is-left has-text-white">
+                                <i class="feather icon-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="column is-one-fifth">
+                    <div class="field">
+                        <label class="label has-text-weight-normal">Điện thoại</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-dark is_phone" type="text" placeholder="Nhập số điện thoại..."
+                                data-required="true">
+                            <span class="icon is-left has-text-white">
+                                <i class="feather icon-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="column is-one-fifth">
+                    <div class="field">
+                        <label class="label has-text-weight-normal">Loại công trình</label>
+                        <div class="control has-icons-left">
+                            <div class="select is-dark is-fullwidth">
+                                <select class="is_type">
+                                    <option value="Nhà phố">Nhà phố</option>
+                                    <option value="Biệt thự">Biệt thự</option>
+                                    <option value="Villa">Villa</option>
+                                    <option value="Công trình khác">Công trình khác</option>
+                                </select>
+                                <span class="icon is-left has-text-white">
+                                    <i class="feather icon-home"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="column is-one-fifth">
+                    <div class="field">
+                        <label class="label has-text-weight-normal">Mức đầu tư</label>
+                        <div class="control has-icons-left">
+                            <div class="select is-dark is-fullwidth">
+                                <select class="is_money">
+                                    <option value="Dưới 1 tỷ">Dưới 1 tỷ</option>
+                                    <option value="1 - 3 tỷ">1 - 3 tỷ</option>
+                                    <option value="3- 5 tỷ">3- 5 tỷ</option>
+                                    <option value="5 - 10 tỷ">5 - 10 tỷ</option>
+                                    <option value="Trên 10 tỷ">Trên 10 tỷ</option>
+                                </select>
+                                <span class="icon is-left has-text-white">
+                                    <i class="feather icon-dollar-sign"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="column is-one-fifth">
+                    <div class="field">
+                        <label class="label is-hidden-mobile">&nbsp;</label>
+                        <div class="control">
+                            <a class="button is_extra is-fullwidth" onclick="submitSubscribe()">
+                                <span class="icon">
+                                    <i class="feather icon-send"></i>
+                                </span>
+                                <span>TƯ VẤN CHO TÔI</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="column is-full has-text-centered">
+                    <span class="has-text-danger is_msg"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bottom py-4 wrap_mobile font_13 has-text-grey-lighter">
+        <div class="container">
+            <div class="columns is-vcentered is-gapless">
+                <div class="column is-half has-text-centered-mobile">
+                    <span>Copyright © 2021 Onetez.com. All rights reserved.</span>
+                </div>
+                <div class="column is-half has-text-right has-text-centered-mobile">
+                    <div class="madeby">
+                        <span>Made with</span>
+                        <i class="feather icon-heart-on animated infinite tada has-text-danger"></i>
+                        <span>by</span>
+                        <a href="http://www.onetez.com/?utm_source=customer">ONETEZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a id="hotline" href="tel:#Config.Hotline1" title="Hotline">
+    <span class="icon animated infinite tada">
+        <i class="feather icon-phone"></i>
+    </span>
+    <span class="text is-hidden">#Config.Hotline1</span>
+</a>
+
+<a id="gotop" href="#" title="Lên đầu trang">
+    <span class="icon">
+        <i class="feather icon-chevron-up"></i>
+    </span>
+</a>

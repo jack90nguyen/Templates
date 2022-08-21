@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb is-hidden">
+            <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/">Tin tức</a></li>
+                <li class="is-active"><a href="#">Documentation</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact -->
+        <section class="py-5">
+            <div class="container">
+
+                <div class="card is_radius mb-5">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="/Themes/b1.jpg" _src="#Post.Image" alt="#Post.Name">
+                        </figure>
+                    </div>
+                    <div class="card-content p-4 content font_14">
+                        <!-- #Post.Content -->
+                        <h1>CÔNG TY CỔ PHẦN MILIMET VUÔNG</h1>
+                        Mã số thuế: 0401755431
+                        <br>
+                        Địa chỉ: Lô 19, B1.99, Khu Đô Thị Sinh Thái Ven Sông Hoà Xuân - Giai Đoạn 2, Phường Hoà Xuân,
+                        Quận Cẩm Lệ, Thành Phố Đà Nẵng, Việt Nam
+                        <br>
+                        Ngày thành lập: 27/04/2016
+                        <br>
+                        Hotline: 02363668686
+                        <br>
+                        Tổng đài: 1900272743
+                        <br>
+                        Email: milimetvuong@gmail.com
+                        <br>
+                        Email nhận hóa đơn: ketoanmm2@gmail.com
+                    </div>
+                </div>
+
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="3"
+                    data-type="link-text" data-source="contact-address">
+                    <li class="column is-full">
+                        <div class="card p-3 is_radius">
+                            <div class="columns is-mobile is-vcentered is-variable is-2">
+                                <div class="column is-5">
+                                    <div class="image is-4by5 is_radius">
+                                        <img src="#Element.Thumb" alt="#Element.Name">
+                                    </div>
+                                </div>
+                                <div class="column is-7 font_13">
+                                    <h2 class="title mb-1 font_14 color_main">
+                                        #Element.Name
+                                    </h2>
+                                    <div class="mb-1">
+                                        Địa chỉ: 45 Phạm Xuân Ẩn, Hòa Xuân, Cẩm Lệ, Đà Nẵng.
+                                        <br>
+                                        HOTLINE: 0777434566
+                                    </div>
+                                    <a class="has-text-info" href="#Element.Link" target="_blank">
+                                        Xem chỉ đường trên Google
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

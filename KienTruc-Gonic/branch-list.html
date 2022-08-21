@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Branch Page - Trang chi nhánh</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main" class="page_branch">
+    <section class="branch_list">
+      <h1 class="title is-5">
+        Hệ thống cửa hàng (68)
+      </h1>
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="select is-fullwidth">
+            <select>
+              <option value="">Toàn quốc</option>
+            </select>
+          </div>
+        </div>
+        <div class="control">
+          <div class="select is-fullwidth">
+            <select>
+              <option value="">Chọn quận/huyện</option>
+            </select>
+          </div>
+        </div>
+        <div class="control is-expanded is-hidden-mobile">
+          <a class="button is-white font_14 has-text-link px-1" href="#">
+            <span class="icon">
+              <img src="/themes/icons/05.png" alt="icon">
+            </span>
+            <span>Cửa hàng gần bạn</span>
+          </a>
+        </div>
+      </div>
+      <div class="has-text-grey font_14 mt-3 mb-3">
+        <i class="fas fa-search"></i>
+        <span>Tìm kiếm cửa hàng</span>
+      </div>
+      <ul id="branch_list" data-repeat="true" data-rows="20">
+        <li id="branch_${item.id}" class="branch_item" onclick="viewmap('${item.map}')">
+          <div class="columns is-variable is-2">
+            <div class="column is-one-quarter is-hidden-mobile">
+              <div class="image is-4by3">
+                <img src="#Element.Image" alt="img">
+              </div>
+            </div>
+            <div class="column is-three-quarters font_13">
+              <div class="is-size-6 font_14_mobile has-text-weight-semibold mb-3">
+                ${item.name}
+              </div>
+              <div class="is-flex mb-2">
+                <i class="font_14 fas fa-map-marker-alt has-text-grey"></i>
+                <span class="ml-2">${item.address}</span>
+              </div>
+              <div class="is-flex">
+                <i class="fas fa-phone-alt has-text-grey"></i>
+                <span class="ml-2">${item.phone}</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="branch_maps">
+      <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.506463902149!2d108.2197044516414!3d16.039187188845013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e9468e9169%3A0x8c92615f975fc0cd!2zVGhp4bq_dCBL4bq_IFdlYnNpdGUgxJDDoCBO4bq1bmcgLSBPbmV0ZXouY29t!5e0!3m2!1svi!2s!4v1637629529411!5m2!1svi!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script src="/scripts/jquery.slimscroll.min.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+      $('#branch_list').slimScroll({
+        alwaysVisible: true
+      });
+    }
+  </script>
+
+</body>
+
+</html>

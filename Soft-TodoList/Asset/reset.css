@@ -1,0 +1,1327 @@
+﻿/* ====  CSS reset  ==== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+*, * focus {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+textarea, input[type=text], input[type=password] {
+    font-family: inherit;
+}
+
+button, input[type=submit] {
+    font-family: inherit;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0090fd;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a.button::-moz-focus-inner {
+    border: 0;
+    padding-top: 20px;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}.note__html::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.note__html address, .note__html blockquote, .note__html dd, .note__html div, .note__html dl, .note__html dt, .note__html fieldset, .note__html frame, .note__html frameset, .note__html h1, .note__html h2, .note__html h3, .note__html h4, .note__html h5, .note__html h6, .note__html noframes, .note__html ol, .note__html p, .note__html ul, .note__html center, .note__html dir, .note__html hr, .note__html menu, .note__html pre {
+    display: block;
+    unicode-bidi: embed
+}
+
+.note__html ul {
+    list-style-type: disc;
+}
+
+.note__html li {
+    display: list-item;
+}
+
+.note__html head {
+    display: none
+}
+
+.note__html table {
+    display: table
+}
+
+.note__html tr {
+    display: table-row
+}
+
+.note__html thead {
+    display: table-header-group
+}
+
+.note__html tbody {
+    display: table-row-group
+}
+
+.note__html tfoot {
+    display: table-footer-group
+}
+
+.note__html col {
+    display: table-column
+}
+
+.note__html colgroup {
+    display: table-column-group
+}
+
+.note__html td, .note__html th {
+    display: table-cell
+}
+
+.note__html caption {
+    display: table-caption
+}
+
+.note__html th {
+    font-weight: bolder;
+    text-align: center
+}
+
+.note__html caption {
+    text-align: center
+}
+
+.note__html body {
+    margin: 8px
+}
+
+.note__html h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+.note__html h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+.note__html h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+.note__html h4, .note__html p, .note__html blockquote, .note__html ul, .note__html fieldset, .note__html form, .note__html ol, .note__html dl, .note__html dir, .note__html menu {
+    margin: 1.12em 0
+}
+
+.note__html h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+.note__html h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+.note__html h1, .note__html h2, .note__html h3, .note__html h4, .note__html h5, .note__html h6, .note__html b, .note__html strong {
+    font-weight: bolder
+}
+
+.note__html blockquote {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+.note__html i, .note__html cite, .note__html em, .note__html var, .note__html address {
+    font-style: italic
+}
+
+.note__html pre, .note__html tt, .note__html code, .note__html kbd, .note__html samp {
+    font-family: monospace
+}
+
+.note__html pre {
+    white-space: pre
+}
+
+.note__html button, .note__html textarea, .note__html input, .note__html select {
+    display: inline-block
+}
+
+.note__html big {
+    font-size: 1.17em
+}
+
+.note__html small, .note__html sub, .note__html sup {
+    font-size: .83em
+}
+
+.note__html sub {
+    vertical-align: sub
+}
+
+.note__html sup {
+    vertical-align: super
+}
+
+.note__html table {
+    border-spacing: 2px;
+}
+
+.note__html thead, .note__html tbody, .note__html tfoot {
+    vertical-align: middle
+}
+
+.note__html td, .note__html th, .note__html tr {
+    vertical-align: inherit
+}
+
+.note__html s, .note__html strike, .note__html del {
+    text-decoration: line-through
+}
+
+.note__html hr {
+    border: 1px inset
+}
+
+.note__html ol, .note__html ul, .note__html dir, .note__html menu, .note__html dd {
+    margin-left: 40px
+}
+
+.note__html ol {
+    list-style-type: decimal
+}
+
+.note__html ol ul, .note__html ul ol, .note__html ul ul, .note__html ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.note__html u, .note__html ins {
+    text-decoration: underline
+}
+
+.note__html br:before {
+    content: "\A";
+    white-space: pre-line
+}
+
+.note__html center {
+    text-align: center
+}
+
+.note__html a {
+    text-decoration: underline;
+}
+
+.note__html :link, .note__html :visited {
+    text-decoration: underline
+}
+
+.note__html :focus {
+    outline: thin dotted invert
+}
+
+.note__html table, .note__html div, .note__html img, .note__html p, .note__html iframe {
+    max-width: 100% !important;
+}
+
+.note__html {
+    font-size: 13px;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* ====  CSS Shared  ==== */
+#loading {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    background-color: #fff;
+    background-image: url(/Images/loading_min.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 40px;
+    display: none;
+}
+#loading:before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 80px);
+    width: 60px;
+    height: 60px;
+    background-image: url(/Images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 40px;
+}
+#loading:after {
+    content: "Notota";
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% + 25px);
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#notify {
+    position: fixed;
+    top: 64px;
+    right: 10px;
+    max-width: 250px;
+    z-index: 999;
+}
+.notification {
+    position: relative;
+    background-color: #ffff;
+    border-radius: 4px;
+    padding: 10px 15px;
+    padding-right: 30px;
+    box-shadow: 0px 0px 5px 0px rgba(82, 88, 101, 0.5);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.notification.is--success {
+    background-color: #48c774;
+    color: #fff;
+}
+.notification.is--danger {
+    background-color: #f14668;
+    color: #fff;
+}
+.notification .btn__close {
+    background-color: rgba(10,10,10,.2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+.notification .btn__close:hover {
+    background-color: rgba(10,10,10,.5);
+}
+.notification .btn__close:before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+    height: 2px;
+    width: 50%;
+}
+.notification .btn__close:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform-origin: center center;
+    height: 50%;
+    width: 2px;
+}
+.is--hide {
+    display: none !important;
+}
+.is--bold {
+    font-weight: bold;
+}
+.is--f16 {
+    font-size: 16px;
+}
+.is--red {
+    color: red !important;
+}
+.is--blue {
+    color: #0090fd !important;
+}
+.is--cover {
+    background-position: center;
+    background-size: cover;
+}
+.is--circle {
+    border-radius: 50%;;
+}
+.action__menu {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+.action__menu .item {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+.action__menu .item.is--text {
+    width: auto;
+    line-height: 24px;
+}
+.action__menu .item img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+.action__menu .item:hover img {
+    opacity: 0.7;
+}
+.action__menu .item .is--child {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0px;
+    max-width: 200px;
+    padding: 0px;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.3);
+}
+.action__menu .item.is--show .is--child {
+    display: block;
+}
+.action__menu .item .is--child a {
+    display: block;
+    color: #333;
+    padding: 10px;
+    padding-left: 34px;
+    font-size: 13px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.action__menu .item .is--child a:hover {
+    background: #efefef;
+}
+.action__menu .item .is--child a img {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+}
+.popup {
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup__wrap {
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: relative;
+    width: 800px;
+    max-width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+}
+.popup__wrap.is--small {
+    width: 300px;
+}
+.popup__wrap .title {
+    background: #fff;;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    line-height: 24px;
+    padding: 4px 15px;
+    padding-right: 32px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    z-index: 101;
+}
+.popup__wrap .title span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+}
+.popup__wrap .close {
+    position: absolute;
+    z-index: 102;
+    top: 0px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
+    background-image: url(/Images/icons/close.svg);
+    background-position: center;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.popup__wrap .close:hover {
+    opacity: 1;
+}
+.popup__form {
+    padding: 10px;
+    background: #F5F5F5;
+    z-index: 100;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.popup__form.no--scroll {
+    overflow: unset;
+}
+.popup__wrap.is--note .popup__form {
+    background: #fff;
+    padding: 20px;
+}
+.popup__button {
+    background: #fff;
+    padding: 4px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #ddd;
+}
+.popup__button.is--menu {
+    justify-content: space-between;
+    position: relative;
+}
+.popup__button.is--menu .action__menu {
+    position: static;
+}
+/* ====  CSS Columns  ==== */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.column.is--1 {
+    width: 100%;
+}
+.column.is--12 {
+    width: 50%;
+    flex: none;
+}
+.column.is--13 {
+    width: calc(100% / 3);
+    flex: none;
+}
+.column.is--23 {
+    width: calc(100% / 3 * 2);
+    flex: none;
+}
+.column.is--14 {
+    width: 25%;
+    flex: none;
+}
+.column.is--34 {
+    width: 75%;
+    flex: none;
+}
+
+
+.pagination {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pagination a {
+    padding: 4px 2px;
+    min-width: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    font-size: 13px;
+}
+.pagination a:last-child {
+    margin-right: 0px;
+}
+.pagination a.active {
+    background: #0090fd;
+    border-color: #0090fd;
+    color: #fff;
+}
+
+/* ====  CSS Button & Input ==== */
+.txt {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    line-height: 22px;
+    display: block;
+    min-height: 32px;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.txt:focus {
+    box-shadow: 0px 0px 4px 0px #3273dc;
+}
+.txt::placeholder {
+  color:#666;
+}
+.txt[readonly] {
+    box-shadow: none;
+    background: #F5F5F5;
+}
+.txt.is--icon {
+    font-size: 18px;
+}
+.txt.is--required {
+    box-shadow: 0px 0px 4px 0px red !important;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 5px 0px;
+}
+.checkbox input {
+    margin-right: 10px;
+}
+.selection {
+    position: relative;
+    width: 100%;
+}
+.selection .selected {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    line-height: 22px;
+    height: 32px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px 20px 4px 10px;
+    color: #000;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.selection .selected img {
+    height: auto;
+    width: 14px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+.selection .selected .icon {
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+.selection .selected:after {
+    border: 2px solid transparent;
+    border-radius: 1px;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 8px;
+    width: 8px;
+    pointer-events: none;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    border-color: #999;
+    top: calc(50% - 6px);
+    right: 5px;
+}
+.selection:hover .selected:after {
+    opacity: 1;
+}
+.selection .selectvalue {
+    display: none;
+}
+.selection ul {
+    width: 100%;
+    max-height: 200px;
+    left: 0px;
+    top: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 100;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.selection ul li {
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+.selection ul li.sub {
+    padding-left: 25px;
+    font-size: 13px;
+}
+.selection ul li:hover {
+    background: #f9f9f9;
+}
+.selection ul li img {
+    height: auto;
+    width: 14px;
+    opacity: 0.7;
+    margin-right: 10px;
+}
+.selection ul li .icon {
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    line-height: 22px;
+    padding: 0px 10px;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s;
+    text-align: center;
+    min-height: 24px;
+}
+.btn:hover {
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+.btn.is--primary {
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+.btn.is--link {
+    background-color: #3273dc;
+    border-color: transparent;
+    color: #fff;
+}
+.btn.is--success {
+    background-color: #48c774;
+    border-color: transparent;
+    color: #fff;
+}
+.btn.is--warning {
+    background-color: #ffdd57;
+    border-color: transparent;
+    color: #000;
+}
+.btn.is--danger {
+    background-color: #f14668;
+    border-color: transparent;
+    color: #fff;
+}
+.btn.is--s32 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+}
+.btn.is--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn.is--icon:hover {
+    color: #000;
+}
+.btn.is--icon img {
+    height: 14px;
+    opacity: 0.6;
+}
+.btn.is--icon span {
+    padding-left: 5px;
+}
+.btn.is--icon:hover img {
+    opacity: 1;
+}
+.btn.is--loading {
+    color: transparent !important;
+    background-image: url(/Images/loading_min.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn.is--loading img {
+    opacity: 0 !important;
+}
+
+.form__input {
+    position: relative;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.form__input.is--sb {
+    justify-content: space-between;
+}
+.form__input.is--small {
+    padding: 5px 0px;
+}
+.form__input.is--small .txt {
+    font-size: 12px;
+    padding: 2px 5px;
+    min-height: 28px;
+    height: 28px;
+}
+.form__input.is--small .selection .selected {
+    font-size: 12px;
+    padding: 2px 5px;
+    padding-right: 20px;
+    min-height: 28px;
+    height: 28px;
+}
+.form__input .btn {
+    margin-right: 5px;
+}
+.form__input .btn:last-child {
+    margin-right: 0px;
+}
+.form__input.form__file .thumb {
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #ddd;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.form__input.form__file .txt {
+    width: calc(100% - 37px);
+}
+.form__input.form__title label {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 0px 0px;
+}
+.form__input.has--icon .txt {
+    padding-right: 30px;
+}
+.form__input.has--icon .is--icon {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__input.has--icon .is--icon img {
+    max-width: 16px;
+    max-height: 16px;
+    opacity: 0.6;
+}
+.form__input.has--icon .is--icon:hover img {
+    opacity: 1;
+}
+.form__input > div {
+    width: 100%;
+}
+.is--icon.is--loading {
+    color: transparent !important;
+    background-image: url(/Images/loading_min.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.is--icon.is--loading img {
+    opacity: 0 !important;
+}
+.suggest {
+    position: absolute;
+    left: 5px;
+    top: 42px;
+    width: calc(100% - 10px);
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px rgba(82, 88, 101, 0.3);
+    z-index: 10;
+    display: none;
+}
+.form__input.is--small .suggest {
+    left: 0px;
+    top: 34px;
+    width: 100%;
+}
+.suggest > li {
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.suggest > li:hover, .suggest > li.active {
+    background: #F5F5F5;
+    cursor: pointer;
+}
+.suggest > li:last-child {
+    border-bottom: 0px;
+}
+.suggest > li span {
+    display: inline-block;
+    margin-right: 14px;
+    position: relative;
+}
+.suggest > li span:last-child {
+    margin-right: 0px;
+}
+.suggest > li span:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #999;
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.suggest > li span:last-child:after {
+    display: none;
+}
+/* ====  CSS Icons  ==== */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+}
+.icon.is--16 {
+    width: 16px;
+    height: 16px;
+}
+.icon.is--plus {
+    background-image: url(/Images/icons/plus.svg);
+}
+.icon.is--plus-circle {
+    background-image: url(/Images/icons/plus-circle.svg);
+}
+.icon.is--minus {
+    background-image: url(/Images/icons/minus.svg);
+}
+.icon.is--minus-circle {
+    background-image: url(/Images/icons/minus-circle.svg);
+}
+.icon.is--dollar {
+    background-image: url(/Images/icons/dollar.svg);
+}
+.icon.is--globe {
+    background-image: url(/Images/icons/globe.svg);
+}
+.icon.is--close {
+    background-image: url(/Images/icons/close.svg);
+}
+.icon.is--status {
+    background: #999;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+.icon.is--status.is--red {
+    background: #c62828;
+}
+.icon.is--status.is--green {
+    background: #4caf50;
+}
+
+/* ====  CSS Other  ==== */
+body.dragging,
+body.dragging * {
+    cursor: grab !important;
+}
+
+.dragged {
+    position: absolute !important;
+    opacity: 0.7 !important;
+    z-index: 2000;
+}
+
+.sortable li.placeholder {
+    position: relative !important;
+}
+
+.sortable li.placeholder:before {
+    position: absolute !important;
+}
+.is--sorting {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.sort__icon {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 12px);
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    cursor: grab;
+}
+.sorting .sort__icon {
+    display: block;
+}
+.sort__icon:before, .sort__icon:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 16px;
+    height: 2px;
+    background: #000;
+}
+.sort__icon:after {
+    top: auto;
+    bottom: 9px;
+}
+.sorting .sort__hiden {
+    display: none !important;
+}
+.no__result {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+.no__result__wrap {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    background: none;
+}
+.no__result__wrap:before {
+    content: "";
+    background-image: url(/Images/icons/search.svg);
+    background-size: auto 60px;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 70px;
+    opacity: 0.2;
+}
+.emojitrigger {
+    top: 8px !important;
+    right: 5px !important;
+    width: 16px;
+    height: 16px;
+}
+.emojitrigger svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Page Login */
+#page_login {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.login__bg {
+    position: fixed;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    z-index: 1;
+    background-color: #449ef1;
+    background-image: url('/Images/bg_login.jpg');
+    background-position: center;
+    background-size: cover;
+    -ms-filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.login__dev {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+
+.login__dev a {
+    color: inherit;
+}
+
+.login__form {
+    position: relative;
+    z-index: 3;
+    background: rgba(0,0,0,0.5);
+    width: 360px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+    color: #fff;
+}
+
+.login__title {
+    background-image: url(/Images/logo.png);
+    background-position: 16px center;
+    background-size: auto 52px;
+    background-repeat: no-repeat;
+    padding: 10px 0px;
+    padding-left: 85px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-bottom: 10px;
+}
+
+.login__input {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    border-radius: 4px;
+    padding: 0px 0px 0px 85px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.login__input label {
+    position: absolute;
+    font-size: 12px;
+    width: 85px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 8px;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.login__input input {
+    background: none;
+    border: none;
+    height: 38px;
+    line-height: 30px;
+    padding: 0px 10px;
+    color: #fff;
+    width: 100%;
+    font-family: inherit !important;
+    font-size: 13px;
+}
+.login__input input::placeholder {
+    color: #ccc;
+}
+
+.login_password input {
+    padding-right: 35px;
+}
+
+.login_captcha input {
+    padding-right: 95px;
+}
+
+.login_password img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    right: 5px;
+    padding: 4px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.login_password img:hover {
+    opacity: 1;
+}
+
+.login_captcha span {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-weight: 600;
+    height: 28px;
+    line-height: 28px;
+    padding: 4px;
+    top: 5px;
+    right: 5px;
+    border-radius: 2px;
+    width: 80px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login__btn {
+    padding-bottom: 20px;
+}
+
+.login__btn a {
+    display: block;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(#0072ff), to(#00d4ff));
+    background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    transition: all 1s;
+}
+
+.login__btn a:hover {
+    text-decoration: none;
+    background: #0072ff;
+    background: linear-gradient(90deg, #0072ff 60%, #00d4ff 100%);
+}
+
+.login__msg {
+    min-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: inherit;
+}
+
+.login__msg img {
+    height: 20px;
+    display: block;
+    margin: 0px auto;
+}

@@ -1,0 +1,211 @@
+@media (min-width: 1400px) 
+{
+    .note__list > li {
+        width: calc(100% / 3);
+    }
+}
+@media (min-width: 770px) 
+{
+    #toggle_sidebar {
+        background: url(/Images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #toggle_sidebar i {
+        opacity: 0;
+    }
+    .scrollbar {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .scrollbar::-webkit-scrollbar
+    {
+        width: 8px;
+    }
+    .scrollbar::-webkit-scrollbar-track
+    {
+        background-color: none;
+    }
+    .scrollbar::-webkit-scrollbar-thumb
+    {
+        border-radius: 2px;
+        background-color: rgba(0,0,0,.2);
+    }
+    .scrollbar::-webkit-scrollbar-thumb:hover
+    {
+        background-color: rgba(0,0,0,.5);
+    }
+}
+@media (max-width: 770px) 
+{
+	#sidebar {
+        position: fixed;
+        top: 0px;
+        left: -280px;
+        z-index: 100;
+    }
+    #main {
+        width: 100%;
+    }
+    .hide__sidebar #sidebar {
+        left: 0px;
+    }
+    .hide__sidebar #toggle_sidebar {
+        left: 270px;
+    }
+    .hide__sidebar #toggle_sidebar i {
+        background: #fff;
+    }
+    .hide__sidebar .header, .hide__sidebar #content {
+        filter: brightness(0.3);
+    }
+    .is--f16 {
+        font-size: 14px;
+    }
+    .emojipicker {
+        width: 300px !important;
+        position: fixed !important;
+        top: calc(50% - 200px) !important;
+        left: calc(50% - 150px) !important;
+        z-index: 100000 !important;
+    }
+    li.item .action__menu .item {
+        opacity: 0.4;
+    }
+    li.item .action__menu .item.is--show {
+        opacity: 1;
+    }
+    .action__menu .item .is--child a {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .content__left {
+        width: 65%;
+    }
+    .content__right {
+        width: 35%;
+    }
+    .note__html {
+        font-size: 13px;
+    }
+    .widget__title {
+        font-size: 14px;
+    }
+    .widget__title, .widget__content, .widget__footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .popup__wrap.is--note .popup__form {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .pagination a {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 480px) 
+{
+    .action__menu {
+        right: 0px;
+    }
+    .header .action__menu,
+    .sidebar .action__menu {
+        right: 10px;
+    }
+    .task__detail {
+        display: block;
+    }
+    .content__left {
+        width: 100%;
+    }
+    .content__right {
+        width: 100%;
+        max-width: none;
+        border: 0px;
+        border-top: 1px solid #ddd;
+    }
+    #content_wrap .content__left {
+        display: none;
+    }
+    #content_wrap.hide--right .content__left {
+        display: block;
+    }
+    .header #header_title {
+        font-size: 16px;
+    }
+    #header__search.is--show,
+    #header__search.is--show.is--full {
+        left: 50px;
+        right: 20px;
+        width: calc(100% - 60px);
+    }
+    .task__item {
+        padding-left: 40px;
+        padding-right: 24px;
+        display: block;
+    }
+    .task__item .icon__status {
+        left: 10px;
+    }
+    .task__item .item__prop {
+        padding-left: 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start !important;
+        width: 100% !important;
+    }
+    .task__item.is--edit .item__prop .txt {
+        width: 140px;
+        margin-right: 18px;
+    }
+    .task__item .item__prop span,
+    .task__item .item__prop a {
+        position: relative;
+        margin-right: 18px;
+        overflow: unset;
+    }
+    .task__item .item__prop span:after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: #999;
+        position: absolute;
+        top: 11px;
+        right: -10px;
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+    .task__item .item__prop span:last-child, .task__item .item__prop a:last-child {
+        margin-right: 0px;
+    }
+    .task__item .item__prop span:last-child:after {
+        display: none;
+    }
+    .overviews > li {
+        width: 50%;
+    }
+    .note__list > li {
+        width: 100%;
+    }
+    .columns .column {
+        width: 100%;
+    }
+    .column.mobile--is--12 {
+        width: 50%;
+    }
+}
+@media (max-width: 320px)
+{
+	#page_login {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .login__form {
+        padding: 10px;
+    }
+    .login__title {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Note Detail | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="none__sidebar">
+    <div id="notify"></div>
+    <div id="loading"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <div class="header">
+            <i class="is--icon"><img src="/todo-logo.png" alt="icon"></i>
+            <h1 id="header_title">
+                Notota.com - Notes, Todo, Task
+            </h1>
+            <div class="action__menu">
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a href="/note-edit.html">
+                            <img src="/Images/icons/edit.svg" alt="icon">
+                            Edit note
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <div id="widget__note" class="widget">
+                <div class="widget__wrap">
+                    <div class="form__input">
+                        <textarea id="note_edit_name" name="note_edit_name" class="txt is--bold is--f16"
+                            placeholder="Title..."
+                            rows="2">Chuyển đổi số (Digital transformation) – Doanh nghiệp Việt Nam có đang bị bỏ lại phía sau?</textarea>
+                    </div>
+                    <div class="form__input">
+                        <textarea id="note_edit_name" name="note_edit_name" class="txt" rows="20">- Web chuyên tracking giá sản phẩm
+- Khách hàng có thể nhập link của sản phẩm vào và nhập email. Khi giá giảm sẽ gửi thông báo qua email
+- Ngoài ra khách hàng có thể nhập mã sản phẩm để kiểm tra giá nếu sản phẩm có trên hệ thống
+- Nếu link hoặc mã sản phẩm chưa có thì lưu vào database để lấy thông tin ngay lúc đó</textarea>
+                    </div>
+                    <div class="form__input">
+                        <button type="submit" class="btn is--link is--s32">Save</button>
+                        <a class="btn is--s32" href="/note-view.html">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <div id="widget__password" class="widget__form is--hide">
+                <div class="widget__wrap">
+                    <div class="widget__title">
+                        Enter password to continue
+                    </div>
+                    <div class="form__input">
+                        <input id="category_name" class="txt" type="password" placeholder="Enter password">
+                    </div>
+                    <div class="form__input is--sb">
+                        <a id="btn__login" class="btn is--link is--s32" onclick="continueWidthPassword()">Submit</a>
+                        <a href="#">Login with account?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script>
+        function continueWidthPassword() {
+            $('#btn__login').addClass('is--loading');
+            setTimeout(function () {
+                $('#btn__login').removeClass('is--loading');
+                $('#widget__note').removeClass('is--hide');
+                $('#widget__password').addClass('is--hide');
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main" class="background_bg">
+
+        <!-- Slide Banner -->
+        <section class="py-5 has-background-white">
+            <div class="container">
+                <h2 class="has-text-weight-bold is-size-4 pb-2">
+                    Về chúng tôi
+                </h2>
+                <ul class="columns is-mobile is-variable is-2 is_scroll" data-repeat="true" data-rows="3"
+                    data-type="link-image" data-source="mobile-home-slide">
+                    <li class="column is-narrow">
+                        <div style="width: 140px;">
+                            <div class="card is_radius">
+                                <div class="card-image">
+                                    <a class="image is-square" href="#Element.Link">
+                                        <img src="#Blog.Thumb" alt="#Blog.Name">
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="font_13 text_1_line mt-2 has-text-grey">
+                                <a href="#Blog.Link">
+                                    #Element.Name
+                                </a>
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Duoc yeu thich -->
+        <section class="py-5" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="s18 feather icon-heart-on"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Được yêu thích</h2>
+                        <div class="has-text-grey font_13">Công trình được xem nhiều nhất</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="3"
+                    data-type="blogs" data-source="#Data.Id" data-sort="6">
+                    <li class="column is-full">
+                        <div class="card p-3 is_radius">
+                            <div class="columns is-mobile is-vcentered is-variable is-2">
+                                <div class="column is-one-third">
+                                    <a class="image is-square is_cover is_radius" href="#Blog.Link"
+                                        style="background-image: url('#Blog.Thumb');"></a>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="has-text-weight-semibold font_14 text_1_line">
+                                        <a href="#Blog.Link">
+                                            #Blog.Name
+                                        </a>
+                                    </h3>
+                                    <div class="has-text-grey font_13 mt-1">
+                                        <span class="mr-1">5m x 20m</span>
+                                        <span class="mr-1">1.2 tỷ</span>
+                                        <span class="mr-1">Ninh bình</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Phu hop voi ban -->
+        <section class="py-5 has-background-white" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="s18 feather icon-heart-on"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Phù hợp với bạn</h2>
+                        <div class="has-text-grey font_13">Những ngôi nhà phù hợp nhất với bạn</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="6"
+                    data-type="blogs" data-source="#Data.Id" data-sort="5">
+                    <li class="column is-half">
+                        <div class="card p-3 is_radius">
+                            <a class="image is-square is_cover is_radius" href="#Blog.Link"
+                                style="background-image: url('#Blog.Thumb');"></a>
+                            <h3 class="has-text-weight-semibold font_14 text_1_line mt-2">
+                                <a href="#Blog.Link">
+                                    #Blog.Name
+                                </a>
+                            </h3>
+                            <div class="has-text-grey font_13 text_1_line">
+                                <span class="mr-1">5m x 20m</span>
+                                <span class="mr-1">1.2 tỷ</span>
+                                <span class="mr-1">Ninh bình</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="pt-5">
+                    <div class="card is_radius background_bg px-4 py-2 mb-4">
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column has-text-weight-bold">
+                                <div>Tư vấn qua điện thoại</div>
+                                <a class="font_13 has-text-info" href="tel:#Config.Hotline1">
+                                    #Config.Hotline1
+                                </a>
+                            </div>
+                            <div class="column is-narrow">
+                                <a class="icon is-medium has-text-danger" href="tel:#Config.Hotline1">
+                                    <i class="fa-lg fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card is_radius background_bg px-4 py-2">
+                        <div class="columns is-mobile is-vcentered">
+                            <div class="column has-text-weight-bold">
+                                <div>Chat với Kiến trúc sư</div>
+                                <a class="font_13 has-text-info" href="#Config.Facebook">
+                                    Messenger
+                                </a>
+                            </div>
+                            <div class="column is-narrow">
+                                <a class="icon is-medium has-text-danger" href="#Config.Facebook">
+                                    <i class="fa-lg fas fa-comment-dots"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos -->
+        <section class="py-5" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="fa-lg fas fa-play-circle"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Video nhà đẹp</h2>
+                        <div class="has-text-grey font_13">Xem thêm các video khác</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="4"
+                    data-type="blogs" data-source="#Data.Id" data-sort="1">
+                    <li class="column is-full">
+                        <div class="video_item is_radius">
+                            <div class="columns is-mobile is-vcentered is-variable is-2">
+                                <div class="column is-5 is_image">
+                                    <a class="image is-5by3 is_cover is_video" href="#Blog.Link"
+                                        style="background-image: url('#Blog.Thumb');">
+                                        <i class="is_play fas fa-play-circle"></i>
+                                    </a>
+                                </div>
+                                <div class="column is-7 is_info">
+                                    <h3 class="has-text-weight-semibold font_14 text_2_line">
+                                        <a href="#Blog.Link">#Blog.Name</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Bai viet moi -->
+        <section class="py-5 has-background-white" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="fa-lg fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Bài viết mới</h2>
+                        <div class="has-text-grey font_13">Được chia sẻ bởi Milimet Vuông</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="4"
+                    data-type="blogs" data-source="#Data.Id" data-sort="1">
+                    <li class="column is-full">
+                        <div class="card p-3 is_radius">
+                            <div class="columns is-mobile is-vcentered is-variable is-2">
+                                <div class="column is-one-third">
+                                    <a class="image is-square is_cover is_radius" href="#Blog.Link"
+                                        style="background-image: url('#Blog.Thumb');"></a>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="has-text-weight-semibold font_14 text_1_line">
+                                        <a href="#Blog.Link">
+                                            #Blog.Name
+                                        </a>
+                                    </h3>
+                                    <div class="has-text-grey text_2_line font_14 mt-1">
+                                        #Blog.Desc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- De xuat -->
+        <section class="py-5" data-bind="true" data-type="post" data-source="279">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="fa-lg fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Milimet Vuông đề xuất</h2>
+                        <div class="has-text-grey font_13">Công trình được Milimet Vuông đề xuất</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-variable is-2 is_scroll" data-repeat="true" data-rows="3"
+                    data-type="blogs" data-source="#Data.Id" data-sort="5">
+                    <li class="column is-10">
+                        <a class="image is-4by5 is_cover is_radius" href="#Blog.Link"
+                            style="background-image: url('#Blog.Thumb');"></a>
+                        <h3 class="has-text-weight-semibold text_1_line">
+                            <a href="#Blog.Link">#Blog.Name</a>
+                        </h3>
+                        <div class="has-text-grey text_3_line font_14 mt-1">
+                            #Blog.Desc
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ung dung -->
+        <section class="py-5 has-background-white">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="fa-lg fas fas fa-rocket"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Ứng dụng trực tuyến</h2>
+                        <div class="has-text-grey font_13">Nhiều người quan tâm</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="columns is-mobile is-multiline is-variable is-2" data-repeat="true" data-rows="3"
+                    data-type="blogs" data-source="#Data.Id" data-sort="1">
+                    <li class="column is-full">
+                        <div class="card p-3 is_radius">
+                            <div class="columns is-mobile is-vcentered is-variable is-2">
+                                <div class="column is-one-quarter">
+                                    <a class="image is-64x64 is_cover is_radius" href="#Blog.Link"
+                                        style="background-image: url('#Blog.Thumb');">
+                                    </a>
+                                </div>
+                                <div class="column is-two-thirds">
+                                    <h3 class="has-text-weight-semibold font_14 text_1_line">
+                                        <a href="#Blog.Link">#Blog.Name</a>
+                                    </h3>
+                                    <div class="has-text-grey text_2_line font_13">
+                                        #Blog.Desc
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Images -->
+        <section class="py-5">
+            <div class="container">
+                <div class="columns is-mobile is-vcentered is-variable is-1">
+                    <div class="column is-narrow">
+                        <div class="button is_extra">
+                            <span class="icon">
+                                <i class="fa-lg fas fas fa-rocket"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2 class="has-text-weight-bold is-size-6">Khám phá</h2>
+                        <div class="has-text-grey font_13">Thêm nhiều dự án của Milimet Vuông</div>
+                    </div>
+                    <div class="column is-narrow">
+                        <a class="ml-2" href="#Data.Link">
+                            <i class="s24 feather icon-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="p-3"></div>
+                <ul class="grid_images" data-bind="true" data-rows="20" data-type="images-childs"
+                    data-source="#Data.Id">
+                    <li class="grid-item">
+                        <a class="image is_radius" href="/short/#Image.Id">
+                            <img src="#Image.Thumb" alt="#Image.Name">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/masonry.pkgd.min.js"></script>
+    <script src="/Scripts/imagesloaded.pkgd.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            var $grid = $('.grid_images').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry();
+            });
+        }
+    </script>
+
+</body>
+
+</html>

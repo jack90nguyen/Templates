@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Detail | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/check-none.svg" alt="icon"></i>
+            <h1 id="header_title">
+                <strong>#2001f8fad5</strong>
+                <span>Notota.com - Note Todo Taks</span>
+                <i>phần mềm quản lý công việc, ghi chú, tài chính</i>
+            </h1>
+            <div class="action__menu">
+                <a class="item" href="#" title="Make as important">
+                    <img src="/Images/icons/star-none.svg" alt="icon">
+                </a>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child is--small">
+                        <a onclick="toggleTaskSort()">
+                            <img src="/Images/icons/sort.svg" alt="icon">
+                            Soft
+                        </a>
+                        <a href="#">
+                            <img src="/Images/icons/edit.svg" alt="icon">
+                            Edit
+                        </a>
+                        <a class="is--red" href="#">
+                            <img src="/Images/icons/trash.svg" alt="icon">
+                            Delete
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <div class="task__detail">
+                <div class="content__left">
+                    <ul id="todo__list" class="task__list sortable__task">
+                        <li id="todo_1" class="item">
+                            <div class="task__item is--child">
+                                <i class="sort__icon"></i>
+                                <a class="icon__status is--done sort__hiden"></a>
+                                <div class="item__info">
+                                    <div class="item__title">
+                                        Quản lý kiểm tra tình trạng domain
+                                    </div>
+                                </div>
+                                <div class="item__prop">
+                                    <span>15/02/2020</span>
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a href="#">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="todo_2" class="item">
+                            <div class="task__item is--child">
+                                <i class="sort__icon"></i>
+                                <a class="icon__status sort__hiden"></a>
+                                <div class="item__info">
+                                    <div class="item__title">
+                                        Todo List: icon check, task info (icon, name, desc / #id, 2 of 5, deadline,
+                                        file, note), property (customer, doanh thu)
+                                    </div>
+                                </div>
+                                <div class="item__prop">
+                                    <span class="is--red">15/02/2020</span>
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a href="#">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="todo_3" class="item">
+                            <div class="task__item is--child">
+                                <i class="sort__icon"></i>
+                                <a class="icon__status sort__hiden"></a>
+                                <div class="item__info">
+                                    <div class="item__title">
+                                        <i>Todo: quản lý công việc, tạo việc con, tạo ghi chú, tạo khách hàng</i>
+                                    </div>
+                                </div>
+                                <div class="item__prop">
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a href="#">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="todo_4" class="item">
+                            <div class="task__item is--child">
+                                <i class="sort__icon"></i>
+                                <a class="icon__status sort__hiden"></a>
+                                <div class="item__info">
+                                    <div class="item__title">
+                                        <i>Notes: có URL riêng, quyền hạn (xem/sửa, xóa, password), có thể liên kết với
+                                            công việc, khách hàng</i>
+                                    </div>
+                                </div>
+                                <div class="item__prop">
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a href="#">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="todo_5" class="item">
+                            <div class="task__item is--child">
+                                <i class="sort__icon"></i>
+                                <a class="icon__status sort__hiden"></a>
+                                <div class="item__info">
+                                    <div class="item__title">
+                                        <i>Customer: thông tin, dự án liên quan, tiền thu, tiền nợ</i>
+                                    </div>
+                                </div>
+                                <div class="item__prop">
+                                </div>
+                                <div class="action__menu">
+                                    <div class="item" onclick="toggleActionMenu(this)">
+                                        <img src="/Images/icons/menu.svg" alt="icon">
+                                        <p class="is--child is--small">
+                                            <a href="#">
+                                                <img src="/Images/icons/edit.svg" alt="icon">
+                                                Edit
+                                            </a>
+                                            <a class="is--red">
+                                                <img src="/Images/icons/trash.svg" alt="icon">
+                                                Delete
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="task__list">
+                        <li class="item">
+                            <div id="task_new" class="task__item is--edit is--min">
+                                <span class="icon__status is--add"></span>
+                                <div class="item__info">
+                                    <textarea id="task_edit_name" name="task_edit_name" class="txt" rows="2"
+                                        placeholder="Add step..."></textarea>
+                                </div>
+                                <div class="item__prop">
+                                    <input id="task_edit_deadline" name="task_edit_deadline" type="date" class="txt"
+                                        placeholder="Due date">
+                                    <a class="btn is--link">Save</a>
+                                    <a class="btn" onclick="cancelTaskEdit('task_new')">Cancel</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__right">
+                    <ul class="property__list">
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title is--active" title="Move task to..."
+                                    onclick="toggleElement('task__listid')">
+                                    <i class="is--icon">💡</i>
+                                    <span>My Project</span>
+                                </a>
+                                <div id="task__listid" class="property__form is--hide">
+                                    <div class="form__input is--small">
+                                        <div class="selection">
+                                            <span class="selected">💡 My Project</span>
+                                            <input id="list_id" name="list_id" class="selectvalue" type="hidden"
+                                                value="">
+                                            <ul style="display: none;">
+                                                <li data-id="100">🎈 Ideas</li>
+                                                <li data-id="779">🎨 Learn</li>
+                                                <li data-id="754">💻 Coding</li>
+                                                <li class="sub" data-id="100">🎈 Ideas</li>
+                                                <li class="sub" data-id="779">🎨 Learn</li>
+                                                <li class="sub" data-id="754">💻 Coding</li>
+                                                <li data-id="100">🎈 Ideas</li>
+                                                <li data-id="779">🎨 Learn</li>
+                                                <li data-id="754">💻 Coding</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <a class="btn is--link">Save</a>
+                                        <a class="btn" onclick="toggleElement('task__listid')">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title is--active">
+                                    <i class="is--icon"><img src="/Images/icons/sun.svg" alt="icon"></i>
+                                    <span>Added today</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title" title="Customer" onclick="toggleElement('task__customer')">
+                                    <i class="is--icon"><img src="/Images/icons/customer.svg" alt="icon"></i>
+                                    <span>Add customer</span>
+                                </a>
+                                <div id="task__customer" class="property__form is--hide">
+                                    <div class="form__input is--small">
+                                        <input id="customer__name" name="customer__name" type="text" class="txt"
+                                            placeholder="Customer name...">
+                                        <ul class="suggest">
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                                <span>0972 053 100</span>
+                                            </li>
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                                <span>0972 053 100</span>
+                                            </li>
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                                <span>0972 053 100</span>
+                                            </li>
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                                <span>0972 053 100</span>
+                                            </li>
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                                <span>0972 053 100</span>
+                                            </li>
+                                            <li>
+                                                <span>Nguyễn Văn Thành</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <input id="customer__phone" name="customer__phone" type="number" class="txt"
+                                            placeholder="Phone number...">
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <a class="btn is--link">Save</a>
+                                        <a class="btn" onclick="toggleElement('task__customer')">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title" title="Due date" onclick="toggleElement('task__deadline')">
+                                    <i class="is--icon"><img src="/Images/icons/calendar.svg" alt="icon"></i>
+                                    <span>Add due date</span>
+                                </a>
+                                <div id="task__deadline" class="property__form is--hide">
+                                    <div class="form__input is--small">
+                                        <input id="deadline_date" name="deadline_date" type="date" class="txt"
+                                            placeholder="Add due date">
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <a class="btn is--link">Save</a>
+                                        <a class="btn" onclick="toggleElement('task__deadline')">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title" title="Completed date"
+                                    onclick="toggleElement('task__completed')">
+                                    <i class="is--icon"><img src="/Images/icons/check.svg" alt="icon"></i>
+                                    <span>Make complete</span>
+                                </a>
+                                <div id="task__completed" class="property__form is--hide">
+                                    <div class="form__input is--small">
+                                        <input id="completed_date" name="completed_date" type="date" class="txt"
+                                            placeholder="Completed date">
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <a class="btn is--link">Save</a>
+                                        <a class="btn" onclick="toggleElement('task__completed')">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title is--active" title="Customer">
+                                    <i class="is--icon"><img src="/Images/icons/note.svg" alt="icon"></i>
+                                    <span>Note: 5 day ago</span>
+                                    <!-- <span>Add note</span> -->
+                                </a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title">
+                                    <i class="is--icon"><img src="/Images/icons/file.svg" alt="icon"></i>
+                                    <span>Add file</span>
+                                </a>
+                                <div class="item__childs">
+                                    <div class="child__item">
+                                        <i class="child__icon">JPG</i>
+                                        <a class="child__delete"></a>
+                                        <a class="child__name" href="#">danh-sach-khach-hang_2019-06-29-17-29.xls</a>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon">xls</i>
+                                        <a class="child__delete"></a>
+                                        <a class="child__name" href="#">danh-sach-khach-hang_2019-06-29-17-29.xls</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="property__item">
+                                <a class="item__title" onclick="toggleElement('task__finance')">
+                                    <i class="is--icon"><img src="/Images/icons/dollar.svg" alt="icon"></i>
+                                    <span>Add finance</span>
+                                </a>
+                                <div id="task__finance" class="property__form is--hide">
+                                    <div class="form__input is--small">
+                                        <input id="finance__money" name="finance__money" type="text"
+                                            class="txt currency" placeholder="Money...">
+                                    </div>
+                                    <div class="form__input is--small" title="Received date">
+                                        <input id="finance__date" name="finance__date" type="date" class="txt"
+                                            placeholder="Received date">
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <input id="finance__desc" name="finance__desc" type="text" class="txt"
+                                            placeholder="Description...">
+                                    </div>
+                                    <div class="form__input is--small">
+                                        <a class="btn is--link">Save</a>
+                                        <a class="btn" onclick="toggleElement('task__finance')">Cancel</a>
+                                    </div>
+                                </div>
+                                <div class="item__childs">
+                                    <div class="child__item">
+                                        <i class="child__icon is--circle">+</i>
+                                        <a class="child__delete"></a>
+                                        <strong class="child__name">10,000,000 VND</strong>
+                                        <span class="child__recap">Báo giá code website</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--circle">-</i>
+                                        <a class="child__delete"></a>
+                                        <strong class="child__name">1,200,000 VND</strong>
+                                        <span class="child__recap">Hosting</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--none is--circle is--none">-</i>
+                                        <a class="child__delete"></a>
+                                        <strong class="child__name">1,200,000 VND</strong>
+                                        <span class="child__recap">Hosting</span>
+                                    </div>
+                                    <div class="child__item">
+                                        <i class="child__icon is--none is--circle is--none">+</i>
+                                        <a class="child__delete"></a>
+                                        <strong class="child__name">300,000 VND</strong>
+                                        <span class="child__recap">Tâng domain</span>
+                                    </div>
+                                    <div class="child__item is--footer">
+                                        <i class="child__icon is--none">=</i>
+                                        <strong class="child__name">9,900,000 VND</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/sortable.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script>
+
+        var todoList = document.getElementById('todo__list')
+
+        new Sortable(todoList, {
+            handle: '.sort__icon',
+            swapThreshold: 0.65,
+            animation: 150,
+            onEnd: function (evt) {
+                getTodoIndex();
+            }
+        });
+
+        function getTodoIndex() {
+            var strIndex = '';
+            var listIndex = $('#todo__list li.item');
+            for (var i = 0; i < listIndex.length; i++) {
+                var id = listIndex[i].id.replace('todo_', '');
+                if (i == 0) {
+                    strIndex += '{ "id": "' + id + '", "index":"' + i + '"}';
+                }
+                else {
+                    strIndex += ', { "id": "' + id + '", "index":"' + i + '"}';
+                }
+            }
+            var aryIndex = JSON.parse('[' + strIndex + ']');
+            console.log(aryIndex);
+        }
+
+        function toggleTaskSort() {
+            let current = $('.sortable__task');
+            if (current.attr('class').indexOf("sorting") !== -1) {
+                current.removeClass('sorting');
+            }
+            else {
+                current.addClass('sorting');
+            }
+        }
+    </script>
+</body>
+
+</html>

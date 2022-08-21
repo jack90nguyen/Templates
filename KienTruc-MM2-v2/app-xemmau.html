@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Xem màu</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main" class="background_bg">
+    <!-- Apps -->
+    <section id="app" class="wrap_mobile container py-6">
+      <div class="columns is-vcentered is-centered">
+        <div id="step1" class="column is-half">
+          <h1 class="title is-4 is-size-5-mobile color_main">
+            Xem màu sắc hợp tuổi
+          </h1>
+          <div class="mb-3">
+            Theo khoa học phong thủy, màu sắc có vai trò to lớn trong việc hỗ trợ và cân bằng, điều tiết hài hòa yếu tố
+            âm dương –
+            ngũ hành của từng người. Do đó việc lựa chọn màu sắc cho trang phục quần áo, giày dép, túi xách, trang sức,
+            màu xe, màu
+            sơn nhà, màu chủ đạo của bàn làm việc vô cùng quan trọng. Nếu nắm bắt được cách thức phối màu cũng như chọn
+            màu sắc sao
+            cho phù hợp với bản mệnh sẽ mang đến cho bạn cảm giác thoải mái và tuyệt vời; không chỉ tự tin thể hiện
+            phong cách bản
+            thân, màu sắc hài hòa sẽ giúp bạn may mắn và đạt hiệu quả cao trong công việc.
+          </div>
+          <div class="field">
+            <label class="label">Nhập năm sinh</label>
+            <input class="input" type="number" id="input_namsinh" placeholder="Nhập năm sinh" value="1990" min="1930"
+              max="2015">
+          </div>
+          <div class="field pt-2">
+            <a class="button is-danger is-fullwidth" onclick="submitStep1()">Xem ngay</a>
+          </div>
+        </div>
+
+        <div id="step2" class="column is-half is-hidden">
+          <div class="title is-5 mb-4">Kết quả xem màu hợp tuổi</div>
+          <ul class="columns is-multiline is-variable is-2 is-mobile">
+            <li class="column is-half">
+              <label class="has-text-grey">Năm sinh</label>
+              <div id="namsinh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-half">
+              <label class="has-text-grey">Tuổi âm lịch</label>
+              <div id="tuoiam" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-half">
+              <label class="has-text-grey">Mệnh</label>
+              <div id="menh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-half">
+              <label class="has-text-grey">Màu bản mệnh</label>
+              <div id="banmenh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-half">
+              <label class="has-text-grey">Màu tương sinh</label>
+              <div id="tuongsinh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-half">
+              <label class="has-text-grey">Màu tương khắc</label>
+              <div id="tuongkhac" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-full">
+              <a class="button is-fullwidth" onclick="reset()">Xem lại</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/Scripts/jquery-2.0.3.min.js"></script>
+  <script src="/Scripts/jquery-1.8.2.min.js"></script>
+  <script src="/Scripts/swiped-events.js"></script>
+  <script src="/Scripts/jquery.aniview.js"></script>
+  <script src="/Scripts/onetez.js"></script>
+  <script src="/Scripts/demo.js"></script>
+  <script src="/Scripts/app-xemmau.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+  </script>
+
+</body>
+
+</html>

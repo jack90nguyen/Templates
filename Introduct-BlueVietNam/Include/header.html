@@ -1,0 +1,62 @@
+<header id="header">
+  <div class="header_top pb-3 wrap_mobile is-hidden">
+    <div class="container">
+      <ul class="columns is-vcentered is-mobile is-variable is-2-mobile">
+        <li class="column is-narrow">
+          <a class="is-block header_logo" href="/">
+            <img src="/themes/logo.png" _src="#Config.Logo" alt="#Config.Domain" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header_menu">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="/themes/logo.png" _src="#Config.Logo" alt="#Config.Domain" />
+          </a>
+          <a class="navbar-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start" data-bind="true" data-rows="0" data-type="nav" data-source="header-nav">
+            <a class="navbar-item" href="#Element.Link">
+              #Element.Name
+            </a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <div class="control is-expanded has-icons-left">
+                  <input type="text" class="input font_14 quick_search" placeholder="Tìm kiếm..." />
+                  <span class="icon is-left font_14">
+                    <i class="feather icon-search"></i>
+                  </span>
+                </div>
+                <div class="control">
+                  <div class="dropdown is-hoverable is-right">
+                    <div class="dropdown-trigger is-uppercase py-1">
+                      <!-- #LanguageCode --> vn
+                    </div>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-content" data-bind="true" data-type="language">
+                        <a id="language_#Language.Id" class="dropdown-item has-text-right" onclick="changeLanguage()">
+                          #Language.Name
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

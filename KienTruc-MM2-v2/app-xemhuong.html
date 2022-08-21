@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hướng làm nhà</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+    crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main" class="background_bg">
+    <!-- Apps -->
+    <section id="app" class="wrap_mobile container py-6">
+      <div class="columns is-vcentered is-centered">
+        <div id="step1" class="column is-half">
+          <h1 class="title is-4 is-size-5-mobile color_main">
+            Xem hướng làm nhà
+          </h1>
+          <div class="mb-3">
+            Theo khoa học phong thủy, để việc thi công được thuận buồm xuôi gió thì cần xem tuổi của chủ nhà
+            phù hợp với năm làm nhà hay không. Nên tránh phạm vào 3 năm: Kim Lâu, Hoang Ốc, Tam Tai. Như
+            vậy, cả đời một con người chỉ còn lại khoảng 17 năm để có thể tiến hành động thổ hay làm các
+            việc đại sự.
+            Ngoài ra nếu không được tuổi làm nhà quý khách có thể xem gợi ý của ứng dụng những tuổi làm nhà
+            phù hợp trong năm dự kiến xây dựng để nhờ đứng tên khi động thổ hoặc làm các thủ tục cần thiết
+          </div>
+          <div class="field">
+            <label class="label">Nhập năm sinh</label>
+            <input class="input" type="number" id="input_namsinh" placeholder="Nhập năm sinh" value="1990">
+          </div>
+          <div class="field">
+            <label class="label">Hướng nhà hiện tại</label>
+            <div class="select is-fullwidth">
+              <select id="input_huongnha">
+                <option value="d">Đông</option>
+                <option value="t">Tây</option>
+                <option value="n">Nam</option>
+                <option value="b">Bắc</option>
+                <option value="db">Đông bắc</option>
+                <option value="dn">Đông nam</option>
+                <option value="tb">Tây bắc</option>
+                <option value="tn">Tây nam</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Giới tính</label>
+            <div class="control">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="gioitinh" value="1" checked />
+                  Nam
+                </label>
+                <label class="radio">
+                  <input type="radio" name="gioitinh" value="2" />
+                  Nữ
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="field pt-2">
+            <a class="button is-danger is-fullwidth" onclick="submitStep1()">Tiếp theo</a>
+          </div>
+        </div>
+
+        <div id="step2" class="column is-half is-hidden">
+          <div class="title is-5 mb-1">Kết quả xem hướng làm nhà</div>
+          <ul class="columns is-multiline is-variable is-2 is-mobile">
+            <li class="column is-one-third">
+              <label class="has-text-grey">Năm sinh</label>
+              <div id="namsinh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-two-thirds">
+              <label class="has-text-grey">Tuổi âm lịch</label>
+              <div id="tuoiam" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-one-third">
+              <label class="has-text-grey">Quẻ mệnh</label>
+              <div id="quemenh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-two-thirds">
+              <label class="has-text-grey">Cung mệnh</label>
+              <div id="cungmenh" class="has-text-weight-semibold"></div>
+            </li>
+            <li class="column is-full has-text-weight-semibold">
+              HƯỚNG TỐT VỚI TUỔI CỦA BẠN
+            </li>
+            <li class="column is-one-third">Hướng Sinh Khí</li>
+            <li id="sinhkhi" class="column is-two-thirds has-text-weight-semibold"></li>
+            <li class="column is-one-third">Hướng Thiên Y</li>
+            <li id="thieny" class="column is-two-thirds has-text-weight-semibold"></li>
+            <li class="column is-one-third">Hướng Diện Niên</li>
+            <li id="diennien" class="column is-two-thirds has-text-weight-semibold"></li>
+            <li class="column is-one-third">Hướng Phục Vị</li>
+            <li id="phucvi" class="column is-two-thirds has-text-weight-semibold"></li>
+            <li class="column is-full has-text-weight-semibold">
+              HƯỚNG NHÀ HIỆN TẠI
+            </li>
+            <li id="hientai" class="column is-one-third"></li>
+            <li id="huongnha" class="column is-two-thirds has-text-weight-semibold"></li>
+            <li id="ynghia" class="column is-full has-text-grey"></li>
+
+            <li class="column is-full">
+              <a class="button is-fullwidth" onclick="reset()">Xem lại</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/Scripts/jquery-2.0.3.min.js"></script>
+  <script src="/Scripts/jquery-1.8.2.min.js"></script>
+  <script src="/Scripts/swiped-events.js"></script>
+  <script src="/Scripts/jquery.aniview.js"></script>
+  <script src="/Scripts/onetez.js"></script>
+  <script src="/Scripts/demo.js"></script>
+  <script src="/Scripts/app-huonglamnha.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,500,700,900" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Breadcrumb -->
+        <section class="section_breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li class="is-active"><a href="#">Detail</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Page Blog -->
+        <section class="page_blog section_space">
+            <div class="container">
+                <h1 class="blog_title">
+                    #Post.Name
+                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                </h1>
+
+                <article class="content" data-repeat="true" data-rows="3">
+                    <div>
+                        <p>
+                            Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị
+                            của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+                            phần quản trị của website.
+                        </p>
+                        <p style="text-align: center;"><img src="#Post.Image" alt="img"></p>
+                        <p>Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+                            phần quản trị của website.</p>
+                    </div>
+                </article>
+                <hr>
+                <div class="title is-6 is-uppercase">
+                    Bài viết liên quan
+                </div>
+                <div class="content">
+                    <ul data-repeat="true" data-rows="5" data-type="blogs" data-source="#Post.ParentId">
+                        <li>
+							<a href="#Blog.Link">
+								#Blog.Name
+							</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/onetez-demo.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+/* ====  Variables & Shared ==== */
+:root {
+    --color-main: #3273dc;
+}
+.is_cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 20px;
+}
+.is_cover > img {
+    opacity: 0;
+}
+.page_loading:before {
+    content: "";
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(/Images/loading.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+}
+.test {
+    background-color: gray;
+    min-height: 100px;
+}
+.button.is_main {
+    color: #fff;
+    border-color: var(--color-main);
+    background-color: var(--color-main);
+}
+.feather {
+    font-size: inherit;
+}
+.font_14 {
+    font-size: 14px;
+}
+.is_one_line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pagination-link.is-current {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+.columns.is_gap {
+    margin-top: calc(-1 * var(--columnGap));
+    margin-bottom: calc(-1 * var(--columnGap));
+}
+.columns.is_gap > .column {
+    padding-top: var(--columnGap);
+    padding-bottom: var(--columnGap);
+}
+.card-content {
+    padding: .75rem;
+}
+#notify {
+    font-size: 13px;
+    position: fixed;
+    z-index: 90000;
+    top: 20px;
+    right: 20px;
+    max-width: calc(100% - 40px);
+    width: 360px;
+}
+
+#notify .notification {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+}
+
+#gallery__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 30000;
+    padding: 20px;
+}
+
+.gallery__popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__popup .gallery__close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gallery__popup .gallery__close:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.gallery__popup .gallery__img {
+    width: auto;
+    height: auto;
+}
+
+.gallery__popup .gallery__prev, .gallery__popup .gallery__next {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    padding: 4px 0px;
+    left: 0px;
+    top: calc(50% - 18px);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery__popup .gallery__next {
+    content: "";
+    left: auto;
+    right: 0px;
+}
+
+.gallery__popup .gallery__prev:after, .gallery__popup .gallery__next:after {
+    border: 4px solid transparent;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 16px;
+    width: 16px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    border-color: #fff;
+}
+
+.gallery__popup .gallery__next:after {
+    transform: rotate(-135deg);
+}
+
+.gallery__popup .gallery__prev:hover, .gallery__popup .gallery__next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+/* ====  Mobile UI ==== */
+body {
+    font-family: 'Segoe UI', Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+#main {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.section_vcentered {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.section_login {
+    padding: 20px;
+}
+.section_header {
+    padding: 20px 10px;
+    border-bottom: 2px solid #f5f5f5;
+}
+.section_detail {
+    padding: 20px;
+}
+.box_list {
+    padding: 0px 10px;
+}
+.pagination {
+    padding: 20px 10px;
+}

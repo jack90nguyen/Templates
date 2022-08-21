@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Page</title>
+  <link rel="stylesheet" href="/Asset/animate.min.css">
+  <link rel="stylesheet" href="/Asset/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/style.css">
+  <link rel="stylesheet" href="/Asset/mobile.css">
+  <link rel="stylesheet" href="/Asset/icon.material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <main id="main">
+    <section id="sidebar" class="is-small">
+      <div data-include="/Include/sidebar.html"></div>
+    </section>
+    <section id="content">
+      <ul class="field is-grouped p-4 m-0">
+        <li class="control">
+          <a class="button is-info" onclick="toggleActive('popup_small')">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">list_alt</i>
+            </span>
+            <span>Popup Form Small</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-link" onclick="toggleActive('popup_medium')">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">list_alt</i>
+            </span>
+            <span>Popup Form Medium</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-danger" onclick="toggleActive('noti_warning')">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">error_outline</i>
+            </span>
+            <span>Popup Warning</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-grey" onclick="toggleActive('noti_info')">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">info</i>
+            </span>
+            <span>Popup Info</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-success"
+            onclick="toggleActive('noti_success'); setTimeout(function () { toggleActive('noti_success')}, 2000);">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">done</i>
+            </span>
+            <span>Popup Success</span>
+          </a>
+        </li>
+      </ul>
+      <hr class="m-0">
+
+      <section id="popup_small" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card is-small">
+          <div class="modal-card-head">
+            <div class="modal-card-title">Tạo thông tin liên hệ mới</div>
+          </div>
+
+          <div class="modal-card-body is-size-7">
+            <ul class="columns is-multiline is-variable is-2">
+              <li class="column is-full">
+                <div class="field">
+                  <label class="label">Chọn link bài viết</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Tìm bài viết...">
+                  </div>
+                </div>
+              </li>
+
+              <li class="column is-half">
+                <div class="field">
+                  <label class="label">Email/SDT</label>
+                  <div class="control has-icons-right">
+                    <input class="input" type="text" placeholder="Nhập email hoặc sdt">
+                    <span class="icon is-right">
+                      <i class="material-icons-outlined is-size-5">drive_file_rename_outline</i>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="column is-half">
+                <div class="field">
+                  <label class="label">Tên khách hàng</label>
+                  <div class="control has-icons-right">
+                    <input class="input" type="text" placeholder="Nhập tên khách hàng...">
+                    <span class="icon is-right">
+                      <i class="material-icons-outlined is-size-5">drive_file_rename_outline</i>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="modal-card-foot is-right">
+            <a class="button is-white" onclick="toggleActive('popup_small')">
+              <span class="icon">
+                <i class="material-icons-outlined">replay</i>
+              </span>
+              <span>Huỷ</span>
+            </a>
+            <a class="button is-warning">
+              <span class="icon">
+                <i class="material-icons-outlined">save</i>
+              </span>
+              <span>Cập nhật</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="popup_medium" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card is-full">
+          <div class="modal-card-head">
+            <div class="modal-card-title">Tạo thông tin liên hệ mới</div>
+          </div>
+
+          <div class="modal-card-body is-size-7">
+            <div class="table-container scroll is_x is_y" style="height: calc(100vh - 185px);">
+              <table class="table table-fixed is-hoverable is-vcentered">
+                <thead>
+                  <tr>
+                    <th width="40px" class="is_sticky" style="left: 0px;">
+                      <a class="icon has-text-white">
+                        <i class="material-icons is-size-5">check_box_outline_blank</i>
+                      </a>
+                    </th>
+                    <th width="70px" class="is_sticky" style="left: 40px;">
+                      ID
+                    </th>
+                    <th width="100px" class="is_sticky" style="left: 110px;">
+                      Tỉnh thành
+                    </th>
+                    <th width="90px" class="is_sticky" style="left: 210px;">
+                      Bài viết
+                    </th>
+                    <th width="70px" class="is_sticky" style="left: 300px;">
+                      NVKD
+                    </th>
+                    <th width="180px" class="is_sticky is_last" style="left: 370px;">
+                      Từ khóa
+                    </th>
+                    <th width="90px">
+                      Tiền năng
+                    </th>
+                    <th width="120px">
+                      Chuyên mục lớn
+                    </th>
+                    <th width="120px">
+                      Chuyên mục nhỏ
+                    </th>
+                    <th rowspan="2" width="120px">
+                      Ngày cập nhật
+                    </th>
+                    <th width="90px">
+                      Thứ hạng
+                    </th>
+                    <th width="90px">
+                      Check URL
+                    </th>
+                    <th width="90px">
+                      Thứ hạng
+                    </th>
+                    <th width="90px">
+                      Check URL
+                    </th>
+                    <th width="90px">
+                      Thứ hạng
+                    </th>
+                    <th width="90px">
+                      Check URL
+                    </th>
+                  </tr>
+                </thead>
+                <tbody data-repeat="true" data-rows="100">
+                  <tr>
+                    <td style="left: 0px;" class="is_sticky">
+                      <a class="icon has-text-grey">
+                        <i class="material-icons is-size-5">check_box_outline_blank</i>
+                      </a>
+                    </td>
+                    <td style="left: 40px;" class="is_sticky">
+                      #Post.Id
+                    </td>
+                    <td class="is_sticky" style="left: 110px;">
+                      Tỉnh thành
+                    </td>
+                    <td class="is_sticky" style="left: 210px;">
+                      <a class="text_1_line" style="width: 80px;">
+                        #Post.Name
+                      </a>
+                    </td>
+                    <td class="is_sticky" style="left: 300px;">
+                      NVKD
+                    </td>
+                    <td class="is_sticky is_last" style="left: 370px;">
+                      <div class="text_1_line" style="width: 170px;">
+                        #Post.Desc
+                      </div>
+                    </td>
+                    <td>
+                      Tiền năng
+                    </td>
+                    <td>
+                      Chuyên mục lớn
+                    </td>
+                    <td>
+                      Chuyên mục nhỏ
+                    </td>
+                    <td>
+                      Ngày cập nhật
+                    </td>
+                    <td>
+                      Thứ hạng
+                    </td>
+                    <td>
+                      Check URL
+                    </td>
+                    <td>
+                      Thứ hạng
+                    </td>
+                    <td>
+                      Check URL
+                    </td>
+                    <td>
+                      Thứ hạng
+                    </td>
+                    <td>
+                      Check URL
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="modal-card-foot is-right">
+            <a class="button is-white" onclick="toggleActive('popup_medium')">
+              <span class="icon">
+                <i class="material-icons-outlined">replay</i>
+              </span>
+              <span>Huỷ</span>
+            </a>
+            <a class="button is-warning">
+              <span class="icon">
+                <i class="material-icons-outlined">save</i>
+              </span>
+              <span>Cập nhật</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="noti_warning" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card is_noti">
+          <ul class="columns is-gapless">
+            <li class="column is-one-fifth has-text-centered has-background-danger">
+              <div class="py-5">
+                <span class="icon is-large has-text-white">
+                  <i class="material-icons-outlined is-size-1">error_outline</i>
+                </span>
+              </div>
+            </li>
+            <li class="column is-four-fifths">
+              <div class="py-5 px-4">
+                <h1 class="is-size-4 has-text-weight-bold has-text-danger">Cảnh báo</h1>
+                <div class="content">
+                  <p>Bạn đang thực hiện thao tác xóa <b>1 doanh thu</b> khỏi QLDT</p>
+                  <p class="has-text-weight-bold">Bạn có muốn tiếp tục?</p>
+                </div>
+                <div class="buttons">
+                  <a class="button is-danger">
+                    <span class="icon">
+                      <i class="material-icons-outlined is-size-5">delete</i>
+                    </span>
+                    <span>Xóa</span>
+                  </a>
+                  <a class="button is-white" onclick="toggleActive('noti_warning')">
+                    <span class="icon">
+                      <i class="material-icons-outlined">replay</i>
+                    </span>
+                    <span>Hoàn tác</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="noti_info" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card is_noti">
+          <ul class="columns is-gapless">
+            <li class="column is-one-fifth has-text-centered has-background-grey">
+              <div class="py-5">
+                <span class="icon is-large has-text-white">
+                  <i class="material-icons-outlined is-size-1">info</i>
+                </span>
+              </div>
+            </li>
+            <li class="column is-four-fifths">
+              <div class="py-5 px-4">
+                <h1 class="is-size-4 has-text-weight-bold has-text-dark">
+                  Chỉnh sửa/Tạo chưa hoàn tất
+                </h1>
+                <div class="content">
+                  <p>Một khách hàng vừa chuyển sang trạng thái <b>Ký HĐ</b></p>
+                  <p class="has-text-weight-bold">Bạn có muốn tiếp tục?</p>
+                </div>
+                <div class="buttons">
+                  <a class="button is-grey">
+                    <span class="icon">
+                      <i class="material-icons-outlined is-size-5">done</i>
+                    </span>
+                    <span>Tiếp tục chỉnh sửa</span>
+                  </a>
+                  <a class="button is-white" onclick="toggleActive('noti_info')">
+                    <span class="icon">
+                      <i class="material-icons-outlined">arrow_back</i>
+                    </span>
+                    <span>Trở về</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="noti_success" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card is_noti">
+          <ul class="columns is-gapless">
+            <li class="column is-one-fifth has-text-centered has-background-success">
+              <div class="py-5">
+                <span class="icon is-large has-text-white">
+                  <i class="material-icons-outlined is-size-1">done</i>
+                </span>
+              </div>
+            </li>
+            <li class="column is-four-fifths">
+              <div class="py-5 px-4">
+                <h1 class="is-size-4 has-text-weight-bold has-text-success">
+                  Cập nhật thành công
+                </h1>
+                <div class="content">
+                  Thao tác hoàn tất
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </section>
+  </main>
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/demo.js"></script>
+</body>
+
+</html>

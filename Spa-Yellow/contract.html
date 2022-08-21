@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-fw.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-mobi.css">
+    <script src="https://kit.fontawesome.com/38f345802b.js" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+
+    <script src="/Scripts/demo.js"></script>
+</head>
+
+<body id="page_body" class="jrow">
+    <div id="notify"></div>
+    <a id="toggleSetting" class=""><i class="fas fa-tools"></i></a>
+    <a id="toggleSideBar"><span></span><span></span><span></span></a>
+    
+    <!-- SideBar -->
+    <div data-include="/Include/sidebar.html"></div>
+    
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main" class="bg__striped">
+
+        <div class="contact__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5063647088014!2d108.21970445090557!3d16.039192344446892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e9468e9169%3A0x8c92615f975fc0cd!2zVGhp4bq_dCBL4bq_IFdlYnNpdGUgxJDDoCBO4bq1bmcgLSBPbmV0ZXouY29t!5e0!3m2!1svi!2s!4v1574593599236!5m2!1svi!2s"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="jwrap">
+            <div class="contact__info">
+                <div class="title__center">
+                    <h1 class="item__title">Thông Tin Liên Hệ</h1>
+                </div>
+                <div class="html__content">
+                    <p>
+                        <strong>Số điện thoại:</strong> #config_hotline1 - #config_hotline2
+                    </p>
+                    <p>
+                        <strong>Địa chỉ:</strong> #config_address
+                    </p>
+                    <p>
+                        <strong>E-mail:</strong> #config_email
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="jwrap">
+            <div id="form_contact" class="contact__form">
+                <div class="field">
+                    <input class="form_name input" data-required="true" type="text" data-tooltip="2_78" value=""
+                        placeholder="Họ và tên">
+                </div>
+                <div class="field">
+                    <input class="form_phone input" data-required="true" type="number" data-tooltip="2_79" value=""
+                        placeholder="Số điện thoại">
+                </div>
+                <div class="field">
+                    <input class="form_email input" data-required="true" type="email" data-tooltip="2_80" value=""
+                        placeholder="Địa chỉ email">
+                </div>
+                <div class="field">
+                    <textarea class="form_note textarea" data-required="true" data-tooltip="2_81" value=""
+                        placeholder="Nội dung"></textarea>
+                </div>
+                <div class="field form_msg"></div>
+                <div class="field">
+                    <button class="form_btn button is-link" type="submit" onclick="submitContact()" data-text="2_82">Gửi Liên Hệ</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function submitContact() {
+                var form = 'form_contact';
+                var btn = $('#' + form + ' .form_btn');
+                var msg = $('#' + form + ' .form_msg');
+
+                if (checkRequired(form)) {
+                    btn.addClass('is-loading');
+
+                    var name = $('#' + form + ' .form_name').val();
+                    var phone = $('#' + form + ' .form_phone').val();
+                    var email = $('#' + form + ' .form_email').val();
+                    var note = $('#' + form + ' .form_note').val();
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/API/Contact",
+                        data: { typeId: type_id, name: name, phone: phone, email: email, note: note },
+                        dataType: "json",
+                        success: function (res) {
+                            btn.removeClass('is-loading');
+                            if (res.status === true)
+                            {
+                                msg.removeClass('has-text-danger');
+                                msg.addClass('has-text-success');
+                                msg.html(res.msg);
+                            }
+                            else{
+                                msg.addClass('has-text-danger');
+                                msg.html(res.msg);
+                            }
+                        }
+                    });
+                }
+                else {
+                    msg.addClass('has-text-danger');
+                    msg.html('Nhập đầy đủ thông tin cần thiết !');
+                }
+            }
+        </script>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+</body>
+
+</html>

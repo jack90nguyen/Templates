@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <style>
+        .table td,
+        .table th {
+            vertical-align: middle;
+            padding: .5em 0px;
+        }
+
+        @media (max-width: 768px) {
+            .table th {
+                display: none;
+            }
+
+            .table th:first-child {
+                display: block;
+                width: 100%;
+            }
+
+            .table tr {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                border-bottom: 1px solid #e2e2e2;
+            }
+
+            .table tr:last-child {
+                border: 0px;
+            }
+
+            .table td {
+                flex-grow: 1;
+                border: 0px;
+                text-align: left !important;
+            }
+
+            .table td:nth-child(2) {
+                width: 70%;
+            }
+
+            .table td:nth-child(1),
+            .table td:nth-child(3) {
+                width: 30%;
+            }
+
+            .table td:nth-child(4),
+            .table td:nth-child(5) {
+                width: 35%;
+            }
+
+            .cart_empty {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Main body -->
+    <main class="container" style="min-height: 100vh; display: flex; align-items: center;padding: 20px;">
+        <div class="columns is-multiline">
+            <div class="column is-full">
+                <a class="title is-4 is-uppercase">
+                    Patincoco.com
+                </a>
+                <hr style="margin: 1rem 0px 0px;">
+            </div>
+
+            <div class="column is-full">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr class="is-uppercase">
+                            <th colspan="2">
+                                Sản phẩm
+                            </th>
+                            <th width="10%" class="has-text-centered">
+                                Số lượng
+                            </th>
+                            <th width="15%" class="has-text-right">
+                                Đơn giá
+                            </th>
+                            <th width="20%" class="has-text-right">
+                                Thành tiền
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="cart_empty" class="is-hidden">
+                            <td class="has-text-centered" colspan="5">
+                                <span>Chưa có sản phẩm nào trong giỏ hàng</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="80px" style="padding-right: 10px;">
+                                <img src="/Themes/p1.jpg" alt="IMG">
+                            </td>
+                            <td>
+                                <a class="has-text-weight-semibold" href="#" target="_blank">
+                                    Đây là sản phẩm mẫu
+                                </a>
+                                <div class="is-size-7">
+                                    <span class="has-text-grey">Kích cỡ:</span>
+                                    <span style="padding-right: 15px;">@item.size</span>
+                                    <span class="has-text-grey">Màu:</span>
+                                    <span>@item.color</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="field has-addons">
+                                    <div class="control is-expanded">
+                                        <div class="select is-fullwidth">
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <a class="button is-danger" title="Xóa">
+                                            <i class="feather icon-x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="has-text-right">
+                                <div>250.000 VND</div>
+                                <del>300.000 VND</del>
+                            </td>
+                            <td class="has-text-right">
+                                <div class="has-text-weight-bold">250.000 VND</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="80px" style="padding-right: 10px;">
+                                <img src="/Themes/p1.jpg" alt="IMG">
+                            </td>
+                            <td>
+                                <a class="has-text-weight-semibold" href="#" target="_blank">
+                                    Đây là sản phẩm mẫu
+                                </a>
+                                <div class="is-size-7">
+                                    <span class="has-text-grey">Kích cỡ:</span>
+                                    <span style="padding-right: 15px;">@item.size</span>
+                                    <span class="has-text-grey">Màu:</span>
+                                    <span>@item.color</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="field has-addons">
+                                    <div class="control is-expanded">
+                                        <div class="select is-fullwidth">
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <a class="button is-danger">
+                                            <i class="feather icon-x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="has-text-right">
+                                <div>250.000 VND</div>
+                                <del>300.000 VND</del>
+                            </td>
+                            <td class="has-text-right">
+                                <div class="has-text-weight-bold">250.000 VND</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="80px" style="padding-right: 10px;">
+                                <img src="/Themes/p1.jpg" alt="IMG">
+                            </td>
+                            <td>
+                                <a class="has-text-weight-semibold" href="#" target="_blank">
+                                    Đây là sản phẩm mẫu
+                                </a>
+                                <div class="is-size-7">
+                                    <span class="has-text-grey">Kích cỡ:</span>
+                                    <span style="padding-right: 15px;">@item.size</span>
+                                    <span class="has-text-grey">Màu:</span>
+                                    <span>@item.color</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="field has-addons">
+                                    <div class="control is-expanded">
+                                        <div class="select is-fullwidth">
+                                            <select>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <a class="button is-danger">
+                                            <i class="feather icon-x"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="has-text-right">
+                                <div>250.000 VND</div>
+                                <del>300.000 VND</del>
+                            </td>
+                            <td class="has-text-right">
+                                <div class="has-text-weight-bold">250.000 VND</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr style="margin: 0px;">
+            </div>
+            <div class="column is-two-thirds is-hidden-mobile"></div>
+            <div class="column is-one-third">
+                <ul class="columns is-mobile is-multiline is-vcentered">
+                    <li class="column is-half has-text-grey">
+                        Tạm tính
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold">
+                            250.000 VND
+                        </span>
+                    </li>
+                    <li class="column is-half has-text-grey">
+                        Giảm giá
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold has-text-success">
+                            50.000 VND
+                        </span>
+                    </li>
+                    <li class="column is-half has-text-grey">
+                        Mã giảm giá
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input class="input is-small has-text-right" type="text" placeholder="Nhập mã">
+                            </div>
+                            <div class="control">
+                                <a class="button is-small">
+                                    <span class="icon">
+                                        <i class="feather icon-save"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="column is-full">
+                        <hr style="margin: 0px;">
+                    </li>
+                    <li class="column is-half">
+                        Tổng tiền
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <span class="has-text-weight-bold has-text-danger is-size-5">
+                            220.000 VND
+                        </span>
+                    </li>
+                    <li class="column is-half">
+                        <a class="is-flex has-text-link" href="/">
+                            <span class="icon">
+                                <i class="s22 feather icon-chevron-left"></i>
+                            </span>
+                            <span>Quay lại</span>
+                        </a>
+                    </li>
+                    <li class="column is-half has-text-right">
+                        <a class="button is-link" href="/payment.html">
+                            <span>Thanh toán</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

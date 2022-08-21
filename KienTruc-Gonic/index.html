@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page - Trang chủ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="home_slide">
+      <div class="slider-wrapper">
+        <div class="nivoSlider" data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+          <a href="#Element.Link">
+            <img src="#Element.Image" data-thumb="#Element.Image" alt="IMG" title="#htmlcaption#Element.Id" />
+          </a>
+        </div>
+      </div>
+      <div class="is-hidden" data-repeat="true" data-rows="3" data-type="image-text" data-source="home-slide">
+        <div id="htmlcaption#Element.Id" style="display:none">
+          <div class="container">
+            <div class="font_title is-size-2 is-size-5-mobile mb-3 aniview" data-av-animation="bounceInLeft">
+              #Element.Name
+            </div>
+            <div class="is-size-5 is-hidden-mobile aniview" data-av-animation="bounceInLeft">
+              #Element.Desc
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-4 wrap_mobile">
+      <div class="container">
+        <div class="has-text-centered has-text-weight-bold is-size-5 color_extra mb-4">
+          Chào mừng các bạn đã ghé thăm Gonic
+        </div>
+        <ul class="columns is-multiline" data-repeat="true" data-rows="5" data-type="image-text"
+          data-source="home-service">
+          <li class="column is-one-fifth">
+            <a class="card mb-2" href="#Element.Link">
+              <div class="image is-4by3">
+                <img src="#Element.Image" alt="img">
+              </div>
+            </a>
+            <a class="has-text-centered is-block" href="#Element.Link">
+              <h3 class="has-text-weight-semibold color_extra">#Element.Name</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-6 wrap_mobile bg_bg">
+      <div class="container">
+        <div class="columns" style="align-items: flex-end;">
+          <div class="column">
+            <h3 class="title is-4">
+              <div class="has-text-danger font_title">Khám phá</div>
+              <span class="has-text-black font_title">Dự án nổi bật</span>
+              <a class="has-text-weight-normal font_14" href="#">(Khám phá nhiều hơn)</a>
+            </h3>
+          </div>
+          <div class="column is-narrow">
+            <div class="buttons" data-bind="true" data-type="category" data-source="CategoryID">
+              <a class="button is-rounded is-outlined font_14" href="#Category.Link">#Category.Name</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered project_1x6">
+          <div class="column is-two-fifths">
+            <div class="card" data-repeat="true" data-rows="1" data-type="blogs" data-source="CategoryID" data-sort="6">
+              <div class="card-image">
+                <a class="image is-1by1" href="#Blog.Link">
+                  <img src="#Blog.Thumb" alt="img">
+                </a>
+              </div>
+              <div class="card-content">
+                <a class="is-block mb-3" href="#Blog.Link">
+                  <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+                </a>
+                <div class="has-text-grey text_5_line font_14">#Blog.Desc</div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-three-fifths">
+            <ul class="columns is-multiline is-variable is-2" data-repeat="true" data-rows="7" data-type="blogs"
+              data-source="CategoryID" data-sort="6">
+              <li class="column is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <a class="image is-1by1" href="#Blog.Link">
+                      <img src="#Blog.Thumb" alt="img">
+                    </a>
+                  </div>
+                  <div class="card-content p-2">
+                    <a class="is-block" href="#Blog.Link">
+                      <h3 class="has-text-weight-bold text_1_line font_14">#Blog.Name</h3>
+                    </a>
+                    <div class="has-text-grey text_3_line font_13">#Blog.Desc</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-6 pb-5 wrap_mobile">
+      <div class="container">
+        <h3 class="title is-4">
+          <div class="has-text-danger font_title">Ưu đãi</div>
+          <span class="has-text-black font_title">Tri ân khách hàng</span>
+          <a class="has-text-weight-normal font_14" href="#">(Khám phá nhiều hơn)</a>
+        </h3>
+        <div class="columns is-variable is-5">
+          <div class="column is-half" data-repeat="true" data-rows="3" data-type="blogs" data-source="BlogID"
+            data-sort="0">
+            <ul class="columns is-variable is-2 mb-3">
+              <li class="column is-one-third">
+                <div class="card">
+                  <a class="image is-4by3" href="#Blog.Link">
+                    <img src="#Blog.Thumb" alt="IMG" />
+                  </a>
+                </div>
+              </li>
+              <li class="column is-two-thirds">
+                <a class="is-block mb-1" href="#Blog.Link">
+                  <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+                </a>
+                <div class="has-text-grey text_4_line font_14">#Blog.Desc</div>
+              </li>
+            </ul>
+          </div>
+          <div class="column is-half" data-repeat="true" data-rows="1" data-type="image" data-source="home-ads">
+            <div class="card">
+              <a class="image is-5by4" href="#Element.Link">
+                <img src="#Element.Image" alt="IMG" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-6 wrap_mobile bg_bg">
+      <div class="container">
+        <h3 class="title is-4">
+          <div class="has-text-danger font_title">Tin tức</div>
+          <span class="has-text-black font_title">Kinh nghiệm xây nhà</span>
+          <a class="has-text-weight-normal font_14" href="#">(Khám phá nhiều hơn)</a>
+        </h3>
+        <ul class="columns" data-repeat="true" data-rows="3" data-type="blogs" data-source="BlogID" data-sort="0">
+          <li class="column is-one-third">
+            <div class="card mb-3">
+              <a class="image is-4by3" href="#Blog.Link">
+                <img src="#Blog.Thumb" alt="IMG" />
+              </a>
+            </div>
+            <a class="is-block mb-1" href="#Blog.Link">
+              <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+            </a>
+            <div class="has-text-grey text_2_line font_14">#Blog.Desc</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pt-6 pb-5 wrap_mobile">
+      <div class="container">
+        <h3 class="title is-4">
+          <div class="has-text-danger font_title">Trải nghiệm</div>
+          <span class="has-text-black font_title">Video nhà đẹp</span>
+          <a class="has-text-weight-normal font_14" href="#">(Khám phá nhiều hơn)</a>
+        </h3>
+        <div class="columns video_1x4">
+          <div class="column is-half" data-repeat="true" data-rows="1" data-type="blogs" data-source="VideoID"
+            data-sort="0">
+            <div class="card mb-3">
+              <a class="image is-5by3 is_video" href="#Element.Link">
+                <img src="#Element.Image" alt="IMG" />
+                <span class="is_play"></span>
+              </a>
+            </div>
+            <a class="is-block mb-1" href="#Blog.Link">
+              <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+            </a>
+            <div class="has-text-grey text_5_line font_14">#Blog.Desc</div>
+          </div>
+          <div class="column is-half">
+            <ul class="columns is-multiline" data-repeat="true" data-rows="5" data-type="blogs" data-source="VideoID"
+              data-sort="0">
+              <li class="column is-full-tablet is-half-mobile">
+                <ul class="columns is-variable is-2">
+                  <li class="column is-one-third">
+                    <div class="card">
+                      <a class="image is-5by3" href="#Blog.Link">
+                        <img src="#Blog.Thumb" alt="IMG" />
+                      </a>
+                    </div>
+                  </li>
+                  <li class="column is-two-thirds">
+                    <a class="is-block font_14 mb-1" href="#Blog.Link">
+                      <h3 class="has-text-weight-bold text_1_line">#Blog.Name</h3>
+                    </a>
+                    <div class="has-text-grey text_3_line font_14">#Blog.Desc</div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script src="/scripts/jquery.nivo.slider.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+      $('.home_slide .nivoSlider').nivoSlider({
+        manualAdvance: false,
+        effect: 'random',
+        animSpeed: 1000,
+        pauseTime: 5000,
+        pauseOnHover: true
+      });
+    }
+  </script>
+
+</body>
+
+</html>

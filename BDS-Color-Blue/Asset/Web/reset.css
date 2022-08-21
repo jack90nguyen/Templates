@@ -1,0 +1,322 @@
+﻿/* ====  CSS reset  ==== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+*, * focus {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+textarea, input[type=text], input[type=password] {
+    font-family: inherit;
+    font-size: 13px;
+}
+
+button, input[type=submit] {
+    font-family: inherit;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #33aaff;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a.button::-moz-focus-inner {
+    border: 0;
+    padding-top: 20px;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ====  CSS Html Content  ==== */
+.html__content::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.html__content address, .html__content blockquote, .html__content dd, .html__content div, .html__content dl, .html__content dt, .html__content fieldset, .html__content frame, .html__content frameset, .html__content h1, .html__content h2, .html__content h3, .html__content h4, .html__content h5, .html__content h6, .html__content noframes, .html__content ol, .html__content p, .html__content ul, .html__content center, .html__content dir, .html__content hr, .html__content menu, .html__content pre {
+    display: block;
+    unicode-bidi: embed
+}
+
+.html__content ul {
+    list-style-type: disc;
+}
+
+.html__content li {
+    display: list-item;
+}
+
+.html__content head {
+    display: none
+}
+
+.html__content table {
+    display: table
+}
+
+.html__content tr {
+    display: table-row
+}
+
+.html__content thead {
+    display: table-header-group
+}
+
+.html__content tbody {
+    display: table-row-group
+}
+
+.html__content tfoot {
+    display: table-footer-group
+}
+
+.html__content col {
+    display: table-column
+}
+
+.html__content colgroup {
+    display: table-column-group
+}
+
+.html__content td, .html__content th {
+    display: table-cell
+}
+
+.html__content caption {
+    display: table-caption
+}
+
+.html__content th {
+    font-weight: bolder;
+    text-align: center
+}
+
+.html__content caption {
+    text-align: center
+}
+
+.html__content body {
+    margin: 8px
+}
+
+.html__content h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+.html__content h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+.html__content h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+.html__content h4, .html__content p, .html__content blockquote, .html__content ul, .html__content fieldset, .html__content form, .html__content ol, .html__content dl, .html__content dir, .html__content menu {
+    margin: 1.12em 0
+}
+
+.html__content h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+.html__content h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+.html__content h1, .html__content h2, .html__content h3, .html__content h4, .html__content h5, .html__content h6, .html__content b, .html__content strong {
+    font-weight: bolder
+}
+
+.html__content blockquote {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+.html__content i, .html__content cite, .html__content em, .html__content var, .html__content address {
+    font-style: italic
+}
+
+.html__content pre, .html__content tt, .html__content code, .html__content kbd, .html__content samp {
+    font-family: monospace
+}
+
+.html__content pre {
+    white-space: pre
+}
+
+.html__content button, .html__content textarea, .html__content input, .html__content select {
+    display: inline-block
+}
+
+.html__content big {
+    font-size: 1.17em
+}
+
+.html__content small, .html__content sub, .html__content sup {
+    font-size: .83em
+}
+
+.html__content sub {
+    vertical-align: sub
+}
+
+.html__content sup {
+    vertical-align: super
+}
+
+.html__content table {
+    border-spacing: 2px;
+}
+
+.html__content thead, .html__content tbody, .html__content tfoot {
+    vertical-align: middle
+}
+
+.html__content td, .html__content th, .html__content tr {
+    vertical-align: inherit
+}
+
+.html__content s, .html__content strike, .html__content del {
+    text-decoration: line-through
+}
+
+.html__content hr {
+    border: 1px inset
+}
+
+.html__content ol, .html__content ul, .html__content dir, .html__content menu, .html__content dd {
+    margin-left: 40px
+}
+
+.html__content ol {
+    list-style-type: decimal
+}
+
+.html__content ol ul, .html__content ul ol, .html__content ul ul, .html__content ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.html__content u, .html__content ins {
+    text-decoration: underline
+}
+
+.html__content br:before {
+    content: "\A";
+    white-space: pre-line
+}
+
+.html__content center {
+    text-align: center
+}
+
+.html__content a {
+    text-decoration: underline;
+}
+
+.html__content :link, .html__content :visited {
+    text-decoration: underline
+}
+
+.html__content :focus {
+    outline: thin dotted invert
+}
+
+.html__content table, .html__content div, .html__content img, .html__content p, .html__content iframe {
+    max-width: 100% !important;
+}
+
+.html__content img[src*="/StoreData/"] {
+    height: auto !important;
+    width: 100% !important;
+    display: block;
+    margin: 0px auto;
+}
+
+.html__content {
+    font-size: 14px;
+    line-height: 1.6;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Category Page - Danh mục sản phẩm</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_bredcrumd py-4 is-hidden">
+      <div class="container">
+        <nav class="breadcrumb is-size-7 has-text-weight-medium">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="wrap_mobile pt-4 pb-6">
+      <div class="container">
+
+        <div class="columns is-variable is-4">
+          <div id="search_box" class="column is-one-quarter is-hidden-mobile">
+            <div class="search_box p-5">
+              <div class="field is-grouped">
+                <div class="control is-expanded">
+                  <span class="has-text-weight-bold">Bộ lọc</span>
+                </div>
+                <div class="control is-hidden-mobile">
+                  <a class="has-text-weight-medium is-size-7 color_extra" onclick="resetSearch()">Về mặc định</a>
+                </div>
+                <div class="control is-hidden-tablet">
+                  <a class="icon color_text" onclick="toggleSearch()">
+                    <i class="fas fa-times"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <div class="field">
+                <label class="label font_14">Loại nhà</label>
+                <div class="control">
+                  <ul class="checkbox_list font_14">
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span>Nhà cấp 4</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Nhà phố</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Nhà phố</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Nhà phố</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span>Nhà phố</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <a class="is-size-7 color_main">
+                    <span>Xem thêm</span>
+                    <i class="fa-xs fas fa-chevron-down"></i>
+                  </a>
+                </div>
+              </div>
+              <hr>
+              <div class="field">
+                <label class="label font_14">Số tầng</label>
+                <div class="control">
+                  <ul class="radio_list" data-repeat="true" data-rows="8">
+                    <li>
+                      <label class="radio">
+                        <input type="radio" name="floors" value="#Element.Id">
+                        <span>#Element.Id</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="field">
+                <label class="label font_14">Số phòng ngủ</label>
+                <div class="control">
+                  <ul class="radio_list" data-repeat="true" data-rows="8">
+                    <li>
+                      <label class="radio">
+                        <input type="radio" name="bedroom" value="#Element.Id">
+                        <span>#Element.Id</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="field">
+                <label class="label">Kích thước</label>
+                <div class="field is-grouped">
+                  <div class="control is-expanded" style="width: 50%;">
+                    <p class="is-size-7 has-text-weight-semibold">Chiều rộng</p>
+                    <div class="select mt-1">
+                      <select data-width>
+                        <option value="0">Mét</option>
+                        <option value="3">3 mét</option>
+                        <option value="4">4 mét</option>
+                        <option value="5">5 mét</option>
+                        <option value="6">6 mét</option>
+                        <option value="7">7 mét</option>
+                        <option value="8">8 mét</option>
+                        <option value="9">9 mét</option>
+                        <option value="10">10 mét</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="control is-expanded" style="width: 50%;">
+                    <p class="is-size-7 has-text-weight-semibold">Chiều dài</p>
+                    <div class="select mt-1">
+                      <select data-long>
+                        <option value="0">Mét</option>
+                        <option value="3">3 mét</option>
+                        <option value="4">4 mét</option>
+                        <option value="5">5 mét</option>
+                        <option value="6">6 mét</option>
+                        <option value="7">7 mét</option>
+                        <option value="8">8 mét</option>
+                        <option value="9">9 mét</option>
+                        <option value="10">10 mét</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="field is-grouped">
+                <div class="control">
+                  <a class="button is_main" onclick="submitSearch()">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <span>Tìm kiếm</span>
+                  </a>
+                </div>
+                <div class="control">
+                  <a class="button is-hidden-tablet" onclick="toggleSearch()">
+                    Hủy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-three-quarters">
+            <div class="columns is-mobile is-variable is-2 is-hidden-tablet">
+              <h1 class="column is-size-5 has-text-weight-semibold">
+                #Post.Name
+              </h1>
+              <div class="column is-narrow">
+                <a class="icon color_text" onclick="toggleSearch()">
+                  <i class="fas fa-sliders-h"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="tabs pt-5 has-text-weight-medium font_14">
+              <ul id="sortby">
+                <li data-id="1">
+                  <a onclick="changeSort(1)">Đề xuất bởi STBV</a>
+                </li>
+                <li data-id="3">
+                  <a onclick="changeSort(3)">Giá tăng dần</a>
+                </li>
+                <li data-id="2">
+                  <a onclick="changeSort(2)">Giá giảm dần</a>
+                </li>
+                <li data-id="6">
+                  <a onclick="changeSort(6)">Nhiều người xem nhất</a>
+                </li>
+                <li data-id="4">
+                  <a onclick="changeSort(4)">Đặt hàng nhiều nhất</a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="columns is-multiline is-variable is-4 pb-5" data-repeat="true" data-rows="12"
+              data-type="product-list" data-source="#Post.Id" data-sort="1" data-pagination="true">
+              <li class="column is-one-third product_item">
+                <div class="card">
+                  <div class="item_img card-image">
+                    <div class="image is-square" href="#Product.Link">
+                      <img src="#Product.Thumb" alt="img">
+                    </div>
+                    <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+                  </div>
+                </div>
+                <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
+                  <img class="mr-2" src="/themes/icons/04.png" alt="icon">
+                  <span>Thiết kế bởi STBV</span>
+                </div>
+                <h3 class="text_2_line mb-1">
+                  <a href="#Product.Link">#Product.Name</a>
+                </h3>
+                <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post">
+                  <span>5m x 20m</span>
+                  <span>1.2 tỷ</span>
+                  <span>Ninh bình</span>
+                  <span>#Attribute.Value</span>
+                </div>
+                <div class="item_price mt-3">
+                  <!-- #Product.Price -->
+                  <span>1,550,000 ₫</span><del>1,800,000</del>
+                </div>
+              </li>
+            </ul>
+            <nav class="pagination is-centered">
+              <ul class="pagination-list">
+                <li><a class="pagination-link is-current">1</a></li>
+                <li><a class="pagination-link">2</a></li>
+                <li><a class="pagination-link">3</a></li>
+                <li><a class="pagination-link">4</a></li>
+                <li><a class="pagination-link">5</a></li>
+                <li><span class="pagination-ellipsis">…</span></li>
+                <li><a class="pagination-link">16</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+    function addFavorite(item) {
+      $(item).toggleClass('is_yes');
+      console.log('Add Favorite ' + item.dataset.id);
+    }
+
+    function resetSearch() {
+      $('.search_box [type="checkbox"]').prop('checked', true);
+      $('.search_box [type="radio"]').prop('checked', false);
+      $('.search_box select').val('');
+    }
+
+    function toggleSearch() {
+      $(`#search_box`).toggleClass('is-hidden-mobile');
+    }
+
+    function submitSearch() {
+      let category = '';
+      const listCategory = $('[data-type="category"] input[type="checkbox"]:checked');
+      for (let i = 0; i < listCategory.length; i++) {
+        category += listCategory[i].value + ',';
+      }
+      let floors = $('input[name="floors"]:checked').val();
+      let bedroom = $('input[name="bedroom"]:checked').val();
+      let width = $('[data-type="width"]').val();
+      let long = $('[data-type="long"]').val();
+
+      let link = '/search.html?type=4';
+      if (category.length > 0)
+        link += `&category=${category}`;
+      link += `&attributes=`;
+      if (floors !== undefined)
+        link += `c57e4b:${floors};`;
+      if (bedroom !== undefined)
+        link += `b115d9:${bedroom};`;
+      if (width !== '')
+        link += `10fe2e:${width};`;
+      if (long !== '')
+        link += `c406bb:${long};`;
+      location.href = link;
+    }
+
+    const attributes = getParameterByName('attributes');
+
+  </script>
+
+</body>
+
+</html>

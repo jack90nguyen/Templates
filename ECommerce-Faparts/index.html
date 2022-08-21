@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+</head>
+
+<body>
+    <div id="notify"></div>
+
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Sponsor -->
+        <section class="section_home">
+            <div class="container">
+                <div class="title_border">
+                    <a class="is_title" href="#">
+                        <i class="feather icon-check-circle"></i>
+                        <h2>Sponsor</h2>
+                    </a>
+                </div>
+                <div class="columns is-multiline is-centered is-variable is-2 is-mobile" data-repeat="true"
+                    data-rows="4" data-type="image" data-source="sponsor">
+                    <div class="column is-narrow">
+                        <a class="border_item">
+                            <figure class="image is-2by1 is_cover" style="background-image: url('#Element.Image');">
+                                <img src="#Element.Image" alt="IMG">
+                            </figure>
+                            <h3 class="item_name one_line">
+                                #Element.Name
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category -->
+        <section class="section_home">
+            <div class="container">
+                <div class="title_border">
+                    <a class="is_title" href="/category-brand.html">
+                        <i class="feather icon-settings"></i>
+                        <h2>Category</h2>
+                    </a>
+                </div>
+
+                <ul class="columns is-multiline is-centered is-variable is-2 is-mobile" data-repeat="true"
+                    data-rows="20" data-type="image" data-source="sponsor">
+                    <li class="column is-narrow">
+                        <a class="border_item">
+                            <figure class="image is-2by1 is_cover" style="background-image: url('#Element.Image');">
+                                <img src="#Element.Image" alt="IMG">
+                            </figure>
+                            <h3 class="item_name one_line">
+                                #Element.Name
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script>
+
+        function loadAfterDataDemo() {
+
+        }
+    </script>
+
+</body>
+
+</html>

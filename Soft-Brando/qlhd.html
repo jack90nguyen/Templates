@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/Asset/animate.min.css">
+  <link rel="stylesheet" href="/Asset/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/style.css">
+  <link rel="stylesheet" href="/Asset/mobile.css">
+  <link rel="stylesheet" href="/Asset/icon.material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <main id="main">
+    <aside id="sidebar" class="is-small">
+      <div data-include="/Include/sidebar.html"></div>
+    </aside>
+    <summary id="content">
+      <ul class="field is-grouped p-4 m-0">
+        <li class="control">
+          <a class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">legend_toggle</i>
+            </span>
+            <span>Tổng quát</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">description</i>
+            </span>
+            <span>Chi tiết</span>
+          </a>
+        </li>
+        <li class="control is-expanded has-text-right">
+          <a class="has-text-dark is-italic is-underlined is-size-7">
+            Cập nhật gần nhất: 21/04/2022 - 15h30
+          </a>
+        </li>
+      </ul>
+      <hr class="m-0">
+      <section class="p-4">
+        <ul class="columns is-multiline">
+          <li class="column is-size-7">
+            <a class="icon-text mr-2">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">filter_alt</i>
+              </span>
+              <span class="has-text-weight-bold">Bộ lọc</span>
+            </a>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">Tổng số Booking:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">Booking còn hạn:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">SP thuộc top:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text mr-2">
+              <span class="mr-1">SP đã thuê:</span>
+              <strong>1000</strong>
+            </span>
+
+            <span class="icon-text has-text-danger">
+              <span class="mr-1">Cảnh báo dữ liệu lỗi:</span>
+              <strong>1000</strong>
+            </span>
+          </li>
+
+          <li class="column is-narrow has-text-weight-bold is-size-7">
+            <a class="icon-text">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">toc</i>
+              </span>
+              <span>Chế độ xem danh sách</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="pl-4 pr-2 pb-2">
+        <div class="table-container scroll is_y" style="height: calc(100vh - 140px);">
+          <table class="table table-fixed is-fullwidth is-hoverable is-vcentered">
+            <thead>
+              <tr>
+                <th width="14.2%">
+                  Thứ 2
+                </th>
+                <th width="14.2%">
+                  Thứ 3
+                </th>
+                <th width="14.2%">
+                  Thứ 4
+                </th>
+                <th width="14.2%">
+                  Thứ 5
+                </th>
+                <th width="14.2%">
+                  Thứ 6
+                </th>
+                <th width="14.2%">
+                  Thứ 7
+                </th>
+                <th width="14.2%">
+                  Chủ nhật
+                </th>
+              </tr>
+            </thead>
+            <tbody data-repeat="true" data-rows="5">
+              <tr data-repeat="true" data-rows="7" data-source="childs">
+                <td>
+                  <div>0#Post.Id</div>
+                  <div class="icon-text my-2">
+                    <span class="icon image is-rounded is_red">
+                      <img src="#Post.Image" alt="img">
+                    </span>
+                    <span class="icon has-text-success">
+                      <i class="material-icons is-size-6">check_circle</i>
+                    </span>
+                    <a class="has-text-dark ml-1">#Post.Name</a>
+                  </div>
+
+                  <div class="icon-text my-2">
+                    <span class="icon image is-rounded is_yellow">
+                      <img src="#Post.Image" alt="img">
+                    </span>
+                    <a class="has-text-dark ml-1">#Post.Name</a>
+                  </div>
+
+                  <div class="icon-text my-2">
+                    <span class="icon image is-rounded">
+                      <img src="#Post.Image" alt="img">
+                    </span>
+                    <a class="has-text-dark ml-1">#Post.Name</a>
+                  </div>
+
+                  <div class="dropdown is-hoverable mt-3">
+                    <div class="dropdown-trigger">
+                      <span class="icon-text">
+                        <span>+2</span>
+                        <span class="icon is-small has-text-danger m-0">
+                          <i class="material-icons font_10">circle</i>
+                        </span>
+                        <span class="icon is-small has-text-yellow m-0">
+                          <i class="material-icons font_10">circle</i>
+                        </span>
+                      </span>
+                    </div>
+                    <div class="dropdown-menu" style="width: 200px;">
+                      <div class="dropdown-content">
+                        <div class="dropdown-item is-size-7 has-text-weight-bold">
+                          20/04/2022
+                        </div>
+                        <div class="dropdown-item is-size-7">
+                          <div class="icon-text my-2">
+                            <span class="icon image is-24x24 is-rounded mr-2">
+                              <img src="#Post.Image" alt="img" />
+                            </span>
+                            <a class="has-text-dark">Jack Nguyen</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </summary>
+  </main>
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/demo.js"></script>
+</body>
+
+</html>

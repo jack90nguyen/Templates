@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working Chart | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/chart.svg" alt="icon"></i>
+            <h1 id="header_title">
+                <span>Working Chart</span>
+                <i>today / yesterday</i>
+            </h1>
+            <div class="action__menu">
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child">
+                        <a href="#">
+                            <img src="/Images/icons/sun.svg" alt="icon">
+                            Today / Yesterday
+                        </a>
+                        <a href="#">
+                            <img src="/Images/icons/clock.svg" alt="icon">
+                            This week / Last week
+                        </a>
+                        <a href="#">
+                            <img src="/Images/icons/calendar.svg" alt="icon">
+                            This month / Last month
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <div class="widget">
+                <div class="widget__wrap">
+                    <img src="/Images/demo/chart.jpg" alt="chart">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+</body>
+
+</html>

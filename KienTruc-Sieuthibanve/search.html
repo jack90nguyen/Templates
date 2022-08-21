@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search Page - Tìm kiếm</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_bredcrumd py-4">
+      <div class="container">
+        <nav class="breadcrumb is-size-7 has-text-weight-medium">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="pb-6">
+      <div class="container">
+        <h1 class="font_title is-size-3 mb-4">
+          1,980 sản phẩm được tìm thấy
+        </h1>
+
+        <ul class="search_bar columns is-vcentered is-variable is-1 pb-5">
+          <li class="column is-narrow">
+            <div class="select">
+              <select>
+                <option value="">Chọn loại nhà</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <div class="select">
+              <select>
+                <option value="">Chọn số tầng</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <div class="select">
+              <select>
+                <option value="">Chọn chiều rộng</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <div class="select">
+              <select>
+                <option value="">Chọn chiều dài</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <div class="select">
+              <select>
+                <option value="">Chọn phòng ngủ</option>
+              </select>
+            </div>
+          </li>
+          <li class="column is-narrow">
+            <button class="button">
+              <span class="icon">
+                <i class="fas fa-search"></i>
+              </span>
+            </button>
+          </li>
+          <li class="column is-hidden-mobile"></li>
+          <li class="column is-1">
+            <div class="control has-icons-right">
+              <div class="select is-transparent">
+                <select id="sortby" onchange="changeSort()">
+                  <option value="0">Mới nhất</option>
+                  <option value="1">Nổi bật</option>
+                  <option value="2">Giá cao</option>
+                  <option value="3">Giá thấp </option>
+                  <option value="4">Bán nhiều</option>
+                </select>
+              </div>
+              <span class="icon is-right">
+                <i class="fas fa-sort color_text font_14"></i>
+              </span>
+            </div>
+          </li>
+        </ul>
+
+
+        <ul class="columns is-multiline is-variable is-4 pb-5" data-repeat="true" data-rows="12"
+          data-type="product-list" data-source="#Post.Id" data-sort="1" data-pagination="true">
+          <li class="column is-one-quarter product_item">
+            <div class="card">
+              <div class="item_img card-image">
+                <div class="image is-square" href="#Product.Link">
+                  <img src="#Product.Thumb" alt="img">
+                </div>
+                <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+              </div>
+            </div>
+            <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
+              <img class="mr-2" src="/themes/icons/04.png" alt="icon">
+              <span>Thiết kế bởi STBV</span>
+            </div>
+            <h3 class="text_2_line mb-1">
+              <a href="#Product.Link">#Product.Name</a>
+            </h3>
+            <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post">
+              <span>5m x 20m</span>
+              <span>1.2 tỷ</span>
+              <span>Ninh bình</span>
+              <span>#Attribute.Value</span>
+            </div>
+            <div class="item_price mt-3">
+              <!-- #Product.Price -->
+              <span>1,550,000 ₫</span><del>1,800,000</del>
+            </div>
+          </li>
+        </ul>
+        <nav class="pagination is-centered">
+          <ul class="pagination-list">
+            <li><a class="pagination-link is-current">1</a></li>
+            <li><a class="pagination-link">2</a></li>
+            <li><a class="pagination-link">3</a></li>
+            <li><a class="pagination-link">4</a></li>
+            <li><a class="pagination-link">5</a></li>
+            <li><span class="pagination-ellipsis">…</span></li>
+            <li><a class="pagination-link">16</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+    function addFavorite(item) {
+      $(item).toggleClass('is_yes');
+      console.log('Add Favorite ' + item.dataset.id);
+    }
+  </script>
+
+</body>
+
+</html>

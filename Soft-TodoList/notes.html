@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/note.svg" alt="icon"></i>
+            <h1 id="header_title">Notes</h1>
+            <div class="action__menu">
+                <a class="item" title="Search" onclick="toggleSearch()">
+                    <img src="/Images/icons/search.svg" alt="icon">
+                </a>
+                <a class="item" title="Add new" onclick="showPopupNoteEdit('')">
+                    <img src="/Images/icons/plus.svg" alt="icon">
+                </a>
+            </div>
+            <div id="header__search" class="">
+                <form action="#">
+                    <input id="search__txt" name="search__txt" type="text" placeholder="Search here...">
+                    <button id="search__btn" type="submit" title="Search">
+                        <img src="/Images/icons/search.svg" alt="icon">
+                    </button>
+                    <a id="search__close" title="Cancel" onclick="toggleSearch()">
+                        <img src="/Images/icons/close.svg" alt="icon">
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <ul id="note__list" class="note__list">
+                <li class="item">
+                    <div class="note__item">
+                        <div class="item__title" onclick="showPopupNote('123')">
+                            Chuyển đổi số (Digital transformation) – Doanh nghiệp Việt Nam có đang bị bỏ lại phía sau?
+                        </div>
+                        <div class="item__recap">
+                            - Web chuyên tracking giá sản phẩm
+                            <br>
+                            - Khách hàng có thể nhập link của sản phẩm vào và nhập email. Khi giá giảm sẽ gửi thông báo
+                            qua email
+                            <br>
+                            - Ngoài ra khách hàng có thể nhập mã sản phẩm để kiểm tra giá nếu sản phẩm có trên hệ thống
+                            <br>
+                            - Nếu link hoặc mã sản phẩm chưa có thì lưu vào database để lấy thông tin ngay lúc đó
+                            <br>
+                            - Sẽ index thông tin sản phẩm với tiêu đề sản "sản phẩm abc giá tốt nhất" hoặc so sánh giá
+                            <br>
+                            - Index lịch sử giá của sản phẩm theo thời gian
+                            <br>
+                            - Có thể phát triển thị trường trong nước và nước ngoài luôn
+                        </div>
+                        <div class="item__data">
+                            <span>🎯 Marketing</span>
+                            <span>
+                                <img src="/Images/icons/clock.svg" alt="icon">
+                                5 days ago
+                            </span>
+                            <a href="/task.html">
+                                <img src="/Images/icons/info.svg" alt="icon">
+                                Notota.com - Note Todo Taks
+                            </a>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                                <p class="is--child is--small">
+                                    <a onclick="showPopupNoteEdit('123')">
+                                        <img src="/Images/icons/edit.svg" alt="icon">
+                                        Edit note
+                                    </a>
+                                    <a class="is--red">
+                                        <img src="/Images/icons/trash.svg" alt="icon">
+                                        Delete
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="note__item">
+                        <div class="item__title" onclick="showPopupNote('123')">
+                            Báo giá thiết kế website bán hàng
+                        </div>
+                        <div class="item__recap">
+                            * Chức năng đặt hàng online, quản lý đơn hàng khách đã mua: +2tr
+                            <br>
+                            * Chức năng thanh toán online khi mua hàng: +500k
+                            * Chức năng mã khuyến mãi: +500k
+                            * Chức năng thành viên (đăng ký thành viên, lịch sử mua hàng, quản lý đơn
+                        </div>
+                        <div class="item__data">
+                            <span>💡 Ideas</span>
+                            <span>
+                                <img src="/Images/icons/clock.svg" alt="icon">
+                                5 days ago
+                            </span>
+                            <span title="Lock with password">
+                                <img src="/Images/icons/lock.svg" alt="icon">
+                            </span>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="note__item">
+                        <div class="item__title" onclick="showPopupNote('123')">
+                            Phần mềm quản lý Nhà Hàng - Quán Ăn - Cafe
+                        </div>
+                        <div class="item__recap">
+                            - Hiển thị thông tin càng gọn càng tốt: để hiển thị được nhiều thông tin
+                            <br>
+                            - Phần Nút Thanh toán: hạn chế load lại trang
+                            <br>
+                            - Danh sách món: cũng làm dạng Tabs như bên Bàn, ghim các món hay gọi vào tab đầu tiên
+                            <br>
+                            - Mã khuyến mãi: có thể thêm danh mục, để khi thêm sản phẩm không cần thêm lại
+                        </div>
+                        <div class="item__data">
+                            <span>🎨 Software</span>
+                            <span>
+                                <img src="/Images/icons/clock.svg" alt="icon">
+                                5 days ago
+                            </span>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script>
+        function loadDemo() {
+            var demo_data = $('#note__list');
+            var item = demo_data.html();
+            if (item !== undefined) {
+                var content = '';
+                for (i = 1; i <= 5; i++) {
+                    var item_demo = item;
+                    content += item_demo;
+                }
+            }
+            demo_data.html(content);
+        }
+        loadDemo();
+    </script>
+</body>
+
+</html>

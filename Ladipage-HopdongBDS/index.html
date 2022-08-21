@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-fw.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez.css">
+    <link rel="stylesheet" href="/Asset/Web/onetez-mobi.css">
+    <script src="https://kit.fontawesome.com/38f345802b.js" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+</head>
+
+<body id="page_body" class="jrow">
+    <div id="msg"></div>
+    
+    <!-- Main body -->
+    <main id="main">
+
+        <!-- Nivo Slider -->
+        <div id="nivo_slider">
+            <div class="slider-wrapper">
+                <div class="nivoSlider">
+                    <a href="/">
+                        <img src="/Images/slide-1.jpg" data-thumb="/Images/slide-1.jpg" alt="IMG" title="#htmlcaption1" />
+                    </a>
+                    <a href="/">
+                        <img src="/Images/slide-2.jpg" data-thumb="/Images/slide-2.jpg" alt="IMG" title="#htmlcaption2" />
+                    </a>
+                </div>
+            </div>
+            <div id="htmlcaption1" style="display:none">
+                <div class="jwrap jpd__isfull">
+                    <div class="nivo_title aniview" data-av-animation="bounceInLeft"><a href="#">HỢP ĐỒNG ĐẶT CỌC NHÀ ĐẤT</a></div>
+                    <div class="nivo_recap aniview" data-av-animation="bounceInRight">
+                        Giá chỉ từ 85k / quyển (3 Liên)
+                        <br>
+                        Liên hệ: 070 314 1988
+                    </div>
+                    <div class="nivo_link aniview" data-av-animation="bounceInUp">
+                        <a href="/">Đặt Hàng Ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div id="htmlcaption2" style="display:none">
+                <div class="jwrap jpd__isfull">
+                    <div class="nivo_title aniview" data-av-animation="bounceInLeft"><a href="#">HỢP ĐỒNG ĐẶT CỌC NHÀ ĐẤT</a></div>
+                    <div class="nivo_recap aniview" data-av-animation="bounceInRight">
+                        Giá chỉ từ 240k / 3 quyển (3 Liên)
+                        <br>
+                        Liên hệ: 070 314 1988
+                    </div>
+                    <div class="nivo_link aniview" data-av-animation="bounceInUp">
+                        <a href="/">Đặt Hàng Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Scripts/jquery.nivo.slider.js"></script>
+        <script>
+            // #nivo_slider_#id
+            $('#nivo_slider .nivoSlider').nivoSlider({
+                manualAdvance: false,
+                effect: 'random',
+                animSpeed: 1000,
+                pauseTime: 5000,
+                pauseOnHover: true
+            });
+            document.getElementById('nivo_slider').addEventListener('swiped-left', function (e) {
+                $('#nivo_slider .nivo-nextNav').click();
+            });
+            document.getElementById('nivo_slider').addEventListener('swiped-right', function (e) {
+                $('#nivo_slider .nivo-prevNav').click();
+            });
+        </script>
+
+        <!-- Albout Product -->
+        <div class="jbg__bottom jpd__t70" style="background-image: url(/Images/demo-1.png);">
+            <div class="jwrap">
+                <div class="title__center">
+                    <h2 class="item__title aniview" data-av-animation="bounceInLeft">Đôi Nét Về Sản Phẩm</h2>
+                    <div class="item__recap aniview" data-av-animation="bounceInUp">
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ads Banner -->
+        <div class="columns is-marginless is-hidden">
+            <a class="column is-full is-paddingless " href="#link">
+                <img class="is-block" src-data="#image" alt="#name" src="/Images/demo-2.png" >
+            </a>
+        </div>
+
+        <!-- More Info -->
+        <div class="jwrap box__s1 jpd__t70">
+            <div class="columns is-paddingless is-marginless">
+                <div class="column is-half item__img">
+                    <p class="jbg__cover" style="background-image: url(/Images/Demo/1.jpg);"></p>
+                    <p class="jbg__cover" style="background-image: url(/Images/Demo/2.jpg);"></p>
+                    <p class="jbg__cover" style="background-image: url(/Images/Demo/3.jpg);"></p>
+                </div>
+                <div class="column is-half">
+                    <div class="html__content aniview" data-av-animation="bounceInRight">
+                        <p style="text-align: center;">
+                            #content Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Price list -->
+        <div class="jwrap jpd__t70 jpd__isfull">
+            <div class="title__center">
+                <h2 class="item__title aniview" data-av-animation="fadeIn">BẢNG GIÁ SẢN PHẨM</h2>
+            </div>
+            <ul class="price__list">
+                <li>
+                    <div class="item__s1 aniview" data-av-animation="bounceInLeft">
+                        <div class="item__title">Giá 1 quyển</div>
+                        <div class="item__recap">
+                            <i class="fas fa-star-of-life"></i> Không giới hạn số lượng Landing Page
+                            <br>
+                            <i class="fas fa-star-of-life"></i> 50+ giao diện mẫu miễn phí
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Kết nối Gmail lưu trữ data
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Bản quyền Powered by LadiPage
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Hỗ trợ tài liệu, Livechat, Hotline 24/7
+                        </div>
+                        <div class="item__price">85.000đ</div>
+                        <div class="item__link">
+                            <a href="#link">Mua Ngay</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item__s1 aniview" data-av-animation="bounceInUp">
+                        <div class="item__title">Giá 3 quyển</div>
+                        <div class="item__recap">
+                            <i class="fas fa-star-of-life"></i> Không giới hạn số lượng Landing Page
+                            <br>
+                            <i class="fas fa-star-of-life"></i> 50+ giao diện mẫu miễn phí
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Kết nối Gmail lưu trữ data
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Bản quyền Powered by LadiPage
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Hỗ trợ tài liệu, Livechat, Hotline 24/7
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Không giới hạn số lượng Landing Page
+                            <br>
+                            <i class="fas fa-star-of-life"></i> 50+ giao diện mẫu miễn phí
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Kết nối Gmail lưu trữ data
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Bản quyền Powered by LadiPage
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Hỗ trợ tài liệu, Livechat, Hotline 24/7
+                        </div>
+                        <div class="item__price">85.000đ</div>
+                        <div class="item__link">
+                            <a href="#link">Mua Ngay</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item__s1 aniview" data-av-animation="bounceInRight">
+                        <div class="item__title">Giá 5 quyển</div>
+                        <div class="item__recap">
+                            <i class="fas fa-star-of-life"></i> Không giới hạn số lượng Landing Page
+                            <br>
+                            <i class="fas fa-star-of-life"></i> 50+ giao diện mẫu miễn phí
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Kết nối Gmail lưu trữ data
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Bản quyền Powered by LadiPage
+                            <br>
+                            <i class="fas fa-star-of-life"></i> Hỗ trợ tài liệu, Livechat, Hotline 24/7
+                        </div>
+                        <div class="item__price">85.000đ</div>
+                        <div class="item__link">
+                            <a href="#link">Mua Ngay</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Payment -->
+        <div class="jwrap jpd__t70 jpd__b70 jpd__isfull">
+            <div class="title__center">
+                <h2 class="item__title aniview" data-av-animation="bounceInLeft">Hướng dẫn thanh toán</h2>
+                <div class="item__recap aniview" data-av-animation="bounceInUp">
+                    Chúng tôi sẽ liên hệ với bạn để xác nhận thông tin kích hoạt dịch vụ ngay sau khi nhận được thông báo chuyển khoản
+                </div>
+            </div>
+            <div class="columns is-multiline is-centered">
+                <div class="column is-half">
+                    <div class="item__s3">
+                        <div class="item__title">Thanh Toán Khi Nhận Hàng</div>
+                        <div class="item__content">
+                            <div class="item__img" style="background-image: url(https://vanchuyentrungquoc247.com/wp-content/uploads/2015/04/icon-3.png);"></div>
+                            <div class="item__info">
+                                <b>Kiểm tra hàng và thanh toán COD khi nhận hàng</b>
+                                <br>
+                                Chủ tài khoản: <b>NGUYỄN VĂN ABV</b>
+                                <br>
+                                Số tài khoản: <b>1234567890</b>
+                                <br>
+                                Nội dung: <b>HDDCD + SĐT</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="item__s3">
+                        <div class="item__title">Thanh Toán Khi Nhận Hàng</div>
+                        <div class="item__content">
+                            <div class="item__img"
+                                style="background-image: url(https://w.ladicdn.com/s400x400/58ad0fda3494e1f5447a9da8/vietcombank-qr-pay-logo200-20190828050544.png);">
+                            </div>
+                            <div class="item__info">
+                                <b>Kiểm tra hàng và thanh toán COD khi nhận hàng</b>
+                                <br>
+                                Chủ tài khoản: <b>NGUYỄN VĂN ABV</b>
+                                <br>
+                                Số tài khoản: <b>1234567890</b>
+                                <br>
+                                Nội dung: <b>HDDCD + SĐT</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-half">
+                    <div class="item__s3">
+                        <div class="item__title">Thanh Toán Khi Nhận Hàng</div>
+                        <div class="item__content">
+                            <div class="item__img"
+                                style="background-image: url(https://w.ladicdn.com/s450x350/57b167caca57d39c18a1c57e/techcombank_logo-20191105035930.png);">
+                            </div>
+                            <div class="item__info">
+                                <b>Kiểm tra hàng và thanh toán COD khi nhận hàng</b>
+                                <br>
+                                Chủ tài khoản: <b>NGUYỄN VĂN ABV</b>
+                                <br>
+                                Số tài khoản: <b>1234567890</b>
+                                <br>
+                                Nội dung: <b>HDDCD + SĐT</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="jpd__t70 jpd__b70 jbg__cover jpd__isfull" style="background-image: url(/Images/bg-feedback.jpg);">
+            <div class="jwrap">
+                <div class="title__left">
+                    <h2 class="item__title aniview" data-av-animation="bounceInRight">10K+ KHÁCH HÀNG ĐÃ MUA</h2>
+                    <div class="item__recap aniview" data-av-animation="bounceInUp">
+                        Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website Đây là đoạn nội
+                        dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website
+                    </div>
+                </div>
+                <div id="jc__121" class="jc__feedback jcarousel-wrapper">
+                    <div class="jcarousel">
+                        <ul class="jrow">
+                            <li>
+                                <div class="item__s2">
+                                    <div class="item__content">
+                                        <i class="fas fa-quote-left"></i>
+                                        Cám ơn đội ngũ bác sỹ đã nhiệt tình phục vụ và rất chu đáo trong việc chăm sóc sức khỏe và tình trang của bệnh nhân. Mọi
+                                        thành công đều nhờ sự tận tình của đội ngũ bác sỹ và chuyên viên Spa.
+                                        <br>
+                                        Spa Hàn Quốc đúng là một “liệu pháp thần thánh” mang đến cho Thanh khuôn mặt V-line mà không cần trải qua bất kỳ ca phẫu
+                                        thuật gọt hàm nào. Huyền Thanh thích điều này.
+                                    </div>
+                                    <div class="item__info">
+                                        <a class="item__img jbg__cover" href="#link"
+                                            style="background-image: url(/Images/Demo/1.jpg);"></a>
+                                        <div class="item__title">
+                                            <a href="#link">Khách Hàng Số 1</a>
+                                        </div>
+                                        <div class="item__recap">
+                                            Công Ty BDS Miền Trung
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item__s2">
+                                    <div class="item__content">
+                                        <i class="fas fa-quote-left"></i>
+                                        Cám ơn đội ngũ bác sỹ đã nhiệt tình phục vụ và rất chu đáo trong việc chăm sóc sức khỏe và tình trang của
+                                        bệnh nhân. Mọi
+                                        thành công đều nhờ sự tận tình của đội ngũ bác sỹ và chuyên viên Spa.
+                                        <br>
+                                        Spa Hàn Quốc đúng là một “liệu pháp thần thánh” mang đến cho Thanh khuôn mặt V-line mà không cần trải qua
+                                        bất kỳ ca phẫu
+                                        thuật gọt hàm nào. Huyền Thanh thích điều này.
+                                    </div>
+                                    <div class="item__info">
+                                        <a class="item__img jbg__cover" href="#link" style="background-image: url(/Images/Demo/2.jpg);"></a>
+                                        <div class="item__title">
+                                            <a href="#link">Khách Hàng Số 2</a>
+                                        </div>
+                                        <div class="item__recap">
+                                            Công Ty BDS Miền Trung
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item__s2">
+                                    <div class="item__content">
+                                        <i class="fas fa-quote-left"></i>
+                                        Cám ơn đội ngũ bác sỹ đã nhiệt tình phục vụ và rất chu đáo trong việc chăm sóc sức khỏe và tình trang của
+                                        bệnh nhân. Mọi
+                                        thành công đều nhờ sự tận tình của đội ngũ bác sỹ và chuyên viên Spa.
+                                        <br>
+                                        Spa Hàn Quốc đúng là một “liệu pháp thần thánh” mang đến cho Thanh khuôn mặt V-line mà không cần trải qua
+                                        bất kỳ ca phẫu
+                                        thuật gọt hàm nào. Huyền Thanh thích điều này.
+                                    </div>
+                                    <div class="item__info">
+                                        <a class="item__img jbg__cover" href="#link" style="background-image: url(/Images/Demo/3.jpg);"></a>
+                                        <div class="item__title">
+                                            <a href="#link">Khách Hàng Số 3</a>
+                                        </div>
+                                        <div class="item__recap">
+                                            Công Ty BDS Miền Trung
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jcarousel-control">
+                        <a class="jcarousel-control-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a class="jcarousel-control-next">
+                            <i class="fas fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Scripts/jquery.jcarousel.min.js"></script>
+        <script>
+            // #jc__#id
+            var jc__121 = $('#jc__121 .jcarousel');
+            jc__121.on('jcarousel:reload jcarousel:create', function () {
+                var width = jc__121.innerWidth();
+                jc__121.jcarousel('items').css('width', width + 'px');
+            }).jcarousel({
+                wrap: 'circular'
+            });
+            jc__121.jcarouselAutoscroll({ autostart: false });
+            jc__121.hover(function () {
+                $(this).jcarouselAutoscroll('stop');
+            }, function () {
+                $(this).jcarouselAutoscroll('start');
+            });
+            
+            $('#jc__121 .jcarousel-control-prev')
+                .jcarouselControl({
+                    target: '-=1'
+                });
+            $('#jc__121 .jcarousel-control-next')
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            document.getElementById('jc__121').addEventListener('swiped-left', function (e) {
+                $('#jc__121 .jcarousel-control-next').click();
+            });
+            document.getElementById('jc__121').addEventListener('swiped-right', function (e) {
+                $('#jc__121 .jcarousel-control-prev').click();
+            });
+        </script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="jwrap jpd__isfull">
+            <div class="level">
+                <div class="level-left has-text-centered">
+                    <span>Copyright &copy; 2019 Tranhome.vn. All right reserved</span>
+                </div>
+                <div class="level-right foot__social">
+                    <div class="level is-mobile">
+                        <a class="level-item" title="Facebook" href="#config_facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="level-item" title="LinkedIn" href="#config_linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="level-item" title="Youtube" href="#config_youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="level-item" title="Twitter" href="#config_twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="level-item" title="Instagram" href="#config_instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="level-item" title="Zalo" href="#config_zalo">
+                            <i class="fas fa-comment-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="popup_order" class="popup__bg" style="display: none;">
+        <div class="popup__container">
+            <a class="popup__close" onclick="closePopupOrder()">X</a>
+            <div class="popup__title">ĐẶT MUA SẢN PHẨM</div>
+            <div class="popup__form">
+                <div id="form_contact_3" class="jrow columns is-multiline">
+                    <div class="column is-full">
+                        <input class="contact_name input" name="contact_name" type="text" data-tooltip="2_78" placeholder="Normal input">
+                    </div>
+                    <div class="column is-full">
+                        <input class="contact_phone input" name="contact_phone" type="number" data-tooltip="2_79">
+                    </div>
+                    <div class="column is-full">
+                        <input class="contact_email input" name="contact_email" type="email" data-tooltip="2_80">
+                    </div>
+                    <div class="column is-full">
+                        <textarea class="contact_content input" name="contact_content" data-tooltip="2_95"></textarea>
+                    </div>
+                    <div class="column is-full">
+                        <button class="contact_btn button is-danger" type="submit" onclick="submitContact(3)" data-text="2_98">Đặt Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Page</title>
+  <link rel="stylesheet" href="/Asset/animate.min.css">
+  <link rel="stylesheet" href="/Asset/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/style.css">
+  <link rel="stylesheet" href="/Asset/mobile.css">
+  <link rel="stylesheet" href="/Asset/icon.material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <main id="main">
+    <section id="sidebar" class="is-small">
+      <div data-include="/Include/sidebar.html"></div>
+    </section>
+    <section id="content">
+      <ul class="columns is-vcentered is-centered" style="min-height: 100vh;">
+        <li class="column is-narrow is-medium">
+          <div class="card p-5">
+            <ul class="columns is-multiline font_14">
+              <li class="column is-two-fifths">
+                <h1 class="has-text-weight-bold py-2">
+                  Cập nhật thông tin tài khoản
+                </h1>
+              </li>
+
+              <li class="column is-three-fifths">
+                <div class="buttons is-right">
+                  <a class="button is-white">
+                    <span class="icon">
+                      <i class="material-icons-outlined">replay</i>
+                    </span>
+                    <span>Huỷ</span>
+                  </a>
+                  <a class="button is-warning">
+                    <span class="icon">
+                      <i class="material-icons-outlined">save</i>
+                    </span>
+                    <span>Cập nhật</span>
+                  </a>
+                  <a class="button is-warning">
+                    <span class="icon">
+                      <i class="material-icons-outlined">edit</i>
+                    </span>
+                    <span>Chỉnh sửa</span>
+                  </a>
+                </div>
+              </li>
+
+              <li class="column is-two-fifths">
+                <div class="has-text-weight-bold py-2">
+                  Ảnh đại diện
+                </div>
+                <div class="image is-square">
+                  <img src="https://avatars.dicebear.com/api/micah/happy.svg?background=pink" alt="img" />
+                </div>
+                <a class="button is-white has-text-link px-0">
+                  <span class="icon">
+                    <i class="material-icons-outlined is-size-5">file_upload</i>
+                  </span>
+                  <span>Tải hình mới</span>
+                </a>
+              </li>
+
+              <li class="column is-three-fifths">
+                <div class="icon-text is_title p-2 mb-3">
+                  <span class="has-text-weight-bold">Thông tin chung</span>
+                  <a class="icon">
+                    <i class="material-icons-outlined is-size-4">expand_more</i>
+                  </a>
+                </div>
+
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <div>jack90nguyen@gmail.com</div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label">Họ và tên</label>
+                  <div class="control has-icons-right">
+                    <input type="text" class="input" placeholder="Nhập ...">
+                    <span class="icon is-right has-text-grey">
+                      <i class="material-icons-outlined is-size-5">drive_file_rename_outline</i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="icon-text is_title p-2 mb-3">
+                  <span class="has-text-weight-bold">Phòng ban và quyền hạn</span>
+                  <a class="icon">
+                    <i class="material-icons-outlined is-size-4">chevron_right</i>
+                  </a>
+                </div>
+
+                <div class="field">
+                  <label class="label">Phòng ban</label>
+                  <div class="content">
+                    <div>Brando</div>
+                    <ul class="mt-0">
+                      <li>
+                        <div>Team miền Bắc</div>
+                        <ul class="mt-0">
+                          <li>
+                            Team sản xuất
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/demo.js"></script>
+</body>
+
+</html>

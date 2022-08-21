@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon" onclick="toggleSearch()"><img src="/Images/icons/search.svg" alt="icon"></i>
+            <h1 id="header_title" onclick="toggleSearch()">
+                <span>Search</span>
+                <i>15 results</i>
+            </h1>
+            <div id="header__search" class="is--show is--full">
+                <form action="#">
+                    <input id="search__txt" name="search__txt" type="text" placeholder="Search here...">
+                    <button id="search__btn" type="submit" title="Search">
+                        <img src="/Images/icons/search.svg" alt="icon">
+                    </button>
+                    <a id="search__close" title="Cancel" onclick="toggleSearch()">
+                        <img src="/Images/icons/close.svg" alt="icon">
+                    </a>
+                </form>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <ul id="task_list" class="task__list">
+                <li class="no__result">
+                    <div class="no__result__wrap">No results were found</div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+    <script>
+        $('#search__txt').focus();
+    </script>
+</body>
+
+</html>

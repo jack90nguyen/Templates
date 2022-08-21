@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="/Asset/animate.min.css">
+  <link rel="stylesheet" href="/Asset/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/style.css">
+  <link rel="stylesheet" href="/Asset/mobile.css">
+  <link rel="stylesheet" href="/Asset/icon.material.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+  <main id="main">
+    <aside id="sidebar" class="is-small">
+      <div data-include="/Include/sidebar.html"></div>
+    </aside>
+    <summary id="content">
+      <ul class="field is-grouped p-4 m-0">
+        <li class="control">
+          <a class="button is-dark">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">list_alt</i>
+            </span>
+            <span>Tổng họp SP</span>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">description</i>
+            </span>
+            <span>Quản lý HĐ</span>
+            <small>5</small>
+          </a>
+        </li>
+        <li class="control">
+          <a class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="material-icons-outlined is-size-5">attach_money</i>
+            </span>
+            <span>Quản lý DT</span>
+          </a>
+        </li>
+      </ul>
+
+      <hr class="m-0">
+
+      <section class="px-4 pt-4">
+        <ul class="columns is-vcentered mb-0">
+          <li class="column is-narrow">
+            <a class="has-text-weight-bold has-text-warning">Tất cả thông báo</a>
+          </li>
+          <li class="column is-narrow">
+            <a class="has-text-weight-bold has-text-grey">Thông báo chưa xem</a>
+          </li>
+          <li class="column has-text-right">
+            <a class="button is-white px-0">
+              <span class="icon">
+                <i class="material-icons-outlined is-size-5">checklist</i>
+              </span>
+              <span>Đánh dấu đã xem</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="scroll is_y px-4" style="max-height: calc(100vh - 150px);">
+        <div class="has-text-weight-bold mb-4">Mới</div>
+
+        <ul class="columns is-multiline is-variable is-2" data-repeat="true" data-rows="5">
+          <li class="column is-full">
+            <div class="user_item">
+              <img class="image is-24x24" src="#Post.Image" alt="img">
+              <a class="has-text-black" href="#">
+                #Post.Name <b>đã thuê</b> của sản phẩm có ID: <b>DAZTB124</b>
+              </a>
+            </div>
+            <div class="is-size-7 pt-2">#Post.Id phút trước</div>
+          </li>
+        </ul>
+
+        <div class="has-text-weight-bold mb-4">Cũ hơn</div>
+
+        <ul class="columns is-multiline is-variable is-2" data-repeat="true" data-rows="20">
+          <li class="column is-full">
+            <div class="user_item">
+              <img class="image is-24x24" src="#Post.Image" alt="img">
+              <a class="has-text-grey" href="#">
+                #Post.Name <b>đã thuê</b> của sản phẩm có ID: <b>DAZTB124</b>
+              </a>
+            </div>
+            <div class="is-size-7 pt-2 has-text-grey">20/04/2022, 07h30</div>
+          </li>
+        </ul>
+      </section>
+    </summary>
+  </main>
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/demo.js"></script>
+</body>
+
+</html>

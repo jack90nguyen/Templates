@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Today | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_body" class="">
+    <div id="notify"></div>
+    <div id="loading"></div>
+
+    <!-- Popup -->
+    <div data-include="/Include/popup.html"></div>
+
+    <!-- Sidebar -->
+    <div data-include="/Include/sidebar.html"></div>
+
+    <!-- Main body -->
+    <main id="main">
+        <a id="toggle_sidebar" onclick="toggleSidebar()">
+            <i></i><i></i><i></i>
+        </a>
+        <div class="header">
+            <i class="is--icon"><img src="/Images/icons/sun.svg" alt="icon"></i>
+            <h1 id="header_title">Today</h1>
+            <div class="action__menu">
+                <a class="item" href="#" title="Add Task">
+                    <img src="/Images/icons/plus.svg" alt="icon">
+                </a>
+                <a class="item" href="#" title="Sort by">
+                    <img src="/Images/icons/sort.svg" alt="icon">
+                </a>
+                <div class="item" onclick="toggleActionMenu(this)">
+                    <img src="/Images/icons/menu.svg" alt="icon">
+                    <p class="is--child">
+                        <a href="#">
+                            <img src="/Images/icons/edit.svg" alt="icon">
+                            Rename list
+                        </a>
+                        <a href="#">
+                            <img src="/Images/icons/check.svg" alt="icon">
+                            Hide completed
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="scrollbar">
+            <ul id="task_list" class="task__list">
+                <li class="item">
+                    <div class="task__item">
+                        <a class="icon__status is--done"></a>
+                        <div class="item__info">
+                            <div class="item__title">
+                                <strong>#2001f8fad5</strong>
+                                <span>Notota.com - Note Todo Taks</span>
+                                <i>phần mềm quản lý công việc, ghi chú, tài chính</i>
+                            </div>
+                            <div class="item__data">
+                                <span>🎯 Software</span>
+                                <span>
+                                    <img src="/Images/icons/check-double.svg" alt="icon">
+                                    2 of 5
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/calendar.svg" alt="icon">
+                                    15/02/2020
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/customer.svg" alt="icon">
+                                    Thành Nguyễn
+                                </span>
+                                <span class="is--red">
+                                    <img src="/Images/icons/dollar.svg" alt="icon">
+                                    10,000,000 đ
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/file.svg" alt="icon">
+                                    3 files
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/note.svg" alt="icon">
+                                    1 note
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/star.svg" alt="icon">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                                <p class="is--child is--small">
+                                    <a href="#">
+                                        <img src="/Images/icons/sun.svg" alt="icon">
+                                        Add today
+                                    </a>
+                                    <a href="#">
+                                        <img src="/Images/icons/edit.svg" alt="icon">
+                                        Edit task
+                                    </a>
+                                    <a class="is--red">
+                                        <img src="/Images/icons/trash.svg" alt="icon">
+                                        Delete
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="task__item">
+                        <a class="icon__status"></a>
+                        <div class="item__info">
+                            <div class="item__title">
+                                <strong>#2001f8fad5</strong>
+                                <span>Notota.com - Note Todo Taks</span>
+                                <i>phần mềm quản lý công việc, ghi chú, tài chính</i>
+                            </div>
+                            <div class="item__data">
+                                <span>🎯 Software</span>
+                                <span>
+                                    <img src="/Images/icons/check-double.svg" alt="icon">
+                                    2 of 5
+                                </span>
+                                <span class="is--red">
+                                    <img src="/Images/icons/calendar.svg" alt="icon">
+                                    15/02/2020
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/customer.svg" alt="icon">
+                                    Thành Nguyễn
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/dollar.svg" alt="icon">
+                                    10,000,000 đ
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/file.svg" alt="icon">
+                                    3 files
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/note.svg" alt="icon">
+                                    1 note
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/star.svg" alt="icon">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                                <p class="is--child is--small">
+                                    <a href="#">
+                                        <img src="/Images/icons/sun.svg" alt="icon">
+                                        Add today
+                                    </a>
+                                    <a href="#">
+                                        <img src="/Images/icons/edit.svg" alt="icon">
+                                        Edit task
+                                    </a>
+                                    <a class="is--red">
+                                        <img src="/Images/icons/trash.svg" alt="icon">
+                                        Delete
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="task__item">
+                        <a class="icon__status"></a>
+                        <div class="item__info">
+                            <div class="item__title">
+                                <strong>#2001f8fad5</strong>
+                                <span>Notota.com - Note Todo Taks</span>
+                                <i>phần mềm quản lý công việc, ghi chú, tài chính</i>
+                            </div>
+                            <div class="item__data">
+                                <span>🎯 Software</span>
+                                <span>
+                                    <img src="/Images/icons/check-double.svg" alt="icon">
+                                    2 of 5
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/customer.svg" alt="icon">
+                                    Thành Nguyễn
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/file.svg" alt="icon">
+                                    3 files
+                                </span>
+                                <span>
+                                    <img src="/Images/icons/note.svg" alt="icon">
+                                    1 note
+                                </span>
+                            </div>
+                        </div>
+                        <div class="action__menu">
+                            <div class="item" onclick="toggleActionMenu(this)">
+                                <img src="/Images/icons/menu.svg" alt="icon">
+                                <p class="is--child is--small">
+                                    <a href="#">
+                                        <img src="/Images/icons/sun.svg" alt="icon">
+                                        Add today
+                                    </a>
+                                    <a href="#">
+                                        <img src="/Images/icons/edit.svg" alt="icon">
+                                        Edit task
+                                    </a>
+                                    <a class="is--red">
+                                        <img src="/Images/icons/trash.svg" alt="icon">
+                                        Delete
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/sortable.js"></script>
+    <script src="/Scripts/meteorEmoji.min.js"></script>
+    <script src="/Scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+﻿@media (max-width: 1140px) {
+    .jwrap {
+        width: 100%;
+    }
+    .head__nav > ul > li {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 770px) {
+    #main {
+        padding-top: 52px;
+    }
+    header {
+        padding: 2px 0px !important;
+    }
+    .head__logo {
+        height: 48px;
+        width: 200px;
+        background-image: url(/Images/logo-footer.png);
+        background-position: center;
+        background-size: auto 40px;
+        margin: 0px auto;
+    }
+    .foot__social {
+        max-width: 200px;
+        margin: 0px auto;
+    }
+    #toggleSideBar span {
+        background: #b68027;
+    }
+    #toggle_booking_mobile {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 7px;
+        top: 8px;
+        color: #b68027;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 2px;
+    }
+    .nivo_title {
+        font-size: 24px !important;
+        padding-bottom: 5px;
+    }
+    .nivo_recap {
+        font-size: 14px !important;
+    }
+    .nivo_link a {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nivo_title {
+        font-size: 16px !important;
+        padding-bottom: 5px;
+    }
+    .nivo_recap {
+        font-size: 13px !important;
+    }
+    .title__center .item__title {
+        font-size: 20px;
+    }
+    .title__center .item__recap {
+        font-size: 14px;
+    }
+    .item__s1, .item__s2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .item__s1 .item__img, .item__s2 .item__img {
+        width: 150px;
+        height: 150px;
+    }
+    .item__s1 .item__img .jbg__cover {
+        width: 140px;
+        height: 140px;
+    }
+    .item__s2 .item__title {
+        font-size: 14px !important;
+        height: auto;
+        display: block;
+    }
+    .item__s3, .item__s5 {
+        display: block;
+    }
+    .item__s3 .item__img {
+        width: 100%;
+        height: 250px;
+    }
+    .item__s3 .item__info, .item__s5 .item__info {
+        width: 100%;
+        max-height: none;
+    }
+    .item__s5 .item__info {
+        padding: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .jc__promotion .jcarousel-control {
+        left: calc(50% - 30px);
+        right: auto;
+        top: auto;
+        bottom: 0px;
+        width: 60px;
+        opacity: 1;
+    }
+    .jcarousel-control a {
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 330px) {
+    
+}

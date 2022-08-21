@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | Notota.com - Notes, Todo, Task</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,700italic,800italic,300,400,700" />
+    <link rel="stylesheet" href="/Asset/animate.min.css">
+    <link rel="stylesheet" href="/Asset/reset.css">
+    <link rel="stylesheet" href="/Asset/desktop.css">
+    <link rel="stylesheet" href="/Asset/mobile.css">
+</head>
+
+<body id="page_login">
+
+    <!-- Form Login -->
+    <div class="login__form">
+        <div class="login__title">NOTOTA.COM</div>
+        <div class="login__input">
+            <label>Username</label>
+            <input id="login_username" type="email" placeholder="Username or email..." value="">
+        </div>
+        <div class="login__input login_password">
+            <label>Password</label>
+            <input id="login_password" type="password" placeholder="Password..." value="">
+            <img src="/Images/icons/eye.svg" onclick="togglePassword()" />
+        </div>
+        <div class="login__input login_captcha">
+            <label>Captcha</label>
+            <input id="login_captcha" type="email" placeholder="Captcha..." value="">
+            <span><canvas id="textCaptcha" height=20></canvas></span>
+        </div>
+        <div class="login__btn">
+            <a onclick="Login()">LOGIN</a>
+        </div>
+        <div id="msglogin" class="login__msg"></div>
+    </div>
+    <div class="login__dev">Copyright © 2020 Notota.com</div>
+    <div class="login__bg"></div>
+
+    <!-- Script -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/login.js"></script>
+    <script>
+        GenCaptcha('1234');
+    </script>
+</body>
+
+</html>
