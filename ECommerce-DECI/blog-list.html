@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blog Page - Danh sách tin tức</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_bredcrumd pt-4 is-hidden">
+      <div class="container">
+        <nav class="breadcrumb is-size-7 has-text-weight-medium">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="pt-5 pb-6">
+      <div class="container">
+        <div class="columns is-variable is-4">
+          <div class="column is-two-thirds">
+
+            <div class="mb-6" data-bind="true" data-type="post" data-source="ID">
+              <h2 class="is-size-7 has-text-weight-bold is-uppercase mb-3">
+                <a href="#Data.Link">#Data.Name</a>
+              </h2>
+              <div class="columns is-variable is-2 mb-6">
+                <div class="column is-half">
+                  <div class="card">
+                    <div class="card-image">
+                      <div class="image is-4by3" href="#Blog.Link">
+                        <img src="/themes/b3.jpg" alt="img">
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="is-size-5 has-text-weight-medium mt-4 mb-3">
+                    <a href="#Blog.Link">Xu hướng thiết kế mới nhà ở hiện nay đến năm 2030</a>
+                  </h3>
+                  <div class="has-text-grey font_14 text_3_line">
+                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
+                  </div>
+                </div>
+                <div class="column is-half">
+                  <ul class="columns is-multiline is-variable is-2" data-repeat="true" data-rows="6" data-type="blogs"
+                    data-source="#Data.Id" data-sort="0">
+                    <li class="column is-half">
+                      <div class="card blog_item_medium">
+                        <a class="image is-4by3" href="#Blog.Link">
+                          <img src="#Blog.Image" alt="img">
+                          <h3 class="is-size-7 has-text-weight-bold has-text-white p-2 pt-4">#Blog.Name</h3>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-6" data-bind="true" data-type="post" data-source="ID">
+              <h2 class="is-size-7 has-text-weight-bold is-uppercase mb-3">
+                <a href="#Data.Link">#Data.Name</a>
+              </h2>
+              <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="4" data-type="blog-list"
+                data-source="#Data.Id" data-sort="0" data-pagination="true">
+                <li class="column is-one-quarter">
+                  <div class="card">
+                    <a class="image is-4by3" href="#Blog.Link">
+                      <img src="#Blog.Image" alt="img">
+                    </a>
+                  </div>
+                  <h3 class="font_14 has-text-weight-medium mt-2">
+                    <a href="#Blog.Link">#Blog.Name</a>
+                  </h3>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-6" data-bind="true" data-type="post" data-source="ID">
+              <h2 class="is-size-7 has-text-weight-bold is-uppercase mb-3">
+                <a href="#Data.Link">#Data.Name</a>
+              </h2>
+              <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="10" data-type="blogs"
+                data-source="#Data.Id" data-sort="0">
+                <li class="column is-full">
+                  <hr class="mt-0">
+                  <div class="columns is-variable is-2">
+                    <div class="column is-one-third">
+                      <div class="card">
+                        <a class="image is-5by3" href="#Blog.Link">
+                          <img src="#Blog.Thumb" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="column is-two-thirds">
+                      <h3 class="is-size-5 has-text-weight-medium mb-3">
+                        <a href="#Blog.Link">#Blog.Name</a>
+                      </h3>
+                      <div class="font_14 text_5_line">
+                        #Blog.Desc
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="has-text-centered pt-5">
+                <a class="button is_more" href="#Data.Link">
+                  <span class="font_14 has-text-weight-semibold">Xem thêm tin mới</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="column is-one-third">
+            <div class="mb-5">
+              <h2 class="is-size-7 has-text-weight-bold is-uppercase mb-2">
+                <span class="icon font_14 color_extra">
+                  <i class="fas fa-fire-alt"></i>
+                </span>
+                <span>Chủ đề hot</span>
+              </h2>
+              <ul class="columns is-multiline is-variable is-2" data-repeat="true" data-rows="5" data-type="blogs"
+                data-source="#Data.Id" data-sort="1">
+                <li class="column is-full">
+                  <hr class="mt-0 mb-3">
+                  <div class="columns is-variable is-2">
+                    <div class="column is-one-quarter">
+                      <div class="card">
+                        <a class="image is-square" href="#Blog.Link">
+                          <img src="#Blog.Thumb" alt="img">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="column is-three-quarters">
+                      <h3 class="font_14 has-text-weight-medium text_2_line">
+                        <a href="#Blog.Link">#Blog.Name</a>
+                      </h3>
+                      <div class="is-size-7 has-text-grey mt-1 text_2_line">
+                        #Blog.Desc
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-6">
+              <div class="buttons" data-bind="true" data-type="tags" data-source="#Post.Id">
+                <a class="button is-small is-rounded font_12" href="#Tag.Link">#Tag.Name</a>
+              </div>
+            </div>
+            <div>
+              <h2 class="is-size-7 has-text-weight-bold is-uppercase mb-2">
+                <span class="icon font_14 has-text-link">
+                  <i class="fas fa-percentage"></i>
+                </span>
+                <span>Khuyến mãi</span>
+              </h2>
+              <ul class="columns is-multiline is-variable is-1" data-repeat="true" data-rows="3" data-type="image"
+                data-source="sidebar-ads">
+                <li class="column is-full">
+                  <div class="card">
+                    <a class="image" href="#Element.Link">
+                      <img src="#Element.Image" alt="img">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-6">
+      <div class="container">
+        <div class="is-size-4 has-text-weight-medium mb-4">
+          Sản phẩm mới nhất
+        </div>
+        <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="4" data-type="products"
+          data-source="#Post.Id" data-sort="0">
+          <li class="column is-one-quarter product_item">
+            <div class="card">
+              <div class="item_img card-image">
+                <div class="image is-square" href="#Product.Link">
+                  <img src="#Product.Thumb" alt="img">
+                </div>
+                <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+              </div>
+            </div>
+            <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
+              <img class="mr-2" src="/themes/icons/04.png" alt="icon">
+              <span>Thiết kế bởi STBV</span>
+            </div>
+            <h3 class="text_2_line mb-1">
+              <a href="#Product.Link">#Product.Name</a>
+            </h3>
+            <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post">
+              <span>5m x 20m</span>
+              <span>1.2 tỷ</span>
+              <span>Ninh bình</span>
+              <span>#Attribute.Value</span>
+            </div>
+            <div class="item_price mt-3">
+              <!-- #Product.Price -->
+              <span>1,550,000 ₫</span><del>1,800,000</del>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+    function addFavorite(item) {
+      $(item).toggleClass('is_yes');
+      console.log('Add Favorite ' + item.dataset.id);
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Page - Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+
+    <section class="section_bredcrumd py-4">
+      <div class="container">
+        <nav class="breadcrumb is-size-7 has-text-weight-medium">
+          <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/">Danh mục</a></li>
+            <li class="is-active"><a href="#">Chi tiết</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="pb-6">
+      <div class="container">
+        <div class="columns is-variable is-4">
+
+          <div class="column is-two-thirds">
+            <h1 class="is-size-4 has-text-weight-medium mb-4">
+              #Post.Name Biệt thự hiện đại 3 tầng sang trọng đẳng cấp view sân golf tam đảo, Vĩnh Phúc
+            </h1>
+
+            <div class="card mb-2">
+              <a id="product_image" class="image is-16by9 js_gallery" href="#Post.Image" data-group="images">
+                <img src="/themes/b3.jpg" _src="#Post.Image" alt="IMG">
+              </a>
+            </div>
+
+            <ul id="product_images" class="columns is-multiline is-centered is-variable is-1" data-bind="true"
+              data-type="images" data-source="#Post.Id">
+              <li class="column is-narrow">
+                <div class="card">
+                  <a class="image is-64x64" href="#Image.Link" data-group="images">
+                    <img src="#Image.Thumb" alt="img">
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <hr>
+
+            <h3 class="has-text-weight-bold mb-3">
+              Thông số kỹ thuật
+            </h3>
+
+            <ul class="product_attributes columns is-multiline is-gapless" data-repeat="true" data-rows="8">
+              <li class="column is-half">
+                <div>
+                  <label>Phong cách</label>
+                  <span>Kiến trúc mái nhật</span>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="has-text-weight-bold mb-3">
+              Chi tiết sản phẩm
+            </h3>
+
+            <div id="product_content">
+              <!-- #Post.Content -->
+              <article class="content font_14" data-repeat="true" data-rows="3">
+                <div>
+                  <p>
+                    Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần
+                    quản trị
+                    của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi
+                    trong
+                    phần quản trị của website.
+                  </p>
+                  <p style="text-align: center;"><img style="width: 100%;" src="#Element.Image" alt="img">
+                  </p>
+                  <p>Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong
+                    phần quản trị của website.</p>
+                </div>
+              </article>
+
+              <div class="box_more">
+                <a class="button is_more" onclick="toggleMore('product_content')">
+                  <span class="font_14 has-text-weight-semibold">Xem thêm nội dung</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="column is-one-third">
+            <div id="form_order" class="order_box p-5">
+              <div class="has-text-weight-medium mb-5">Liên hệ đặt hàng</div>
+              <div class="field">
+                <label class="label">
+                  Tên của bạn
+                </label>
+                <div class="control">
+                  <input type="text" class="input" data-model="name" placeholder="Nhập tên của bạn">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">
+                  Số điện thoại <i>*</i>
+                </label>
+                <div class="control">
+                  <input type="text" class="input" data-model="phone" data-required placeholder="Nhập số điện thoại">
+                </div>
+              </div>
+              <div class="field is-grouped">
+                <div class="control is-expanded" style="width: 50%;">
+                  <label class="label">
+                    Tỉnh/Thành phố <i>*</i>
+                  </label>
+                  <div class="select is-fullwidth">
+                    <select data-model="city" data-required>
+                      <option value="">- chọn -</option>
+                      <option value="43">Đà Nẵng</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control is-expanded" style="width: 50%;">
+                  <label class="label">
+                    Quận huyện <i>*</i>
+                  </label>
+                  <div class="select is-fullwidth">
+                    <select data-model="district" data-required>
+                      <option value="">- chọn -</option>
+                      <option value="43">Hải Châu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <a class="is-flex is-vcentered has-text-link is-size-7" href="#">
+                  <span class="icon">
+                    <img src="/themes/icons/05.png" alt="icon">
+                  </span>
+                  <span class="has-text-weight-semibold">Cửa hàng gần bạn</span>
+                </a>
+              </div>
+              <div class="field is-grouped pt-4">
+                <div class="control font_14">
+                  Tổng tiền
+                </div>
+                <div class="product_price font_14 control is-expanded has-text-right">
+                  <!-- #Post.Price -->
+                  <strong>1,550,000 ₫</strong>
+                  <span>(-6%)</span>
+                  <del>1,800,000 ₫</del>
+                </div>
+              </div>
+              <div class="field pt-4">
+                <p class="has-text-centered is-size-7 mb-2">
+                  Bạn chưa phải thanh toán tiền ở bước này
+                </p>
+                <button class="button is-medium is-fullwidth is_main mb-2" onclick="orderNow()">
+                  <span class="has-text-weight-bold is-size-6 color_text">Liên hệ đặt hàng</span>
+                </button>
+                <a class="button is-medium is-fullwidth" onclick="addFavorite(this)" data-id="#Post.Id">
+                  <span class="icon">
+                    <i class="far fa-heart"></i>
+                  </span>
+                  <span class="has-text-weight-bold font_14">Thêm vào hồ sô yêu thích</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="is-size-4 has-text-weight-medium mb-4">
+          Phù hợp với bạn
+        </div>
+        <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="4" data-type="products"
+          data-source="#Post.Id" data-sort="5">
+          <li class="column is-one-quarter product_item">
+            <div class="card">
+              <div class="item_img card-image">
+                <div class="image is-square" href="#Product.Link">
+                  <img src="#Product.Thumb" alt="img">
+                </div>
+                <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+              </div>
+            </div>
+            <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
+              <img class="mr-2" src="/themes/icons/04.png" alt="icon">
+              <span>Thiết kế bởi STBV</span>
+            </div>
+            <h3 class="text_2_line mb-1">
+              <a href="#Product.Link">#Product.Name</a>
+            </h3>
+            <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post">
+              <span>5m x 20m</span>
+              <span>1.2 tỷ</span>
+              <span>Ninh bình</span>
+              <span>#Attribute.Value</span>
+            </div>
+            <div class="item_price mt-3">
+              <!-- #Product.Price -->
+              <span>1,550,000 ₫</span><del>1,800,000</del>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pt-5 pb-6">
+      <div class="container">
+        <div class="is-size-4 has-text-weight-medium mb-4">
+          Khám phá thêm
+        </div>
+        <div class="buttons" data-bind="true" data-type="tags" data-source="#Post.Id">
+          <a class="button is-rounded font_14" href="#Tag.Link">#Tag.Name</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+      $('#product_images li a').click(function (e) {
+        e.preventDefault();
+        var img = $(this).attr('href');
+        $('#product_image').attr('href', img);
+        $('#product_image img').attr('src', img);
+      });
+    }
+    function addFavorite(item) {
+      $(item).toggleClass('is_yes');
+      console.log('Add Favorite ' + item.dataset.id);
+    }
+    function orderNow() {
+      alert('Chức năng đang trong quá trình hoàn thiện !');
+      var code = 'order';
+      var name = $('[data-name').val();
+      var phone = $('[data-phone]').val();
+      var email = '';
+      var address = $('#contact_address').val();
+      var content = $('[data-product]').val();
+
+      if (checkRequired('form_order')) {
+        $('#contact_btn').addClass('is-loading');
+        setTimeout(function () {
+          $('#contact_btn').removeClass('is-loading');
+          $('#contact_msg').html(`Đã gửi thông tin liên hệ !`);
+        }, 1000);
+
+        $.ajax({
+          type: "POST",
+          url: "/APIv1/Form/Send",
+          data: { code, name, phone, email, address, content },
+          dataType: "json",
+          success: function (res) {
+            $('#contact_btn').removeClass('is-loading');
+            if (res.status === true) {
+              $('#contact_msg').html(`Đã gửi thông tin liên hệ !`);
+            } else {
+              $('#contact_msg').html(res.msg);
+            }
+          }
+        });
+      }
+      else {
+        $('#contact_msg').html('Vui lòng nhập đầy đủ thông tin');
+      }
+    }
+  </script>
+
+</body>
+
+</html>

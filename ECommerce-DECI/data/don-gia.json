@@ -1,0 +1,632 @@
+[
+  {
+    "stt": 1,
+    "tinh_thanh": "An Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 2,
+    "tinh_thanh": "Bà Rịa - Vũng Tàu",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 3,
+    "tinh_thanh": "Bắc Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 4,
+    "tinh_thanh": "Bắc Kạn",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 5,
+    "tinh_thanh": "Bạc Liêu",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 6,
+    "tinh_thanh": "Bắc Ninh",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 7,
+    "tinh_thanh": "Bến Tre",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 8,
+    "tinh_thanh": "Bình Định",
+    "dgpt_nhapho": "3150000",
+    "dght_nhapho": "2340000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "1950000",
+    "dght_cap4": "2900000"
+  },
+  {
+    "stt": 9,
+    "tinh_thanh": "Bình Dương",
+    "dgpt_nhapho": "3300000",
+    "dght_nhapho": "2500000",
+    "dgpt_bietthu": "3300000",
+    "dght_bietthu": "3100000",
+    "dgpt_cap4": "2100000",
+    "dght_cap4": "3100000"
+  },
+  {
+    "stt": 10,
+    "tinh_thanh": "Bình Phước",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 11,
+    "tinh_thanh": "Bình Thuận",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 12,
+    "tinh_thanh": "Cà Mau",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 13,
+    "tinh_thanh": "Cần Thơ",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 14,
+    "tinh_thanh": "Cao Bằng",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 15,
+    "tinh_thanh": "Đà Nẵng",
+    "dgpt_nhapho": "3200000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3200000",
+    "dght_bietthu": "3000000",
+    "dgpt_cap4": "2000000",
+    "dght_cap4": "3000000"
+  },
+  {
+    "stt": 16,
+    "tinh_thanh": "Đắk Lắk",
+    "dgpt_nhapho": "3150000",
+    "dght_nhapho": "2350000",
+    "dgpt_bietthu": "3200000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "1950000",
+    "dght_cap4": "2950000"
+  },
+  {
+    "stt": 17,
+    "tinh_thanh": "Đắk Nông",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 18,
+    "tinh_thanh": "Điện Biên",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 19,
+    "tinh_thanh": "Đồng Nai",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 20,
+    "tinh_thanh": "Đồng Tháp",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 21,
+    "tinh_thanh": "Gia Lai",
+    "dgpt_nhapho": "3240000",
+    "dght_nhapho": "2480000",
+    "dgpt_bietthu": "3260000",
+    "dght_bietthu": "3060000",
+    "dgpt_cap4": "1980000",
+    "dght_cap4": "2950000"
+  },
+  {
+    "stt": 22,
+    "tinh_thanh": "Hà Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 23,
+    "tinh_thanh": "Hà Nam",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 24,
+    "tinh_thanh": "Hà Nội",
+    "dgpt_nhapho": "3450000",
+    "dght_nhapho": "2650000",
+    "dgpt_bietthu": "3450000",
+    "dght_bietthu": "3250000",
+    "dgpt_cap4": "2250000",
+    "dght_cap4": "3250000"
+  },
+  {
+    "stt": 25,
+    "tinh_thanh": "Hà Tĩnh",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 26,
+    "tinh_thanh": "Hải Dương",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 27,
+    "tinh_thanh": "Hải Phòng",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 28,
+    "tinh_thanh": "Hậu Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 29,
+    "tinh_thanh": "Hòa Bình",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 30,
+    "tinh_thanh": "Hưng Yên",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 31,
+    "tinh_thanh": "Khánh Hòa",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 32,
+    "tinh_thanh": "Kiên Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 33,
+    "tinh_thanh": "Kon Tum",
+    "dgpt_nhapho": "3220000",
+    "dght_nhapho": "2460000",
+    "dgpt_bietthu": "3220000",
+    "dght_bietthu": "3040000",
+    "dgpt_cap4": "1950000",
+    "dght_cap4": "2930000"
+  },
+  {
+    "stt": 34,
+    "tinh_thanh": "Lai Châu",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 35,
+    "tinh_thanh": "Lâm Đồng",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 36,
+    "tinh_thanh": "Lạng Sơn",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 37,
+    "tinh_thanh": "Lào Cai",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 38,
+    "tinh_thanh": "Long An",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 39,
+    "tinh_thanh": "Nam Định",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 40,
+    "tinh_thanh": "Nghệ An",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 41,
+    "tinh_thanh": "Ninh Bình",
+    "dgpt_nhapho": "3250000",
+    "dght_nhapho": "2450000",
+    "dgpt_bietthu": "3250000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "2050000",
+    "dght_cap4": "3050000"
+  },
+  {
+    "stt": 42,
+    "tinh_thanh": "Ninh Thuận",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 43,
+    "tinh_thanh": "Phú Thọ",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 44,
+    "tinh_thanh": "Phú Yên",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 45,
+    "tinh_thanh": "Quảng Bình",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 46,
+    "tinh_thanh": "Quảng Nam",
+    "dgpt_nhapho": "3150000",
+    "dght_nhapho": "2350000",
+    "dgpt_bietthu": "3150000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "1950",
+    "dght_cap4": "2950000"
+  },
+  {
+    "stt": 47,
+    "tinh_thanh": "Quảng Ngãi",
+    "dgpt_nhapho": "3250000",
+    "dght_nhapho": "2450000",
+    "dgpt_bietthu": "3250000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "2050000",
+    "dght_cap4": "3050000"
+  },
+  {
+    "stt": 48,
+    "tinh_thanh": "Quảng Ninh",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 49,
+    "tinh_thanh": "Quảng Trị",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 50,
+    "tinh_thanh": "Sóc Trăng",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 51,
+    "tinh_thanh": "Sơn La",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 52,
+    "tinh_thanh": "Tây Ninh",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 53,
+    "tinh_thanh": "Thái Bình",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 54,
+    "tinh_thanh": "Thái Nguyên",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 55,
+    "tinh_thanh": "Thanh Hóa",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 56,
+    "tinh_thanh": "Thừa Thiên Huế",
+    "dgpt_nhapho": "3150000",
+    "dght_nhapho": "2350000",
+    "dgpt_bietthu": "3150000",
+    "dght_bietthu": "3050000",
+    "dgpt_cap4": "1950",
+    "dght_cap4": "2950000"
+  },
+  {
+    "stt": 57,
+    "tinh_thanh": "Tiền Giang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 58,
+    "tinh_thanh": "Thành phố Hồ Chí Minh",
+    "dgpt_nhapho": "3400000",
+    "dght_nhapho": "2600000",
+    "dgpt_bietthu": "3400000",
+    "dght_bietthu": "3200000",
+    "dgpt_cap4": "2200000",
+    "dght_cap4": "3200000"
+  },
+  {
+    "stt": 59,
+    "tinh_thanh": "Trà Vinh",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 60,
+    "tinh_thanh": "Tuyên Quang",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 61,
+    "tinh_thanh": "Vĩnh Long",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 62,
+    "tinh_thanh": "Vĩnh Phúc",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  },
+  {
+    "stt": 63,
+    "tinh_thanh": "Yên Bái",
+    "dgpt_nhapho": "3100000",
+    "dght_nhapho": "2400000",
+    "dgpt_bietthu": "3100000",
+    "dght_bietthu": "2400000",
+    "dgpt_cap4": "3100000",
+    "dght_cap4": "2400000"
+  }
+]

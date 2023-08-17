@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videos Page</title>
+    <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+    <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+    <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+    <link rel="stylesheet" href="/Asset/Web/style.css">
+    <link rel="stylesheet" href="/Asset/Web/theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div data-include="/Include/header.html"></div>
+
+    <!-- Main body -->
+    <main id="main" class="background_bg">
+
+        <!-- Cover -->
+        <section class="py-6">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-three-fifths">
+                        <nav class="breadcrumb">
+                            <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
+                                <li><a href="/">Trang chủ</a></li>
+                                <li><a href="/">Tin tức</a></li>
+                                <li class="is-active"><a href="#">Documentation</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="column is-two-fifths">
+                        <div class="control has-icons-left">
+                            <input class="input is-rounded is_shadow quick_search" type="text" placeholder="Tìm kiếm">
+                            <span class="icon is-left">
+                                <i class="s24 feather icon-search color_main"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos -->
+        <section class="pb-6">
+            <div class="container">
+                <ul class="columns is-variable is-2 is-size-5">
+                    <li class="column is-narrow">
+                        <a class="color_main has-text-weight-bold">Tất cả video</a>
+                    </li>
+                    <li class="column">
+                        <ul class="columns is-variable is-2" data-bind="true" data-type="category"
+                            data-source="#Post.Id">
+                            <li class="column is-narrow">
+                                <a class="color_text" href="#Category.Link">#Category.Name</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="mt-1 mb-6">
+                <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="10"
+                    data-type="blog-list" data-source="#Post.Id" data-sort="1" data-pagination="true">
+                    <li class="column is-half">
+                        <div class="card mb-3">
+                            <div class="card-image">
+                                <a class="image is-16by9 is_cover is_video" href="#Blog.Link"
+                                    style="background-image: url('#Blog.Thumb');">
+                                    <i class="is_play fas fa-play-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="columns is-multiline is-vcentered is-variable is-0">
+                            <div class="column is-three-quarters">
+                                <h3 class="has-text-weight-semibold text_1_line">
+                                    <a href="#Blog.Link">#Blog.Name</a>
+                                </h3>
+                            </div>
+                            <div class="column is-one-quarter font_13 has-text-right">
+                                <i class="feather icon-eye"></i>
+                                <span>1.5k view</span>
+                            </div>
+                            <div class="column is-full">
+                                <hr class="my-1">
+                                <div class="text_5_line font_13">#Blog.Desc</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div data-include="/Include/footer.html"></div>
+
+    <!-- Javascript -->
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="/Scripts/swiped-events.js"></script>
+    <script src="/Scripts/jquery.aniview.js"></script>
+    <script src="/Scripts/onetez.js"></script>
+    <script src="/Scripts/demo.js"></script>
+    <script src="/Scripts/masonry.pkgd.min.js"></script>
+    <script src="/Scripts/imagesloaded.pkgd.js"></script>
+    <script>
+        function loadAfterDataDemo() {
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry();
+            });
+        }
+    </script>
+
+</body>
+
+</html>
