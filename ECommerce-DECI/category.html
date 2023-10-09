@@ -11,11 +11,8 @@
   <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
   <link rel="stylesheet" href="/Asset/Web/style.css">
   <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +25,7 @@
   <!-- Main body -->
   <main id="main">
 
-    <section class="section_bredcrumd py-4 is-hidden">
+    <section class="section_bredcrumd is-hidden">
       <div class="container">
         <nav class="breadcrumb is-size-7 has-text-weight-medium">
           <ul data-bind="true" data-type="breadcrumb" data-source="#Post.Id">
@@ -40,18 +37,14 @@
       </div>
     </section>
 
-    <section class="wrap_mobile pt-4 pb-6">
+    <section class="wrap_mobile py-5">
       <div class="container">
-
         <div class="columns is-variable is-4">
           <div id="search_box" class="column is-one-quarter is-hidden-mobile">
-            <div class="search_box p-5">
-              <div class="field is-grouped">
-                <div class="control is-expanded">
-                  <span class="has-text-weight-bold">Bộ lọc</span>
-                </div>
-                <div class="control is-hidden-mobile">
-                  <a class="has-text-weight-medium is-size-7 color_extra" onclick="resetSearch()">Về mặc định</a>
+            <div class="search_box">
+              <div class="field is-grouped is-vcentered mb-0">
+                <div class="control is-expanded py-2">
+                  <span class="has-text-weight-bold">Bộ lọc sản phẩm</span>
                 </div>
                 <div class="control is-hidden-tablet">
                   <a class="icon color_text" onclick="toggleSearch()">
@@ -59,9 +52,11 @@
                   </a>
                 </div>
               </div>
-              <hr>
+
+              <hr class="is-grey mt-1">
+
               <div class="field">
-                <label class="label font_14">Loại nhà</label>
+                <label class="label font_14">Danh mục</label>
                 <div class="control">
                   <ul class="checkbox_list font_14">
                     <li>
@@ -95,13 +90,11 @@
                       </label>
                     </li>
                   </ul>
-                  <a class="is-size-7 color_main">
-                    <span>Xem thêm</span>
-                    <i class="fa-xs fas fa-chevron-down"></i>
-                  </a>
                 </div>
               </div>
-              <hr>
+
+              <hr class="my-2">
+              
               <div class="field">
                 <label class="label font_14">Số tầng</label>
                 <div class="control">
@@ -115,27 +108,15 @@
                   </ul>
                 </div>
               </div>
-              <hr>
+
+              <hr class="my-2">
+              
               <div class="field">
-                <label class="label font_14">Số phòng ngủ</label>
-                <div class="control">
-                  <ul class="radio_list" data-repeat="true" data-rows="8">
-                    <li>
-                      <label class="radio">
-                        <input type="radio" name="bedroom" value="#Element.Id">
-                        <span>#Element.Id</span>
-                      </label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <hr>
-              <div class="field">
-                <label class="label">Kích thước</label>
+                <label class="label font_14">Kích thước</label>
                 <div class="field is-grouped">
-                  <div class="control is-expanded" style="width: 50%;">
+                  <div class="control">
                     <p class="is-size-7 has-text-weight-semibold">Chiều rộng</p>
-                    <div class="select mt-1">
+                    <div class="select is-small mt-1">
                       <select data-width>
                         <option value="0">Mét</option>
                         <option value="3">3 mét</option>
@@ -149,9 +130,9 @@
                       </select>
                     </div>
                   </div>
-                  <div class="control is-expanded" style="width: 50%;">
+                  <div class="control">
                     <p class="is-size-7 has-text-weight-semibold">Chiều dài</p>
-                    <div class="select mt-1">
+                    <div class="select is-small mt-1">
                       <select data-long>
                         <option value="0">Mét</option>
                         <option value="3">3 mét</option>
@@ -167,10 +148,10 @@
                   </div>
                 </div>
               </div>
-              <hr>
-              <div class="field is-grouped">
+              
+              <div class="field is-grouped mt-5">
                 <div class="control">
-                  <a class="button is_main" onclick="submitSearch()">
+                  <a class="button is-rounded is_main" onclick="submitSearch()">
                     <span class="icon">
                       <i class="fas fa-search"></i>
                     </span>
@@ -178,7 +159,7 @@
                   </a>
                 </div>
                 <div class="control">
-                  <a class="button is-hidden-tablet" onclick="toggleSearch()">
+                  <a class="button is-rounded" onclick="resetSearch()">
                     Hủy
                   </a>
                 </div>
@@ -187,67 +168,79 @@
           </div>
 
           <div class="column is-three-quarters">
-            <div class="columns is-mobile is-variable is-2 is-hidden-tablet">
-              <h1 class="column is-size-5 has-text-weight-semibold">
-                #Post.Name
-              </h1>
-              <div class="column is-narrow">
-                <a class="icon color_text" onclick="toggleSearch()">
-                  <i class="fas fa-sliders-h"></i>
+            <div class="field is-grouped is-vcentered mb-0">
+              <div class="control is-expanded">
+                <h1 class="title is-size-5-tablet is-size-6-mobile color_main">
+                  #Post.Name
+                </h1>
+              </div>
+              <div class="control">
+                <div class="dropdown is-hoverable is-right">
+                  <div class="dropdown-trigger">
+                    <a class="button is-small is-rounded">
+                      <span>Sắp xếp</span>
+                      <span class="icon">
+                        <i class="fas fa-chevron-down"></i>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-content">
+                      <a class="dropdown-item" onclick="changeSort(1)">Sản phẩm nổi bật</a>
+                      <a class="dropdown-item" onclick="changeSort(2)">Giá giảm dần</a>
+                      <a class="dropdown-item" onclick="changeSort(3)">Giá tăng dần</a>
+                      <a class="dropdown-item" onclick="changeSort(4)">Đặt hàng nhiều</a>
+                      <a class="dropdown-item" onclick="changeSort(6)">Lượt xem nhiều</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="control is-hidden-tablet">
+                <a class="button is-small is-rounded" onclick="toggleSearch()">
+                  <span class="icon">
+                    <i class="fas fa-search"></i>
+                  </span>
                 </a>
               </div>
             </div>
 
-            <div class="tabs pt-5 has-text-weight-medium font_14">
-              <ul id="sortby">
-                <li data-id="1">
-                  <a onclick="changeSort(1)">Đề xuất bởi STBV</a>
-                </li>
-                <li data-id="3">
-                  <a onclick="changeSort(3)">Giá tăng dần</a>
-                </li>
-                <li data-id="2">
-                  <a onclick="changeSort(2)">Giá giảm dần</a>
-                </li>
-                <li data-id="6">
-                  <a onclick="changeSort(6)">Nhiều người xem nhất</a>
-                </li>
-                <li data-id="4">
-                  <a onclick="changeSort(4)">Đặt hàng nhiều nhất</a>
-                </li>
-              </ul>
+            <hr class="is-grey mt-3">
+
+            <div class="content font_14_mobile">
+              #Post.Content
+              Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website. Đây là đoạn nội dung mẫu để kiểm tra giao diện, bạn có thể thay đổi trong phần quản trị của website.
             </div>
 
-            <ul class="columns is-multiline is-variable is-4 pb-5" data-repeat="true" data-rows="12"
+            <ul class="columns is-multiline is-mobile is-variable is-4-tablet is-2-mobile pb-5"
+              data-repeat="true" data-rows="12"
               data-type="product-list" data-source="#Post.Id" data-sort="1" data-pagination="true">
-              <li class="column is-one-third product_item">
-                <div class="card">
-                  <div class="item_img card-image">
-                    <div class="image is-square" href="#Product.Link">
-                      <img src="#Product.Thumb" alt="img">
+              <li class="column is-one-third-tablet is-half-mobile">
+                <div class="product_item is-shadow is-radius">
+                  <a class="image is-4by5" href="#Product.Link">
+                    <img src="#Product.Thumb" alt="img">
+                  </a>
+                  <div class="item_info has-text-centered">
+                    <div class="item_category has-text-grey has-text-weight-light">
+                      #Product.Category
                     </div>
-                    <a class="icon is_like" onclick="addFavorite(this)" data-id="#Product.Id"></a>
+                    <h3 class="item_name has-text-dark text_1_line">
+                      <a href="#Product.Link">#Product.Name</a>
+                    </h3>
+                    <div class="item_price has-text-danger">
+                      #Product.Price
+                    </div>
+                    <div class="item_attr" data-type="attributes" data-source="post" data-rows="3">
+                      <span>#Attribute.Value</span>
+                      <span>#Attribute.Value</span>
+                    </div>
+                    <a class="item_buy button is-rounded is_main" onclick="addToCart('#Product.Id',0)">
+                      <span>Mua hàng</span>
+                    </a>
                   </div>
-                </div>
-                <div class="is-flex is-vcentered has-text-success is-size-7 py-3">
-                  <img class="mr-2" src="/themes/icons/04.png" alt="icon">
-                  <span>Thiết kế bởi STBV</span>
-                </div>
-                <h3 class="text_2_line mb-1">
-                  <a href="#Product.Link">#Product.Name</a>
-                </h3>
-                <div class="item_attr is-size-7 has-text-grey text_1_line" data-type="attributes" data-source="post">
-                  <span>5m x 20m</span>
-                  <span>1.2 tỷ</span>
-                  <span>Ninh bình</span>
-                  <span>#Attribute.Value</span>
-                </div>
-                <div class="item_price mt-3">
-                  <!-- #Product.Price -->
-                  <span>1,550,000 ₫</span><del>1,800,000</del>
                 </div>
               </li>
             </ul>
+
             <nav class="pagination is-centered">
               <ul class="pagination-list">
                 <li><a class="pagination-link is-current">1</a></li>

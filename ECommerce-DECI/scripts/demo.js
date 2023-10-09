@@ -53,14 +53,17 @@ function repeatDataElement(element) {
     if (source !== undefined) {
       if (source.indexOf('category') !== -1)
         name = `Danh mục số ${id}`;
-      if (source.indexOf('service') !== -1)
+      else if (source.indexOf('service') !== -1)
+      {
         name = `Dịch vụ số ${id}`;
-      if (source.indexOf('slide') !== -1)
+        content = desc;
+      }
+      else if (source.indexOf('slide') !== -1)
         image = `/Themes/s${img}.jpg`;
-      if (source.indexOf('feedback') !== -1)
+      else if (source.indexOf('feedback') !== -1)
       {
         name = `Khách hàng số ${id}`;
-        content = `${desc}`;
+        content = desc;
       }
     }
 

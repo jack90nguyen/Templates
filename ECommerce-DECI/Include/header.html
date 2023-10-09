@@ -1,22 +1,37 @@
 <header id="header">
-  <section class="header_top bg_main wrap_mobile">
+  <section class="header_top bg_main">
     <div class="container py-2 has-text-weight-medium has-text-centered">
-      <div class="has-text-white font_14" style="opacity: 0.7;">
-        <span>DECI Art & Decor: trang trí nhà của</span>
-        <span>-</span>
-        <a class="icon-text" href="tel:#Config.Hotline1">
-          Hotline: #Config.Hotline1
+      <span class="icon-text has-text-white font_14 is-size-7-mobile">
+        <span style="opacity: 0.7;">DECI Art & Decor: trang trí nhà cửa</span>
+        <a class="ml-4" href="tel:#Config.Hotline1">
+          #Config.Hotline1
         </a>
-      </div>
+        <span class="icon is-small">
+          <i class="fas fa-phone"></i>
+        </span>
+      </span>
     </div>
   </section>
 
-  <div class="header_middle wrap_mobile">
+  <div class="header_middle">
     <div class="container">
-      <ul class="columns is-vcentered">
-        <li class="column is-2">
+      <ul class="columns is-vcentered is-gapless">
+        <li class="column is-2 header_mobile">
+          <a class="navbar-burger is-hidden-tablet">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
           <a class="header_logo is-block" href="/">
             <img src="/themes/logo.png" _src="#Config.Logo" alt="#Config.Domain" />
+          </a>
+
+          <a class="icon-text header_cart is-hidden-tablet" href="/cart.html">
+            <span class="icon">
+              <i class="fas fa-shopping-bag is-size-5"></i>
+            </span>
+            <span class="header_cart_count has-background-danger has-text-white">6</span>
           </a>
         </li>
         <li class="column is-8">
@@ -32,7 +47,7 @@
             </div>
           </div>
 
-          <div class="header_menu">
+          <div class="header_menu navbar-menu">
             <div class="navbar" data-bind="true" data-rows="0" data-type="nav"
               data-source="header-nav">
               <a class="navbar-item" href="#Element.Link">
@@ -41,8 +56,8 @@
             </div>
           </div>
         </li>
-        <li class="column is-2 has-text-right">
-          <a class="icon-text font_14 header_cart" href="/cart.html">
+        <li class="column is-2 has-text-right is-hidden-mobile">
+          <a class="header_cart icon-text font_14" href="/cart.html">
             <span>Giỏ hàng</span>
             <span class="icon">
               <i class="fas fa-shopping-bag is-size-5"></i>

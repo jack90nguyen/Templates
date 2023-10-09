@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
   <link rel="stylesheet" href="/Asset/Web/style.css">
   <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -34,12 +35,12 @@
       </div>
     </section>
 
-    <section class="home_category bg_bg">
+    <section class="home_category bg_bg wrap_mobile">
       <div class="container py-5">
         <ul class="columns is-vcentered">
           <li class="column is-one-quarter">
-            <h2 class="title is-3 color_main mb-2">
-              Bộ Sưu Tập<br>DECI
+            <h2 class="title is-size-3 is-size-4-mobile color_main mb-2">
+              Bộ Sưu Tập <br class="is-hidden-mobile"> DECI
             </h2>
             <div class="mb-3">
               Lựa chọn bộ sưu tập mà bạn đang quan tâm và DECI sẽ mở ra cho bạn một thế giới DECOR độc đáo và đa dạng sự lựa chọn
@@ -79,19 +80,20 @@
       </div>
     </section>
 
-    <section class="home_about" data-bind="true" data-type="content-image" data-source="home-about">
+    <section class="home_about wrap_mobile"
+      data-bind="true" data-type="content-image" data-source="home-about">
       <div class="container py-6">
         <ul class="columns is-vcentered is-variable is-8">
-          <li class="column is-half">
+          <li class="column is-half is-hidden-mobile">
             <div class="image">
               <img src="/themes/about.png" alt="img">
             </div>
           </li>
           <li class="column is-half">
-            <div class="has-text-weight-semibold is-size-5 py-4">
+            <div class="has-text-weight-semibold is-size-5 py-4 is-hidden-mobile">
               DECI ART & DECOR
             </div>
-            <h2 class="has-text-weight-bold is-size-1 color_main">
+            <h2 class="has-text-weight-bold color_main is-size-1 is-size-4-mobile">
               #Element.Name
             </h2>
             <div class="is-size-6 py-4">
@@ -108,20 +110,20 @@
       </div>
     </section>
 
-    <section class="home_sale py-5">
-      <div class="container is-small">
-        <ul class="columns is-mobile mb-5">
-          <li class="column is-one-third">
+    <section class="home_sale py-5 wrap_mobile">
+      <div class="home_sale_tabs container is-small">
+        <ul class="columns is-mobile is-variable is-1-mobile mb-5">
+          <li class="column is-one-third-tablet is-narrow-mobile">
             <a class="button is-outlined is-medium is-fullwidth is-rounded is-active">
               <span class="is-size-6">Bán chạy</span>
             </a>
           </li>
-          <li class="column is-one-third">
+          <li class="column is-one-third-tablet is-narrow-mobile">
             <a class="button is-outlined is-medium is-fullwidth is-rounded">
               <span class="is-size-6">Đang khuyến mãi</span>
             </a>
           </li>
-          <li class="column is-one-third">
+          <li class="column is-one-third-tablet is-narrow-mobile">
             <a class="button is-outlined is-medium is-fullwidth is-rounded">
               <span class="is-size-6">Xu hướng</span>
             </a>
@@ -131,7 +133,7 @@
 
       <div class="container">
         <ul class="columns is-variable is-4">
-          <li class="column is-narrow" data-bind="true" data-type="link-image" data-source="home-sale">
+          <li class="home_sale_cover column is-narrow" data-bind="true" data-type="link-image" data-source="home-sale">
             <div class="sale_item image is-radius is-shadow">
               <img src="/themes/sale.png" alt="img">
               <div class="item_info">
@@ -141,7 +143,7 @@
               </div>
             </div>
           </li>
-          <li class="column is-narrow">
+          <li class="home_sale_products column is-narrow">
             <div class="jcarousel-wrapper">
               <div class="jcarousel">
                 <ul data-repeat="true" data-rows="12" data-type="products" data-source="0" data-sort="1">
@@ -150,22 +152,22 @@
                       <a class="image is-4by5" href="#Product.Link">
                         <img src="#Product.Thumb" alt="img">
                       </a>
-                      <div class="item_info has-text-centered px-4 py-5">
-                        <div class="has-text-grey has-text-weight-light font_14 mb-1">
+                      <div class="item_info has-text-centered">
+                        <div class="item_category has-text-grey has-text-weight-light font_14">
                           #Product.Category
                         </div>
-                        <h3 class="is-size-6 has-text-dark text_1_line mb-2">
+                        <h3 class="item_name has-text-dark text_1_line">
                           <a href="#Product.Link">#Product.Name</a>
                         </h3>
-                        <div class="item_price has-text-danger mb-2">
+                        <div class="item_price has-text-danger">
                           #Product.Price
                         </div>
-                        <div class="item_attr mb-3" data-type="attributes" data-source="post" data-rows="3">
+                        <div class="item_attr" data-type="attributes" data-source="post" data-rows="3">
                           <span>#Attribute.Value</span>
                           <span>#Attribute.Value</span>
                         </div>
-                        <a class="button is-rounded is_main" onclick="addToCart('#Product.Id',0)">
-                          <span class="font_14">Mua hàng</span>
+                        <a class="item_buy button is-rounded is_main" onclick="addToCart('#Product.Id',0)">
+                          <span>Mua hàng</span>
                         </a>
                       </div>
                     </div>
@@ -186,21 +188,23 @@
       </div>
     </section>
 
-    <section class="home_products py-6">
+    <section class="home_products py-6 wrap_mobile">
       <div class="container is-small">
-        <div class="title is-2 color_main">
+        <div class="title is-size-2 is-size-4-mobile color_main">
           Độc quyền chỉ có tại DECI
         </div>
         <div class="field is-grouped is-vcentered">
-          <div class="control mr-6">
+          <div class="control mr-6 is-hidden-mobile">
             <div class="has-text-dark is-size-4">
               Lựu chọn sản phẩm
             </div>
           </div>
-          <div class="control is-expanded" data-bind="true" data-type="category" data-source="-ParentId-">
-            <a class="button is-outlined is-medium is-rounded mr-3">
-              <span class="is-size-6">#Category.Name</span>
-            </a>
+          <div class="control is-expanded">
+            <div class="buttons" data-bind="true" data-type="category" data-source="-ParentId-">
+              <a class="button is-outlined is-medium is-rounded">
+                <span class="is-size-6 font_14_mobile">#Category.Name</span>
+              </a>
+            </div>
           </div>
         </div>
         <hr>
@@ -213,22 +217,22 @@
               <a class="image is-4by5" href="#Product.Link">
                 <img src="#Product.Thumb" alt="img">
               </a>
-              <div class="item_info has-text-centered px-4 py-5">
-                <div class="has-text-grey has-text-weight-light font_14 mb-1">
+              <div class="item_info has-text-centered">
+                <div class="item_category has-text-grey has-text-weight-light">
                   #Product.Category
                 </div>
-                <h3 class="is-size-6 has-text-dark text_1_line mb-2">
+                <h3 class="item_name has-text-dark text_1_line">
                   <a href="#Product.Link">#Product.Name</a>
                 </h3>
-                <div class="item_price has-text-danger mb-2">
+                <div class="item_price has-text-danger">
                   #Product.Price
                 </div>
-                <div class="item_attr mb-3" data-type="attributes" data-source="post" data-rows="3">
+                <div class="item_attr" data-type="attributes" data-source="post" data-rows="3">
                   <span>#Attribute.Value</span>
                   <span>#Attribute.Value</span>
                 </div>
-                <a class="button is-rounded is_main" onclick="addToCart('#Product.Id',0)">
-                  <span class="font_14">Mua hàng</span>
+                <a class="item_buy button is-rounded is_main" onclick="addToCart('#Product.Id',0)">
+                  <span>Mua hàng</span>
                 </a>
               </div>
             </div>
@@ -237,18 +241,18 @@
       </div>
     </section>
 
-    <section class="home_blog py-6 bg_bg" data-bind="true" data-type="post" data-source="Blog_ID">
+    <section class="home_blog py-6 bg_bg wrap_mobile" data-bind="true" data-type="post" data-source="Blog_ID">
       <div class="container is-small">
         <div class="field is-grouped is-vcentered">
           <div class="control is-expanded">
-            <h2 class="title is-3 color_main">#Data.Name</h2>
+            <h2 class="title is-size-3 is-size-5-mobile color_main">#Data.Name</h2>
           </div>
           <div class="control">
             <a class="color_extra is-underlined" href="#Data.Link">Xem thêm</a>
           </div>
         </div>
         
-        <hr class="is-dark">
+        <hr class="is-grey">
 
         <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="3"
           data-type="blogs" data-source="#Data.Id" data-sort="1">
@@ -260,24 +264,23 @@
               <div class="has-text-grey font_14 mb-2">
                 #Blog.Date
               </div>
-              <h3 class="title is-size-5 text_2_line mb-3">
+              <h3 class="title is-size-6 text_2_line mb-3">
                 <a href="#Blog.Link">#Blog.Name</a>
               </h3>
               <div class="font_14 text_3_line mb-2">
                 #Blog.Desc
               </div>
-              <a class="is-underlined color_extra" href="#Blog.Link">Chi tiết</a>
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="home_service py-6">
+    <section class="home_service py-6 wrap_mobile">
       <div class="container is-small">
         <ul class="columns mb-5">
           <li class="column is-two-thirds">
-            <div class="title is-2 color_main mb-2">
+            <div class="title is-size-2-tablet is-size-4-mobile color_main mb-2">
               Cam kết về chất lượng <span class="color_extra">#1</span><br>của DECI
             </div>
             <div>
@@ -285,57 +288,56 @@
             </div>
           </li>
         </ul>
-        <ul class="columns is-multiline is-variable is-4" data-repeat="true" data-rows="6"
+        <ul class="columns is-multiline is-variable is-4-tablet is-2-mobile" data-repeat="true" data-rows="6"
           data-type="icon-text" data-source="home-service">
           <li class="column is-one-third">
-            <div class="service_item px-5 py-6">
+            <div class="service_item">
               <span class="icon is-large color_main">
                 <i class="is-size-2 feather #Element.Image"></i>
               </span>
-              <div class="has-text-dark is-size-4 is-uppercase my-3 text_1_line">
+              <div class="item_name has-text-dark is-uppercase text_1_line">
                 #Element.Name
               </div>
-              <div class="font_14 text_5_line">
-                #Element.Content
+              <div class="item_desc text_5_line">
+                #Element.Desc
               </div>
-              
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="home_feedback py-5">
+    <section class="home_feedback py-5 wrap_mobile">
       <div class="container is-small mb-6">
-        <div class="title is-2 color_main">
+        <div class="title is-size-2-tablet is-size-4-mobile color_main">
           Mọi người nói về DECI
         </div>
       </div>
       <div class="container">
         <ul class="columns is-variable is-4">
-          <li class="column is-narrow">
+          <li class="home_feedback_cover column is-narrow">
             <div class="is-radius px-5 py-6 bg_main">
               <div class="title is-3 has-text-white">
                 Những khách hàng DECI có làm bạn cảm thấy yên tâm hơn!!!
               </div>
               <hr style="background: #346654;">
               <div class="title is-3 has-text-grey">Google</div>
-              <div class="has-text-white is-size-5 mb-3">TUYỆT VỜI</div>
+              <div class="has-text-white is-size-5-tablet is-size-6-mobile mb-3">TUYỆT VỜI</div>
               <div class="icon-text color_extra">
-                <span class="icon">
-                  <i class="is-size-5 feather icon-star-on"></i>
+                <span class="icon is-size-5">
+                  <i class="feather icon-star-on"></i>
                 </span>
-                <span class="icon">
-                  <i class="is-size-5 feather icon-star-on"></i>
+                <span class="icon is-size-5">
+                  <i class="feather icon-star-on"></i>
                 </span>
-                <span class="icon">
-                  <i class="is-size-5 feather icon-star-on"></i>
+                <span class="icon is-size-5">
+                  <i class="feather icon-star-on"></i>
                 </span>
-                <span class="icon">
-                  <i class="is-size-5 feather icon-star-on"></i>
+                <span class="icon is-size-5">
+                  <i class="feather icon-star-on"></i>
                 </span>
-                <span class="icon">
-                  <i class="is-size-5 feather icon-star-on"></i>
+                <span class="icon is-size-5">
+                  <i class="feather icon-star-on"></i>
                 </span>
                 <span class="is-size-5 color_text">|</span>
                 <span class="has-text-white mx-2">trên 135</span>
@@ -343,12 +345,12 @@
               </div>
             </div>
           </li>
-          <li class="column is-narrow">
+          <li class="home_feedback_list column is-narrow">
             <div class="jcarousel-wrapper">
               <div class="jcarousel">
                 <ul data-repeat="true" data-rows="12" data-type="image-text" data-source="home-feedback">
                   <li>
-                    <div class="feedback_item is-radius p-6">
+                    <div class="feedback_item is-radius">
                       <div class="icon-text">
                         <span class="icon image is-32x32 is-rounded">
                           <img src="#Product.Thumb" alt="img">
@@ -453,7 +455,7 @@
         if (width >= 768)
           width = width / 3;
         else
-          width = width / 2;
+          width = width;
         home_sale.jcarousel('items').css('width', width + 'px');
       })
         .jcarousel({
@@ -482,7 +484,7 @@
         if (width >= 768)
           width = 380;
         else
-          width = width / 2;
+          width = width;
         home_feedback.jcarousel('items').css('width', width + 'px');
       })
         .jcarousel({

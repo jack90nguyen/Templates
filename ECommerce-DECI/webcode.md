@@ -205,8 +205,14 @@ Blogs: data-type="blogs", "blog-list", "products"
 
 # Menu chính
 .navbar-burger = Đóng mở menu trên mobile
-#header.is-active = thể chưa header
+#header.is-active = thẻ chưa header
 .navbar-menu.is-active = thẻ chưa menu
+
+<a class="navbar-burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</a>
 
 
 # Breadcrumb:
