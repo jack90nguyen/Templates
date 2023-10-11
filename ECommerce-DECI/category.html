@@ -56,6 +56,18 @@
               <hr class="is-grey mt-1">
 
               <div class="field">
+                <label class="label font_14">Từ khóa</label>
+                <div class="control has-icons-right">
+                  <input class="input" type="text" data-type="keyword" placeholder="Nhập từ khóa...">
+                  <span class="icon is-right">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </div>
+              </div>
+
+              <hr class="my-2">
+
+              <div class="field">
                 <label class="label font_14">Danh mục</label>
                 <div class="control">
                   <ul class="checkbox_list font_14">
@@ -185,13 +197,14 @@
                     </a>
                   </div>
                   <div class="dropdown-menu">
-                    <div class="dropdown-content">
-                      <a class="dropdown-item" onclick="changeSort(1)">Sản phẩm nổi bật</a>
-                      <a class="dropdown-item" onclick="changeSort(2)">Giá giảm dần</a>
-                      <a class="dropdown-item" onclick="changeSort(3)">Giá tăng dần</a>
-                      <a class="dropdown-item" onclick="changeSort(4)">Đặt hàng nhiều</a>
-                      <a class="dropdown-item" onclick="changeSort(6)">Lượt xem nhiều</a>
-                    </div>
+                    <ul id="sortby" class="dropdown-content">
+                      <li class="dropdown-item" data-id="1" onclick="changeSort(1)">Sản phẩm nổi bật</li>
+                      <li class="dropdown-item" data-id="2" onclick="changeSort(2)">Giá giảm dần</li>
+                      <li class="dropdown-item" data-id="3" onclick="changeSort(3)">Giá tăng dần</li>
+                      <li class="dropdown-item" data-id="4" onclick="changeSort(4)">Đặt hàng nhiều</li>
+                      <li class="dropdown-item" data-id="5" onclick="changeSort(5)">Ngẫu nhiên</li>
+                      <li class="dropdown-item" data-id="6" onclick="changeSort(6)">Lượt xem nhiều</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -316,6 +329,15 @@
     }
 
     const attributes = getParameterByName('attributes');
+
+    const category = getParameterByName('category');
+    if(category !== null) {
+      category.split(',').forEach(item => {
+        if (item.length > 0) {
+          $(`input[value="${item}"]`).prop('checked', true);;
+        }
+      })
+    }
 
   </script>
 

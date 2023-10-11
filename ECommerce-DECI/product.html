@@ -115,9 +115,12 @@
             <hr class="my-2">
             
             <ul class="product_attributes columns is-multiline is-variable is-1"
-            data-source="post" data-type="attributes" data-repeat="true" data-rows="8">
+                data-bind="true" data-type="attributes" data-source="#Post.Id">
               <li class="column is-full font_14">
-                <label class="has-text-grey">#Attribute.Name:</label>
+                <label class="has-text-grey">
+                  <i class="icon is-small #Attribute.Icon"></i>
+                  #Attribute.Name:
+                </label>
                 <span>#Attribute.Value</span>
               </li>
             </ul>
