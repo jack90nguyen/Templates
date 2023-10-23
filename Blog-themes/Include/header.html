@@ -1,0 +1,33 @@
+<header id="header">
+  <div class="container">
+    <ul class="columns is-vcentered is-gapless">
+      <li class="column is-2 header_mobile">
+        <a class="navbar-burger is-hidden-tablet">
+          <span></span><span></span><span></span>
+        </a>
+        <a class="header_logo image" href="/">
+          <img src="/images/logo.svg" _src="#Config.Logo" alt="#Config.Domain" />
+        </a>
+      </li>
+      <li class="column is-8">
+        <div class="header_menu navbar-menu is-size-14">
+          <div class="navbar" data-bind="true" data-rows="0" data-type="nav"
+            data-source="header-nav">
+            <a class="navbar-item" href="#Element.Link">
+              #Element.Name
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="column is-2 has-text-right is-hidden-mobile">
+        <div class="header_search control has-icons-right">
+          <input class="quick_search input is-rounded is-small" type="text"
+            placeholder="Tìm kiếm..." />
+          <span class="icon is-right">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</header>

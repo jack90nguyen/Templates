@@ -1,0 +1,35 @@
+
+/* ====  Responsive ==== */
+@media (max-width: 768px) {
+  #header {
+    padding: 0px;
+  }
+  .header_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navbar-burger {
+    margin: 0px;
+  }
+  .header_logo {
+    margin-left: 10px;
+  }
+  .header_logo img {
+    max-width: 200px;
+    max-height: 40px;
+  }
+  .header_search {
+    padding: 20px !important;
+    margin: 0px !important;
+    max-width: 100%;
+  }
+  .header_menu {
+    padding: 0px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+}

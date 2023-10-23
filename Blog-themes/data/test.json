@@ -1,0 +1,65 @@
+[
+  {
+    "id": "c57e4b",
+    "icon": "feather icon-layers",
+    "name": "Số tầng",
+    "value": "3",
+    "key": "c57e4b:3"
+  },
+  {
+    "id": "b115d9",
+    "icon": "feather icon-layout",
+    "name": "Phòng ngủ",
+    "value": "5",
+    "key": "b115d9:5"
+  },
+  {
+    "id": "be29fb",
+    "icon": "feather icon-square",
+    "name": "Diện tích",
+    "value": "200m2",
+    "key": "be29fb:200m2"
+  },
+  {
+    "id": "10fe2e",
+    "icon": "feather icon-credit-card",
+    "name": "Mặt tiền",
+    "value": "10m",
+    "key": "10fe2e:10m"
+  },
+  {
+    "id": "c406bb",
+    "icon": "feather icon-smartphone",
+    "name": "Chiều dài",
+    "value": "20m2",
+    "key": "c406bb:20m2"
+  },
+  {
+    "id": "1a474c",
+    "icon": "feather icon-home",
+    "name": "Loại hình",
+    "value": "Nhà phố",
+    "key": "1a474c:Nhà phố"
+  },
+  {
+    "id": "0491e7",
+    "icon": "feather icon-hash",
+    "name": "Phong cách",
+    "value": "Hiện đại",
+    "key": "0491e7:Hiện đại"
+  },
+  {
+    "id": "f94348",
+    "icon": "feather icon-dollar-sign",
+    "name": "Tổng mức đầu tư",
+    "value": "1,2 tỷ",
+    "key": "f94348:1,2 tỷ"
+  },
+  {
+    "id": "b575fd",
+    "icon": "feather icon-info",
+    "name": "Thiết kế bởi",
+    "value": "Siêu Thị Bản Vẽ",
+    "key": "b575fd:Siêu Thị Bản Vẽ"
+  }
+]

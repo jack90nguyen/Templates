@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="vi-VN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page - Trang chủ</title>
+  <link rel="stylesheet" href="/Asset/Animate/animate.min.css">
+  <link rel="stylesheet" href="/Asset/iconfeather/iconfont.css">
+  <link rel="stylesheet" href="/Asset/Web/bulma.min.css">
+  <link rel="stylesheet" href="/Asset/Web/style.css">
+  <link rel="stylesheet" href="/Asset/Web/theme.css">
+  <link rel="stylesheet" href="/Asset/Web/mobile.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div data-include="/Include/header.html"></div>
+
+  <!-- Main body -->
+  <main id="main">
+    <section class="py-5 wrap_mobile">
+      <div class="container">
+        <h2 class="icon-text has-text-weight-bold is-size-5 color_main mb-3">
+          <span class="icon">
+            <i class="feather icon-star-on"></i>
+          </span>
+          <span class="is-uppercase">Breaking News</span>
+        </h2>
+        <ul class="hot_list columns is-multiline is-variable is-0"
+          data-repeat="true" data-rows="6" data-type="blogs" data-source="0" data-sort="1">
+          <li class="column is-one-third">
+            <a class="hot_item" href="#Blog.Link">
+              <div class="image is-4by3" href="#Blog.Link">
+                <img src="#Blog.Thumb" alt="img">
+              </div>
+              <h3 class="item_name">
+                #Blog.Name
+              </h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-6 wrap_mobile bg_bg">
+      <div class="container">
+        <ul class="columns is-multiline is-variable is-4"
+          data-bind="true" data-rows="3" data-type="category" data-source="-ParentId-">
+          <li class="column is-one-third">
+            <h2 class="icon-text has-text-weight-bold is-size-5 color_main mb-3">
+              <span class="icon">
+                <i class="feather icon-hash"></i>
+              </span>
+              <a class="is-uppercase" href="#Category.Link">#Category.Name</a>
+            </h2>
+            <ul class="blog_columns columns is-multiline is-variable is-2 is-mobile"
+              data-repeat="true" data-rows="5" data-type="blogs" data-source="#Category.Id">
+              <li class="column is-full">
+                <div class="blog_item">
+                  <div class="image is-5by3 is-radius" href="#Blog.Link">
+                    <img src="#Blog.Thumb" alt="img">
+                  </div>
+                  <div class="item_info">
+                    <h3 class="item_name text_2_line">
+                      <a href="#Blog.Link">#Blog.Name</a>
+                    </h3>
+                    <div class="item_desc text_3_line">
+                      #Blog.Desc
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-6 wrap_mobile"
+      data-bind="true" data-type="post" data-source="Blog_ID">
+      <div class="container">
+        <div class="field is-grouped is-vcentered mb-3">
+          <div class="control is-expanded">
+            <h2 class="icon-text has-text-weight-bold is-size-5 color_main">
+              <span class="icon">
+                <i class="feather icon-hash"></i>
+              </span>
+              <a class="is-uppercase" href="#Category.Link">#Data.Name</a>
+            </h2>
+          </div>
+          <div class="control">
+            <a class="icon-text" href="#Data.Link">
+              <span>View more</span>
+              <span class="icon">
+                <i class="feather icon-chevron-right is-size-6"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        
+        <ul class="columns is-multiline is-variable is-3"
+          data-repeat="true" data-rows="8" data-type="blogs" data-source="#Data.Id">
+          <li class="column is-one-quarter">
+            <div class="blog_item">
+              <div class="image is-5by3 is-radius" href="#Blog.Link">
+                <img src="#Blog.Thumb" alt="img">
+              </div>
+              <div class="item_info">
+                <h3 class="item_name text_2_line">
+                  <a href="#Blog.Link">#Blog.Name</a>
+                </h3>
+                <div class="item_desc text_3_line">
+                  #Blog.Desc
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-6 wrap_mobile bg_bg">
+      <div class="container">
+        <ul class="columns is-multiline is-variable is-4"
+          data-bind="true" data-rows="3" data-type="category" data-source="-ParentId-">
+          <li class="column is-one-third">
+            <h2 class="icon-text has-text-weight-bold is-size-5 color_main mb-3">
+              <span class="icon">
+                <i class="feather icon-hash"></i>
+              </span>
+              <a class="is-uppercase" href="#Category.Link">#Category.Name</a>
+            </h2>
+            <ul class="blog_columns columns is-multiline is-variable is-2 is-mobile"
+              data-repeat="true" data-rows="5" data-type="blogs" data-source="#Category.Id">
+              <li class="column is-full">
+                <div class="blog_item">
+                  <div class="image is-5by3 is-radius" href="#Blog.Link">
+                    <img src="#Blog.Thumb" alt="img">
+                  </div>
+                  <div class="item_info">
+                    <h3 class="item_name text_2_line">
+                      <a href="#Blog.Link">#Blog.Name</a>
+                    </h3>
+                    <div class="item_desc text_3_line">
+                      #Blog.Desc
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/Include/footer.html"></div>
+
+  <!-- Javascript -->
+  <script src="/scripts/jquery-2.0.3.min.js"></script>
+  <script src="/scripts/jquery-1.8.2.min.js"></script>
+  <script src="/scripts/swiped-events.js"></script>
+  <script src="/scripts/jquery.aniview.js"></script>
+  <script src="/scripts/onetez.js"></script>
+  <script src="/scripts/demo.js"></script>
+  <script>
+    function loadAfterDataDemo() {
+
+    }
+  </script>
+</body>
+
+</html>
